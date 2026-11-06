@@ -7,7 +7,7 @@ The frames are not in this repository: they are about 15 GB. Each shot's frames 
 - [Blender](https://www.blender.org/) 5.2.1, with a GPU that Cycles supports
 - Python 3.13 (3.12 also works) and `pip install -r requirements.txt`
 - FFmpeg, to cut the film and for the proof clips some scripts write; without it those scripts exit with an error after their frames are done
-- For `s76_yidi` and `s69_mutan_raw`, torch and an NVIDIA GPU
+- For `s76_yidi` and `s69_mutan_raw`, torch and an NVIDIA GPU. `s76_yidi` solves its fluid and writes its frames in about 7 minutes on an RTX 5090
 
 On macOS the scripts look for `/Applications/Blender.app` and use Metal. Elsewhere they run `blender` and use OptiX. To change either:
 
@@ -79,6 +79,7 @@ Each shot below was rendered again from this repository at final quality and com
 | `s66_xieyang` | 71.7 | 86.6 |
 | `s69_mutan_raw` | – | 41.5 |
 | `s73_heisan` | 114 | 86.4 |
+| `s76_yidi` | – | 70.7, all 36 frames |
 
 `*` One sub-exposure against the film's averaged frame, so part of the difference is the averaging.
 
@@ -88,7 +89,6 @@ A shot rendered on the kind of GPU that made its frames for the film comes out n
 
 Contributions are welcome.
 
-- **`s76_yidi` has not been rendered again.** It needs torch and an NVIDIA GPU, and its frames are written by the fluid solver as it runs, about 8 minutes on an RTX 5090. Its code is the code that made the film's frames, going by the commit times, but nothing has been compared.
 - **`s69_mutan_raw` is about 3% brighter than the film.** It needs torch and an NVIDIA GPU. The camera matches the film's to every digit and the background is identical, but the glow is brighter. The cause was not found: the script and shaders match the commit made just before the film's frames, and two runs of the heat solve differ in their mean by less than one part in a million. The comparison also reused the crack fields from the original run. They are not in this repository, so a fresh clone solves them again, and that has not been compared.
 - **Some shots differ a little on both GPUs.** `s16_lizhi_v1`, `s20_denglong`, `s36_nanzhu`, `s37_jinyu`, `s50_qinghua` and `s63_nanhong` read about the same on Metal and on the 5090 (50 to 56 dB), so something other than GPU noise differs. The cause has not been looked into.
 - **`s54_zoumadeng` hung the GPU on Metal.** In the one run tried, Metal reported a GPU hang after 4 frames, so only its first frame was compared there. It runs through on the 5090.
