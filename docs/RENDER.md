@@ -5,8 +5,9 @@ The frames are not in this repository: they are about 15 GB. Each shot's frames 
 ## Setup
 
 - [Blender](https://www.blender.org/) 5.2.1, with a GPU that Cycles supports
-- Python 3.13 and `pip install -r requirements.txt`
-- FFmpeg, to cut the film
+- Python 3.13 (3.12 also works) and `pip install -r requirements.txt`
+- FFmpeg, to cut the film and for the proof clips some scripts write; without it those scripts exit with an error after their frames are done
+- For `s76_yidi` and `s69_mutan_raw`, torch and an NVIDIA GPU
 
 On macOS the scripts look for `/Applications/Blender.app` and use Metal. Elsewhere they run `blender` and use OptiX. To change either:
 
@@ -41,39 +42,56 @@ Captions use the macOS fonts Songti and Baskerville. On other systems set `GEWU_
 
 ## How close it comes
 
-Each shot below was rendered again from this repository at final quality and compared with the film's own frames. Moving shots were compared on their first and last frames, with `GEWU_ENDS=1`. The numbers are PSNR at 1/4 size, where render noise has mostly gone. As a rule of thumb, a difference is hard to see above 40 dB.
+Each shot below was rendered again from this repository at final quality and compared with the film's own frames, on an Apple GPU with Metal (Python 3.13) and on an NVIDIA RTX 5090 with OptiX (Python 3.12). Moving shots were compared on their first and last frames, with `GEWU_ENDS=1`, and the lower number is shown. The numbers are PSNR in dB at 1/4 size, where render noise has mostly gone. As a rule of thumb, a difference is hard to see above 40 dB. The 5090 numbers stop at about 80 to 100 because its reference frames were kept as 16-bit floats, so read those as identical.
 
-| Shot | PSNR (dB) |
-|---|---|
-| `s35_kuangcao` | 120.9 |
-| `s19_luodian` | 120.4 |
-| `s07_cijing` | 117.6 |
-| `s73_heisan` | 114 |
-| `s61_tihong` | 107.6 |
-| `s05_yinni` | 98 |
-| `s15_zheshan` | 87.1 |
-| `s11_jiangdou` | 80.3 |
-| `s55_diancui` | 72.0 |
-| `s66_xieyang` | 71.7 |
-| `s06_junyao` | 63.9 |
-| `s49_falang` | 57.0 |
-| `s20_denglong` | 51.5 |
-| `s16_lizhi_v1` | 51.1 |
-| `s50_qinghua` | 50.3 |
-| `s36_nanzhu` | 49.5 |
-| `s30_huali` | 49.1 |
-| `s59_suxiu` | 46.5 |
-| `s28_dehua` | 44.3 |
-| `s45_kongque` | 41.2, one sub-exposure against the film's averaged frame |
+| Shot | Metal | RTX 5090 |
+|---|---|---|
+| `s01_moyun` | – | 86.9 |
+| `s02_yaobian` | 71.0 | 99.1 |
+| `s05_yinni` | 98 | 80.3 |
+| `s06_junyao` | 63.9 | 66.6 |
+| `s07_cijing` | 117.6 | 78.9 |
+| `s09_yinxing` * | – | 45.0 |
+| `s11_jiangdou` | 80.3 | 62.7 |
+| `s14_datiehua` | 119.6 | 93.1 |
+| `s15_zheshan` * | 87.1 | 89.9 |
+| `s16_lizhi_v1` | 51.1 | 51.1 |
+| `s19_luodian` | 120.4 | 86.1 |
+| `s20_denglong` | 51.5 | 51.5 |
+| `s24_jianzhi` | 106.8 | 80.9 |
+| `s27_jinbo` | 51.6 | 85.2 |
+| `s28_dehua` | 85.3 | 85.0 |
+| `s30_huali` | 49.1 | 49.1 |
+| `s35_kuangcao` | 120.9 | 79.5 |
+| `s36_nanzhu` | 49.5 | 49.5 |
+| `s37_jinyu` | 56.3 | 56.3 |
+| `s38_richu` | 101.6 | 81.1 |
+| `s39_hehua` * | 49.6 | 49.6 |
+| `s45_kongque` * | 41.2 | 41.2 |
+| `s46_luopan` | 60.0 | 60.0 |
+| `s49_falang` | 57.0 | 95.4 |
+| `s50_qinghua` | 50.3 | 50.3 |
+| `s54_zoumadeng` | 116.7, first frame only | 59.2 |
+| `s55_diancui` | 72.0 | 94.0 |
+| `s59_suxiu` | 83.5 | 81.8 |
+| `s61_tihong` | 107.6 | 76.1 |
+| `s63_nanhong` | 55.0 | 55.0 |
+| `s66_xieyang` | 71.7 | 86.6 |
+| `s69_mutan_raw` | – | 41.5 |
+| `s73_heisan` | 114 | 86.4 |
 
-The same code on the same machine gives nearly identical frames. Path-tracing noise differs between GPUs, so yours will be close rather than bit-identical.
+`*` One sub-exposure against the film's averaged frame, so part of the difference is the averaging.
+
+A shot rendered on the kind of GPU that made its frames for the film comes out nearly identical. On the other kind it is a little further off, and the difference images show mostly noise.
 
 ## Known issues
 
 Contributions are welcome.
 
-- **Shots not compared yet.** These have recipes in `v2/render_film.py`, but no comparison is recorded above: `s01_moyun`, `s02_yaobian`, `s09_yinxing`, `s14_datiehua`, `s24_jianzhi`, `s27_jinbo`, `s37_jinyu`, `s38_richu`, `s39_hehua`, `s46_luopan`, `s54_zoumadeng`, `s63_nanhong`.
-- **`s76_yidi` and `s69_mutan_raw` need torch and an NVIDIA GPU, and have not been rendered again.** Their code is the code that made the film's frames, going by the commit times, but nothing has been compared. The fluid and fracture solvers may be sensitive to the GPU and the torch version, so the fine detail could differ; this has not been tested.
+- **`s76_yidi` has not been rendered again.** It needs torch and an NVIDIA GPU, and its frames are written by the fluid solver as it runs, about 8 minutes on an RTX 5090. Its code is the code that made the film's frames, going by the commit times, but nothing has been compared.
+- **`s69_mutan_raw` is about 3% brighter than the film.** It needs torch and an NVIDIA GPU. The camera matches the film's to every digit and the background is identical, but the glow is brighter. The cause was not found: the script and shaders match the commit made just before the film's frames, and two runs of the heat solve differ in their mean by less than one part in a million. The comparison also reused the crack fields from the original run. They are not in this repository, so a fresh clone solves them again, and that has not been compared.
+- **Some shots differ a little on both GPUs.** `s16_lizhi_v1`, `s20_denglong`, `s36_nanzhu`, `s37_jinyu`, `s50_qinghua` and `s63_nanhong` read about the same on Metal and on the 5090 (50 to 56 dB), so something other than GPU noise differs. The cause has not been looked into.
+- **`s54_zoumadeng` hung the GPU on Metal.** In the one run tried, Metal reported a GPU hang after 4 frames, so only its first frame was compared there. It runs through on the 5090.
 - **`s30_huali` has moved slightly.** The camera and lights differ from the film's render by a hair (the key light's y is -44.028, was -43.97). The script that made the film's frame was not found.
 - **The first and last frames of spinning shots have half the motion blur.** They have no keyframe beyond them on one side.
 - **Old docstrings.** Many scripts describe paths and steps from while the shot was being made. `v2/render_film.py` is the source of truth for how each frame in the film was made.

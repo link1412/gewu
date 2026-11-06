@@ -244,7 +244,8 @@ def characters(pxcm, X0_, X1_, Y0_, Y1_, Th, Dry, want_layout=None):
     """Write every character whose cell is on the grid into Th and Dry. In order of writing: the load of the brush runs on through the column."""
     if not os.path.exists(FONT):
         raise SystemExit(f"missing font {FONT}; see the head of this file for its source and licence")
-    font = ImageFont.truetype(FONT, int(EM * TPX * 2))
+    # BASIC is what the film's frame used. Pillow turns raqm on where it has it (Linux wheels), and raqm places the glyphs differently.
+    font = ImageFont.truetype(FONT, int(EM * TPX * 2), layout_engine=ImageFont.Layout.BASIC)
     from fontTools.ttLib import TTFont
 
     cmap = TTFont(FONT).getBestCmap()

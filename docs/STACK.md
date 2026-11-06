@@ -164,7 +164,7 @@ numpy 算几何和运动 → scene.json + npy
 | Apple M4 Pro | 12 CPU,16 GPU,64 GB | Metal 渲染 |
 | NVIDIA RTX 5090 | 32 GB,24 核,120 GB RAM,Ubuntu | OptiX 渲染、torch 解算 |
 
-- **环境:** Python(numpy 2.4.4、scipy 1.17.1、cv2 5.0.0),torch 环境(重建步骤写的 torch 2.8.0、torchvision 0.23.0、cu128,numpy 2.3.3、scipy 1.18.1、opencv-python-headless 5.0.0.93,没实际跑过)。合片 venv Python 3.13,numpy 2.4.4,cv2 5.0.0,Pillow 12.1.1。
+- **环境:** Python(numpy 2.4.4、scipy 1.17.1、cv2 5.0.0),torch 环境(重建步骤写的 torch 2.8.0、torchvision 0.23.0、cu128,numpy 2.3.3、scipy 1.18.1、opencv-python-headless 5.0.0.93;复测用 `requirements.txt` 的版本加 torch 2.8.0+cu128,Python 3.12.4,能跑通)。合片 venv Python 3.13,numpy 2.4.4,cv2 5.0.0,Pillow 12.1.1。
 - **量到的:**
   - s02 37 帧:RTX 5090 275 s(7.4 s/帧),M4 Pro Metal 1121 s;GEWU_MOVE final Metal 31 s/帧。
   - s46 mid:RTX 5090 12 s,M4 Pro Metal 约 161 s。

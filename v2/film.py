@@ -86,7 +86,7 @@ def find(ov):
 
 def text_mask(text, font, size, bloom=1.0):
     """White text as an alpha mask at 1080p: drawn at 4x, reduced, with the faint bloom of letters on a bright screen. The mask has 40 pixels of margin on every side."""
-    f = ImageFont.truetype(font[0], size * 4, index=font[1])
+    f = ImageFont.truetype(font[0], size * 4, index=font[1], layout_engine=ImageFont.Layout.BASIC)  # the same on every platform: Pillow turns raqm on where it has it
     x0, y0, x1, y1 = f.getbbox(text)
     pad = 160
     im = Image.new("L", (x1 - x0 + 2 * pad, y1 - y0 + 2 * pad), 0)

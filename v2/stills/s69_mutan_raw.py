@@ -1,4 +1,4 @@
-# The script of the charcoal shot in the film, an earlier state of s69_mutan.py. Chosen by the times of the frames and the commits; a full re-render has not been compared, see docs/RENDER.md. s69_mutan.py next to this is a later state, not in the film.
+# The script of the charcoal shot in the film, an earlier state of s69_mutan.py. Chosen by the times of the frames and the commits; its first and last frames come within 41 dB of the film's, see docs/RENDER.md. s69_mutan.py next to this is a later state, not in the film.
 """Shot 69: a heap of burning charcoal, through a long lens, wide open. Replaces s67_mutan. One piece alone could not be read as charcoal (three designs); a heap can.
 
     python3 -I v2/stills/s69_mutan.py still [preview|mid|final] [tag] [json of heat params and framing]
