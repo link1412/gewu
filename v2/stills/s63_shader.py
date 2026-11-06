@@ -277,8 +277,8 @@ def _patch_studio():
     rigid_take._rigid = True
     old = g["soup_mesh"]
 
-    def soft(name, V, F, attrs, mat):
-        ob = old(name, V, F, attrs, mat)
+    def soft(name, V, F, attrs, mat, **kw):
+        ob = old(name, V, F, attrs, mat, **kw)
         ob.data.polygons.foreach_set("use_smooth", np.ones(len(F), dtype=bool))
         ob.data.update()
         return ob
