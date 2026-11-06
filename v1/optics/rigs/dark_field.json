@@ -1,0 +1,73 @@
+{
+ "name": "dark_field",
+ "title": "暗场单灯",
+ "what": "One softbox overhead and a little behind, on black velvet: the top of the object lit, falling off to black below; glossy surfaces carry the box's reflection on the shoulder.",
+ "look_target": {
+  "film": "ref/reference-film.mp4",
+  "note": "a reference film: a look target for the light only, never material truth",
+  "shots": [
+   {
+    "shot": 2,
+    "frame": 44,
+    "what": "marbled glass on black: one light from above, the rim bright, the ground black"
+   },
+   {
+    "shot": 8,
+    "frame": 127,
+    "what": "lace on black: soft top light, falling off downwards"
+   },
+   {
+    "shot": 19,
+    "frame": 261,
+    "what": "carved lacquer on near black: one light from above"
+   }
+  ]
+ },
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "top",
+   "group": "top",
+   "shape": "rect",
+   "size": {
+    "R": [
+     4,
+     4
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 170,
+    "elevation_deg": 65,
+    "distance": {
+     "R": 5
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 2500,
+   "why": "the one light: overhead, a little behind"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "black_flock",
+  "distance": {
+   "R": 10
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 16
+  },
+  "width": {
+   "R": 20
+  },
+  "why": "the default ground; a recipe sets the colour for its object (backdrop.material). Black flock (0.003): S3, framed as the film the ground in view is the floor just behind the object, lit by the same lamps; black velvet (0.01) came out dark grey there"
+ }
+}

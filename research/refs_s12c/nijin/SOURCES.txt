@@ -1,0 +1,97 @@
+nijin/ 真实实物摄影参照来源记录
+采集日期：2026-11-05（Asia/Tokyo）
+用途：本地外观参照；本次未发布、未购买、未联系作者。
+像素为下载文件解码后的宽×高；原图按字节保存，未做重绘、裁切或去水印。
+摄影者未署名时明确记为未署名；文章作者、商家、藏品作者分别记录。
+
+[01.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 卷首佛教故事金线画
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt1_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1590 px（宽 × 高）
+文件：TIFF；23,861,124 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：cc351c795b9fc3bb421edcf88fad11bd53f11b562afeb698cad2fa2391395576
+
+[02.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文序品开头：妙法莲华经序品第一
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt2_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1629 px（宽 × 高）
+文件：TIFF；24,446,288 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：befcd861b3bd09c34f89a6c209c76eec96a5fbe4f786d5e685effa8a262a86cc
+
+[03.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文序品不同后续段落
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt3_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1574 px（宽 × 高）
+文件：TIFF；23,621,208 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：08535cb9dc366950d5e85408008ea40950aca194c9a4adddf5ec1ec9b37f214f
+
+[04.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文中段
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt7_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1558 px（宽 × 高）
+文件：TIFF；23,381,240 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：ae659593c17ed11524cc31a238657d4329a738c1a8f4d3eb0e3ead86679d1d46
+
+[05.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文后段
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt14_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1558 px（宽 × 高）
+文件：TIFF；23,381,098 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：880df0d9026260181ec36a8edaefb964617ed18753700014534f0ae433ecc063
+
+[06.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文卷末及题名
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt15_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 2566 px（宽 × 高）
+文件：TIFF；38,502,830 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：7de3403d61f7b3ca11650e41ccc6fd3907c7a5b47e6e53043b0f1de2e7c50194
+
+[07.jpg]
+主题：“Devadatta,” Chapter 12 of the Lotus Sutra (Hoke-kyō, Daibadatta-bon) — 法华经提婆达多品卷首金泥佛画
+来源页：https://www.metmuseum.org/art/collection/search/44851
+图片下载地址：https://images.metmuseum.org/CRDImages/as/original/DP-31563-023.jpg
+作者／摄影者：作者未署名；个人摄影者未署名；图像提供机构 The Metropolitan Museum of Art
+许可：Public Domain；The Met Open Access / CC0（官方API isPublicDomain=true，作品页Public Domain）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：3000 × 4000 px（宽 × 高）
+文件：JPEG；3,860,931 bytes
+可观察细节：日本；作为紺纸金泥近似材质补充，不冒充中国磁青纸；Handscroll; gold and silver on indigo-dyed paper；馆方原始实物摄影，可见金泥笔画或金线边缘不均、局部金色颗粒斑驳与纸面折痕。
+限制／辨别事项：日本靛蓝染纸实物，为中国磁青纸泥金的近似材质；非显微摄影。
+机构元数据：https://collectionapi.metmuseum.org/public/collection/v1/objects/44851
+SHA-256：53c8e01681cd3bca840a2b77f16b6bfb5b40990b947e3ada83001f0ecfee59a6
+

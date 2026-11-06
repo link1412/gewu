@@ -1,0 +1,58 @@
+{
+ "about": "the optics tests' plate_marble (tests/optics/gen_object.py) under optics/rigs/backlit.json, framed to the arc of the original's shot 37 (S3 review: compose as the film does)",
+ "object": {
+  "file": "out/optics/objects/plate_marble/plate_marble.pbrt"
+ },
+ "rig": "optics/rigs/backlit.json",
+ "camera": {
+  "focal_mm": 100,
+  "f_number": 11,
+  "azimuth_deg": 0,
+  "elevation_deg": 0,
+  "frame": {
+   "arc_of_shot": 37
+  },
+  "why": "our choice: a 100 mm lens at f/11, looking 0 degrees down; placed and focused so the object's upper edge is the arc of the original's shot 37 (spec/shots.json), the shot of this rig's first look target"
+ },
+ "render": {
+  "spp": 128,
+  "maxdepth": 256,
+  "refractivenee": false,
+  "denoise": true,
+  "seed": 0
+ },
+ "mix": {
+  "through": 1.0,
+  "front": -1.0
+ },
+ "develop": {
+  "sensor": "canon_eos_5d_mkiv",
+  "iso": 100,
+  "expose": {
+   "percentile": 99.9,
+   "of_saturation": 0.7,
+   "why": "our choice, as shots/06-guan/camera.json"
+  },
+  "develop": {
+   "ev": 0.0,
+   "shoulder_from": 0.5,
+   "contrast": 1.0,
+   "pivot": 0.18,
+   "why": "neutral: no grade yet"
+  },
+  "sharpen": {
+   "amount": 0.0,
+   "sigma_px": 0.7
+  },
+  "seed": 1
+ },
+ "sheet": {
+  "stops": 1
+ },
+ "rig_overrides": {
+  "backdrop.material": "sky_blue"
+ },
+ "ground_why": "our choice: a blue ground behind the warm glow (the lantern on a blue sky of shot 37)",
+ "render_why": "256 bounces: light crosses 4 mm of marble (about 10 mean free paths) by around a hundred scatterings",
+ "mix_why": "our choice (S3 preview): the glow leads, the front fill only keeps the face from going black"
+}

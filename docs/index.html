@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#141415">
+<title>Gewu</title>
+<meta name="description" content="33 seconds, 34 Eastern objects and crafts, every frame rendered from code. An unofficial version of the Claude Opus 5.5 launch film in the art of the East.">
+<meta property="og:type" content="video.other">
+<meta property="og:title" content="Gewu">
+<meta property="og:description" content="33 seconds, 34 Eastern objects and crafts, every frame rendered from code. An unofficial version of the Claude Opus 5.5 launch film in the art of the East.">
+<meta property="og:image" content="https://link1412.github.io/gewu/poster.jpg">
+<meta property="og:video" content="https://link1412.github.io/gewu/film.mp4">
+<meta property="og:video:type" content="video/mp4">
+<meta property="og:video:width" content="1920">
+<meta property="og:video:height" content="1080">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root {
+  --bg: #141415;
+  --ink: #cdcbc5;
+  --dim: #8f8d87;
+  --line: #2c2c2d;
+  --serif: Baskerville, "Baskerville Old Face", Georgia, "Times New Roman", serif;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 18px/1.7 var(--serif); }
+a { color: var(--ink); text-decoration-color: #66645f; text-underline-offset: .22em; }
+a:hover { text-decoration-color: var(--ink); }
+a:focus-visible { outline: 1px solid var(--ink); outline-offset: 3px; }
+p { margin: 0; }
+
+header, .text, footer, .wide { width: min(1600px, 100% - 32px); margin-inline: auto; }
+.text > *, footer > * { max-width: 46rem; }
+
+header { padding-block: clamp(40px, 8vw, 88px) clamp(26px, 4vw, 40px); }
+h1 { margin: 0; font-size: clamp(44px, 7vw, 68px); font-weight: 400; letter-spacing: .04em; line-height: 1.2; }
+.line { margin-top: 12px; color: var(--dim); }
+.line cite { font-style: normal; white-space: nowrap; }
+
+video, .sheet img { display: block; width: 100%; height: auto; background: #0b0b0c; }
+video { aspect-ratio: 16 / 9; }
+
+.facts { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 28px; margin-top: 12px; color: var(--dim); font-size: 16px; line-height: 1.6; }
+.facts a { color: var(--dim); }
+.facts span + span { margin-left: 22px; }
+
+section { margin-top: clamp(56px, 9vw, 104px); }
+h2 { margin: 0 0 18px; font-size: 24px; font-weight: 400; letter-spacing: .02em; }
+.sheet { margin: 0; }
+.sheet figcaption { margin-top: 12px; color: var(--dim); font-size: 16px; line-height: 1.6; }
+
+dl { margin: 0; }
+dl div { padding-block: 16px; border-top: 1px solid var(--line); }
+dt { color: var(--dim); font-size: 16px; }
+dd { margin: 4px 0 0; }
+
+.links { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 16px 28px; padding: 0; margin: 0; list-style: none; }
+.links small { display: block; color: var(--dim); font-size: 16px; line-height: 1.55; }
+
+footer { margin-top: clamp(56px, 9vw, 104px); padding-block: 22px 56px; border-top: 1px solid var(--line); color: var(--dim); font-size: 15.5px; line-height: 1.7; }
+footer a { color: var(--dim); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Gewu</h1>
+  <p class="line">If truly new one day, then new day after day, and new again. <cite>— The Great Learning</cite></p>
+</header>
+
+<main>
+  <div class="wide">
+    <video controls playsinline preload="metadata" poster="poster.jpg" width="1920" height="1080">
+      <source src="film.mp4" type="video/mp4">
+      <a href="film.mp4">Download the film</a>
+    </video>
+    <div class="facts">
+      <div>33 s · 34 shots · 1920×1080 · 25 fps · with sound</div>
+      <div><span><a href="https://github.com/link1412/gewu/releases/download/film-1.0/gewu-film-en-h264-crf10.mp4">Download high bitrate (357 MB)</a></span></div>
+    </div>
+  </div>
+
+  <section class="wide">
+    <h2>Contact sheet</h2>
+    <figure class="sheet">
+      <a href="contact-sheet.jpg"><img src="contact-sheet.jpg" width="3910" height="2506" loading="lazy" alt="Contact sheet of all 34 shots, one frame each: ink bloom, yohen tenmoku, seal paste, Jun ware, indigo sutra paper, ginkgo, carved red lacquer, peachbloom glaze, Suzhou embroidery, trotting-horse lantern, folding fan, lychee, kingfisher-feather inlay, molten-iron fireworks, oil-paper umbrella, mother-of-pearl inlay, red lantern, paper-cut, nanhong agate, gold leaf, Dehua porcelain, lotus, mother-of-pearl bamboo, wild cursive, a drop of ink, oil-paper umbrella on black, peacock feather, Nanzhu pearl, huanghuali wood, blue-and-white porcelain, goldfish, cloisonné, charcoal, sunrise."></a>
+      <figcaption>One frame from each shot, taken from the lossless master. Open it for full size (3910×2506).</figcaption>
+    </figure>
+  </section>
+
+  <section class="text">
+    <h2>How it was made</h2>
+    <dl>
+      <div>
+        <dt>Picture</dt>
+        <dd>Every frame is generated by code. Geometry, materials, lights and motion are written in Python, path traced in Blender Cycles, and developed from linear floating-point frames in a hand-written darkroom.</dd>
+      </div>
+      <div>
+        <dt>Sound</dt>
+        <dd>The notes and structure are written in code. The instruments are sampled, not synthesized by the program: the choir and strings from <a href="https://github.com/link1412/gewu/blob/main/v2/music/NOTICE-MuseScore-General.md">MuseScore General</a> (MIT), the low drones and reeds from Keyscape.</dd>
+      </div>
+      <div>
+        <dt>People and machines</dt>
+        <dd>link1412 set the direction and made the calls. Claude Opus 5.5 wrote the code and ran the renders.</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="text">
+    <h2>Source and research</h2>
+    <ul class="links">
+      <li><a href="https://github.com/link1412/gewu">Repository</a><small>Code for v1 and v2. The documents are mostly in Chinese.</small></li>
+      <li><a href="https://github.com/link1412/gewu/blob/main/docs/PAPERS.md">Paper index</a><small>Whether each link was checked, how the code used it, and whether we hold the full text. Not a list of papers read.</small></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Gewu is an unofficial tribute to the Claude Opus 5.5 launch film. Anthropic was not involved in making it. Claude is a product name and trademark of Anthropic. The <a href="https://x.com/claudeai/status/2102435511222890900">original film</a> belongs to Anthropic, and none of its picture or sound is included here. Repost the film and the contact sheet freely; there is no need to ask.</p>
+</footer>
+
+</body>
+</html>

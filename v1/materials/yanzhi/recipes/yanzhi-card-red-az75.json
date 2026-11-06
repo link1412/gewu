@@ -1,0 +1,52 @@
+{
+ "about": "胭脂红 card: a bowl in Met 1971.180.248's form, the gold-ruby outside at the card's c, under the museum's flat light, seen from 14 degrees up as that photograph is (materials/yanzhi/card.py); the two softboxes moved to +-75 degrees (a test of the light: the photo's sides are about 2.3 x the front's luminance)",
+ "object": {
+  "file": "out/materials/yanzhi/card/red/bowl.pbrt"
+ },
+ "rig": "optics/rigs/museum_flat.json",
+ "camera": {
+  "focal_mm": 100,
+  "f_number": 11,
+  "azimuth_deg": 0,
+  "elevation_deg": 14,
+  "fill": 0.57,
+  "aim": "centre",
+  "why": "the photo's view: 14 degrees up (its rim ellipse, minor / major 0.25 [M]); the bowl's height 57% of the frame's height, as in the photo (760 of 1333 px [M]); 100 mm lens our choice (the photo's distance unknown)"
+ },
+ "render": {
+  "spp": 256,
+  "maxdepth": 48,
+  "refractivenee": true,
+  "denoise": true,
+  "seed": 0
+ },
+ "mix": {},
+ "develop": {
+  "sensor": "canon_eos_5d_mkiv",
+  "iso": 100,
+  "expose": {
+   "percentile": 99.0,
+   "of_saturation": 0.75,
+   "why": "our choice: the lit white glaze near 3/4 of full scale"
+  },
+  "develop": {
+   "ev": 0.0,
+   "shoulder_from": 0.6,
+   "contrast": 1.0,
+   "pivot": 0.18,
+   "why": "neutral: no grade"
+  },
+  "sharpen": {
+   "amount": 0.0,
+   "sigma_px": 0.7
+  },
+  "seed": 1
+ },
+ "sheet": {
+  "stops": 1
+ },
+ "rig_overrides": {
+  "lamps.left.at.azimuth_deg": -75,
+  "lamps.right.at.azimuth_deg": 75
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "name": "notched",
+ "what": "A parametric two-lobed leaf with a central notch (a long-shoot-like leaf), to exercise the outline's notch and incisions and the veins' growth around them; its numbers are a typical leaf's, not one photographed leaf's.",
+ "seed": 3,
+ "outline": {
+  "parametric": {
+   "radius_mm": {
+    "value": 55.0,
+    "source": "blade length (base to the longest lobe's tip) 61.5-62.8 mm, Klimko 2015 Table 1 clone means [M], less the base cut and the distal shape's bulge [A]"
+   },
+   "half_angle_deg": {
+    "value": 62.0,
+    "source": "a width of about 93 mm at this radius (Klimko 2015 Table 1, male clone 92.7 mm [M]) [D/A]"
+   },
+   "base_half_angle_deg": {
+    "value": 8.0,
+    "source": "the blade's narrow wedge at the petiole [A, read off the photos by eye]"
+   },
+   "base_flare_mm": {
+    "value": 12.0,
+    "source": "how far up the wedge opens to the fan [A, by eye]"
+   },
+   "distal_shape": {
+    "value": [
+     0.0,
+     -0.06,
+     0.02
+    ],
+    "source": "a distal margin a little higher on the lobes than at the axis [A]"
+   },
+   "corner_radius_mm": {
+    "value": 3.0,
+    "source": "[A]"
+   },
+   "petiole_width_mm": {
+    "value": 1.75,
+    "source": "as the lamp leaf's (objects/yinxing/lamp.json) [A]"
+   },
+   "notch": {
+    "depth_mm": {
+     "value": 14.0,
+     "source": "central notch depth 14.1 +- 10.7 mm, male clone, Klimko 2015 Table 1 [M]"
+    },
+    "bottom_half_width_mm": {
+     "value": 0.6,
+     "source": "[A]"
+    },
+    "flank_angle_deg": {
+     "value": 6.0,
+     "source": "[A]"
+    }
+   },
+   "undulation": {
+    "rms_mm": {
+     "value": 0.8,
+     "source": "[A]"
+    },
+    "wavelength_mm": {
+     "value": [
+      4.0,
+      15.0
+     ],
+     "source": "[A, the photos' margin waves by eye]"
+    }
+   },
+   "incisions": {
+    "count": {
+     "value": 2,
+     "source": "secondary incisions [A]; Critchfield 1970: up to a third of the blade's length on late long-shoot leaves"
+    },
+    "depth_mm": {
+     "value": [
+      3.0,
+      8.0
+     ],
+     "source": "[A]"
+    },
+    "half_width_mm": {
+     "value": 0.4,
+     "source": "[A]"
+    }
+   }
+  },
+  "flank_depth_mm": {
+   "value": 4.0,
+   "source": "the margin deeper than this below the convex hull is a notch's or an incision's flank, which veins run along; shallower dips (the margin's waves, 1-3 mm) are ended on as on the rest of the distal margin [A]"
+  }
+ },
+ "veins": {
+  "from_config": "lamp.json"
+ },
+ "mesh": {
+  "boundary_step_mm": 0.2,
+  "interior_step_mm": 1.0,
+  "texel_mm": 0.03,
+  "texel_supersample": 3
+ },
+ "surface": {
+  "cup_mm": 0.0
+ },
+ "petiole": {
+  "from_config": "lamp.json"
+ }
+}

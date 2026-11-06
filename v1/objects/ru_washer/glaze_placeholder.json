@@ -1,0 +1,10 @@
+{
+ "about": "PLACEHOLDER numbers [A] for objects/ru_washer/scene.py, so the washer can be rendered before the Ru glaze material exists (materials/ru_glaze/ is being built). None of these is a property of Ru glaze; replace the file (scene.py --glaze PATH) with the material's own.",
+ "eta": {"value": 1.50, "tag": "A", "why": "placeholder: a typical glaze index"},
+ "roughness": {"value": 0.0, "tag": "A", "why": "placeholder: smooth (pbrt's alpha, remaproughness false)"},
+ "sigma_a_per_mm": {"lambda_nm_value": [360, 0.05, 830, 0.05], "tag": "A", "why": "placeholder: grey, weak"},
+ "sigma_s_per_mm": {"lambda_nm_value": [360, 15.0, 830, 15.0], "tag": "A", "why": "placeholder"},
+ "g": {"value": 0.85, "tag": "A", "why": "placeholder"},
+ "body_reflectance": {"lambda_nm_value": [360, 0.35, 830, 0.35], "tag": "A", "why": "placeholder: a grey body (Ru's body is a grey-buff 香灰胎)"},
+ "ground_reflectance": {"lambda_nm_value": [360, 0.06, 830, 0.06], "tag": "A", "why": "placeholder: the dark grey cloth under the washer in the CMA photo (its luma ~45 of 255 against the glaze's ~150)"}
+}

@@ -1,0 +1,19 @@
+{
+ "name": "lychee_card",
+ "title": "荔枝材质卡:照 Leidus 那张照片的光",
+ "what": "The light of the card's photograph (Ivar Leidus, 'Lychee fruits and seed'), read off it: a broad soft source high at the front left (the seed's wide highlight at its upper left, the aril's bright crown), a weaker fill from the right, soft shadows to the lower right; a pale ground. EXIF: no flash fired, light source 'fine weather', 1/500 s f/8 ISO 500: daylight, or strobes not reported [I]. Sizes and strengths are our reading [A].",
+ "spectrum": {"blackbody_K": 5500, "why": "daylight-like; the photo's white balance made its ground neutral, so only colour ratios are compared"},
+ "lamps": [
+  {"name": "key", "group": "key", "shape": "rect", "size": {"R": [3, 3]},
+   "at": {"anchor": "centre", "azimuth_deg": -40, "elevation_deg": 45, "distance": {"R": 4}},
+   "aim": {"anchor": "centre"}, "lux": 4000, "why": "the seed's broad highlight at its upper left, the aril's bright top"},
+  {"name": "fill", "group": "fill", "shape": "rect", "size": {"R": [3, 2]},
+   "at": {"anchor": "centre", "azimuth_deg": 60, "elevation_deg": 15, "distance": {"R": 5}},
+   "aim": {"anchor": "centre"}, "lux": 1200, "why": "the right sides are not dark"},
+  {"name": "top", "group": "top", "shape": "rect", "size": {"R": [3, 3]},
+   "at": {"anchor": "centre", "azimuth_deg": 10, "elevation_deg": 80, "distance": {"R": 4}},
+   "aim": {"anchor": "centre"}, "lux": 1500, "why": "soft shadows straight under the pieces"}
+ ],
+ "backdrop": {"kind": "sweep", "material": "white_90", "distance": {"R": 3}, "cove": {"R": 1}, "height": {"R": 6},
+  "width": {"R": 10}, "why": "the photo's ground is a retouched neutral gradient (exactly grey, GIMP in its EXIF): a pale sweep, not compared"}
+}

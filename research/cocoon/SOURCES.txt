@@ -1,0 +1,170 @@
+桑蚕茧（Bombyx mori）实拍照片来源清单
+检索与下载日期：2026-11-05（Asia/Tokyo）
+共 9 张独立摄影文件，位于 photos/。像素均为宽 × 高。
+实际下载像素由本地解码读取；“来源最大像素”是网站所列公开原文件尺寸，不冒充已下载尺寸。
+
+下载与真实性说明：
+- 01 从摄影者 Flickr 原尺寸链接下载；02 为 Commons 原文件；08 为 Pexels 公开发布的全尺寸 JPEG。
+- 03、04、05、06、07 的 Wikimedia 原文件请求返回 HTTP 429，按官方标准尺寸方案改取 1920/3840 宽摄影衍生版本；已附原文件链接供日后获取。
+- 09 的 Pixabay 页面标称 4000 × 3000，但本次可直接下载的是 1280 × 960；未取得 4000 × 3000 文件。
+- 标准尺寸依据：https://www.mediawiki.org/wiki/Common_thumbnail_sizes
+- 文件保存下载响应原字节；本地未裁切、调色、去水印或超分辨率放大。在线平台的尺寸版本仍是真实摄影的缩小版本。
+- 作者页/文件历史/相机资料与逐张目视用于核对实拍来源；物种依据为原页名称或 Commons 分类，未明确物种的黄茧群照未收入。
+
+
+许可说明：
+CC BY / CC BY-SA 图片使用时请保留作者、来源与相应许可链接；CC BY-SA 改编遵守相同方式共享条件。这里采用各条列明的许可选项。
+Pexels 和 Pixabay 使用各自站点许可，不等同于 CC0；完整条件以所列许可页为准。
+
+[01] photos/01_brewbooks_single_cocoon.jpg
+作品标题：Silk cocoon - Flickr - brewbooks.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Silk_cocoon_-_Flickr_-_brewbooks.jpg
+补充来源页：https://www.flickr.com/photos/brewbooks/14333086142/
+作者：brewbooks
+许可：CC BY-SA 2.0
+许可链接：https://creativecommons.org/licenses/by-sa/2.0
+实际下载像素：3053 × 3057
+来源最大像素：3053 × 3057
+文件大小：2113993 bytes
+下载直链：https://live.staticflickr.com/3863/14333086142_20449e782d_o.jpg
+来源原文件直链（本次未下载成功）：https://upload.wikimedia.org/wikipedia/commons/4/44/Silk_cocoon_-_Flickr_-_brewbooks.jpg
+拍摄/发布日：2014-05-09
+实拍来源依据：摄影者 Flickr 原页及 Commons 的 Flickr 许可复核记录；原文件含 Canon PowerShot SX160 IS 相机资料。
+物种标注依据：Commons 归入 Bombyx mori (cocoon)。
+SHA-256：e2427d75319706497a771b9973d0b845bef346cc92460e9a7fa8fc324f6c7cb0
+本地修改：无。
+
+[02] photos/02_muller_cocoon_on_twigs.jpg
+作品标题：Bombyx mori Cocon 02.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Bombyx_mori_Cocon_02.jpg
+作者：Gerd A. T. Müller
+许可：CC BY-SA 3.0
+许可链接：http://creativecommons.org/licenses/by-sa/3.0/
+实际下载像素：1425 × 1425
+来源最大像素：1425 × 1425
+文件大小：73291 bytes
+下载直链：https://upload.wikimedia.org/wikipedia/commons/d/df/Bombyx_mori_Cocon_02.jpg
+拍摄/发布日：2002-05-18
+实拍来源依据：Commons 正文注明摄影者与拍摄日，文件历史始于 2004 年；作者/日期由正文人工补录，非空白机器元数据。
+物种标注依据：文件名 Bombyx mori Cocon 02；正文 Seidenspinner Kokon。
+SHA-256：1fe0c5451a1f41e94ea04648df5335267a0b10661c981cd42a25e85193d9113c
+本地修改：无。
+
+[03] photos/03_milaszewska_yellow_cocoon.jpg
+作品标题：Bombyx mori pulpa 001.JPG
+来源页：https://commons.wikimedia.org/wiki/File:Bombyx_mori_pulpa_001.JPG
+作者：Małgorzata Miłaszewska（Lilly M）
+许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+实际下载像素：1920 × 1285
+来源最大像素：2710 × 1814
+文件大小：452415 bytes
+下载直链：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Bombyx_mori_pulpa_001.JPG/1920px-Bombyx_mori_pulpa_001.JPG
+来源原文件直链（本次未下载成功）：https://upload.wikimedia.org/wikipedia/commons/3/32/Bombyx_mori_pulpa_001.JPG
+拍摄/发布日：2007-07-25
+实拍来源依据：摄影者 own work；来源页保留 Nikon D80 相机、曝光与拍摄日期。
+物种标注依据：文件名与来源说明明确 Bombyx mori。
+SHA-256：7f9af3bef9eacbcc6edef194c5ca68593c921ca4588301f59a1e64a9305bee0c
+本地修改：无。
+
+[04] photos/04_gibellini_cocoon_moth.jpg
+作品标题：Bombyx mori sul bozzolo 02.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Bombyx_mori_sul_bozzolo_02.jpg
+作者：P.gibellini
+许可：CC0
+许可链接：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+实际下载像素：1920 × 1440
+来源最大像素：2560 × 1920
+文件大小：351025 bytes
+下载直链：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Bombyx_mori_sul_bozzolo_02.jpg/1920px-Bombyx_mori_sul_bozzolo_02.jpg
+来源原文件直链（本次未下载成功）：https://upload.wikimedia.org/wikipedia/commons/3/3a/Bombyx_mori_sul_bozzolo_02.jpg
+拍摄/发布日：2011-06-22
+实拍来源依据：摄影者 own work；来源页保留 Sony CYBERSHOT 相机与曝光资料。
+物种标注依据：文件名与来源说明明确 Bombyx mori。
+SHA-256：cd3bc761323dbbefc241f8b8773831a37d3650dbaa43beb4aec707016b0558a4
+本地修改：无。
+
+[05] photos/05_ganguly_three_cocoons_8547.jpg
+作品标题：Cocoon - Bombyx mori - Kolkata 2013-06-04 8547.JPG
+来源页：https://commons.wikimedia.org/wiki/File:Cocoon_-_Bombyx_mori_-_Kolkata_2013-06-04_8547.JPG
+作者：Biswarup Ganguly
+许可：CC BY 3.0
+许可链接：https://creativecommons.org/licenses/by/3.0
+实际下载像素：3840 × 2553
+来源最大像素：6016 × 4000
+文件大小：652335 bytes
+下载直链：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Cocoon_-_Bombyx_mori_-_Kolkata_2013-06-04_8547.JPG/3840px-Cocoon_-_Bombyx_mori_-_Kolkata_2013-06-04_8547.JPG
+来源原文件直链（本次未下载成功）：https://upload.wikimedia.org/wikipedia/commons/4/44/Cocoon_-_Bombyx_mori_-_Kolkata_2013-06-04_8547.JPG
+拍摄/发布日：2013-06-04 10:51:42
+实拍来源依据：摄影者 own work；来源页保留 Nikon D3200、105 mm、f/25、1/200 s 等摄影资料。
+物种标注依据：文件名明确 Bombyx mori；未使用其含多种蚕茧的 Assamese Cocoons 对照组照片。
+SHA-256：9b0ec6e0cd5c25d9e95a98aed80616ece3b2dadb16621ff9da550758fc2ed87f
+本地修改：无。
+
+[06] photos/06_ganguly_cocoon_group_8545.jpg
+作品标题：Cocoon - Bombyx mori - Kolkata 2013-06-04 8545.JPG
+来源页：https://commons.wikimedia.org/wiki/File:Cocoon_-_Bombyx_mori_-_Kolkata_2013-06-04_8545.JPG
+作者：Biswarup Ganguly
+许可：CC BY 3.0
+许可链接：https://creativecommons.org/licenses/by/3.0
+实际下载像素：3840 × 2553
+来源最大像素：6016 × 4000
+文件大小：864968 bytes
+下载直链：https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Cocoon_-_Bombyx_mori_-_Kolkata_2013-06-04_8545.JPG/3840px-Cocoon_-_Bombyx_mori_-_Kolkata_2013-06-04_8545.JPG
+来源原文件直链（本次未下载成功）：https://upload.wikimedia.org/wikipedia/commons/a/a2/Cocoon_-_Bombyx_mori_-_Kolkata_2013-06-04_8545.JPG
+拍摄/发布日：2013-06-04 10:50:11
+实拍来源依据：摄影者 own work；来源页保留 Nikon D3200、105 mm、f/25、1/200 s 等摄影资料；与 05 是不同机位/构图的独立照片。
+物种标注依据：文件名明确 Bombyx mori。
+SHA-256：a7bc4d2cca28a9a07b57e50f1a6ec054166fd4dab0ba2c68fe36730f4b2b38d5
+本地修改：无。
+
+[07] photos/07_bora_cocoon_texture.jpg
+作品标题：The Cocoons.jpg
+来源页：https://commons.wikimedia.org/wiki/File:The_Cocoons.jpg
+作者：Abhilasha Bora（来源页用户名 Abhilasha bora）
+许可：CC BY 4.0
+许可链接：https://creativecommons.org/licenses/by/4.0
+实际下载像素：3840 × 2560
+来源最大像素：5184 × 3456
+文件大小：1101337 bytes
+下载直链：https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/The_Cocoons.jpg/3840px-The_Cocoons.jpg
+来源原文件直链（本次未下载成功）：https://upload.wikimedia.org/wikipedia/commons/8/87/The_Cocoons.jpg
+拍摄/发布日：2017-04-27
+实拍来源依据：摄影者 own work，Wiki Science Competition 2017 投稿；来源页保留 Canon EOS 1300D 相机资料，图上有作者署名。
+物种标注依据：Commons 归入 Bombyx mori (cocoon)；原说明使用 silkworm 通名。
+SHA-256：4b51b038b5b02397ce0823f326d991e101999b32612fc49d92da40d51d1d2812
+本地修改：无。
+
+[08] photos/08_vinh_cocoons_floss_grid.jpg
+作品标题：White silk cocoons and larvae of Bombyx mori worms
+来源页：https://www.pexels.com/photo/white-silk-cocoons-and-larvae-of-bombyx-mori-worms-4543910/
+作者：Quang Nguyen Vinh
+许可：Pexels License
+许可链接：https://www.pexels.com/license/
+实际下载像素：6421 × 4283
+来源最大像素：6421 × 4283
+文件大小：4375533 bytes
+下载直链：https://images.pexels.com/photos/4543910/pexels-photo-4543910.jpeg
+拍摄/发布日：2020-06-02（原页发布日）
+实拍来源依据：作者摄影页，发布于 2020 年，页面列出 6421 × 4283；下载的是原始摄影条目链接，未使用网页上的编辑功能。
+物种标注依据：原页标题明确 Bombyx mori。
+SHA-256：38ba53ec6147e17cde5ef3d7053e46f79aca76dc1cce3d3a9f595d7ff43685bc
+本地修改：无。
+
+[09] photos/09_loggawiggler_cut_cocoon.jpg
+作品标题：Cocoon, Silkworm, Silk, Cut Open
+来源页：https://pixabay.com/photos/cocoon-silkworm-silk-cut-open-196533/
+补充来源页：https://commons.wikimedia.org/wiki/File:Cut-cocoon.jpg
+作者：LoggaWiggler
+许可：Pixabay Content License（按当前下载来源页记录）
+许可链接：https://pixabay.com/service/license-summary/
+实际下载像素：1280 × 960
+来源最大像素：4000 × 3000
+文件大小：231233 bytes
+下载直链：https://cdn.pixabay.com/photo/2013/10/16/22/40/cocoon-196533_1280.jpg
+拍摄/发布日：2013-10-18（Pixabay 发布日）
+实拍来源依据：摄影者 Pixabay 条目，页面列出 Panasonic DMC-FZ150；同图的 Commons 历史副本记载 CC0，见补充来源。
+物种标注依据：原页使用 silkworm 通名；同图 Commons 归入 Bombyx mori (cocoon)。
+SHA-256：4f8c3a7bc4fbdb5a3dbd0e8091126b54e0ab26771f86e799acfffc697e067c54
+本地修改：无。
+

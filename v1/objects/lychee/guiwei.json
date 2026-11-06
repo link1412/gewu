@@ -1,0 +1,157 @@
+{
+ "name": "guiwei",
+ "what": "a 桂味 (Guiwei) lychee for the film: near-round, sharp tubercles (片峰尖锐刺手), a clear suture, fresh. Lengths in mm. Tags as materials/lychee/material.json.",
+ "material_set": "guiwei",
+ "fruit": {
+  "D_mm": {
+   "value": 34.0,
+   "tag": "D",
+   "source": "a sphere of 22.53 g [M, casb2023: Guiwei, Yongde] at density 1.0 g/cm3 [A] is 35.0 mm across; 34 with the tubercles standing out of the envelope"
+  },
+  "L_over_D": {
+   "value": 1.05,
+   "tag": "A",
+   "source": "近圆球形 (near-round) in cultivar descriptions [I, popular]; Brewster is 38.62/36.10 = 1.07 [M, nacif2001]"
+  },
+  "shoulder": {
+   "value": 0.06,
+   "tag": "A",
+   "source": "cordiform: the stem end broader than the apex (nacif2001 calls the ripe fruit heart-shaped); x scale (1 + k cos theta)"
+  }
+ },
+ "tubercles": {
+  "spacing_over_D": {
+   "value": 0.096,
+   "tag": "M",
+   "source": "the card's photo (leidus2021), plates counted face-on at the fruit's centre on a 100 px grid: about 220 px for a fruit 2280 px across (mean of the limb ellipse's axes); taken over to Guiwei [A]"
+  },
+  "height_over_D": {
+   "value": 0.018,
+   "tag": "M",
+   "source": "the card's fruit: limb prominence median 0.018 D (max 0.032 D) [M, materials/lychee/measure_ref.py], taken over to Guiwei [A]. S4: 0.03 first (the upper value, for Guiwei's sharper plates, 片峰尖锐刺手 [I]): at the section's 8 degree view the skin beyond the cut stood up as a range of hills, where the look target's rim is a low crust; the sharpness stays in q and the facets"
+  },
+  "height_cv": {
+   "value": 0.25,
+   "tag": "A",
+   "source": "plate to plate"
+  },
+  "sharpness_q": {
+   "value": 1.6,
+   "tag": "A",
+   "source": "h = H (e/e_max)^q, e the distance to the plate's border: q 1 a pyramid, > 1 concave flanks and a sharp peak (不规则圆锥状, 片峰尖锐)"
+  },
+  "jitter": {
+   "value": 0.3,
+   "tag": "A",
+   "source": "plate centres: a Fibonacci lattice moved by up to this many spacings"
+  },
+  "facets": {
+   "spacing_over_plate": {
+    "value": 0.4,
+    "tag": "A",
+    "source": "the plates are divided again into smaller facets (the card's photo, ref/lychee: finer divisions inside the plates [M, qualitative]; Guiwei's plates sharp and prickly [I, cultivar descriptions]); about three across a plate, not counted"
+   },
+   "height_over_H": {
+    "value": 0.6,
+    "tag": "A",
+    "source": "not measured; S4: 0.35 first: the plates' peaks still read as single smooth hills at 2.55x, where the look target's edge is a fine sawtooth"
+   },
+   "sharpness_q": {
+    "value": 1.3,
+    "tag": "A",
+    "source": "sharp-tipped, as the plates"
+   }
+  },
+  "grain": {
+   "across_mm": {
+    "value": 0.08,
+    "tag": "A",
+    "source": "fine fissures across the plates (the card's photo, ref/lychee: radial cracks and a granular face [M, qualitative]); width not measured"
+   },
+   "rms_mm": {
+    "value": 0.006,
+    "tag": "A",
+    "source": "not measured"
+   },
+   "px_mm": {
+    "value": 0.015,
+    "tag": "A",
+    "source": "texels at the equator: the section's pixel is 7 um"
+   }
+  }
+ },
+ "suture": {
+  "depth_mm": {
+   "value": 0.35,
+   "tag": "A",
+   "source": "缝合线明显, deep and narrow [I, cultivar descriptions]"
+  },
+  "width_mm": {
+   "value": 0.35,
+   "tag": "A",
+   "source": "see depth"
+  }
+ },
+ "pericarp": {
+  "thickness_mm": {
+   "value": 0.75,
+   "tag": "A",
+   "source": "Guiwei's pericarp is thin and brittle [I, popular descriptions]: near the low end of 0.74-3.13 mm over 120 accessions [M, yuan2023]. S4: 0.9 first, which drew the white layer a wide band"
+  },
+  "outer_mm": {
+   "value": 0.45,
+   "tag": "A",
+   "source": "the red layer: from the tubercles' surface down to this far under the grooves' level, so the tubercles are red through (a cut fruit's rim is mostly red, ref/lychee/commons2, Filo gen', by eye) [A]; the white layer is the rest of the pericarp's thickness"
+  },
+  "layer_gap_mm": {
+   "value": 0.01,
+   "tag": "A",
+   "source": "between the two layers: an artefact of the renderers' one medium per closed surface (material.json model)"
+  }
+ },
+ "gaps": {
+  "pericarp_aril_mm": {
+   "value": 0.05,
+   "tag": "A",
+   "source": "the endocarp often separates from the aril (nacif2001)"
+  },
+  "aril_seed_mm": {
+   "value": 0.03,
+   "tag": "A",
+   "source": "the aril grows from the funicle and wraps the seed (nacif2001; PCP 2015); not attached over the seed's surface"
+  },
+  "testa_cotyledon_mm": {
+   "value": 0.01,
+   "tag": "A",
+   "source": "an artefact, as layer_gap_mm"
+  }
+ },
+ "seed": {
+  "length_mm": {
+   "value": 20.0,
+   "tag": "D",
+   "source": "the edible rate 76.61 % [M, casb2023] leaves 23.4 % of 22.53 g for pericarp and seed; pericarp about 3 g (0.9 mm x the envelope's area x 0.9 g/cm3 [A]) leaves about 2.2 g for the seed, an ellipsoid of about 1.9 cm3 at 1.15 g/cm3 [A], 20 x 13 x 11.5 mm with the card photo's seed proportions [M]. Guiwei often has a shrivelled seed (焦核, 44 % in Yongde): a plump one here"
+  },
+  "width_mm": {
+   "value": 13.0,
+   "tag": "D",
+   "source": "see length"
+  },
+  "thickness_mm": {
+   "value": 11.5,
+   "tag": "D",
+   "source": "see length"
+  },
+  "centre_z_mm": {
+   "value": 1.0,
+   "tag": "A",
+   "source": "towards the stem, where the aril grows from"
+  }
+ },
+ "mesh": {
+  "step_mm": 0.07,
+  "smooth_step_mm": 0.2,
+  "tag": "A",
+  "source": "outer surface sampled finer than a pixel at the section's framing (about 0.02 mm/px at 1920); smooth surfaces coarser"
+ }
+}

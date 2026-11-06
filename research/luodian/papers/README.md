@@ -1,0 +1,28 @@
+# 论文、工艺文献及图录
+
+保留 **17 份PDF文件**（其中包含同一论文作者稿/正式版、工艺单页和图录，不等于17篇独立论文），另有1份作者代码ZIP。每个PDF均检查文件头并可由PDF解析器读取，逐文件哈希见 [manifest.json](manifest.json)。
+
+| 本地文件 | 书目/内容 | 原始出处 | 版本与授权 |
+|---|---|---|---|
+| [Fu_Juyou_Thin_Mother_of_Pearl_DPM.pdf](Fu_Juyou_Thin_Mother_of_Pearl_DPM.pdf) | 傅举有《薄螺钿漆器》，《紫禁城》2008(2)，总157期，仅p.136单页 | [原始来源](https://img.dpm.org.cn/Uploads/File/pdf/db/b9/89/dbb989254f4ab709d63d9f7cbdea5665.pdf) | 故宫网站公开；未发现开放再使用授权，版权依原刊  |
+| [Fu_Juyou_Thin_Mother_of_Pearl_p143.pdf](Fu_Juyou_Thin_Mother_of_Pearl_p143.pdf) | 傅举有同文，仅p.143单页 | [原始来源](https://img.dpm.org.cn/Uploads/File/pdf/ce/4c/65/ce4c6508e0747a56ae52fd39b9bde55e.pdf) | 故宫网站公开；未发现开放再使用授权，版权依原刊  |
+| [Williams_2008_Conservation_of_Asian_Lacquer.pdf](Williams_2008_Conservation_of_Asian_Lacquer.pdf) | Jane L. Williams, The Conservation of Asian Lacquer: Case Studies at the Asian Art Museum of San Francisco, 2008 | [原始来源](https://collections.asianart.org/wp-content/uploads/sites/5/2024/05/Williams_2008_Conservation_of_Asian_Lacquer.pdf) | Copyright ©2008 Asian Art Museum; All rights reserved; 官方免费阅读下载不等于开放再发布  |
+| [DPM_T00007_00_Lacquer_Techniques.pdf](DPM_T00007_00_Lacquer_Techniques.pdf) | 明代漆器概述，p.7单页，篇名作者未取得 | [原始来源](https://img.dpm.org.cn/Uploads/pdf/1546/T00007_00.pdf) | 故宫网站公开；未发现开放再使用授权，版权依原刊  |
+| [DPM_T00055_00_Mother_of_Pearl_History.pdf](DPM_T00055_00_Mother_of_Pearl_History.pdf) | 螺钿史论文单页，作者篇名未取得 | [原始来源](https://img.dpm.org.cn/Uploads/pdf/1607/T00055_00.pdf) | 故宫网站公开；未发现开放再使用授权，版权依原刊  |
+| [DB32T_4532_2023_Dianluo_Official.pdf](DB32T_4532_2023_Dianluo_Official.pdf) | 江苏地方标准 DB32/T4532—2023 点螺漆器技术规范，扬州漆器厂起草 | [原始来源](https://dbba.sacinfo.org.cn/portal/download/7d669991c4bc219dca28bdede3f45b833ae99fd8a1fb4c07b66d1fc88b68b6ba) | 官方标准全文开放阅读；未发现可再分发开放许可证  |
+| [hit_2021_preprint.pdf](hit_2021_preprint.pdf) | Salman et al.，2021，Hyperspectral interference tomography of nacre | [原始来源](https://doi.org/10.1073/pnas.2023623118) | PNAS license for journal; preprint download is not a verified general reuse license. Preprint, includes 12-page supplementary information; journal-text sampling-depth wording differs slightly. |
+| [polarimetry_nacre_2014.pdf](polarimetry_nacre_2014.pdf) | Metzler et al.，2014，Polarimetry of Nacre in Iridescent Shells | [原始来源](https://doi.org/10.1117/12.2061196) | Publisher/author copyright, reference only; reuse terms not independently verified. Author-hosted SPIE paper. |
+| [nacre_structural_color_2021.pdf](nacre_structural_color_2021.pdf) | Fan, Zhou & Myagkaya，2021，Investigation of nacre nanostructure by analyzing its structural color pattern | [原始来源](https://doi.org/10.1038/s41598-021-99327-4) | CC BY 4.0, article notice. Published version. |
+| [artificial_nacre_2012.pdf](artificial_nacre_2012.pdf) | Finnemore et al.，2012，Biomimetic layer-by-layer assembly of artificial nacre | [原始来源](https://doi.org/10.1038/ncomms1970) | Copyright retained; reference only. Author manuscript; unresolved figure-reference placeholders, prefer published PDF. |
+| [artificial_nacre_2012_published.pdf](artificial_nacre_2012_published.pdf) | Finnemore et al.，2012，Biomimetic layer-by-layer assembly of artificial nacre | [原始来源](https://doi.org/10.1038/ncomms1970) | ©2012 Macmillan Publishers Limited, all rights reserved. Published version; Fig.4 angle-resolved natural/artificial nacre. |
+| [belcour_2017.pdf](belcour_2017.pdf) | Belcour & Barla，2017，A Practical Extension to Microfacet Theory for the Modeling of Varying Iridescence | [原始来源](https://doi.org/10.1145/3072959.3073620) | Author/publisher terms; reference download does not imply open-source code license. Author deposit HAL version 2. |
+| [nacre_nanogaps_2025.pdf](nacre_nanogaps_2025.pdf) | Hizukuri et al.，2025，Brilliant structural colors originating from reflection by nanogaps of nacreous layers in fossilized ammonite shells | [原始来源](https://doi.org/10.1038/s41598-025-21872-z) | CC BY 4.0, article p.11. Published version; natural Haliotis iris / Nautilus controls, TEM and SEM. |
+| [byrnes_2016_multilayer.pdf](byrnes_2016_multilayer.pdf) | Steven J. Byrnes，2016, revised 2020，Multilayer optical calculations | [原始来源](https://doi.org/10.48550/arXiv.1603.02720) | Paper arXiv terms; separate tmm code is MIT. Version 5; optical TMM derivation. |
+| [structural_colors_pearls_2021.pdf](structural_colors_pearls_2021.pdf) | Ozaki et al.，2021，Structural colors of pearls | [原始来源](https://doi.org/10.1038/s41598-021-94737-w) | CC BY 4.0, article notice. Published version; measured spectra and GLSL rendering comparison. |
+| [belcour_2017_code.zip](belcour_2017_code.zip) | Belcour & Barla，2017，Thin-film microfacet supplemental code | [原始来源](https://doi.org/10.1145/3072959.3073620) | No independent LICENSE file found in downloaded zip; do not assert unrestricted reuse. BRDFExplorer GLSL, old Mitsuba C++; package readme inspected. |
+| [extra_aichi_2014_kimura_lacquer_catalogue.pdf](extra_aichi_2014_kimura_lacquer_catalogue.pdf) | 愛知県美術館 木村定三コレクション漆工芸品目録，2014，印刷p.39–93 | [原始来源](https://apmoa.museum/assets/pdf/bulletin/2014/apmoabulletin2014kimurap39-93.pdf) | 机构官方公开PDF；未见开放再利用许可  |
+| [extra_aichi_2014_scientific_analysis.pdf](extra_aichi_2014_scientific_analysis.pdf) | 愛知県美術館 木村定三收藏 漆工品科学分析，2014，印刷p.98–117 | [原始来源](https://apmoa.museum/assets/pdf/bulletin/2014/apmoabulletin2014kimurap98-117.pdf) | 机构官方公开PDF；未见开放再利用许可  |
+
+未取得的论文/附件：Song et al.2003文石/有机层实测全文PDF、Liu et al.1999衍射论文有效PDF、HIT正式PDF（本地保留含SI预印本）、Hizukuri2025补充DOCX、UE5螺钿案例全文/代码。本报告对这些文件的获得状态没有作成功声明。失败原因与光学文件细节见 [optics_sources.json](optics_sources.json)。
+
+作者TMM源码与示例MAT/CSV在 [sources/optics_code](../sources/optics_code/)；示例数据的物种/测量角未标，不当作绝对BRDF。

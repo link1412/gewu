@@ -1,0 +1,46 @@
+{
+ "shot": 20,
+ "subject": "红灯笼,背光",
+ "note": "shader shot (WIP, never rendered): red silk lantern lit from inside against a backlit wall; lens veil; bloom of the glow held at 1x [A]",
+ "optics": {
+  "f_number": 2.0,
+  "magnification": 0.143,
+  "focal_mm": 100.0
+ },
+ "res": [
+  960,
+  540
+ ],
+ "spp": 256,
+ "camera": {
+  "seed": 2020
+ },
+ "bases": {
+  "veil": "uniform",
+  "glare": {
+   "blur": "lamp",
+   "sigma": 0.03
+  }
+ },
+ "fit": {
+  "blocks": [
+   8,
+   18
+  ],
+  "band_weight": 2000,
+  "lights": {
+   "veil": {
+    "tie": "spot"
+   },
+   "lamp": {
+    "fixed": 0.005
+   },
+   "glare": {
+    "tie": [
+     "lamp",
+     1.0
+    ]
+   }
+  }
+ }
+}

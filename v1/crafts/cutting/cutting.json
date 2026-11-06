@@ -1,0 +1,92 @@
+{
+ "name": "cutting",
+ "what": "A knife's plane cut through a soft juicy tissue (the lychee's aril): the cut cells' relief, levelled by the juice that runs out of them, and beads of juice on the face. A height map (mm) on the cut face, for a bump ('texture displacement'). Tags as materials/lychee/material.json. The cut's plane itself is the object's (objects/lychee/lychee.py: every part is closed by its face in the plane).",
+ "cell_diameter_mm": {
+  "value": 0.2,
+  "range": [
+   0.1,
+   0.4
+  ],
+  "tag": "A",
+  "source": "the aril's parenchyma cells, not measured for lychee (S4 search found no micrograph with a scale); the range is that of fleshy-fruit parenchyma [A]. Checked on the section's render against the face's glints"
+ },
+ "cell_depth_mm": {
+  "value": 0.012,
+  "tag": "A",
+  "source": "a cut cell's opened lumen, as a shallow bowl between standing walls"
+ },
+ "sacs": {
+  "size_mm": {
+   "value": 4.5,
+   "tag": "A",
+   "source": "the aril's flesh in groups of juice cells between thin membranes (its fibres); a cut fruit shows lobes a few mm across (ref/lychee/commons2). Not measured; S4 v6: 3.0 first; about a third of the frame across, about 4.5 mm at the section's framing"
+  },
+  "bulge_mm": {
+   "value": 0.3,
+   "tag": "A",
+   "source": "turgid tissue swells into the free face after the cut, each group as a low dome, the membranes between them as creases: h = b (1 - (1 - e/e_max)^k), e the distance to the group's border. Not measured; S4: 0.1 first, the domes did not show under the slump's glints; v6: 0.2, with the larger sacs the same slopes need more"
+  },
+  "profile_power": {
+   "value": 2.0,
+   "tag": "A",
+   "source": "k in the dome's profile: 2 a rounded dome (its slope falls linearly to the top), 3 flatter-topped; S4 v6: 3 first, its flat tops mirrored the light as blots"
+  },
+  "jitter": {
+   "value": 0.45,
+   "tag": "A",
+   "source": "of the spacing"
+  }
+ },
+ "juice_level_sigma_mm": {
+  "value": 0.08,
+  "tag": "A",
+  "source": "the juice film levels the relief finer than its thickness (surface tension): a Gaussian of this width; S4: 0.03 first: the cut cells' bowls caught the light everywhere as a glitter, where a fresh cut's juice film is smooth and glossy"
+ },
+ "slump": {
+  "wavelength_mm": {
+   "value": 0.8,
+   "tag": "A",
+   "source": "the soft flesh does not stay a plane after the knife: groups of juice cells bulge or sink as they relax and drain; a Gaussian-filtered noise of about this wavelength (sigma = wavelength / 4)"
+  },
+  "rms_mm": {
+   "value": 0.006,
+   "tag": "A",
+   "source": "slopes of about 10 degrees, so the face's glints scatter over a softbox's width (S4: with only the 12 um cell bowls the face was a mirror of the dark studio). Not measured; S4: 0.02 first: its glints made random squiggles over the face, hiding the sacs"
+  }
+ },
+ "droplets": {
+  "per_mm2": {
+   "value": 0.3,
+   "tag": "A",
+   "source": "beads of juice on a fresh cut. S4: 0.04 first: about two in the section's macro frame; real cut or torn lychee flesh glistens with many small ones (ref/lychee/commons2: Filo gen', Lychee_600)"
+  },
+  "radius_mm": {
+   "value": [
+    0.06,
+    0.3
+   ],
+   "tag": "A",
+   "source": "footprint radius, log-uniform; S4: 0.12-0.5 first"
+  },
+  "contact_angle_deg": {
+   "value": 40.0,
+   "tag": "A",
+   "source": "juice on wet tissue; a spherical cap of height r tan(angle/2)"
+  }
+ },
+ "edge_taper_mm": {
+  "value": 0.08,
+  "tag": "A",
+  "source": "the relief fades to 0 at the aril's edges (the gaps to pericarp and seed)"
+ },
+ "minutes_after_cut": {
+  "value": 0,
+  "tag": "A",
+  "source": "the after-cut processes (juice spreading and draining, the cotyledon browning) at t = 0: not modelled beyond the state at the cut"
+ },
+ "texture_px": {
+  "value": 4096,
+  "tag": "A",
+  "source": "the square texture over the fruit's section, about 0.01 mm a pixel: 20 pixels a cell; S4: 2048 first, about 3 screen pixels a texel at the section's 2.55x"
+ }
+}

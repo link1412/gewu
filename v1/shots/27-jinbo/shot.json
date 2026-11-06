@@ -1,0 +1,29 @@
+{
+ "shot": 27,
+ "subject": "洒金的金箔堆与飘落的金箔",
+ "note": "shader shot: gold-leaf heap + falling flakes, black studio, key + rim + fill (colours tied to the key), f/1.2 built at 1/10, one render per frame (docs/shots/27-jinbo.md)",
+ "per_frame": true,
+ "optics": {
+  "f_number": 2.8,
+  "magnification": 0.0417,
+  "focal_mm": 100.0
+ },
+ "res": [
+  960,
+  540
+ ],
+ "spp": 256,
+ "camera": {
+  "seed": 2727
+ },
+ "fit": {
+  "lights": {
+   "rim": {
+    "tie": "key"
+   },
+   "fill": {
+    "tie": "key"
+   }
+  }
+ }
+}

@@ -1,0 +1,198 @@
+{
+ "about": "shots/19-luodian/fit.py: camera-RGB weights of each light group (all emitters 5500 K, scale 1 in scene.py) fitted to the original's 12-frame mean row profile under the arc [F]: the bands from free_from_deg up a colour on the ramp warm-neutral-cool (only the cavetto and the lip see them), the bands in dark_deg one dim even level dark_level (the floor's mirror: the lacquer's sheen at L* lacquer_L), the key's share of the body fixed (key_share), the rest of the panel one shared chroma, the key neutral (the 5500 K the camera is balanced on); key_per_frame from `fit.py key`",
+ "groups": {
+  "p00": [
+   46.159471,
+   47.629149,
+   56.959795
+  ],
+  "p01": [
+   45.955081,
+   47.418251,
+   56.707583
+  ],
+  "p02": [
+   44.093356,
+   45.497251,
+   54.410255
+  ],
+  "p03": [
+   38.760998,
+   39.995116,
+   47.830239
+  ],
+  "p04": [
+   25.801853,
+   26.623362,
+   31.838932
+  ],
+  "p05": [
+   0.133902,
+   0.138165,
+   0.165232
+  ],
+  "p06": [
+   0.133902,
+   0.138165,
+   0.165232
+  ],
+  "p07": [
+   0.133902,
+   0.138165,
+   0.165232
+  ],
+  "p08": [
+   0.133902,
+   0.138165,
+   0.165232
+  ],
+  "p09": [
+   6.290057,
+   6.490327,
+   7.761796
+  ],
+  "p10": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p11": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p12": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p13": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p14": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p15": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p16": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p17": [
+   0.702871,
+   0.891111,
+   1.563758
+  ],
+  "p18": [
+   2.411819,
+   2.938316,
+   4.819676
+  ],
+  "p19": [
+   1.026086,
+   1.278321,
+   2.179646
+  ],
+  "p20": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p21": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "p22": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "key": [
+   55.641542,
+   55.641542,
+   55.641542
+  ]
+ },
+ "fit": {
+  "gain": 2.79504,
+  "key_share": 0.5,
+  "lacquer_L": 13.0,
+  "dark_level": 0.049432,
+  "ramp": {
+   "warm": [
+    1.0,
+    0.32,
+    0.1
+   ],
+   "cool": [
+    0.32,
+    0.24,
+    1.0
+   ],
+   "order": [
+    "warm",
+    "cool"
+   ],
+   "split": 3
+  },
+  "smooth": 0.3,
+  "free_smooth": 5.0,
+  "dark_deg": [
+   20.0,
+   36.0
+  ],
+  "free_from_deg": 64.0,
+  "shared_chroma": [
+   0.96914,
+   1.0,
+   1.1959
+  ],
+  "rows": 199,
+  "rms_8bit": [
+   46.87,
+   47.58,
+   51.32
+  ],
+  "against": "original frames 255-266 (mean), raw camera RGB via camera.json's linear chain; render frame 5"
+ },
+ "key_per_frame": [
+  1.1524,
+  1.0767,
+  0.9954,
+  0.9308,
+  0.9449,
+  0.954,
+  0.989,
+  1.0209,
+  1.0258,
+  1.013,
+  0.9491,
+  0.9582
+ ],
+ "key_fit": {
+  "against": "the original body mean's change frame by frame (rows 0.62-1.0, columns 100-860 of 960, raw G-weighted), about our level with the key as fitted [F]",
+  "original_body_rel": [
+   1.0107,
+   1.013,
+   1.0241,
+   1.0101,
+   1.0288,
+   1.0292,
+   1.0252,
+   1.0138,
+   0.9887,
+   0.9729,
+   0.9486,
+   0.935
+  ]
+ }
+}

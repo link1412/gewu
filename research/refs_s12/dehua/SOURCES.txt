@@ -1,0 +1,117 @@
+dehua — 德化白瓷观音
+照片数量：8
+下载日期：2026-11-05
+
+保留下载文件的原像素；未做放大。
+“原始图 URL”指来源原文件；“实际下载 URL”可为服务端标准尺寸版本，像素以本文件所列为准。
+
+[01] 文件名：dehua_cma_127950_main.tif
+名称：Bodhisattva Guanyin of the South Sea
+原始图 URL：https://openaccess-cdn.clevelandart.org/1950.579/1950.579_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/1950.579/1950.579_full.tif
+来源页面：https://clevelandart.org/art/1950.579
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：6000 × 7806
+文件：TIFF；140,526,840 bytes
+SHA-256：3d2170599d88a22e20ef69838b32ebd9f2c2b087f6ff9bbd0eb44dabd89e9321
+来源内容说明：Bodhisattva Guanyin of the South Sea (南海觀音), 1600s. China, Fujian Province, Ming dynasty (1368-1644) - Qing dynasty (1644-1911). Porcelain with white glaze, Dehua ware; overall: 45.2 cm (17 13/16 in.). The Cleveland Museum of Art, The Norweb Collection, 1950.579
+
+[02] 文件名：dehua_commons_66815328.jpg
+名称：Guanyin by Su Xuejin, China, c. 1900 AD, Dehua ware, porcelain - John and Mable Ringling Museum of Art - Sarasota, FL - DSC00718.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/1/1e/Guanyin_by_Su_Xuejin%2C_China%2C_c._1900_AD%2C_Dehua_ware%2C_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota%2C_FL_-_DSC00718.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Guanyin_by_Su_Xuejin%2C_China%2C_c._1900_AD%2C_Dehua_ware%2C_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota%2C_FL_-_DSC00718.jpg/1920px-Guanyin_by_Su_Xuejin%2C_China%2C_c._1900_AD%2C_Dehua_ware%2C_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota%2C_FL_-_DSC00718.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Guanyin_by_Su_Xuejin,_China,_c._1900_AD,_Dehua_ware,_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota,_FL_-_DSC00718.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Guanyin_by_Su_Xuejin,_China,_c._1900_AD,_Dehua_ware,_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota,_FL_-_DSC00718.jpg
+作者／摄影／机构署名：Daderot
+像素：1920 × 2873
+文件：JPEG；648,681 bytes
+SHA-256：79b93a02e5abb1cb8ef9e7655a8cb4533dd9b3b7a81dbb3020b8d5d3dba8cccf
+来源内容说明：Exhibit in the John and Mable Ringling Museum of Art - Sarasota, Florida, USA.
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸1920px。原图3421×5119。
+
+[03] 文件名：dehua_commons_66815326.jpg
+名称：Guanyin by Su Xuejin, detail, China, c. 1900 AD, Dehua ware, porcelain - John and Mable Ringling Museum of Art - Sarasota, FL - DSC00719.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/0/00/Guanyin_by_Su_Xuejin%2C_detail%2C_China%2C_c._1900_AD%2C_Dehua_ware%2C_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota%2C_FL_-_DSC00719.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/0/00/Guanyin_by_Su_Xuejin%2C_detail%2C_China%2C_c._1900_AD%2C_Dehua_ware%2C_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota%2C_FL_-_DSC00719.jpg/1920px-Guanyin_by_Su_Xuejin%2C_detail%2C_China%2C_c._1900_AD%2C_Dehua_ware%2C_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota%2C_FL_-_DSC00719.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Guanyin_by_Su_Xuejin,_detail,_China,_c._1900_AD,_Dehua_ware,_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota,_FL_-_DSC00719.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Guanyin_by_Su_Xuejin,_detail,_China,_c._1900_AD,_Dehua_ware,_porcelain_-_John_and_Mable_Ringling_Museum_of_Art_-_Sarasota,_FL_-_DSC00719.jpg
+作者／摄影／机构署名：Daderot
+像素：1920 × 2880
+文件：JPEG；738,413 bytes
+SHA-256：81ab779f62a1158dd24894e7c8f3368bc542fdb8ea674f5787c665a663265838
+来源内容说明：Exhibit in the John and Mable Ringling Museum of Art - Sarasota, Florida, USA.
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸1920px。原图3648×5472。
+
+[04] 文件名：dehua_commons_132726722.jpg
+名称：Guanyin 觀音, M.C. 9594(2).jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/e/e9/Guanyin_%E8%A7%80%E9%9F%B3%2C_M.C._9594%282%29.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Guanyin_%E8%A7%80%E9%9F%B3%2C_M.C._9594%282%29.jpg/3840px-Guanyin_%E8%A7%80%E9%9F%B3%2C_M.C._9594%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Guanyin_%E8%A7%80%E9%9F%B3,_M.C._9594(2).jpg
+许可：CC0
+许可说明 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者／摄影／机构署名：anonymous
+像素：3840 × 2870
+文件：JPEG；702,193 bytes
+SHA-256：14258ba4184b660aea99506ebd6cf423d99a39a5c6cf179551a22700826739f4
+来源内容说明：Auteur(s): Anonyme Date de production: Entre 1600 et 1644 Datation en siècle: 17e siècle Type(s) d'objet(s): Croyances - Coutumes - Cultes - Cérémonies, Sculpture, Céramique, Chine Dénomination(s): Objet religieux, Statuette Matériaux et techniques: Porcelaine, Moulage, Glaçure = Couverte Lieu(x) d'exécution / réalisation: Dehua Dimensions - Oeuvre: Hauteur : 15 cm Largeur : 13.5 cm Profondeur : 8.7 cm Description: Guanyin assise, la jambe droite repliée reposant sur le sol, la jambe gauche repliée est dressée. Elle est coiffée d'un chignon complese, par l'encolure de son vêtement on apperçoit un pectoral en forme de losange. Elle tient ses deux mains jointes sur le genoux gauche. La main droite tient un rouleau, elle est ornée d'un bracelet. Description iconographique: Kouan-yin assise en délassement Thèmes / Sujets / Lieux représentés : Figure religieuse - Divinité, Figure religieuse Mode d'acquisition: Don manuel Nom du donateur, testateur, vendeur: Laveaucoupet, Paul-François de Date d’acquisition: 06–06–1977 Institution: Musée Cernuschi, musée des Arts de l’Asie de la Ville de Paris Numéro d’inventaire: M.C. 9594 IIIF Manifest: https://apicollections.parismusees.paris.fr/iiif/420010312/manifest
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸3840px。原图6088×4550。
+
+[05] 文件名：dehua_commons_132726708.jpg
+名称：Guanyin 觀音, M.C. 9594.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/9/96/Guanyin_%E8%A7%80%E9%9F%B3%2C_M.C._9594.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Guanyin_%E8%A7%80%E9%9F%B3%2C_M.C._9594.jpg/3840px-Guanyin_%E8%A7%80%E9%9F%B3%2C_M.C._9594.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Guanyin_%E8%A7%80%E9%9F%B3,_M.C._9594.jpg
+许可：CC0
+许可说明 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者／摄影／机构署名：anonymous
+像素：3840 × 2870
+文件：JPEG；571,338 bytes
+SHA-256：cd8349421658371f3ef3459cfeee735bc705dd0539477dbd87bc32fdee32c4f8
+来源内容说明：Auteur(s): Anonyme Date de production: Entre 1600 et 1644 Datation en siècle: 17e siècle Type(s) d'objet(s): Croyances - Coutumes - Cultes - Cérémonies, Sculpture, Céramique, Chine Dénomination(s): Objet religieux, Statuette Matériaux et techniques: Porcelaine, Moulage, Glaçure = Couverte Lieu(x) d'exécution / réalisation: Dehua Dimensions - Oeuvre: Hauteur : 15 cm Largeur : 13.5 cm Profondeur : 8.7 cm Description: Guanyin assise, la jambe droite repliée reposant sur le sol, la jambe gauche repliée est dressée. Elle est coiffée d'un chignon complese, par l'encolure de son vêtement on apperçoit un pectoral en forme de losange. Elle tient ses deux mains jointes sur le genoux gauche. La main droite tient un rouleau, elle est ornée d'un bracelet. Description iconographique: Kouan-yin assise en délassement Thèmes / Sujets / Lieux représentés : Figure religieuse - Divinité, Figure religieuse Mode d'acquisition: Don manuel Nom du donateur, testateur, vendeur: Laveaucoupet, Paul-François de Date d’acquisition: 06–06–1977 Institution: Musée Cernuschi, musée des Arts de l’Asie de la Ville de Paris Numéro d’inventaire: M.C. 9594 IIIF Manifest: https://apicollections.parismusees.paris.fr/iiif/420010312/manifest
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸3840px。原图6088×4550。
+
+[06] 文件名：dehua_commons_54579658.jpg
+名称：Baiyi Guanyin, China, Qing dynasty, late 18th century AD, Dehua-ware porcelain - Linden-Museum - Stuttgart, Germany - DSC03618.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/4/48/Baiyi_Guanyin%2C_China%2C_Qing_dynasty%2C_late_18th_century_AD%2C_Dehua-ware_porcelain_-_Linden-Museum_-_Stuttgart%2C_Germany_-_DSC03618.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Baiyi_Guanyin%2C_China%2C_Qing_dynasty%2C_late_18th_century_AD%2C_Dehua-ware_porcelain_-_Linden-Museum_-_Stuttgart%2C_Germany_-_DSC03618.jpg/1920px-Baiyi_Guanyin%2C_China%2C_Qing_dynasty%2C_late_18th_century_AD%2C_Dehua-ware_porcelain_-_Linden-Museum_-_Stuttgart%2C_Germany_-_DSC03618.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Baiyi_Guanyin,_China,_Qing_dynasty,_late_18th_century_AD,_Dehua-ware_porcelain_-_Linden-Museum_-_Stuttgart,_Germany_-_DSC03618.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Baiyi_Guanyin,_China,_Qing_dynasty,_late_18th_century_AD,_Dehua-ware_porcelain_-_Linden-Museum_-_Stuttgart,_Germany_-_DSC03618.jpg
+作者／摄影／机构署名：Daderot
+像素：1920 × 2880
+文件：JPEG；687,592 bytes
+SHA-256：99c671e2997c742e7a7a7055fc13db5168ab1d1f6e2df5b11ea9ce4bbd4e87f2
+来源内容说明：Exhibit in the Linden-Museum - Stuttgart, Germany.
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸1920px。原图3648×5472。
+
+[07] 文件名：dehua_commons_83210077.jpg
+名称：Guanyin doorkruist de zee Beeld van een staande Guanyin, AK-MAK-594.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/9/94/Guanyin_doorkruist_de_zee_Beeld_van_een_staande_Guanyin%2C_AK-MAK-594.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Guanyin_doorkruist_de_zee_Beeld_van_een_staande_Guanyin%2C_AK-MAK-594.jpg/3840px-Guanyin_doorkruist_de_zee_Beeld_van_een_staande_Guanyin%2C_AK-MAK-594.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Guanyin_doorkruist_de_zee_Beeld_van_een_staande_Guanyin,_AK-MAK-594.jpg
+许可：CC0
+许可说明 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者／摄影／机构署名：Rijksmuseum
+像素：3840 × 6396
+文件：JPEG；3,157,051 bytes
+SHA-256：ba89c3ce556a18652e92e595528d6ba55caeba50bc7d3476dd3e53bdb2fe4e60
+来源内容说明：IdentificatieTitel(s): Guanyin doorkruist de zee. Beeld van een staande GuanyinObjecttype: beeld figuur Objectnummer: AK-MAK-594Opschriften / Merken: merk, voorzijde, ingegrift: ‘He Chaozong yin’ (Zegel van He Chaozong), vier-karakter zegelmerk van He ChaozongOmschrijving: Beeld van porselein op voetstuk, bedekt met een doorschijnend glazuur. De staande Guanyin heeft haar handen gevouwen voor zich en staat op een wolk; verwerkt in haar hoofdtooi een zittende Buddha Amitabha, omgeven door lotusbloemen. Op de achterzijde gemerkt met het vierkante Vervaardiger: smerk van He Chaozong. Enkele bakscheuren. Blanc de Chine.VervaardigingVervaardigerpottenbakker: He Chaozong (toegeschreven aan)Plaats vervaardiging: ChinaDatering: ca. 1675 - ca. 1699School / stijl: Qing-dynastie (1644-1912) / Kangxi-periode (1662-1722)Fysieke kenmerken: blanc de Chine-porseleinMateriaal: blanc de Chine porselein glazuur Techniek: vormen / bakken / graveren (inkerven) / glazurenAfmetingen: h 51 cmvoet: l 15 cm × b 12,5 cmOnderwerpWie. GuanyinVerwerving en rechtenCredit line: Bruikleen van de Vereniging van Vrienden der Aziatische Kunst (legaat Herman Karel Westendorp, 1968)Verwerving: bruikleen 1972Copyright: Publiek domeinHerkomst: …; collection of Herman Karel Westendorp (1868-1941), Amsterdam, 1941;{Note RMA.} his widow Betsy Westendorp-Osieck (1880-1968), Amsterdam, by whom bequeathed to the Vereniging van Vrienden der Aziatische Kunst, 1968;{note RMA.} from whom on loan to the museum, 1972
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸3840px。原图3888×6476。
+
+[08] 文件名：dehua_commons_83501953.jpg
+名称：Zittende Guanyin met een kind, begeleid door de Drakendochter Beeld van een zittende Guanyin met kind, draken en adorant, AK-NM-6547.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/d/d3/Zittende_Guanyin_met_een_kind%2C_begeleid_door_de_Drakendochter_Beeld_van_een_zittende_Guanyin_met_kind%2C_draken_en_adorant%2C_AK-NM-6547.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Zittende_Guanyin_met_een_kind%2C_begeleid_door_de_Drakendochter_Beeld_van_een_zittende_Guanyin_met_kind%2C_draken_en_adorant%2C_AK-NM-6547.jpg/3840px-Zittende_Guanyin_met_een_kind%2C_begeleid_door_de_Drakendochter_Beeld_van_een_zittende_Guanyin_met_kind%2C_draken_en_adorant%2C_AK-NM-6547.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Zittende_Guanyin_met_een_kind,_begeleid_door_de_Drakendochter_Beeld_van_een_zittende_Guanyin_met_kind,_draken_en_adorant,_AK-NM-6547.jpg
+许可：CC0
+许可说明 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者／摄影／机构署名：Rijksmuseum
+像素：3840 × 5688
+文件：JPEG；1,085,325 bytes
+SHA-256：261ff0e068f85c2bbe04c59ab480af98e96fad02a5b1f18e774ef69dde1815e2
+来源内容说明：IdentificatieTitel(s): Zittende Guanyin met een kind, begeleid door de Drakendochter. Beeld van een zittende Guanyin met kind, draken en adorantObjecttype: beeld figuur Objectnummer: AK-NM-6547Omschrijving: Beeld van porselein op voetstuk, bedekt met een doorschijnend wit glazuur. Een zittende Guanyin op haar troon met een kind op schoot. Aan weerszijden van de troon oorspronkelijk twee adoranten op een lotusbloem of peul, waarvan nog één aanwezig. Boven de adoranten oorspronkelijk twee attributen, waarvan alleen het boek nog aanwezig is. Rond de troon kronkelen twee vierklauwige draken en de voet is versierd met golven. Twee onderdelen missend, de hand van het kind is gerestaureerd, enkele vingers van Guanyin missend en een bakscheur in het voetstuk. Blanc de Chine.VervaardigingVervaardiger: pottenbakker: anoniemPlaats vervaardiging: ChinaDatering: ca. 1700 - ca. 1749School / stijl: Qing-dynastie (1644-1912) / Kangxi-periode (1662-1722) / Yongzheng-periode (1723-1735) / Qianlong-periode (1736-1795)Fysieke kenmerken: blanc de Chine-porseleinMateriaal: porselein glazuur Techniek: vormen / bakken / glazurenAfmetingen: h 34 cm. voet: l 15 cm. × b 7,6 cm. OnderwerpWie: GuanyinVerwerving en rechtenVerwerving: overdracht van beheer 1885Copyright: Publiek domein
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸3840px。原图5109×7568。

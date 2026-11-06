@@ -1,0 +1,113 @@
+{
+ "name": "yanzhi",
+ "what": "胭脂红 (rouge / gold-ruby): a low-fired lead-glass enamel coloured by colloidal gold, fired over the clear high-fired glaze of a white porcelain (Kangxi-Yongzheng-Qianlong). docs/materials/yanzhi.md",
+ "tags": "M measured, I quoted, D derived, F fitted, A assumed (docs/layers.md). Source keys as in docs/materials/yanzhi.md (H18, Z25, B24, C22, C25, L23, Takebe 2021, Berciaud 2005, McPeak 2015, J&C 1972)",
+ "enamel": {
+  "glass": {
+   "composition_wt_pct": {
+    "value": {
+     "Na2O": 2.28,
+     "MgO": 0.73,
+     "Al2O3": 1.8,
+     "SiO2": 51.75,
+     "PbO": 38.13,
+     "K2O": 2.9,
+     "CaO": 1.02,
+     "TiO2": 0.02,
+     "MnO": 0.05,
+     "Fe2O3": 1.14,
+     "CuO": 0.08,
+     "Au2O3": 0.11,
+     "As2O3": "trace"
+    },
+    "unit": "wt%",
+    "tag": "M",
+    "source": "H18 p.216 (continued Table 1): the 胭脂红 of a Yongzheng enamelled dish, micro-EDXRF without standards (semi-quantitative), mean of three spots; boron not measurable with that instrument (H18 p.211), and B is present in Qing pinks (B24). A painted dish, not a monochrome bowl."
+   },
+   "n_D": {
+    "value": 1.59,
+    "unit": "",
+    "tag": "D",
+    "source": "Appen's additive factors on H18's composition (enamel.appen_nD: 1.590 with S = SiO2 + Al2O3 in the PbO factor, 1.591 with S = SiO2; SiO2, PbO, K2O, Na2O factors from the 1963 handbook's Table 72 as transcribed in the research, ref/yanzhi/research2; Al2O3, CaO, MgO, TiO2 from EP3013762B1; 1.4 wt% without a factor left out). The report's four-oxide version 1.584. No measured index of a Qing enamel found (research S7); a reconstructed historical enamel of 38.2 wt% PbO (but 17.9 K2O, 34.3 SiO2) measured 1.604 +- 0.006 by ellipsometry, wavelength not stated [M, Palomar, Pradell & Mosa 2025, Materials 18:1137, Table 1]. Used for the gold's host and the exact stack (stack.py); the renderer's top surface is the glaze's index (docs, 'one interface')."
+   },
+   "abbe_number": {
+    "value": 39.8,
+    "unit": "",
+    "tag": "D",
+    "source": "Appen's mean partial dispersions of SiO2, PbO, K2O, Na2O (1963 handbook Table 72), S = SiO2 + Al2O3: n_F - n_C 0.0148 (enamel.appen_nD)"
+   },
+   "density_g_cm3": {
+    "value": 3.6,
+    "unit": "g/cm^3",
+    "tag": "A",
+    "source": "a lead glass of about 38 wt% PbO (LF5 3.22, F2 3.60 [I, Schott catalogue]); used only for the magnitude check of the gold's column density (docs)"
+   }
+  },
+  "gold": {
+   "optical_constants": {
+    "value": "mcpeak",
+    "unit": "",
+    "tag": "D",
+    "source": "McPeak et al. 2015 (data/au_mcpeak_2015.txt) over Johnson & Christy 1972 (data/au_johnson_christy_1972.txt): against a measured gold-ruby glass (Takebe 2021 Fig. 6, digitised, validate.py) McPeak fits panels a-c at rms 0.8-7% of the peak, J&C 3-13%; panel d (544 nm) J&C 3.2%, McPeak 3.5%."
+   },
+   "size_correction_A": {
+    "value": 0.25,
+    "unit": "",
+    "tag": "I",
+    "source": "Berciaud et al. 2005 p.517: gamma(R) = gamma_0 + A v_F / R, A = 0.25 (best fit to single 5-33 nm particles), with v_F 1.40 nm/fs; gamma_0 and omega_p are our Drude fit to the table's infrared rows (enamel.drude_fit) [F]. On Takebe's panel c, A 0.25-0.5 fit best (rms 1.1 / 0.8% of the peak) [D]."
+   },
+   "diameter_nm": {
+    "value": 20.0,
+    "unit": "nm",
+    "tag": "A",
+    "source": "no TEM/SAXS of a Qing 胭脂红 in hand (S7 调研; C25: its Raman bands do not give a size). 18th-century Chinese famille-rose transparent pink: Au 20-60 nm [I, Kingery & Vandiver 1986 as quoted by Barber & Freestone 1990, Archaeometry 32 p.43; the original TEM not seen]; Meissen Purple of Cassius radius 16 +- 11 nm [M, C22, STEM]; Takebe's best single-size fits 7.5-30 nm for the 526-533 nm glasses (validate.py). 20 nm, the low end of the Chinese range: there the single-scattering albedo is below 2% at the peak and 7% at 650 nm, so the enamel is a pure absorber (scattering taken as loss: 0.6-0.7 Delta E00, docs). On the card's light-free test 40 nm fits worse (Delta E00 4.7-5.8 against 3.5-4.4, locus.py)."
+   },
+   "column_density_g_m2": {
+    "value": 0.56,
+    "unit": "g Au/m^2",
+    "tag": "F",
+    "source": "fitted on the card (card.py measure, the centre column's luminance over the inside's white) to Met 1971.180.248 under optics/rigs/museum_flat.json (softboxes at +-45 degrees): Cycles c 0.51 -> 0.56 -> 0.63 next (pbrt at 0.56: 0.67 next). Limited by the light, not the material: the photo's sides are 2.3 x its front's luminance, the rig's 1.05; with the softboxes at +-75 degrees (sides 1.7 x) the same step gives 0.34. So 0.34-0.67 [F, light-limited]. Light-free (locus.py, per region): 0.37-0.51. Magnitude check: H18's Au2O3 0.11 wt% (0.098 wt% Au) in 25-60 um of a 3.6 g/cm^3 glass is 0.09-0.21 g/m^2, 0.35 at 100 um [D]: the fit is 2-7 x that; open (docs)."
+   }
+  },
+  "thickness_mm": {
+   "value": 0.04,
+   "unit": "mm",
+   "tag": "A",
+   "source": "Kangxi 胭脂红 on biscuit about 25 um [M, H18 p.212-213]; ruby-pink on an export sherd 30-60 um [M, Z25 p.168]; 30-100 um typical overglaze enamel [I, B24]. Only the column density matters to the colour (tau = c kappa); the thickness sets where the white lip's enamel ends, nothing else in v1."
+  },
+  "white_lip_mm": {
+   "value": 1.2,
+   "unit": "mm",
+   "tag": "M",
+   "source": "read off Met 1971.180.248's side view at 5.86 px/mm: the white line at the rim, 1-1.5 mm, ending in a sharp red edge"
+  }
+ },
+ "glaze": {
+  "eta": {
+   "value": 1.52,
+   "unit": "",
+   "tag": "A",
+   "source": "as materials/qinghua (no measured index of a Jingdezhen glaze found)"
+  },
+  "thickness_mm": {
+   "value": 0.19,
+   "unit": "mm",
+   "tag": "M",
+   "source": "Yongzheng enamelled dish, the clear glaze inside and out 180-200 um [M, H18 p.214, Fig. 5a]"
+  },
+  "ggx_alpha": {
+   "value": 0.003,
+   "unit": "",
+   "tag": "A",
+   "source": "as materials/qinghua (a gloss-meter reading of Jingdezhen glazes, read as nearly a mirror); the enamel's surface (the outside) gets the same, as the Met's bottom view shows crisp window reflections on the red; no roughness measured (research S7)"
+  }
+ },
+ "body": {
+  "albedo": {
+   "value": 0.85,
+   "unit": "",
+   "tag": "A",
+   "source": "as materials/qinghua (no body reflectance spectrum found), flat"
+  }
+ }
+}

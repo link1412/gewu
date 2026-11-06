@@ -1,0 +1,29 @@
+{
+ "name": "dust",
+ "what": "积灰: grime in the concave corners a wiping cloth does not reach, and in open cracks (dust.py). A physical process; 'old' is a result, not a knob. New: off.",
+ "parameters": {
+  "on": {
+   "unit": "bool",
+   "new": 0
+  },
+  "corner_radius_mm": {
+   "unit": "mm",
+   "new": 0.5,
+   "what": "radius of the wiping cloth's finest fold"
+  },
+  "min_depth_mm": {
+   "unit": "mm below that fold's envelope",
+   "new": null
+  },
+  "in_cracks": {
+   "unit": "bool",
+   "new": 0
+  },
+  "reflectance": {
+   "unit": "flat body reflectance",
+   "value": 0.06,
+   "tag": "A",
+   "what": "grey-dark grime as it looks in the CMA photo's hollows; a placeholder, no measured spectrum"
+  }
+ }
+}

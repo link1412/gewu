@@ -1,0 +1,187 @@
+荷花实拍外观参考 / leaf_water
+下载及许可记录日期：2026-11-05（日本时间）
+用途：仅用于本地渲染外观观察，不再发布照片。
+像素为实际下载文件尺寸；网站缩放版与原文件明确区分。
+许可取自逐张 Commons 文件页；CC BY/CC BY-SA 仍受版权保护，但附有开放许可。
+未进行本地裁切、放大或重编码。
+
+文件名：01_backlit_curled_edge.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Sunlight_through_Nelumbo_nucifera_leaf_(Sacred_lotus).jpg
+来源原文件名：Sunlight through Nelumbo nucifera leaf (Sacred lotus).jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Basile Morin
+像素：3840 × 2588 px（宽 × 高）
+来源原图像素：6055 × 4081 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Sunlight_through_Nelumbo_nucifera_leaf_%28Sacred_lotus%29.jpg/3840px-Sunlight_through_Nelumbo_nucifera_leaf_%28Sacred_lotus%29.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/7/79/Sunlight_through_Nelumbo_nucifera_leaf_%28Sacred_lotus%29.jpg
+摄影原来源：Own work
+观察重点：逆光、起卷叶缘、叶脉，贴近泥水，虚化背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：f073200ecda3c0bc88204db1fb0b847a9dd11c2bd68096b4b243d2427f94ddd1
+
+------------------------------------------------------------------------
+
+文件名：02_waxy_leaf_brown_water.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Libellulidae_Brachythemis_contaminata_on_Nelumbo_nucifera_leaf_with_water_drops,_in_a_pond.jpg
+来源原文件名：Libellulidae Brachythemis contaminata on Nelumbo nucifera leaf with water drops, in a pond.jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Basile Morin
+像素：3840 × 2967 px（宽 × 高）
+来源原图像素：5795 × 4478 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Libellulidae_Brachythemis_contaminata_on_Nelumbo_nucifera_leaf_with_water_drops%2C_in_a_pond.jpg/3840px-Libellulidae_Brachythemis_contaminata_on_Nelumbo_nucifera_leaf_with_water_drops%2C_in_a_pond.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/c/cf/Libellulidae_Brachythemis_contaminata_on_Nelumbo_nucifera_leaf_with_water_drops%2C_in_a_pond.jpg
+摄影原来源：Own work
+观察重点：贴水叶片，蜡质反光、叶脉、卷边和水珠；附有小蜻蜓。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：565f65bf57c2808e28699fa1aef4d0a38a296c78895cd51fc3a910234194a7a9
+
+------------------------------------------------------------------------
+
+文件名：03_grazing_light_floating.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lotusleaves_Chirakkal.jpg
+来源原文件名：Lotusleaves Chirakkal.jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Kv vishnu
+像素：1920 × 1280 px（宽 × 高）
+来源原图像素：3456 × 2304 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Lotusleaves_Chirakkal.jpg/1920px-Lotusleaves_Chirakkal.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/6/67/Lotusleaves_Chirakkal.jpg
+摄影原来源：Own work
+观察重点：斜看贴水叶面，掠射反光与波浪叶缘。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：e47db5bfa27caf6c198620c87f5dfc3e83cd49ea3efbbebe748049d6036d4374
+
+------------------------------------------------------------------------
+
+文件名：04_kakadu_floating_leaves.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Kakadu_(AU),_Kakadu_National_Park,_Yellow_Water_--_2019_--_3953.jpg
+来源原文件名：Kakadu (AU), Kakadu National Park, Yellow Water -- 2019 -- 3953.jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Dietmar Rabich
+像素：3840 × 2560 px（宽 × 高）
+来源原图像素：6720 × 4480 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Kakadu_%28AU%29%2C_Kakadu_National_Park%2C_Yellow_Water_--_2019_--_3953.jpg/3840px-Kakadu_%28AU%29%2C_Kakadu_National_Park%2C_Yellow_Water_--_2019_--_3953.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/4/45/Kakadu_%28AU%29%2C_Kakadu_National_Park%2C_Yellow_Water_--_2019_--_3953.jpg
+摄影原来源：Own work
+观察重点：贴水叶群，卷边、叶脉、水面反射；中等俯斜视角。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：44d77641b1efc896d8740e58e8617e4c9a97d234a61d2e65f477943164119149
+
+------------------------------------------------------------------------
+
+文件名：05_fallen_petals_on_leaf.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%D0%9B%D0%B5%D0%BF%D0%B5%D1%81%D1%82%D0%BA%D0%B8_%D0%BB%D0%B8%D0%BB%D0%B8%D0%B8_%D0%BD%D0%B0_%D0%BA%D1%83%D0%B2%D1%88%D0%B8%D0%BD%D0%BA%D0%B5.jpg
+来源原文件名：Лепестки лилии на кувшинке.jpg
+许可状态：开放许可；CC BY 2.0
+许可链接：https://creativecommons.org/licenses/by/2.0
+作者：zleng
+像素：4665 × 2624 px（宽 × 高）
+来源原图像素：4665 × 2624 px
+下载规格：Flickr 原文件（o 尺寸）
+下载地址：https://live.staticflickr.com/5721/21622320690_8b6874fa23_o.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/a/a7/%D0%9B%D0%B5%D0%BF%D0%B5%D1%81%D1%82%D0%BA%D0%B8_%D0%BB%D0%B8%D0%BB%D0%B8%D0%B8_%D0%BD%D0%B0_%D0%BA%D1%83%D0%B2%D1%88%D0%B8%D0%BD%D0%BA%D0%B5.jpg
+摄影原来源：https://www.flickr.com/photos/60134003@N04/21622320690/
+观察重点：低斜视角，贴水叶缘与粉白落瓣，背景水面虚化。
+物种依据：来源页仅标 Nelumbo / lotus / 荷叶或荷叶效应；根据盾状放射叶脉等可见形态作为荷叶参照，未独立作物种级鉴定。
+SHA-256：35d44f9ebd8a96af3aae48627f0963edfb028fc246cb006d7a200782c98abca0
+原文件校验：下载 SHA-1 与 Commons 原文件记录完全相同。
+
+------------------------------------------------------------------------
+
+文件名：06_curled_leaf_water_pool.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lotus_leaf_(28894653265).jpg
+来源原文件名：Lotus leaf (28894653265).jpg
+许可状态：开放许可；CC BY-SA 2.0
+许可链接：https://creativecommons.org/licenses/by-sa/2.0
+作者：Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China
+像素：1920 × 1440 px（宽 × 高）
+来源原图像素：3264 × 2448 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Lotus_leaf_%2828894653265%29.jpg/1920px-Lotus_leaf_%2828894653265%29.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/b/b2/Lotus_leaf_%2828894653265%29.jpg
+摄影原来源：Lotus leaf
+观察重点：贴水卷边，叶面大水团与放射叶脉；俯斜视角。
+物种依据：来源页仅标 Nelumbo / lotus / 荷叶或荷叶效应；根据盾状放射叶脉等可见形态作为荷叶参照，未独立作物种级鉴定。
+SHA-256：58a5288f110126cdaccfcaf5015785d8fb34dad4024f1ecf451ee550f53ff1e7
+
+------------------------------------------------------------------------
+
+文件名：07_leaf_on_dark_water.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lotus_20190607_110841.jpg
+来源原文件名：Lotus 20190607 110841.jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Ka23 13
+像素：3840 × 2160 px（宽 × 高）
+来源原图像素：4608 × 2592 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Lotus_20190607_110841.jpg/3840px-Lotus_20190607_110841.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/b/b2/Lotus_20190607_110841.jpg
+摄影原来源：Own work
+观察重点：贴水叶片与蜡质叶面、水珠，深色水背景；俯斜视角。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：52941cf4cfe532fb1b9091f7e35dbb18f82a7b3d1134a78eefcba09db7e55027
+
+------------------------------------------------------------------------
+
+文件名：08_floating_leaf_pair.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera_%E2%80%93_Arboretum_Ellerhoop_3.jpg
+来源原文件名：Nelumbo nucifera – Arboretum Ellerhoop 3.jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Karbohut
+像素：3840 × 2880 px（宽 × 高）
+来源原图像素：4000 × 3000 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Nelumbo_nucifera_%E2%80%93_Arboretum_Ellerhoop_3.jpg/3840px-Nelumbo_nucifera_%E2%80%93_Arboretum_Ellerhoop_3.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/a/a3/Nelumbo_nucifera_%E2%80%93_Arboretum_Ellerhoop_3.jpg
+摄影原来源：Own work
+观察重点：贴水起伏叶缘与水珠，水面背景；较高俯斜视角的结构补充。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：d3cdff13d6353cd15f3169a6a97b32302be758c37439149b0bd4e43c4f240616
+
+------------------------------------------------------------------------
+
+文件名：09_silver_waxy_reflections.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lotus_Summerpalace_Beijing.jpg
+来源原文件名：Lotus Summerpalace Beijing.jpg
+许可状态：开放许可；CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：Anubis85 KH
+像素：3840 × 2560 px（宽 × 高）
+来源原图像素：5184 × 3456 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Lotus_Summerpalace_Beijing.jpg/3840px-Lotus_Summerpalace_Beijing.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/a/ad/Lotus_Summerpalace_Beijing.jpg
+摄影原来源：Own work
+观察重点：平浮叶片，银色掠射反光与起伏叶缘。
+物种依据：来源页仅标 Nelumbo / lotus / 荷叶或荷叶效应；根据盾状放射叶脉等可见形态作为荷叶参照，未独立作物种级鉴定。
+SHA-256：daa879c64eabf67e053d0c44b37c69f8d16d7c057b70500efedf938bf9e9f2d1
+
+------------------------------------------------------------------------
+
+文件名：10_pond_surface_low_camera.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera_%E2%80%93_Arboretum_Ellerhoop_16.jpg
+来源原文件名：Nelumbo nucifera – Arboretum Ellerhoop 16.jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Karbohut
+像素：3840 × 2880 px（宽 × 高）
+来源原图像素：4000 × 3000 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Nelumbo_nucifera_%E2%80%93_Arboretum_Ellerhoop_16.jpg/3840px-Nelumbo_nucifera_%E2%80%93_Arboretum_Ellerhoop_16.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/0/0a/Nelumbo_nucifera_%E2%80%93_Arboretum_Ellerhoop_16.jpg
+摄影原来源：Own work
+观察重点：接近水面的低机位，前景浮叶与水面；上方同时含挺水叶。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：3035e2b6b12b0399f31a9c487ddc140e17ecc057448cf6015fb541b0a13f6cb8
+
+------------------------------------------------------------------------

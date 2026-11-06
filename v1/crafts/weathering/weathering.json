@@ -1,0 +1,7 @@
+{
+ "name": "weathering",
+ "what": "风化、失光: the skin's roughness after light and air (Han et al. 2023 [I], see weathering.py). A physical process; 'old' is a result, not a knob. New: 0.",
+ "parameters": {
+  "skin_alpha": {"unit": "GGX alpha of the weathered skin's micro-roughness, added to the material's in quadrature", "new": 0}
+ }
+}

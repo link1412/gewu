@@ -1,0 +1,249 @@
+{
+ "name": "guan_glaze",
+ "what": "Southern Song Guan glaze (官窑青釉, fenqing): a thick, bubbly, translucent glass over a dark body, with a satin surface. Substance only: the crackle network, the burial staining of a given sherd, and the object's shape are not here (crafts / aging / object layers).",
+ "tags": {
+  "M": "measured in a source (paper, database, the photo)",
+  "D": "derived or read off a source",
+  "I": "our inference",
+  "A": "assumed or placeholder"
+ },
+ "origin": "copied from shots/06-guan/scene.py (GLAZE, GLAZE_ROUGHNESS, STAIN_*), glaze_fit.py, crackle.py; shots/06-guan/ is untouched",
+ "glaze_volume": {
+  "thickness_mm": {
+   "value": 1.2,
+   "tag": "A",
+   "source": "Guan glaze 0.5-2 mm (Li, Deng & Xu, MRS Bulletin 2001); 1.2 mm is our pick, the fit below depends on it"
+  },
+  "eta": {
+   "value": 1.5,
+   "tag": "A",
+   "source": "soda-lime-silica glass, n ~ 1.5"
+  },
+  "g": {
+   "value": 0.7,
+   "tag": "A",
+   "source": "Henyey-Greenstein; bubbles much larger than the wavelength scatter forward"
+  },
+  "sigma_s_per_mm": {
+   "value": 2.5,
+   "tag": "I",
+   "source": "grey (wavelength-independent); inside the literature range 1.5-15 /mm; fixed by glaze_fit.py --invert at 1.2 mm so that sigma_a below reproduces sherd J2's reflectance"
+  },
+  "body_reflectance": {
+   "value": 0.12,
+   "tag": "A",
+   "source": "body 'dark grey to black' [M, Guan-Ge paper of glaze_fit.py]; the number is a placeholder"
+  },
+  "sigma_a_per_mm": {
+   "lambda_nm_value": [
+    400,
+    0.1717,
+    450,
+    0.07757,
+    500,
+    0.02558,
+    550,
+    0.01028,
+    600,
+    0.01403,
+    650,
+    0.06212,
+    700,
+    0.1447,
+    750,
+    0.2371
+   ],
+   "tag": "D",
+   "source": "inverted from the measured reflectance spectrum of Southern Song Guan fenqing sherd J2 (Guan-Ge glaze paper used by shots/06-guan/glaze_fit.py, docs/shots/06-guan.md 'S2'), at 1.2 mm; held flat outside 400-750 nm"
+  },
+  "bubbles": {
+   "diameter_um": 10,
+   "tag": "M",
+   "source": "Southern Song Guan bubbles ~10 um (the J2 paper); they are the scattering above, not geometry"
+  },
+  "sigma_a_variant_met48503": {
+   "red_scale": 2.2,
+   "blue_scale": 0.45,
+   "tag": "M, fitted to the photo",
+   "source": "sigma_a above multiplied by 0.45 below 500 nm and by 2.2 above 600 nm (linear between), so that on the card (plain glaze, 5500 K soft boxes, camera chain) the glaze/backdrop colour ratios R/G, B/G match Met 48503's (0.77, 0.91, measured_met48503.json). J2's fit alone gives R/G 0.91, B/G 0.78: olive where this sherd is blue-green. Assumes the Met photo is roughly sRGB-correct [A]. Sherd colours differ; this is the card's sherd, J2's spectrum stays the default of the material"
+  }
+ },
+ "surface": {
+  "ggx_alpha": {
+   "value": 0.0307,
+   "tag": "D",
+   "source": "60-degree gloss of Southern Song Guan fenqing 46.7 GU (2 sherds; the J2 paper, Table 1) -> tools/gloss.py (ISO 2813 geometry, aperture from memory) ; the meter angle is not stated and is taken as 60 degrees [A]"
+  },
+  "speckle": {
+   "what": "fine pits and opened bubbles in the surface, as a height map. The sizes and densities are measured on the photo (measured_met48503.json, 'speckle'); 'depth_over_sigma' is the one free parameter, calibrated so that the DoG 0.7-3 px rms of the card matches the photo's.",
+   "tag": "M for sizes and densities (photo, includes its JPEG noise), I for the pit shape (Gaussian) and the depth",
+   "classes": [
+    {
+     "sigma_um": 26,
+     "per_mm2": 10.0
+    },
+    {
+     "sigma_um": 39,
+     "per_mm2": 4.8
+    },
+    {
+     "sigma_um": 58,
+     "per_mm2": 1.7
+    },
+    {
+     "sigma_um": 87,
+     "per_mm2": 0.3
+    }
+   ],
+   "depth_over_sigma": {
+    "value": 1.8,
+    "tag": "I",
+    "source": "calibrated on the card: 0.9 gave band energy 0.41/0.71/0.87% (0.7-1.4/1.4-2.8/2.8-5.6 px, preview scale) against the photo's 1.28/1.54/1.30%; no measured pit depths exist"
+   }
+  },
+  "mottling": {
+   "what": "thicker and thinner glaze: a smooth random thickness field",
+   "std_mm": {
+    "value": 0.3,
+    "tag": "I",
+    "source": "calibrated on the card: p3 (0.15 mm) gave a 3 mm-scale luma variation of 5%, the photo's 12% (stains in the photo crop included); no measured thickness map exists"
+   },
+   "corr_mm": {
+    "value": 3.0,
+    "tag": "D",
+    "source": "photo: luma variation falls from 10% at sigma 3 mm to 4% at 6 mm (measured_met48503.json 'mottling')"
+   }
+  }
+ },
+ "crackle_drivers": {
+  "cte_glaze_per_K": {
+   "value": 6.19e-06,
+   "tag": "M",
+   "source": "Li, Deng & Xu, MRS Bulletin 2001"
+  },
+  "cte_body_per_K": {
+   "value": 5.7e-06,
+   "tag": "M",
+   "source": "Li, Deng & Xu, MRS Bulletin 2001"
+  },
+  "lag_per_thickness": {
+   "value": 4.0,
+   "tag": "I",
+   "source": "shear-lag length / glaze thickness; sets the cell size. 5.5 was calibrated on Met 52611 (19.8 mm cells); this card's sherd has smaller cells (measured_met48503.json 'cracks'), so the card runs its own value"
+  },
+  "channel_stress_ratio": {
+   "value": 0.45,
+   "tag": "D",
+   "source": "Y sqrt(pi a/(Z e)) with a = 0.12 mm, Z = 2, e = 1.2 mm (Hutchinson & Suo 1992), see crackle.py"
+  },
+  "poisson": {
+   "value": 0.22,
+   "tag": "A",
+   "source": "glass, 0.2-0.25"
+  },
+  "geometry": {
+   "value": "a plane through the glaze leaning 10-20 deg from the normal (card.py TILT_DEG), an air film where open; its walls corroded into a channel and filled where the state says (materials/guan_glaze/states.json, crafts/crackle/faces.channels)",
+   "tag": "D",
+   "source": "Yang et al. 2012 (OCT of Hangzhou celadon shards): four cracks at 10, 14, 16, 19 deg read off their figures 1b-1d [D]; channel: Li et al. 2022 [I]"
+  },
+  "tough_spread": {
+   "value": 0.15,
+   "tag": "F",
+   "source": "round 2: sigma of ln(toughness), a log-normal random field (crafts/crackle/crackle.py), fitted to the photo's path statistics: drawn as the photo shows lines and found again (crafts/crackle/network.py), 0.15 gives turn 7.5 deg rms per 0.25 mm and 0.16 kinks >15 deg per mm against the photo's 7.15 deg and 0.167 (0.1: 4.0 deg, 0.0; 0.3: 9.0 deg, 0.33). No measured toughness field of a glaze exists"
+  },
+  "tough_corr_mm": {
+   "value": 0.3,
+   "tag": "A",
+   "source": "correlation length of the toughness field: a few bubble and quartz-grain spacings (Guan glaze: dense ~10 um bubbles and fine quartz, Yu et al. 2021); not measured"
+  }
+ },
+ "stains": {
+  "crack_ochre": {
+   "what": "what stains the crack mouths and walls on this sherd (ochre to brown)",
+   "reflectance_shape": {
+    "lambda_nm_value": [
+     400,
+     0.0269,
+     420,
+     0.0322,
+     440,
+     0.0415,
+     460,
+     0.0494,
+     480,
+     0.0526,
+     500,
+     0.0614,
+     520,
+     0.0784,
+     540,
+     0.1049,
+     560,
+     0.1397,
+     580,
+     0.1748,
+     600,
+     0.1993,
+     620,
+     0.2125,
+     640,
+     0.2209,
+     660,
+     0.23,
+     680,
+     0.2425,
+     700,
+     0.259,
+     720,
+     0.2778,
+     740,
+     0.2933,
+     750,
+     0.2979
+    ],
+    "tag": "M",
+    "source": "raw sienna GDS805 (goethite in clays), USGS Spectral Library v7 splib07a (public domain; fetched from a GitHub mirror, not checked against the USGS host); a stand-in for the golden thread's lepidocrocite/hematite in clay (Wu et al. 2025, Laohudong)"
+   },
+   "scale": {
+    "value": 1.0,
+    "tag": "I",
+    "source": "multiplies the shape; fitted on the card so that the lines' colour ratio to the glaze equals the photo's (R 1.27, G 1.16, B 1.02, measured_met48503.json)"
+   }
+  },
+  "crack_dark": {
+   "reflectance": {
+    "lambda_nm_value": [
+     400,
+     0.0198,
+     500,
+     0.0191,
+     600,
+     0.019,
+     700,
+     0.019,
+     750,
+     0.0189
+    ],
+    "tag": "M",
+    "source": "carbon black GDS68, USGS splib07a; the iron wire (carbon + pyrite, Wu et al. 2025). Not used on this card: this sherd has no black lines in the photo."
+   }
+  },
+  "burial_rust": {
+   "what": "burial staining of the glaze surface (iron oxyhydroxide / clay), blotches",
+   "reflectance_shape": {
+    "same_as": "crack_ochre.reflectance_shape",
+    "tag": "M"
+   },
+   "scale": {
+    "value": 1.0,
+    "tag": "I",
+    "source": "fitted on the card to the photo's blotch colour ratio to the glaze (R 1.33, G 1.02, B 0.89)"
+   },
+   "depth_mm": {
+    "value": 0.08,
+    "tag": "A",
+    "source": "the deposit lies this far under the glaze surface; the glaze above it blurs it"
+   }
+  }
+ }
+}

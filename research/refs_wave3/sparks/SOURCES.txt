@@ -1,0 +1,121 @@
+sparks — 真实摄影外观参考
+用途：仅作本地渲染外观参照，不再发布。
+核对日期：2026-11-05。像素为实际下载文件解码结果；源文件像素另列。
+图片未在本地裁切、调色、去水印或放大。官方标准尺寸图片/图库 JPEG 可能经过来源服务器缩放、压缩。
+作者未署名时如实注明；发布单位或工艺作者不冒充摄影师。
+
+[01] sparks_01.jpg
+文件名：sparks_01.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E5%B1%B1%E8%A5%BF%E5%8F%B8%E5%BE%92%E5%B0%8F%E9%95%87%E6%89%93%E9%93%81%E8%8A%B1_Datiehua_Iron_Fireworks_in_Shanxi_Situ_Town.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/%E5%B1%B1%E8%A5%BF%E5%8F%B8%E5%BE%92%E5%B0%8F%E9%95%87%E6%89%93%E9%93%81%E8%8A%B1_Datiehua_Iron_Fireworks_in_Shanxi_Situ_Town.jpg/1920px-%E5%B1%B1%E8%A5%BF%E5%8F%B8%E5%BE%92%E5%B0%8F%E9%95%87%E6%89%93%E9%93%81%E8%8A%B1_Datiehua_Iron_Fireworks_in_Shanxi_Situ_Town.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY 4.0
+许可链接：https://creativecommons.org/licenses/by/4.0
+作者：Witcater
+像素：1920 × 1283 px
+文件：JPEG，832,815 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：2992 × 2000 px
+来源标题：山西司徒小镇打铁花 Datiehua Iron Fireworks in Shanxi Situ Town.jpg
+来源署名/机构：Own work
+参照内容与限制：山西司徒小镇打铁花：白热亮点、金色火花雨及地面/水面反光。
+SHA-256：59f6aa238e4d853030f3daa6c96820163f4192c58fdf03b087a0128ee6e57d80
+
+[02] sparks_02.jpg
+文件名：sparks_02.jpg
+来源页：https://commons.wikimedia.org/wiki/File:20250531_Iron_flower_in_the_Millennium_City_Park.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/20250531_Iron_flower_in_the_Millennium_City_Park.jpg/3840px-20250531_Iron_flower_in_the_Millennium_City_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Yumeto
+像素：3840 × 2880 px
+文件：JPEG，1,594,844 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：4096 × 3072 px
+来源标题：20250531 Iron flower in the Millennium City Park.jpg
+来源署名/机构：Own work
+参照内容与限制：清明上河园打铁花：大场景与水中倒影；单颗火花细节较小。
+SHA-256：f30844ea13fbe3a0dcd37c2414f9539b98fa825151ce3fc2c6e9eefdd4cc43ea
+
+[03] sparks_03.jpg
+文件名：sparks_03.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E6%82%A6%E5%8A%A8%E8%BE%BD%E6%BA%90%E6%89%93%E9%93%81%E8%8A%B1.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/%E6%82%A6%E5%8A%A8%E8%BE%BD%E6%BA%90%E6%89%93%E9%93%81%E8%8A%B1.jpg/3840px-%E6%82%A6%E5%8A%A8%E8%BE%BD%E6%BA%90%E6%89%93%E9%93%81%E8%8A%B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC0
+许可链接：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者：E2568
+像素：3840 × 2880 px
+文件：JPEG，2,086,638 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：4000 × 3000 px
+来源标题：悦动辽源打铁花.jpg
+来源署名/机构：Own work
+参照内容与限制：辽源打铁花大场景：白亮核心、金色飞溅和烟雾；含舞台灯光。
+SHA-256：a0f9cd20e4df68c577d42eb82c7b5003a38577b3ea1b9bee0b77289451fc6df5
+
+[04] sparks_04.jpg
+文件名：sparks_04.jpg
+来源页：https://commons.wikimedia.org/wiki/File:The_Magic_of_Blacksmiths_01.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/The_Magic_of_Blacksmiths_01.jpg/1920px-The_Magic_of_Blacksmiths_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Mengqi Huang
+像素：1920 × 1280 px
+文件：JPEG，754,037 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3543 × 2362 px
+来源标题：The Magic of Blacksmiths 01.jpg
+来源署名/机构：Own work
+参照内容与限制：河北暖泉打树花：熔融生铁泼墙，密集长轨迹和亮区。
+SHA-256：127a982e3cc227b08542167a3183d871729f88205ca07e6ae00d2c44978cd67c
+
+[05] sparks_05.jpg
+文件名：sparks_05.jpg
+来源页：https://commons.wikimedia.org/wiki/File:The_Magic_of_Blacksmiths_05.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/The_Magic_of_Blacksmiths_05.jpg/1920px-The_Magic_of_Blacksmiths_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Mengqi Huang
+像素：1920 × 1280 px
+文件：JPEG，484,348 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3543 × 2362 px
+来源标题：The Magic of Blacksmiths 05.jpg
+来源署名/机构：Own work
+参照内容与限制：河北暖泉打树花另一曝光：白热亮区、弧状长轨迹及暗部地面。
+SHA-256：7af8c723bc04a4e212364c4f362206972f01909402979933528bcb312076d640
+
+[06] sparks_06.png
+文件名：sparks_06.png
+来源页：https://www.news.cn/foto/20240206/a2864d27c92c4f05bb7598369cc5910d/c.html
+图片下载地址：https://www.news.cn/foto/20240206/a2864d27c92c4f05bb7598369cc5910d/20240206a2864d27c92c4f05bb7598369cc5910d_202402046bad69ee41be4266a644b9039d3e8590.jpg
+许可：保留版权；新华社摄影。未发现开放许可；仅作本地外观参照，不构成再发布授权。
+作者：黄政伟／新华社
+像素：1013 × 492 px
+文件：PNG，1,259,160 bytes
+下载版本：来源页公开展示的最大可取得图片；非相机 RAW
+参照内容与限制：新华社黄政伟实拍，洛阳隋唐河洛文化庙会打铁花：白热核心、火花长轨迹、烟和舞台暗部。公开页面版本约 1K。
+SHA-256：a60c2046bfa6bf565532a2ea5ef650f610c8f7b990f0920966595e089b485296
+
+[07] sparks_07.png
+文件名：sparks_07.png
+来源页：https://www.news.cn/foto/20240206/a2864d27c92c4f05bb7598369cc5910d/c.html
+图片下载地址：https://www.news.cn/foto/20240206/a2864d27c92c4f05bb7598369cc5910d/20240206a2864d27c92c4f05bb7598369cc5910d_2024020472bad249687b4ef1895970383f3e7088.jpg
+许可：保留版权；新华社摄影。未发现开放许可；仅作本地外观参照，不构成再发布授权。
+作者：黄政伟／新华社
+像素：1016 × 512 px
+文件：PNG，1,132,925 bytes
+下载版本：来源页公开展示的最大可取得图片；非相机 RAW
+参照内容与限制：新华社黄政伟实拍，洛阳隋唐河洛文化庙会打铁花：白热核心、火花长轨迹、烟和舞台暗部。公开页面版本约 1K。
+SHA-256：73fb694df0ba971da05eb7df02886249aadde71fda7979ce01bc1154c8f43725
+
+[08] sparks_08.png
+文件名：sparks_08.png
+来源页：https://www.news.cn/foto/20240206/a2864d27c92c4f05bb7598369cc5910d/c.html
+图片下载地址：https://www.news.cn/foto/20240206/a2864d27c92c4f05bb7598369cc5910d/20240206a2864d27c92c4f05bb7598369cc5910d_20240204beb932a5666b49db821ef941d7c52fac.jpg
+许可：保留版权；新华社摄影。未发现开放许可；仅作本地外观参照，不构成再发布授权。
+作者：黄政伟／新华社
+像素：1024 × 552 px
+文件：PNG，1,315,819 bytes
+下载版本：来源页公开展示的最大可取得图片；非相机 RAW
+参照内容与限制：新华社黄政伟实拍，洛阳隋唐河洛文化庙会打铁花：白热核心、火花长轨迹、烟和舞台暗部。公开页面版本约 1K。
+SHA-256：5ae17e20cf91e0ca996e187058cb94844b0dc8a9bff20b68768ec517658be41b

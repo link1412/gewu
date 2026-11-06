@@ -1,0 +1,272 @@
+{
+ "source": "Inaba yohen tenmoku, Seikado Bunko Art Museum; profile from the 1937 plate (Takahashi, Taisho meiki kan 6; Commons PD-Japan-oldphoto; ref/yohen/images/inaba_commons_1937.jpg)",
+ "frame": "mm; z up along the axis, z = 0 on the foot's bottom; outer profile (r, z)",
+ "scale": {
+  "mouth_mm": {
+   "value": 122.0,
+   "tag": "M",
+   "how": "NPM 2018 p.23 table 1"
+  }
+ },
+ "record": {
+  "height_mm": 72.0,
+  "foot_mm": 38.0,
+  "mass_g": 276.0,
+  "tag": "M",
+  "how": "NPM 2018 p.23 table 1"
+ },
+ "fitted": {
+  "r_foot_bottom": {
+   "value": 19.9976,
+   "sd": 0.4605,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_foot_top": {
+   "value": 21.9852,
+   "sd": 1.0385,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "h_foot": {
+   "value": 6.5422,
+   "sd": 1.5362,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_w0": {
+   "value": 25.0571,
+   "sd": 0.8539,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "dz_under": {
+   "value": 0.0,
+   "sd": 1.4053,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "height_mm": {
+   "value": 68.3113,
+   "sd": 0.5802,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "h_lip": {
+   "value": 3.671,
+   "sd": 1.3723,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_groove": {
+   "value": 58.7902,
+   "sd": 0.909,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_k1": {
+   "value": 32.0259,
+   "sd": 0.1927,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_k2": {
+   "value": 37.948,
+   "sd": 0.3273,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_k3": {
+   "value": 44.232,
+   "sd": 0.3912,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_k4": {
+   "value": 49.5206,
+   "sd": 0.4553,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_k5": {
+   "value": 53.7103,
+   "sd": 0.4771,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_k6": {
+   "value": 56.6138,
+   "sd": 0.4395,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_k7": {
+   "value": 58.0746,
+   "sd": 0.3645,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  },
+  "r_k8": {
+   "value": 58.5327,
+   "sd": 0.3554,
+   "tag": "M",
+   "how": "fitted to the 1937 side view's edges (form.py fit)"
+  }
+ },
+ "knots_u": [
+  0.0,
+  0.14,
+  0.28,
+  0.42,
+  0.55,
+  0.67,
+  0.78,
+  0.87,
+  0.94,
+  1.0
+ ],
+ "assumed": {
+  "lip_mm": {
+   "value": 3.0,
+   "why": "the lip's thickness (a half round): not resolved in the side view's outline"
+  },
+  "bead_mm": {
+   "value": 1.0,
+   "why": "the foot ring's rounded bottom edge"
+  },
+  "crease_mm": {
+   "value": 1.0,
+   "why": "the corner between the foot's outer face and the underside"
+  },
+  "roll_mm": {
+   "value": 2.5,
+   "why": "the glaze's thick lower edge, rounding the corner between underside and wall"
+  },
+  "groove_fillet_mm": {
+   "value": 1.5,
+   "why": "the groove under the lip band, rounded (its sharpness is not resolved)"
+  },
+  "foot_width_mm": {
+   "value": 5.0,
+   "why": "the foot ring's width at its bottom (its inner face is hidden)"
+  },
+  "density_g_cm3": {
+   "value": 2.3,
+   "why": "bulk density of the fired body with its glaze (iron-rich stoneware, a few % porosity: 2.2-2.4; the glaze ~2.5 is a thin share)"
+  },
+  "recess_frac": {
+   "value": 0.5,
+   "why": "the base's underside inside the foot ring, recessed above the foot's bottom by this fraction of the foot's height"
+  },
+  "floor_fillet_mm": {
+   "value": 10.0,
+   "why": "the inner wall turns into the floor in a broad curve (the well)"
+  },
+  "thickness_shape": {
+   "value": "linear",
+   "why": "the wall thickens linearly from the lip's thickness at the groove to w_low at the wall's foot; the base under the floor is w_low thick"
+  }
+ },
+ "camera_1937": {
+  "model": "pinhole (tools/lathe.py); principal point at the cropped plate's centre [A]",
+  "principal_px": [
+   1097.5,
+   750.0
+  ],
+  "ref_z_mm": 34.155661320622436,
+  "f_px": {
+   "value": 10041.28758,
+   "sd": 51.79582
+  },
+  "dist_mm": {
+   "value": 635.78372,
+   "sd": 1.83388
+  },
+  "elev_deg": {
+   "value": 15.12078,
+   "sd": 0.15766
+  },
+  "dyaw_deg": {
+   "value": 0.0373,
+   "sd": 0.00627
+  },
+  "dpitch_deg": {
+   "value": -0.57024,
+   "sd": 0.01772
+  },
+  "roll_deg": {
+   "value": 1.34692,
+   "sd": 0.10867
+  }
+ },
+ "residuals_px": {
+  "outline_top": {
+   "n": 2539,
+   "median_px": 1.77,
+   "p90_px": 4.932,
+   "max_px": 13.96
+  },
+  "outline_side": {
+   "n": 3968,
+   "median_px": 1.69,
+   "p90_px": 12.166,
+   "max_px": 24.68
+  },
+  "outline_bottom": {
+   "n": 771,
+   "median_px": 2.881,
+   "p90_px": 9.6,
+   "max_px": 15.98
+  },
+  "lip_front": {
+   "n": 276,
+   "median_px": 6.822,
+   "p90_px": 11.788,
+   "max_px": 15.61
+  }
+ },
+ "derived": {
+  "height_mm": 68.311,
+  "height_record_mm": 72.0,
+  "foot_diameter_bottom_mm": 39.995,
+  "foot_diameter_max_mm": 45.453,
+  "foot_record_mm": 38.0,
+  "foot_height_mm": 6.542,
+  "wall_bottom_r_z_mm": [
+   25.057,
+   6.542
+  ],
+  "groove_r_z_mm": [
+   58.79,
+   64.64
+  ],
+  "lip_band_mm": 3.671,
+  "lip_flare_mm": 2.21,
+  "wall_radius_at_z_mm": {
+   "10": 28.129,
+   "20": 35.918,
+   "30": 43.513,
+   "40": 50.489,
+   "50": 55.88,
+   "55": 57.614,
+   "60": 58.438
+  },
+  "max_outer_radius_mm": 60.992,
+  "w_low_mm_from_mass": 8.15,
+  "mass_check_g": 276.0,
+  "floor_z_mm": 14.693,
+  "depth_inside_mm": 53.619,
+  "floor_flat_radius_mm": 17.167,
+  "w_low_mm_if_density_2.2_2.4": [
+   8.807,
+   7.559
+  ],
+  "inner_wall_radius_at_z_mm": {
+   "20": 26.847,
+   "30": 35.367,
+   "40": 43.977,
+   "50": 50.992,
+   "60": 54.984
+  }
+ }
+}

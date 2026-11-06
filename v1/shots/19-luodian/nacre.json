@@ -1,0 +1,67 @@
+{
+ "about": "The shell's stack for shots/19-dianluo/nacre.py (reused unchanged), shot 19 round 1 (螺钿 dish). Starting values of docs/research/luodian.md section 5. Tags: [M] measured in the source, [D] secondary source or read off a figure, [A] model assumption or our choice. Isotropic aragonite (n_alpha = n_beta = n_gamma = 1.63) as in Salman et al. 2021's model, not the S2 uniaxial values.",
+ "aragonite_n_alpha": {
+  "value": 1.63,
+  "unit": "",
+  "source": "Salman et al. 2021 (PNAS 118 e2023623118) Methods: isotropic 1.63 in their TMM (an assumption of that model; the principal indices are 1.530/1.681/1.686 at 589 nm)",
+  "tag": "A"
+ },
+ "aragonite_n_beta": {
+  "value": 1.63,
+  "unit": "",
+  "source": "same",
+  "tag": "A"
+ },
+ "aragonite_n_gamma": {
+  "value": 1.63,
+  "unit": "",
+  "source": "same; no dispersion (none found)",
+  "tag": "A"
+ },
+ "organic_n": {
+  "value": 1.43,
+  "unit": "",
+  "source": "Salman et al. 2021 model assumption (citing Snow et al.)",
+  "tag": "A"
+ },
+ "organic_nm": {
+  "value": 25.0,
+  "unit": "nm",
+  "source": "Salman et al. 2021 model (fixed); Song, Soh & Bai 2003 measured 21-31 nm in H. iris",
+  "tag": "A"
+ },
+ "organic_spread_nm": {
+  "value": 3.0,
+  "unit": "nm",
+  "source": "our choice, inside Song 2003's 21-31 nm range",
+  "tag": "A"
+ },
+ "tablet_spread_nm": {
+  "value": 50.0,
+  "unit": "nm",
+  "source": "Salman et al. 2021 SI section 4 / Fig. S4: one section of H. rufescens, tablet thickness ~Gaussian, mean ~420 nm, SD ~50 nm",
+  "tag": "M"
+ },
+ "sheet_um": {
+  "value": 44.5,
+  "unit": "um",
+  "source": "about 100 aragonite/organic pairs at 420 + 25 nm (luodian.md section 5: Salman's code uses layers=201, i.e. ~100 pairs; an arithmetic result, not the dish's shell thickness). The number of pairs per piece is sheet / (d + 25 nm)",
+  "tag": "A"
+ },
+ "lacquer_n": {
+  "value": 1.55,
+  "unit": "",
+  "source": "as S2 (shots/19-dianluo/nacre.json): from SCI - SCE of polished black urushi by Fresnel, 1.53 and 1.57; cured-film n not found",
+  "tag": "A"
+ },
+ "grid": {
+  "d_min_nm": 240.0,
+  "d_max_nm": 560.0,
+  "d_step_nm": 5.0,
+  "b_max": 1.4,
+  "n_b": 36,
+  "n_mu": 65,
+  "draws": 32,
+  "why": "piece means 250-550 nm (pattern.py): the measured tablet thicknesses of abalone nacre run 245+-38 (H. iris blue), 293+-27 (green), 371+-36 / 499+-35 (H. varia centre / edge), 420+-50 (H. rufescens), 450-550 (H. iris) [查到, docs/research/luodian.md section 3]; a craftsman picks pieces by colour from all over the valve; b = n sin(angle to the layers' normal) inside the shell, up to 1.4 (S2's grid)"
+ }
+}

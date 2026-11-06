@@ -1,0 +1,244 @@
+{
+ "name": "yanzhi_fit5",
+ "title": "胭脂红卡：拟合用的灯(四组)",
+ "what": "museum_flat refitted to Met 1971.180.248 (materials/yanzhi/lightfit, docs/materials/yanzhi.md round 2): four groups whose strengths fit.py mixes",
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "mainL",
+   "group": "main",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 50,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] the left reflection in the inside's far wall at u -0.38, v 0.52; el 50 between the probe's 45 (v 0.60) and 60 (v 0.30) (probe: az 60 el 45 gives -0.37, 0.60)"
+  },
+  {
+   "name": "mainR",
+   "group": "main",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 72,
+    "elevation_deg": 50,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] the right reflection at u +0.45, v 0.54 (probe: az 75 el 45 gives +0.46, 0.58)"
+  },
+  {
+   "name": "backL",
+   "group": "back",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -135,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] probe: a rear pair high up lights the sweep (photo backdrop 0.66-0.73 of the white)"
+  },
+  {
+   "name": "backR",
+   "group": "back",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 135,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "as backL"
+  },
+  {
+   "name": "top",
+   "group": "top",
+   "shape": "rect",
+   "size": {
+    "R": [
+     5,
+     5
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 0,
+    "elevation_deg": 75,
+    "distance": {
+     "R": 7
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 500,
+   "why": "meng: a top light; its size (5 R), height and strength (a stop under the sides) are our choice"
+  },
+  {
+   "name": "lowL",
+   "group": "low",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -90,
+    "elevation_deg": 22,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] probe: a low side pair makes the outer wall's sides bright (probe a090e20: sides 5 x the front; the photo's 2-3.7 x)"
+  },
+  {
+   "name": "lowR",
+   "group": "low",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 90,
+    "elevation_deg": 22,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "as lowL"
+  },
+  {
+   "name": "low2L",
+   "group": "low2",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -110,
+    "elevation_deg": 22,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] alternative to 'low', further back"
+  },
+  {
+   "name": "low2R",
+   "group": "low2",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 110,
+    "elevation_deg": 22,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "as low2L"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "white_90",
+  "distance": {
+   "R": 10
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 30
+  },
+  "why": "[F] the photo's backdrop is 0.66-0.73 of the inside's white: grey_18 gives 0.09-0.19, white_90 with the rear pair 0.7"
+ }
+}

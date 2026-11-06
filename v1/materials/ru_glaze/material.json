@@ -1,0 +1,476 @@
+{
+ "name": "ru_glaze",
+ "what": "Northern Song Ru celadon glaze (汝窑天青釉), Qingliangsi kiln, Baofeng: a lime-alumina-silicate glass with iron, phase-separated into Ca-rich droplets in a Si-rich matrix, with anorthite crystals and bubbles, about half a millimetre thick over a grey body. Substance only: the crackle, the glaze-thickness field of an object and its state (excavated or handed down) are in the craft and object layers.",
+ "tags": {
+  "M": "measured: reported as a measurement in the source, or measured by us",
+  "I": "looked up: the source gives the value but did not measure it (handbook, patent, review)",
+  "D": "derived from other values by the stated algorithm",
+  "F": "fitted: tuned until our model matches the stated reference",
+  "A": "assumed or placeholder"
+ },
+ "sources": {
+  "Shi2020": "Shi, P. et al. (2020), Study on the coloring mechanism of the Ru celadon glaze in the Northern Song Dynasty, Ceramics International 46, 23662-23668, doi 10.1016/j.ceramint.2020.06.139: four Qingliangsi sherds from the Palace Museum, Beijing; XRF (Table 3), CIELAB (Table 2, X-Rite Ci7800, 6 mm aperture), droplet sizes (HF-etched SEM, §3.3, Fig. 7), surface XPS Fe2+/Fe3+ (Fig. 8b), glaze thickness (Table 1). Transcribed in ref/ru/research/report.md, ref/ru/research2/files/shi2020_*.csv",
+  "Zhou2023": "Zhou, B., Ma, Q., Li, Z. & Chen, J. (2023), Coatings 13(6), 1011, doi 10.3390/coatings13061011: excavated Qingliangsi sherds; SEM-EDS of the anorthite and the two glass phases (Tables 2, 3), Ca-rich phase sizes away from and near anorthite (§3.1.2, Figs. 4, 6). ref/ru/research2/files/zhou2023_compositions_wt.csv",
+  "Chen2020": "Chen, Y.-Y., Bai, Y.-W. & Wei, W.-C. J. (2020), Analysis of structural effects on coloring mechanism of Ru celadon porcelain, International Journal of Ceramic Engineering & Science 2, 177-186, doi 10.1002/ces2.10058: anorthite grain size and bubble size of an ancient sherd, SEM (§3.2, Figs. 9A, 10A); ref/ru/research/report.md [S2]",
+  "Li2005": "Li, W. et al. (2005), Ceramics International 31, 487-494, doi 10.1016/j.ceramint.2004.07.002: glaze thickness of the fourth firing area's sherds N1-N6 (Table 1)",
+  "Volotinen2008": "Volotinen, T. T., Parker, J. M. & Bingham, P. A. (2008), Physics and Chemistry of Glasses B 49(5), 258-270: Gaussian fit of Fe2+ and Fe3+ absorption in 15Na2O-15CaO-70SiO2 (mol%) glass, Table 3, Eq. 2; Fe2+ calibrated to Bamford's epsilon(1000 nm) = 30 L/mol/cm. ref/ru/research2/files/iron_Volotinen2008_table3_transcribed.csv",
+  "Klement2009": "Klement, R., Kraxner, J. & Liska, M. (2009), Ceramics-Silikaty 53(3), 180-183: epsilon_Fe2+(1000 nm) = 15.99 +- 0.09 L/mol/cm in an E-glass (CaO-Al2O3-SiO2 with 4.6 mol% B2O3), redox by wet chemistry",
+  "EP3013762B1": "European patent EP3013762B1 (Queen Mary University of London), Appen factors for n_D, mol% basis, with composition-dependent SiO2 and TiO2 factors; not checked against Appen's book (Kimiya Stekla, 1974)",
+  "Duminis2018": "Duminis, T. et al. (2018), Dental Materials 34, e83-e88, doi 10.1016/j.dental.2018.01.024: Appen factors, Table 1 (used here only for P2O5, which the patent table lacks)",
+  "Medenbach1997": "Medenbach, O. & Shannon, R. D. (1997), JOSA B 14, 3299-3318, doi 10.1364/JOSAB.14.003299: principal refractive indices of anorthite (Great Sitka Island, Alaska), small-prism method, +-0.0002 (Table 6). ref/ru/research2/files/index_anorthite_measured_Medenbach1997.csv"
+ },
+ "samples": {
+  "shi2020_R1": {
+   "appearance": {
+    "value": "天青、哑光、细开片 (sky-blue, matte, fine crackle)",
+    "tag": "M",
+    "source": "Shi2020 Table 1"
+   },
+   "composition_wt": {
+    "value": {
+     "Na2O": 0.02,
+     "MgO": 1.97,
+     "Al2O3": 14.08,
+     "SiO2": 70.65,
+     "K2O": 2.58,
+     "CaO": 8.26,
+     "TiO2": 0.16,
+     "Fe2O3": 1.54,
+     "P2O5": 0.63,
+     "MnO2": 0.11
+    },
+    "tag": "M",
+    "source": "Shi2020 Table 3, XRF; Fe2O3 is all iron reported as Fe2O3"
+   },
+   "fe2_fraction": {
+    "value": 0.5741,
+    "tag": "M",
+    "source": "Shi2020 Fig. 8b, surface XPS fit; taken as the bulk ratio [A]"
+   },
+   "thickness_um": {
+    "value": 511,
+    "tag": "M",
+    "source": "Shi2020 Table 1 (one section)"
+   },
+   "droplet_d_nm": {
+    "value": 31,
+    "tag": "M",
+    "source": "Shi2020 §3.3, Fig. 7, mean of the HF-etched SEM texture"
+   },
+   "lab": {
+    "value": [
+     56.56,
+     -6.0,
+     2.44
+    ],
+    "tag": "M",
+    "source": "Shi2020 Table 2; illuminant, observer and SCI/SCE not reported"
+   }
+  },
+  "shi2020_R2": {
+   "appearance": {
+    "value": "天青、明亮细腻、开片 (sky-blue, bright and fine, crackled)",
+    "tag": "M",
+    "source": "Shi2020 Table 1"
+   },
+   "composition_wt": {
+    "value": {
+     "Na2O": 0.37,
+     "MgO": 2.0,
+     "Al2O3": 14.79,
+     "SiO2": 71.63,
+     "K2O": 2.44,
+     "CaO": 6.52,
+     "TiO2": 0.13,
+     "Fe2O3": 1.48,
+     "P2O5": 0.52,
+     "MnO2": 0.12
+    },
+    "tag": "M",
+    "source": "Shi2020 Table 3, XRF"
+   },
+   "fe2_fraction": {
+    "value": 0.6637,
+    "tag": "M",
+    "source": "Shi2020 Fig. 8b, surface XPS fit; taken as the bulk ratio [A]"
+   },
+   "thickness_um": {
+    "value": 532,
+    "tag": "M",
+    "source": "Shi2020 Table 1"
+   },
+   "droplet_d_nm": {
+    "value": 35,
+    "tag": "M",
+    "source": "Shi2020 §3.3, Fig. 7"
+   },
+   "lab": {
+    "value": [
+     61.95,
+     -5.3,
+     -0.03
+    ],
+    "tag": "M",
+    "source": "Shi2020 Table 2"
+   }
+  }
+ },
+ "lab_measurement": {
+  "instrument": {
+   "value": "X-Rite Ci7800 (d/8 sphere), 6 mm aperture",
+   "tag": "M",
+   "source": "Shi2020 §2.2"
+  },
+  "illuminant_observer": {
+   "value": "D65, CIE 1931 2°",
+   "tag": "A",
+   "source": "not reported; the instrument's usual setting is D65/10°, but only the 1931 observer is at hand (pbrt's tables); a 2°/10° difference of about a unit in a*, b* is expected for such a pale colour [A]"
+  },
+  "specular": {
+   "value": "both computed",
+   "tag": "A",
+   "source": "SCI or SCE not reported; the fit is done for both (fit.py)"
+  }
+ },
+ "glass": {
+  "density_g_cm3": {
+   "value": 2.45,
+   "tag": "A",
+   "source": "lime-alumina-silicate glasses are 2.4-2.5 g/cm3; no measured density of Ru glaze found (ref/ru/research2/report.md §7)"
+  },
+  "appen_factors_mol": {
+   "value": {
+    "SiO2": "1.475 if p_SiO2 <= 67 else 1.5085 - 0.0005 p_SiO2",
+    "Al2O3": 1.52,
+    "CaO": 1.73,
+    "MgO": 1.61,
+    "Na2O": 1.59,
+    "K2O": "1.575, or 1.595 when p_Na2O < 1",
+    "TiO2": "2.480 - 0.005 p_SiO2",
+    "P2O5": 1.31
+   },
+   "tag": "I",
+   "source": "EP3013762B1; P2O5 from Duminis2018. No factors for Fe2O3, MnO, MnO2: they are left out and the rest renormalised, and the left-out share is reported (glaze.py)"
+  },
+  "abbe_number": {
+   "value": 60,
+   "tag": "A",
+   "source": "typical of low-index silicate crown glasses; no measured dispersion of the glaze or its phases found"
+  }
+ },
+ "phases": {
+  "what": "SEM-EDS of excavated sherd R1 of Zhou2023 (not the Shi2020 sherds). The phases are tens to hundreds of nm, smaller than the 15 kV interaction volume, so each analysis mixes in its neighbours: the contrast between them is a lower bound [A].",
+  "si_rich_wt": {
+   "value": {
+    "Na2O": 1.1,
+    "MgO": 1.4,
+    "Al2O3": 12.8,
+    "SiO2": 67.5,
+    "P2O5": 0.3,
+    "K2O": 4.8,
+    "CaO": 10.4,
+    "TiO2": 0.2,
+    "Fe2O3": 1.6
+   },
+   "tag": "M",
+   "source": "Zhou2023 Table 2, EDS2"
+  },
+  "ca_rich_wt": {
+   "value": {
+    "Na2O": 0.5,
+    "MgO": 2.5,
+    "Al2O3": 11.0,
+    "SiO2": 62.7,
+    "P2O5": 0.7,
+    "K2O": 3.0,
+    "CaO": 16.7,
+    "TiO2": 0.4,
+    "MnO": 0.1,
+    "Fe2O3": 2.5
+   },
+   "tag": "M",
+   "source": "Zhou2023 Table 2, EDS3"
+  },
+  "ca_rich_droplet_row_wt": {
+   "value": {
+    "Na2O": 0.8,
+    "MgO": 3.0,
+    "Al2O3": 10.1,
+    "SiO2": 59.6,
+    "P2O5": 0.1,
+    "K2O": 3.5,
+    "CaO": 20.0,
+    "TiO2": 0.3,
+    "MnO": 0.2,
+    "Fe2O3": 2.5
+   },
+   "tag": "M",
+   "source": "Zhou2023 Table 3, EDS2 (a row of Ca-rich droplets; TEM found wollastonite in them)"
+  },
+  "ca_rich_size_far_nm": {
+   "value": 81,
+   "range": [
+    55,
+    137
+   ],
+   "tag": "M",
+   "source": "Zhou2023 §3.1.2, Ca-rich phase away from anorthite, mean of 187, 60% within the range"
+  },
+  "ca_rich_size_near_nm": {
+   "value": 489,
+   "range": [
+    268,
+    668
+   ],
+   "tag": "M",
+   "source": "Zhou2023 §3.1.2, Ca-rich phase near anorthite, mean of 106, 60% within the range"
+  },
+  "volume_fractions": {
+   "value": null,
+   "tag": "A",
+   "source": "not found for any phase (ref/ru/research/report.md §2): fitted on the card [F]"
+  }
+ },
+ "anorthite": {
+  "d_um": {
+   "value": 4.41,
+   "sd": 1.66,
+   "tag": "M",
+   "source": "Chen2020 §3.2, Fig. 9A (whether +- is a standard deviation, and whether the size is a long axis, is not stated)"
+  },
+  "habit": {
+   "value": "needles and short prisms, hundreds of nm to a few um wide, a few um to hundreds of um long, densest at the glaze-body interface",
+   "tag": "M",
+   "source": "Li2005 §3.4, p. 490, Figs. 4-6 (sherds N1-N6)"
+  },
+  "scattering_width_nm": {
+   "volume_median": 800,
+   "sigma_g": 1.6,
+   "tag": "A",
+   "source": "the needles are modelled as spheres of their width (tools/mie.py has no cylinders; per volume a long needle scatters about like spheres of its width): a log-normal by volume, 68% of the volume within 0.5-1.3 um, inside 'hundreds of nm to a few um' (Li2005). Not the 4.41 um grains: as 4.4 um spheres they scatter almost straight on (g 0.991), sigma_s(1 - g) 0.09/mm per 1% of volume, and the measured lightness would need 25-30% anorthite; with this distribution it is about 0.25/mm per 1% at 550 nm (n 1.582 in 1.502). The fitted volume fraction scales with this choice"
+  },
+  "n_principal": {
+   "lambda_nm": [
+    643.8,
+    576.9,
+    546.0,
+    508.6,
+    480.0,
+    468.0,
+    435.8
+   ],
+   "n_alpha": [
+    1.5719,
+    1.5749,
+    1.5769,
+    1.5794,
+    1.5817,
+    1.5831,
+    1.5867
+   ],
+   "n_beta": [
+    1.5805,
+    1.5835,
+    1.5853,
+    1.588,
+    1.5904,
+    1.5916,
+    1.5952
+   ],
+   "n_gamma": [
+    1.5852,
+    1.5883,
+    1.5901,
+    1.5928,
+    1.5953,
+    1.5965,
+    1.6002
+   ],
+   "tag": "M",
+   "source": "Medenbach1997 Table 6 (a reference mineral, not the glaze's crystals)"
+  }
+ },
+ "bubbles": {
+  "d_um": {
+   "value": 79.9,
+   "sd": 62.0,
+   "tag": "M",
+   "source": "Chen2020 §3.2, Fig. 10A, section diameters (no stereological correction)"
+  },
+  "volume_fraction": {
+   "value": 0.01,
+   "tag": "A",
+   "source": "not found (ref/ru/research/report.md §2; 'large and few' in Chen2020): 1% as a placeholder; at 1% it adds sigma_s 0.38/mm, g 0.77 (tools/mie.py), about 0.09/mm of sigma_s(1 - g)"
+  }
+ },
+ "render": {
+  "g_star": {
+   "value": 0.6,
+   "tag": "D",
+   "source": "similarity: each scatterer's sigma_s is replaced by sigma_s (1 - g) / (1 - g*), all with g* (the anorthite's g is about 0.95, the bubbles' 0.78). Chosen with materials/ru_glaze/gstar.py (out/ru/fit/gstar_R2.json: R2 at 540 nm, sigma_s' 2.5/mm, body 0.3, alpha 0.05, light from 8 and 45 deg, against the exact mixture of the lobes, 0.5-0.7% noise): with no path limit g* 0.8 is within -2.2..+0.9% for 0.1-1.0 mm, g* 0.6 within -1.5..+2.6%, g* 0 up to +7.6% (thin glaze); with the renderers' 64 vertices g* 0.8 loses 24% at 1 mm and 7-8% at 0.5 mm, g* 0.6 6.5% at 1 mm. g* 0.6 at max_depth 128 is within -1.5..+2.6% everywhere and costs about half of g* 0.8 at 256 (the slab's event counts). Was 0.8 until S5's strip card, where both renderers lost light with the glaze's thickness"
+  },
+  "max_depth": {
+   "value": 128,
+   "tag": "D",
+   "source": "the renderers' path limit (pbrt volpath maxdepth, Cycles' bounces) for this glaze at g* 0.6: the slab's share of the reflection kept at 128 vertices is 1.000 at 0.5 mm and 0.997 at 1.0 mm (64: 0.996 and 0.949), light from 45 deg"
+  }
+ },
+ "thickness_range_um": {
+  "value": [
+   300,
+   800
+  ],
+  "tag": "M",
+  "source": "Li2005 Table 1: N1 0.5-0.8, N2 0.5-0.7, N6 0.3-0.8 mm"
+ },
+ "iron": {
+  "volotinen2008_peaks": {
+   "columns": [
+    "ion",
+    "nu0_cm-1",
+    "sigma_cm-1",
+    "H_per_cm_per_molpercent"
+   ],
+   "value": [
+    [
+     "Fe2+",
+     3590,
+     700,
+     2.065
+    ],
+    [
+     "Fe2+",
+     4950,
+     660,
+     3.183
+    ],
+    [
+     "Fe2+",
+     7490,
+     1430,
+     5.198
+    ],
+    [
+     "Fe2+",
+     10380,
+     2390,
+     10.944
+    ],
+    [
+     "Fe2+",
+     46700,
+     5700,
+     1000
+    ],
+    [
+     "Fe3+t",
+     21550,
+     1350,
+     0.218
+    ],
+    [
+     "Fe3+t",
+     22740,
+     650,
+     0.27
+    ],
+    [
+     "Fe3+t",
+     24020,
+     650,
+     0.323
+    ],
+    [
+     "Fe3+t",
+     26220,
+     480,
+     0.959
+    ],
+    [
+     "Fe3+o",
+     14700,
+     1700,
+     0.31
+    ],
+    [
+     "Fe3+o",
+     18350,
+     2000,
+     0.21
+    ],
+    [
+     "Fe3+o",
+     25190,
+     530,
+     0.255
+    ],
+    [
+     "Fe3+o",
+     27250,
+     530,
+     0.098
+    ],
+    [
+     "Fe3+uv",
+     39360,
+     3050,
+     1900
+    ]
+   ],
+   "tag": "M",
+   "source": "Volotinen2008 Table 3 (fitted parameters of measured spectra in soda-lime glass); P(nu) = H exp(-(nu - nu0)^2 / (2 sigma^2)), decadic; Fe2+ sum of p1-p5 is 11.920 /(cm mol%) at 1000 nm, which is epsilon 30 L/mol/cm"
+  },
+  "eps_fe2_1000nm": {
+   "soda_lime": 30.0,
+   "e_glass": 15.99,
+   "use": "soda_lime",
+   "tag": "F",
+   "source": "Volotinen2008 (Bamford's 30) and Klement2009 (15.99 +- 0.09, measured in an E-glass). The factor of two between the two glasses is the main uncertainty of the absorption. Chosen by the sherds' a*: with the scattering set to give the measured L*, the soda-lime calibration gives a* -5.2 to -6.7 against the measured -5.3 (R2) and -6.0 (R1), the E-glass one -3.3 to -4.2 (fit.py, docs/materials/ru_glaze.md); so a* is used to choose between the two published calibrations and is not a prediction"
+  },
+  "fe3_normalisation": {
+   "value": "table_sum",
+   "other": "eq1_nt_half",
+   "tag": "A",
+   "source": "Volotinen2008's Eq. 1 weights tetrahedral and octahedral Fe3+ by n_t = 0.5, but its reported 380 nm intensities match the plain sum of the table's peaks (ref/ru/research2/report.md §1.1); the plain sum is used, converted with the same 30/11.92 as Fe2+, and not scaled to E-glass (Klement2009 could not determine Fe3+)"
+  }
+ },
+ "body": {
+  "what": "the body under the glaze (香灰胎): Lambertian, rho(lambda) = rho0 (1 + t tanh((lambda - 560 nm) / 40 nm)) (fit.body_rho)",
+  "rho0": {
+   "value": 0.3,
+   "tag": "A",
+   "source": "no body colour measured for Ru ware (ref/ru/research/report.md: grey, grey-white, blue-grey in descriptions; no CIELAB or spectrum)"
+  },
+  "shape": {
+   "tag": "A",
+   "source": "a step at 560 nm: a reddening edge like that of iron oxide in a fired body; nothing measured"
+  },
+  "t": {
+   "value": 0.2212,
+   "tag": "F",
+   "source": "fitted to R2's b* (fit.py --fit-t). Why a warm body: of the two one-parameter fixes for the model's too-blue hue (hue.py, out/ru/fit/hue_SCI.txt), only the warm body also gets R2's a* (-4.72 against -5.30 measured, SCI; -5.52, SCE), while an Fe3+ tail into the blue makes it -7.17 (SCI); the NPM records thin glaze showing the body pink (薄釉透胎呈粉红, ref/ru/research2/report.md), which a blue tail cannot do; fitted with the exact lobes, R2 SCI (fit.py fit --mixture --fit-t): L*a*b* (61.89, -4.62, -0.03) against (61.95, -5.30, -0.03), so a* is the check, 0.68 off"
+  }
+ },
+ "fit": {
+  "what": "Shi 2020's R2 (SCI [A]) fitted with the slab Monte Carlo and the exact mixture of the scatterers' lobes: the anorthite's volume fraction to L*, the body's t to b*; a* is then a prediction",
+  "tag": "F",
+  "phi_an": 0.08916,
+  "body_t": 0.2212,
+  "lab_model": [
+   61.89,
+   -4.62,
+   -0.03
+  ],
+  "lab_measured": [
+   61.95,
+   -5.3,
+   -0.03
+  ],
+  "rho0": 0.3,
+  "alpha": 0.05,
+  "phi_b": 0.01,
+  "phi_d": 0.0,
+  "file": "out/ru/fit/R2_SCI_mix.json",
+  "pending": "R1 SCI (with R2's t, a prediction of R1's a*, b*) and R2 SCE were still running at S5's hand-off: out/ru/fit/R1_SCI_mix.json, R2_SCE_mix.json"
+ }
+}

@@ -1,0 +1,73 @@
+{
+  "_labels": "[M] measured  [D] derived  [F] fitted to the original  [I] inferred  [A] assumed/placeholder. Sources in docs/shots/01-38-ink.md.",
+  "paper": {
+    "seed": 11,
+    "optical_dx_mm": 0.05,
+    "basis_weight_gsm": 26.9,
+    "_basis_weight": "[查到] Lu et al. 2023, Table 2: unsized sheng xuan (四尺棉料单宣, Wang Liuji), 26.9 g/m^2, 69.6 um. Optics only (the grammage map is relative)",
+    "fibres": [
+      {
+        "name": "qingtan_bast",
+        "share": 0.7,
+        "length_mm": 2.5,
+        "length_logsd": 0.4,
+        "coarseness_mg_per_m": 0.08,
+        "_": "[A] bast fibre of Pteroceltis tatarinowii; length/coarseness pending survey"
+      },
+      {
+        "name": "rice_straw",
+        "share": 0.3,
+        "length_mm": 1.0,
+        "length_logsd": 0.4,
+        "coarseness_mg_per_m": 0.05,
+        "_": "[A] rice straw fibre"
+      }
+    ],
+    "fibre_width_mm": 0.015,
+    "floc_corr_mm": 2.0,
+    "floc_sigma": 0.12,
+    "_floc": "[A] floc strength of the formation. r1: 0.12 (a well-formed sheet); 0.25-0.35 gave cloudy halos that the original does not have. To be checked against a backlit xuan photo"
+  },
+  "ink": {
+    "pool_radius_mm": 35.0,
+    "_pool": "[A] a pour of about 7 cm across; sets the scale with the camera (see camera)",
+    "core_gsm": 50.0,
+    "_core": "[D] 1 mm of ink at 5 wt% carbon dried in place: opaque (tau ~ 375)",
+    "classes": [
+      {
+        "name": "coarse",
+        "share": 0.85,
+        "C0_gsm_per_sat": 2.55,
+        "lambda_per_mm": 1.0,
+        "_": "[A] aggregates; C0 = 3 g/m^2 carbon per saturated pore volume x share; lambda [F]"
+      },
+      {
+        "name": "fine",
+        "share": 0.15,
+        "C0_gsm_per_sat": 0.45,
+        "lambda_per_mm": 0.35,
+        "_": "[A] fine particles travel further; lambda [F]"
+      }
+    ]
+  },
+  "sim": {
+    "dx_mm": 0.2,
+    "extent_mm": [
+      -26.0,
+      26.0,
+      -8.0,
+      46.0
+    ],
+    "m": 4.0,
+    "eps": 0.0001,
+    "perm_grammage_exponent": 0.5,
+    "filter_grammage_exponent": 0.0,
+    "dt0": 0.0001,
+    "dt_max": 50.0,
+    "cfl": 0.7,
+    "t_pool": 2600.0,
+    "t_shot": 3000.0,
+    "_": "[A] Richards exponent m and the time units (tau = 1/D0, D0 = 1 mm^2/tau); t_pool, t_shot set the halo size [F]",
+    "_r1b": "r1 second run: filtration independent of local grammage [A], permeability ~ g^0.5 [A], floc sigma 0.25 / 2 mm [A]: the first run (g^1, g^1, 0.35/1.5 mm) fingered the carbon edge by ~5 mm (real for sheng xuan, but the original's limb is a clean arc)"
+  }
+}

@@ -1,0 +1,19 @@
+{
+ "name": "painting",
+ "what": "Painting cobalt on the body under a glaze (青花's 勾线 and 分水) and the firing's spread: the brush's laws that crafts/painting/paint.py turns into the cobalt map c(x, y), g CoO per m^2. Tags as docs/layers.md: M measured, I looked up, D derived, F fitted, A assumed.",
+ "not_found": "S3 调研 (qinghua-s3 report section 5): no measured stroke widths, no transverse cobalt profile across a stroke, no edge-to-centre ratio, no pooling law, no concentration law for 分水. The workshop's 5, 7 or 9 named tones of 分水 [I, Palace Museum glossary; UMMA] are categories, not levels, so c is continuous here. Every law below is therefore our assumption, to be checked against photographs on the material card and fitted there [F].",
+ "params": {
+  "land_mm": {"value": 0.4, "unit": "mm", "range": [0.1, 1.0], "tag": "A", "source": "the length over which a landing brush presses from 40% to full width; not measured"},
+  "lift_mm": {"value": 0.8, "unit": "mm", "range": [0.2, 2.0], "tag": "A", "source": "the taper as the brush lifts to a point; not measured"},
+  "load_drop": {"value": 0.25, "unit": "", "range": [0.0, 0.5], "tag": "A", "source": "the fraction of a stroke's c lost from its start to its end as the brush empties; not measured"},
+  "edge_mm": {"value": 0.03, "unit": "mm", "range": [0.01, 0.08], "tag": "A", "source": "the width over which a stroke's deposit falls from full to none (the bristles' splay, the slurry wicking into the dry body); not measured. The firing's bleed adds to it"},
+  "rim": {"value": 0.25, "unit": "", "range": [0.0, 0.6], "tag": "A", "source": "the extra pigment at a wash's edge, as a fraction of its c (a pool dries last at its rim); 'an artistic hypothesis' per S3 调研, not established as a law for 分水"},
+  "rim_mm": {"value": 0.3, "unit": "mm", "range": [0.1, 1.0], "tag": "A", "source": "the rim's e-folding width inward; not measured"},
+  "mottle": {"value": 0.08, "unit": "", "range": [0.0, 0.2], "tag": "A", "source": "the relative standard deviation of a wash's slow variation (the pool's uneven settling); not measured"},
+  "mottle_mm": {"value": 1.5, "unit": "mm", "range": [0.5, 4.0], "tag": "A", "source": "the mottle's scale (Gaussian sigma of filtered noise); not measured"},
+  "wash_edge_mm": {"value": 0.05, "unit": "mm", "range": [0.02, 0.15], "tag": "A", "source": "the width of a wash's soft edge; not measured"},
+  "line_c": {"value": 3.0, "unit": "g CoO / m^2", "range": [1.5, 5.0], "tag": "A", "source": "outline pigment; with materials/qinghua's kappa a wide area of c = 3 under the glaze reads as a deep navy (blue/white 0.33, red/white 0.04, tests/qinghua/check_coat.py). No measured cobalt loading of a stroke was found; the card fits it [F, later]"},
+  "wash_c": {"value": [0.2, 2.0], "unit": "g CoO / m^2", "range": [0.05, 3.0], "tag": "A", "source": "the span of 分水 from the palest 影淡 to the deep 头浓; as line_c"},
+  "line_width_mm": {"value": 0.35, "unit": "mm", "range": [0.1, 1.0], "tag": "A", "source": "a fine outline (勾线); typical stroke widths not found (S3 调研); the card's photograph measures them [M, later]"}
+ }
+}

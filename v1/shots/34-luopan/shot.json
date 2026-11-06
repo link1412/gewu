@@ -1,0 +1,12 @@
+{
+ "shot": 34,
+ "subject": "风水罗盘",
+ "note": "shader shot: luopan plate from above (face.py texture), red cross threads, warm white board; key panel + sky (colour tied); Cycles GPU (docs/shots/34-luopan.md)",
+ "prep": [["python3", "-I", "face.py", "{build}/tex"]],
+ "scene_args": ["--tex", "tex"],
+ "optics": {"f_number": 8.0, "magnification": 0.198, "focal_mm": 100.0},
+ "res": [960, 540],
+ "spp": 512,
+ "camera": {"seed": 3434},
+ "fit": {"lights": {"sky": {"tie": "key"}}}
+}

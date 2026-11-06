@@ -1,0 +1,90 @@
+{
+ "what": "Three sets of process parameters for one model of the Guan glaze card (card.py build --state NAME). The glaze, its crack network and the light are the same in all three. Only the processes that act after firing differ, each with physical parameters: the corrosion of the crack walls (the channel), deposition in the crack, the burial stain on the surface, and the surface roughness. 'Old' is what these processes produce, not a knob of its own (docs/layers.md).",
+ "tags": {
+  "M": "measured in a source, or by us on the photo or a render",
+  "I": "a value given by a source that did not measure it on this object",
+  "D": "derived (the derivation is written)",
+  "F": "fitted on the card against the photo of Met 48503 (what was fitted, how)",
+  "A": "our assumption or a placeholder"
+ },
+ "parameters": {
+  "channel.w0_mm": "width of the crack at the mouth (mm): the open aperture of a fresh crack, or aperture plus the corroded walls (median along the crack; lognormal, sigma w_sigma, correlation corr_mm)",
+  "channel.w_deep_mm": "width ramp_mm below the mouth when the walls corroded more inside (null: no widening)",
+  "deposit": "null: the crack is open (an air film) all the way down. Otherwise the channel is filled from top_mm down to a depth drawn per column, with chance c0 erfc(z / L_mm) of being filled at depth z (fill_corr_mm: correlation of that depth along the crack). The fill's reflectance is its own spectrum ('reflectance_nm', fitted) or an intimate mixture (Hapke) of an iron oxide ('mineral': lepidocrocite USGS GDS80, or goethite GDS134) with share f in a matrix of flat reflectance 'matrix' (crafts/deposition/deposit.fill_spectrum)",
+  "surface_stain_fraction": "area share of the burial-stain blotches on the surface (glaze.stain_levels)",
+  "surface_ggx_alpha": "roughness of the glaze surface; null: material.json's (46.7 GU, measured on excavated sherds)"
+ },
+ "states": {
+  "fresh": {
+   "what": "fresh from the kiln: open cracks only. Li 2022 (citing older Chinese work [I]) and the Ye Kewei workshop (Li 2020, fig. 5 [M]) describe new Guan/Ge cracks as transparent, colourless",
+   "channel": {
+    "w0_mm": 0.012,
+    "tag": "I: Guan crack widths 14.1 and 9.4 um (Palace Museum 2016, via the S3 crackle research); only the film's place matters to the render, the film itself is thin"
+   },
+   "deposit": null,
+   "surface_stain_fraction": 0.0,
+   "surface_ggx_alpha": null
+  },
+  "heirloom": {
+   "what": "handed down, never buried: the crack walls are not corroded (no widening), the crack takes up a stain from use or from deliberate colouring (Li 2020: ink, then soil, in modern Ge workshops [M]; Wu 2025: carbonaceous matter with S and Fe in heirloom Ge crackle [I]; the golden thread of Laohudong sherds is lepidocrocite and hematite in a clay-like deposit, fading with depth [I]), no burial stain on the surface. The state of shot 6's vase (decided S3 end by the main session; docs/materials/guan_glaze.md, 'Three states')",
+   "channel": {
+    "w0_mm": 0.012,
+    "tag": "I, as fresh"
+   },
+   "deposit": {
+    "c0": 1.0,
+    "L_mm": 0.4,
+    "top_mm": 0.0,
+    "fill_corr_mm": 0.5,
+    "reflectance_nm": [
+     360.0,
+     0.1548,
+     450.0,
+     0.1548,
+     550.0,
+     0.2442,
+     650.0,
+     0.2943,
+     830.0,
+     0.2943
+    ],
+    "tag": "reflectance_nm [F]: fitted so that the line's colour over the glaze is the Palace Museum vase's (官窑青釉弦纹瓶, ref/guan/pm_xianwenping_siyuwj.jpg, the vase shot 6 is drawn from): its lines are one kind, pale golden; measured on the belly, three lines, 188 blocks, mean cross profile minimum over the glaze 0.926/0.891/0.802 (R/G/B linear) [M, on the photo; the scale 16.5 px/mm comes from the chosen belly radius 70.5 mm, A] (materials/guan_glaze/pm_lines.py, out/materials/guan_glaze/r2/heirloom_fit/pm_lines.json). Two pbrt renders of this state that differ only in the fill (lepidocrocite 0.3 in a flat matrix of 0.3, Hapke: line 0.934/0.872/0.829; S2's golden-thread stand-in, raw sienna USGS GDS805: line 0.908/0.720/0.612, far too dark and orange) give per channel how the line follows the fill (materials/guan_glaze/heirsolve.py); the fill this target needs has camera colour 0.296/0.238/0.158, a smooth spectrum with anchors 0.155/0.244/0.294 at 450/550/650 nm. The nearest iron oxide in a flat matrix (lepidocrocite 0.3 in 0.28, or goethite 0.54 in 0.9) is 10% low in green (the line 3-4% too red), as on the excavated sherd. The mineral is not known. L_mm 0.4 (fading with depth, Wu 2025 [I]; the value [A]); top_mm 0 (never washed) [A]; fill_corr_mm 0.5 [A] (0.1 made the line jagged and dotted); c0 1 [A]"
+   },
+   "surface_stain_fraction": 0.0,
+   "surface_ggx_alpha": null
+  },
+  "excavated": {
+   "what": "the state of Met 48503: crack walls corroded into a channel, filled with burial soil, burial stain on the surface",
+   "channel": {
+    "w0_mm": 0.03,
+    "w_deep_mm": 0.2,
+    "ramp_mm": 0.3,
+    "w_sigma": 0.3,
+    "corr_mm": 0.3,
+    "tag": "F: fitted on the line test tile (linetest.py, deep_b) so that the line's width matches the photo's (FWHM p10/p50/p90 74/113/188 um); the form (narrow at the mouth, wider inside) is Li et al. 2022's brown channels in excavated Jiaotanxia Guan, about 63 um at the surface, <70 to >400 um inside [I]; w_sigma, corr_mm [A]"
+   },
+   "deposit": {
+    "c0": 1.0,
+    "L_mm": 2.6,
+    "top_mm": 0.1,
+    "fill_corr_mm": 0.5,
+    "reflectance_nm": [
+     360.0,
+     0.2205,
+     450.0,
+     0.2205,
+     550.0,
+     0.326,
+     650.0,
+     0.2994,
+     830.0,
+     0.2994
+    ],
+    "tag": "reflectance_nm [F]: fitted so that the line's colour over the glaze is the photo's (1.45/1.28/1.10 on lines found at 16 px/mm). Iteration 1 (anchors 0.2435/0.3816/0.3178 at 450/550/650 nm): two pbrt renders of the line test (linetest.py, lepidocrocite 0.16 in a matrix of 0.34 and of 0.5; lt/p_deep_l1, p_deep_l2) give per channel how the line follows the fill, solved for the fill (materials/guan_glaze/fillsolve.py); on the card that gave 1.52/1.40/1.15. Iteration 2 (these anchors, 0.2205/0.326/0.2994): the camera colour of the fill scaled per channel by the card's remaining error, through the same linear model. A smooth spectrum through three anchors; an iron oxide in a flat matrix (lepidocrocite or goethite, Hapke) cannot give this colour: its best fit has R/G about 20% high (the line turns pink-orange, p_deep_l1). The mineral is not known. top_mm 0.1 (the mouth emptied, the fill seen through the glaze: Wu 2025 sees the golden thread mostly deep in the crack, through the glaze [I]; washing of excavated sherds [A]). L_mm 2.6 [F, rough]: the line is bright only where the fill reaches the wide part of the channel (below ramp_mm); erfc(0.3/2.6) = 0.87, so 13% of the length is faint, as on the photo (lines faint for 12-17% of their length, round 1). Iteration 1 had L_mm 0.6, which fills the wide part along only erfc(0.5) = 48% of the length: the lines came out dashed. fill_corr_mm 0.5 [A] (iteration 1: 0.1, a flicker of short dashes); c0 1 [A]"
+   },
+   "surface_stain_fraction": 0.077,
+   "surface_stain_tag": "M: the photo's area at R/B > 1.4 x the glaze median (measured_met48503.json)",
+   "surface_ggx_alpha": null
+  }
+ }
+}

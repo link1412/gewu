@@ -1,0 +1,1721 @@
+diff --git a/src/pbrt/base/bxdf.h b/src/pbrt/base/bxdf.h
+index e94b135..6f3db13 100644
+--- a/src/pbrt/base/bxdf.h
++++ b/src/pbrt/base/bxdf.h
+@@ -158,6 +158,7 @@ class ThinDielectricBxDF;
+ class HairBxDF;
+ class MeasuredBxDF;
+ class ConductorBxDF;
++class ThinFilmBxDF;
+ class NormalizedFresnelBxDF;
+ class CoatedDiffuseBxDF;
+ class CoatedConductorBxDF;
+@@ -166,7 +167,8 @@ class CoatedConductorBxDF;
+ class BxDF
+     : public TaggedPointer<DiffuseTransmissionBxDF, DiffuseBxDF, CoatedDiffuseBxDF,
+                            CoatedConductorBxDF, DielectricBxDF, ThinDielectricBxDF,
+-                           HairBxDF, MeasuredBxDF, ConductorBxDF, NormalizedFresnelBxDF> {
++                           HairBxDF, MeasuredBxDF, ConductorBxDF, NormalizedFresnelBxDF,
++                           ThinFilmBxDF> {
+   public:
+     // BxDF Interface
+     PBRT_CPU_GPU inline BxDFFlags Flags() const;
+diff --git a/src/pbrt/base/material.h b/src/pbrt/base/material.h
+index e78435a..492a3a9 100644
+--- a/src/pbrt/base/material.h
++++ b/src/pbrt/base/material.h
+@@ -22,6 +22,7 @@ struct MaterialEvalContext;
+ class CoatedDiffuseMaterial;
+ class CoatedConductorMaterial;
+ class ConductorMaterial;
++class ThinFilmMaterial;
+ class DielectricMaterial;
+ class DiffuseMaterial;
+ class DiffuseTransmissionMaterial;
+@@ -36,7 +37,8 @@ class Material
+     : public TaggedPointer<  // Material Types
+           CoatedDiffuseMaterial, CoatedConductorMaterial, ConductorMaterial,
+           DielectricMaterial, DiffuseMaterial, DiffuseTransmissionMaterial, HairMaterial,
+-          MeasuredMaterial, SubsurfaceMaterial, ThinDielectricMaterial, MixMaterial
++          MeasuredMaterial, SubsurfaceMaterial, ThinDielectricMaterial, MixMaterial,
++          ThinFilmMaterial
+ 
+           > {
+   public:
+diff --git a/src/pbrt/base/texture.h b/src/pbrt/base/texture.h
+index 78e376c..7aa07d6 100644
+--- a/src/pbrt/base/texture.h
++++ b/src/pbrt/base/texture.h
+@@ -67,6 +67,7 @@ class SpectrumDotsTexture;
+ class SpectrumPtexTexture;
+ class GPUSpectrumPtexTexture;
+ class SpectrumScaledTexture;
++class FamilyMapSpectrumTexture;
+ 
+ // SpectrumTexture Definition
+ class SpectrumTexture
+@@ -74,7 +75,8 @@ class SpectrumTexture
+           SpectrumImageTexture, GPUSpectrumImageTexture, SpectrumMixTexture,
+           SpectrumDirectionMixTexture, SpectrumScaledTexture, SpectrumConstantTexture,
+           SpectrumBilerpTexture, SpectrumCheckerboardTexture, MarbleTexture,
+-          SpectrumDotsTexture, SpectrumPtexTexture, GPUSpectrumPtexTexture
++          SpectrumDotsTexture, SpectrumPtexTexture, GPUSpectrumPtexTexture,
++          FamilyMapSpectrumTexture  // gewu
+ 
+           > {
+   public:
+diff --git a/src/pbrt/bsdf.h b/src/pbrt/bsdf.h
+index 691180e..1c32d25 100644
+--- a/src/pbrt/bsdf.h
++++ b/src/pbrt/bsdf.h
+@@ -145,6 +145,12 @@ class BSDF {
+     PBRT_CPU_GPU
+     void Regularize() { bxdf.Regularize(); }
+ 
++    // gewu: lets the refractive NEE recognise the interfaces it connects through
++    template <typename T>
++    PBRT_CPU_GPU const T *GetBxDF() const {
++        return bxdf.CastOrNullptr<T>();
++    }
++
+   private:
+     // BSDF Private Members
+     BxDF bxdf;
+diff --git a/src/pbrt/bxdfs.cpp b/src/pbrt/bxdfs.cpp
+index ce74b51..bae8327 100644
+--- a/src/pbrt/bxdfs.cpp
++++ b/src/pbrt/bxdfs.cpp
+@@ -77,6 +77,38 @@ std::string LayeredBxDF<TopBxDF, BottomBxDF, twoSided>::ToString() const {
+ PBRT_CPU_GPU pstd::optional<BSDFSample> DielectricBxDF::Sample_f(
+     Vector3f wo, Float uc, Point2f u, TransportMode mode,
+     BxDFReflTransFlags sampleFlags) const {
++    if (IsSatin()) {
++        // gewu: rough reflection or smooth transmission, picked by Fresnel at the
++        // shading normal
++        Float R = FrDielectric(CosTheta(wo), eta), T = 1 - R;
++        Float pr = R, pt = T;
++        if (!(sampleFlags & BxDFReflTransFlags::Reflection))
++            pr = 0;
++        if (!(sampleFlags & BxDFReflTransFlags::Transmission))
++            pt = 0;
++        if (pr == 0 && pt == 0)
++            return {};
++
++        if (uc < pr / (pr + pt)) {
++            Vector3f wm = mfDistrib.Sample_wm(wo, u);
++            Vector3f wi = Reflect(wo, wm);
++            if (!SameHemisphere(wo, wi))
++                return {};
++            Float pdf = mfDistrib.PDF(wo, wm) / (4 * AbsDot(wo, wm)) * pr / (pr + pt);
++            SampledSpectrum f(mfDistrib.D(wm) * mfDistrib.G(wo, wi) *
++                              FrDielectric(Dot(wo, wm), eta) /
++                              (4 * CosTheta(wi) * CosTheta(wo)));
++            return BSDFSample(f, wi, pdf, BxDFFlags::GlossyReflection);
++        }
++        Vector3f wi;
++        Float etap;
++        if (!Refract(wo, Normal3f(0, 0, 1), eta, &etap, &wi))
++            return {};
++        SampledSpectrum ft(T / AbsCosTheta(wi));
++        if (mode == TransportMode::Radiance)
++            ft /= Sqr(etap);
++        return BSDFSample(ft, wi, pt / (pr + pt), BxDFFlags::SpecularTransmission, etap);
++    }
+     if (eta == 1 || mfDistrib.EffectivelySmooth()) {
+         // Sample perfect specular dielectric BSDF
+         Float R = FrDielectric(CosTheta(wo), eta), T = 1 - R;
+@@ -172,6 +204,9 @@ PBRT_CPU_GPU pstd::optional<BSDFSample> DielectricBxDF::Sample_f(
+ PBRT_CPU_GPU SampledSpectrum DielectricBxDF::f(Vector3f wo, Vector3f wi, TransportMode mode) const {
+     if (eta == 1 || mfDistrib.EffectivelySmooth())
+         return SampledSpectrum(0.f);
++    // gewu: a satin interface's transmission is a delta, not part of f
++    if (IsSatin() && !(CosTheta(wo) * CosTheta(wi) > 0))
++        return SampledSpectrum(0.f);
+     // Evaluate rough dielectric BSDF
+     // Compute generalized half vector _wm_
+     Float cosTheta_o = CosTheta(wo), cosTheta_i = CosTheta(wi);
+@@ -212,6 +247,8 @@ PBRT_CPU_GPU Float DielectricBxDF::PDF(Vector3f wo, Vector3f wi, TransportMode m
+                           BxDFReflTransFlags sampleFlags) const {
+     if (eta == 1 || mfDistrib.EffectivelySmooth())
+         return 0;
++    if (IsSatin() && !(CosTheta(wo) * CosTheta(wi) > 0))
++        return 0;
+     // Evaluate sampling PDF of rough dielectric BSDF
+     // Compute generalized half vector _wm_
+     Float cosTheta_o = CosTheta(wo), cosTheta_i = CosTheta(wi);
+@@ -230,7 +267,8 @@ PBRT_CPU_GPU Float DielectricBxDF::PDF(Vector3f wo, Vector3f wi, TransportMode m
+         return {};
+ 
+     // Determine Fresnel reflectance of rough dielectric boundary
+-    Float R = FrDielectric(Dot(wo, wm), eta);
++    // (gewu: a satin interface picks its lobe by Fresnel at the shading normal)
++    Float R = FrDielectric(IsSatin() ? CosTheta(wo) : Dot(wo, wm), eta);
+     Float T = 1 - R;
+ 
+     // Compute probabilities _pr_ and _pt_ for sampling reflection and transmission
+@@ -258,14 +296,20 @@ PBRT_CPU_GPU Float DielectricBxDF::PDF(Vector3f wo, Vector3f wi, TransportMode m
+ }
+ 
+ std::string DielectricBxDF::ToString() const {
+-    return StringPrintf("[ DielectricBxDF eta: %f mfDistrib: %s ]", eta,
+-                        mfDistrib.ToString());
++    return StringPrintf("[ DielectricBxDF eta: %f mfDistrib: %s smoothT: %s ]", eta,
++                        mfDistrib.ToString(), smoothT);
+ }
+ 
+ std::string ThinDielectricBxDF::ToString() const {
+     return StringPrintf("[ ThinDielectricBxDF eta: %f ]", eta);
+ }
+ 
++std::string ThinFilmBxDF::ToString() const {
++    return StringPrintf("[ ThinFilmBxDF mfDistrib: %s lambda: %s thickness: %f n1: %s k1: %s "
++                        "n2: %s k2: %s rho: %s ]",
++                        mfDistrib, lambda, thickness, n1, k1, n2, k2, rho);
++}
++
+ std::string ConductorBxDF::ToString() const {
+     return StringPrintf("[ ConductorBxDF mfDistrib: %s eta: %s k: %s ]", mfDistrib, eta,
+                         k);
+diff --git a/src/pbrt/bxdfs.h b/src/pbrt/bxdfs.h
+index 1871f17..a876d14 100644
+--- a/src/pbrt/bxdfs.h
++++ b/src/pbrt/bxdfs.h
+@@ -169,17 +169,32 @@ class DielectricBxDF {
+     // DielectricBxDF Public Methods
+     DielectricBxDF() = default;
+     PBRT_CPU_GPU
+-    DielectricBxDF(Float eta, TrowbridgeReitzDistribution mfDistrib)
+-        : eta(eta), mfDistrib(mfDistrib) {}
++    DielectricBxDF(Float eta, TrowbridgeReitzDistribution mfDistrib,
++                   bool smoothT = false)
++        : eta(eta), mfDistrib(mfDistrib), smoothT(smoothT) {}
+ 
+     PBRT_CPU_GPU
+     BxDFFlags Flags() const {
+         BxDFFlags flags = (eta == 1) ? BxDFFlags::Transmission
+                                      : (BxDFFlags::Reflection | BxDFFlags::Transmission);
++        if (IsSatin())
++            return flags | BxDFFlags::Glossy | BxDFFlags::Specular;
+         return flags |
+                (mfDistrib.EffectivelySmooth() ? BxDFFlags::Specular : BxDFFlags::Glossy);
+     }
+ 
++    // gewu: with smoothT, a rough interface reflects through its microfacets but
++    // transmits as if smooth (Fresnel at the shading normal decides between the two).
++    // The volpath integrator's refractive NEE needs the transmission to be a delta.
++    PBRT_CPU_GPU
++    bool IsSatin() const {
++        return smoothT && eta != 1 && !mfDistrib.EffectivelySmooth();
++    }
++    PBRT_CPU_GPU
++    bool SmoothT() const { return smoothT; }
++    PBRT_CPU_GPU
++    Float Eta() const { return eta; }
++
+     PBRT_CPU_GPU
+     pstd::optional<BSDFSample> Sample_f(
+         Vector3f wo, Float uc, Point2f u, TransportMode mode,
+@@ -203,6 +218,7 @@ class DielectricBxDF {
+     // DielectricBxDF Private Members
+     Float eta;
+     TrowbridgeReitzDistribution mfDistrib;
++    bool smoothT = false;
+ };
+ 
+ // ThinDielectricBxDF Definition
+@@ -212,16 +228,60 @@ class ThinDielectricBxDF {
+     ThinDielectricBxDF() = default;
+     PBRT_CPU_GPU
+     ThinDielectricBxDF(Float eta) : eta(eta) {}
++    // gewu: an absorbing slab. T0 is its internal transmittance for one crossing at
++    // normal incidence; a crossing at the refracted angle theta_t transmits
++    // T0^(1/cos theta_t). With eta = 1 it is a film that only absorbs.
++    PBRT_CPU_GPU
++    ThinDielectricBxDF(Float eta, SampledSpectrum T0) : eta(eta), T0(T0), absorbs(true) {}
+ 
+     PBRT_CPU_GPU
+     SampledSpectrum f(Vector3f wo, Vector3f wi, TransportMode mode) const {
+         return SampledSpectrum(0);
+     }
+ 
++    // gewu: reflectance and transmittance of the absorbing slab, both interfaces and
++    // all orders between them, for light along w
++    PBRT_CPU_GPU
++    void SlabRT(Vector3f w, SampledSpectrum *Rs, SampledSpectrum *Ts) const {
++        Float c = AbsCosTheta(w);
++        Float R = FrDielectric(c, eta), T = 1 - R;
++        if (R >= 1) {
++            *Rs = SampledSpectrum(1.f);
++            *Ts = SampledSpectrum(0.f);
++            return;
++        }
++        Float ct = SafeSqrt(1 - (1 - Sqr(c)) / Sqr(eta));
++        SampledSpectrum a;
++        for (int i = 0; i < NSpectrumSamples; ++i)
++            a[i] = (ct > 0 && T0[i] > 0) ? std::pow(std::min<Float>(T0[i], 1), 1 / ct) : 0;
++        SampledSpectrum den = SampledSpectrum(1.f) - Sqr(R) * a * a;
++        *Rs = SampledSpectrum(R) + Sqr(T) * R * a * a / den;
++        *Ts = Sqr(T) * a / den;
++    }
++
+     PBRT_CPU_GPU
+     pstd::optional<BSDFSample> Sample_f(Vector3f wo, Float uc, Point2f u,
+                                         TransportMode mode,
+                                         BxDFReflTransFlags sampleFlags) const {
++        if (absorbs) {
++            SampledSpectrum Rs, Ts;
++            SlabRT(wo, &Rs, &Ts);
++            Float pr = Rs.Average(), pt = Ts.Average();
++            if (!(sampleFlags & BxDFReflTransFlags::Reflection))
++                pr = 0;
++            if (!(sampleFlags & BxDFReflTransFlags::Transmission))
++                pt = 0;
++            if (pr == 0 && pt == 0)
++                return {};
++            if (uc < pr / (pr + pt)) {
++                Vector3f wi(-wo.x, -wo.y, wo.z);
++                return BSDFSample(Rs / AbsCosTheta(wi), wi, pr / (pr + pt),
++                                  BxDFFlags::SpecularReflection);
++            }
++            Vector3f wi = -wo;
++            return BSDFSample(Ts / AbsCosTheta(wi), wi, pt / (pr + pt),
++                              BxDFFlags::SpecularTransmission);
++        }
+         Float R = FrDielectric(AbsCosTheta(wo), eta), T = 1 - R;
+         // Compute _R_ and _T_ accounting for scattering between interfaces
+         if (R < 1) {
+@@ -258,6 +318,22 @@ class ThinDielectricBxDF {
+         return 0;
+     }
+ 
++    // gewu: the straight-through transmittance Sample_f uses (for refractive NEE)
++    PBRT_CPU_GPU
++    SampledSpectrum Transmittance(Vector3f w) const {
++        if (absorbs) {
++            SampledSpectrum Rs, Ts;
++            SlabRT(w, &Rs, &Ts);
++            return Ts;
++        }
++        Float R = FrDielectric(AbsCosTheta(w), eta), T = 1 - R;
++        if (R < 1) {
++            R += Sqr(T) * R / (1 - Sqr(R));
++            T = 1 - R;
++        }
++        return SampledSpectrum(T);
++    }
++
+     PBRT_CPU_GPU
+     static constexpr const char *Name() { return "ThinDielectricBxDF"; }
+ 
+@@ -274,6 +350,8 @@ class ThinDielectricBxDF {
+ 
+   private:
+     Float eta;
++    SampledSpectrum T0 = SampledSpectrum(1.f);  // gewu
++    bool absorbs = false;                        // gewu
+ };
+ 
+ // ConductorBxDF Definition
+@@ -380,6 +458,196 @@ class ConductorBxDF {
+     SampledSpectrum eta, k;
+ };
+ 
++// gewu: coherent thin film. Reflectance of air / film (N1 = n1 + i k1, thickness d) / substrate
++// (N2 = n2 + i k2), unpolarised, at one wavelength (Airy's formula; tools/tmm.py is the reference).
++// The forward wave decays in every medium: Im(N cos) >= 0.
++PBRT_CPU_GPU inline Float ThinFilmR(Float cosTheta_i, Float lambda, Float d,
++                                    pstd::complex<Float> N1, pstd::complex<Float> N2) {
++    using Complex = pstd::complex<Float>;
++    Float c0 = Clamp(cosTheta_i, 0, 1);
++    Float sin2 = 1 - c0 * c0;
++    auto cosIn = [&](Complex N) {
++        Complex c = pstd::sqrt(Complex(1) - sin2 / (N * N));
++        Complex q = N * c;
++        if (q.im < 0 || (q.im == 0 && q.re < 0))
++            c = -c;
++        return c;
++    };
++    Complex c1 = cosIn(N1), c2 = cosIn(N2);
++    // phase factor exp(2 i beta), beta = 2 pi N1 cos1 d / lambda
++    Complex beta = (2 * Pi * d / lambda) * (N1 * c1);
++    Float amp = std::exp(-2 * beta.im);
++    Complex e(amp * std::cos(2 * beta.re), amp * std::sin(2 * beta.re));
++    Float R = 0;
++    for (int pol = 0; pol < 2; ++pol) {
++        // tilted admittances: N cos (s), N / cos (p)
++        Complex y0 = pol == 0 ? Complex(c0) : Complex(1 / c0);
++        Complex y1 = pol == 0 ? N1 * c1 : N1 / c1;
++        Complex y2 = pol == 0 ? N2 * c2 : N2 / c2;
++        Complex r01 = (y0 - y1) / (y0 + y1), r12 = (y1 - y2) / (y1 + y2);
++        Complex r = (r01 + r12 * e) / (Complex(1) + r01 * r12 * e);
++        R += pstd::norm(r);
++    }
++    return R / 2;
++}
++
++PBRT_CPU_GPU inline SampledSpectrum ThinFilmR(Float cosTheta_i, const SampledSpectrum &lambda,
++                                              Float d, const SampledSpectrum &n1,
++                                              const SampledSpectrum &k1,
++                                              const SampledSpectrum &n2,
++                                              const SampledSpectrum &k2) {
++    SampledSpectrum R;
++    for (int i = 0; i < NSpectrumSamples; ++i)
++        R[i] = ThinFilmR(cosTheta_i, lambda[i], d, pstd::complex<Float>(n1[i], k1[i]),
++                         pstd::complex<Float>(n2[i], k2[i]));
++    return R;
++}
++
++// gewu: ThinFilmBxDF Definition. Microfacet reflection (GGX, as ConductorBxDF) off a coherent thin
++// film on an absorbing substrate: the Fresnel factor is the film's ThinFilmR at the microfacet. What
++// enters the substrate is lost, except for an optional Lambertian base of albedo rho seen through the
++// film: rho / pi (1 - R(cos_i)) (1 - R(cos_o)) with R the smooth film's reflectance (an approximation
++// [A]: no inter-reflection between base and film, no roughness on the way in).
++class ThinFilmBxDF {
++  public:
++    ThinFilmBxDF() = default;
++    PBRT_CPU_GPU
++    ThinFilmBxDF(const TrowbridgeReitzDistribution &mfDistrib, SampledSpectrum lambda,
++                 Float thickness, SampledSpectrum n1, SampledSpectrum k1, SampledSpectrum n2,
++                 SampledSpectrum k2, SampledSpectrum rho)
++        : mfDistrib(mfDistrib),
++          lambda(lambda),
++          thickness(thickness),
++          n1(n1),
++          k1(k1),
++          n2(n2),
++          k2(k2),
++          rho(rho) {}
++
++    PBRT_CPU_GPU
++    BxDFFlags Flags() const {
++        BxDFFlags f = mfDistrib.EffectivelySmooth() ? BxDFFlags::SpecularReflection
++                                                    : BxDFFlags::GlossyReflection;
++        if (rho)
++            f = f | BxDFFlags::DiffuseReflection;
++        return f;
++    }
++
++    PBRT_CPU_GPU
++    SampledSpectrum R(Float cosTheta) const {
++        return ThinFilmR(cosTheta, lambda, thickness, n1, k1, n2, k2);
++    }
++
++    // probability of sampling the diffuse base rather than the specular lobe
++    PBRT_CPU_GPU
++    Float PDiffuse(Vector3f wo) const {
++        if (!rho)
++            return 0;
++        Float pr = R(AbsCosTheta(wo)).Average();
++        Float pd = (SampledSpectrum(1) - R(AbsCosTheta(wo))).Average() * rho.Average();
++        return pd / (pr + pd);
++    }
++
++    PBRT_CPU_GPU
++    SampledSpectrum fDiffuse(Vector3f wo, Vector3f wi) const {
++        return rho * InvPi * (SampledSpectrum(1) - R(AbsCosTheta(wi))) *
++               (SampledSpectrum(1) - R(AbsCosTheta(wo)));
++    }
++
++    PBRT_CPU_GPU
++    SampledSpectrum fSpecular(Vector3f wo, Vector3f wi) const {
++        if (mfDistrib.EffectivelySmooth())
++            return {};
++        Float cosTheta_o = AbsCosTheta(wo), cosTheta_i = AbsCosTheta(wi);
++        if (cosTheta_i == 0 || cosTheta_o == 0)
++            return {};
++        Vector3f wm = wi + wo;
++        if (LengthSquared(wm) == 0)
++            return {};
++        wm = Normalize(wm);
++        return mfDistrib.D(wm) * R(AbsDot(wo, wm)) * mfDistrib.G(wo, wi) /
++               (4 * cosTheta_i * cosTheta_o);
++    }
++
++    PBRT_CPU_GPU
++    Float PDFSpecular(Vector3f wo, Vector3f wi) const {
++        if (mfDistrib.EffectivelySmooth())
++            return 0;
++        Vector3f wm = wo + wi;
++        if (LengthSquared(wm) == 0)
++            return 0;
++        wm = FaceForward(Normalize(wm), Normal3f(0, 0, 1));
++        return mfDistrib.PDF(wo, wm) / (4 * AbsDot(wo, wm));
++    }
++
++    PBRT_CPU_GPU
++    pstd::optional<BSDFSample> Sample_f(
++        Vector3f wo, Float uc, Point2f u, TransportMode mode,
++        BxDFReflTransFlags sampleFlags = BxDFReflTransFlags::All) const {
++        if (!(sampleFlags & BxDFReflTransFlags::Reflection) || wo.z == 0)
++            return {};
++        Float pd = PDiffuse(wo);
++        if (uc < pd) {
++            Vector3f wi = SampleCosineHemisphere(u);
++            if (wo.z < 0)
++                wi.z *= -1;
++            Float pdf = pd * CosineHemispherePDF(AbsCosTheta(wi));
++            if (!mfDistrib.EffectivelySmooth())
++                pdf += (1 - pd) * PDFSpecular(wo, wi);
++            SampledSpectrum f = fDiffuse(wo, wi) + fSpecular(wo, wi);
++            return BSDFSample(f, wi, pdf, BxDFFlags::DiffuseReflection);
++        }
++        if (mfDistrib.EffectivelySmooth()) {
++            Vector3f wi(-wo.x, -wo.y, wo.z);
++            SampledSpectrum f = R(AbsCosTheta(wi)) / AbsCosTheta(wi);
++            return BSDFSample(f, wi, 1 - pd, BxDFFlags::SpecularReflection);
++        }
++        Vector3f wm = mfDistrib.Sample_wm(wo, u);
++        Vector3f wi = Reflect(wo, wm);
++        if (!SameHemisphere(wo, wi))
++            return {};
++        Float pdf = (1 - pd) * mfDistrib.PDF(wo, wm) / (4 * AbsDot(wo, wm));
++        if (pd > 0)
++            pdf += pd * CosineHemispherePDF(AbsCosTheta(wi));
++        SampledSpectrum f = fSpecular(wo, wi);
++        if (rho)
++            f += fDiffuse(wo, wi);
++        return BSDFSample(f, wi, pdf, BxDFFlags::GlossyReflection);
++    }
++
++    PBRT_CPU_GPU
++    SampledSpectrum f(Vector3f wo, Vector3f wi, TransportMode mode) const {
++        if (!SameHemisphere(wo, wi))
++            return {};
++        SampledSpectrum f = fSpecular(wo, wi);
++        if (rho)
++            f += fDiffuse(wo, wi);
++        return f;
++    }
++
++    PBRT_CPU_GPU
++    Float PDF(Vector3f wo, Vector3f wi, TransportMode mode,
++              BxDFReflTransFlags sampleFlags) const {
++        if (!(sampleFlags & BxDFReflTransFlags::Reflection) || !SameHemisphere(wo, wi))
++            return 0;
++        Float pd = PDiffuse(wo);
++        return (1 - pd) * PDFSpecular(wo, wi) + pd * CosineHemispherePDF(AbsCosTheta(wi));
++    }
++
++    PBRT_CPU_GPU
++    static constexpr const char *Name() { return "ThinFilmBxDF"; }
++    std::string ToString() const;
++
++    PBRT_CPU_GPU
++    void Regularize() { mfDistrib.Regularize(); }
++
++  private:
++    TrowbridgeReitzDistribution mfDistrib;
++    SampledSpectrum lambda;
++    Float thickness;  // nm
++    SampledSpectrum n1, k1, n2, k2, rho;
++};
++
+ // TopOrBottomBxDF Definition
+ template <typename TopBxDF, typename BottomBxDF>
+ class TopOrBottomBxDF {
+diff --git a/src/pbrt/cpu/integrators.cpp b/src/pbrt/cpu/integrators.cpp
+index a8c541f..3f1490a 100644
+--- a/src/pbrt/cpu/integrators.cpp
++++ b/src/pbrt/cpu/integrators.cpp
+@@ -958,6 +958,17 @@ SampledSpectrum VolPathIntegrator::Li(RayDifferential ray, SampledWavelengths &l
+     bool specularBounce = false, anyNonSpecularBounces = false;
+     int depth = 0;
+     Float etaScale = 1;
++    // gewu: refracted light connections. rneeState 1: the last scattering x was
++    // non-specular and SampleLdRefracted() ran there, followed only by thin-dielectric
++    // transmissions; 2: then a refraction through a "refractivenee" dielectric at
++    // rneeY. Area light reached in state 2 is dropped if the connection at x covered it.
++    // rneeGuide: the normal of the last surface, pointing to the interface's thinner
++    // side, where the connection's solver starts.
++    int rneeState = 0;
++    Interaction rneeX;
++    LightSampleContext rneeCtx;
++    Vector3f rneeGuide(0, 0, 0), rneeXGuide(0, 0, 0);
++    Point3f rneeY;
+ 
+     LightSampleContext prevIntrContext;
+ 
+@@ -1032,6 +1043,10 @@ SampledSpectrum VolPathIntegrator::Li(RayDifferential ray, SampledWavelengths &l
+                             MediumInteraction intr(p, -ray.d, ray.time, ray.medium,
+                                                    mp.phase);
+                             L += SampleLd(intr, nullptr, lambda, sampler, beta, r_u);
++                            if (refractiveNEE)
++                                L += SampleLdRefracted(intr, nullptr, rneeGuide, lambda,
++                                                       sampler, scratchBuffer, beta, r_u,
++                                                       depth);
+ 
+                             // Sample new direction at real-scattering event
+                             Point2f u = sampler.Get2D();
+@@ -1049,6 +1064,10 @@ SampledSpectrum VolPathIntegrator::Li(RayDifferential ray, SampledWavelengths &l
+                                 ray.d = ps->wi;
+                                 specularBounce = false;
+                                 anyNonSpecularBounces = true;
++                                rneeState = 1;
++                                rneeX = intr;
++                                rneeCtx = prevIntrContext;
++                                rneeXGuide = rneeGuide;
+                             }
+                         }
+                         return false;
+@@ -1097,7 +1116,10 @@ SampledSpectrum VolPathIntegrator::Li(RayDifferential ray, SampledWavelengths &l
+             break;
+         }
+         SurfaceInteraction &isect = si->intr;
+-        if (SampledSpectrum Le = isect.Le(-ray.d, lambda); Le) {
++        if (SampledSpectrum Le = isect.Le(-ray.d, lambda);
++            Le && !(refractiveNEE && rneeState == 2 &&
++                    RefractionCovered(rneeX, rneeCtx, rneeXGuide, rneeY, isect, lambda,
++                                      sampler, scratchBuffer))) {
+             // Add contribution of emission from intersected surface
+             if (depth == 0 || specularBounce)
+                 L += beta * Le / r_u.Average();
+@@ -1154,8 +1176,16 @@ SampledSpectrum VolPathIntegrator::Li(RayDifferential ray, SampledWavelengths &l
+         }
+ 
+         // Sample illumination from lights to find attenuated path contribution
++        const DielectricBxDF *dielectric = bsdf.GetBxDF<DielectricBxDF>();
++        bool rneeInterface = dielectric && dielectric->SmoothT();
++        bool rneeThin = bsdf.GetBxDF<ThinDielectricBxDF>() != nullptr;
++        Vector3f ns(bsdf.LocalToRender(Vector3f(0, 0, 1)));
++        Vector3f guideHere = FaceForward(ns, isect.wo);
+         if (IsNonSpecular(bsdf.Flags())) {
+             L += SampleLd(isect, &bsdf, lambda, sampler, beta, r_u);
++            if (refractiveNEE && !rneeInterface)
++                L += SampleLdRefracted(isect, &bsdf, guideHere, lambda, sampler,
++                                       scratchBuffer, beta, r_u, depth);
+             DCHECK(IsInf(L.y(lambda)) == false);
+         }
+         prevIntrContext = LightSampleContext(isect);
+@@ -1182,6 +1212,25 @@ SampledSpectrum VolPathIntegrator::Li(RayDifferential ray, SampledWavelengths &l
+         anyNonSpecularBounces |= !bs->IsSpecular();
+         if (bs->IsTransmission())
+             etaScale *= Sqr(bs->eta);
++        if (refractiveNEE) {
++            if (!bs->IsSpecular() && !rneeInterface) {
++                rneeState = 1;
++                rneeX = isect;
++                rneeCtx = prevIntrContext;
++                rneeXGuide = guideHere;
++            } else if (rneeState == 1 && bs->IsSpecular() && bs->IsTransmission() &&
++                       (rneeThin || rneeInterface)) {
++                if (rneeInterface) {
++                    rneeState = 2;
++                    rneeY = isect.p();
++                }
++            } else
++                rneeState = 0;
++            if (rneeInterface)
++                rneeGuide = dielectric->Eta() > 1 ? ns : -ns;
++            else if (!rneeThin)
++                rneeGuide = guideHere;
++        }
+         ray = isect.SpawnRay(ray, bsdf, bs->wi, bs->flags, bs->eta);
+ 
+         // Account for attenuated subsurface scattering, if applicable
+@@ -1250,6 +1299,7 @@ SampledSpectrum VolPathIntegrator::Li(RayDifferential ray, SampledWavelengths &l
+             // Don't increment depth this time...
+             DCHECK(!IsInf(beta.y(lambda)));
+             specularBounce = bs->IsSpecular();
++            rneeState = 0;
+             ray = RayDifferential(pi.SpawnRay(bs->wi));
+         }
+ 
+@@ -1389,10 +1439,406 @@ SampledSpectrum VolPathIntegrator::SampleLd(const Interaction &intr, const BSDF
+         return beta * f_hat * T_ray * ls->L / (r_l + r_u).Average();
+ }
+ 
++// gewu: refractive next-event estimation.
++//
++// Light reaches a point inside a glaze only across the glaze surface, where SampleLd()'s
++// shadow ray stops. SampleLdRefracted() connects the vertex x to a sampled point z on an
++// area light through one refraction y on a "refractivenee" dielectric, whose
++// transmission is smooth. SolveRefraction() finds y: Snell's law on the tangent plane
++// at a first crossing (along the guide, the normal of the last surface the path met,
++// else along the straight line to z), then the crossing is moved on the real surface
++// until it stops moving. Thin dielectrics between x and y pass the light straight on
++// and only attenuate it. The connection's density over directions at x is
++//   p(z) / J,   J = dw_x / dA_z,
++// J by differences of re-traced directions: the surface's curvature focuses the light
++// (13% for 1 mm under a 5 mm radius) and so do bumps.
++// A path that BSDF sampling carries the same way (non-specular x, thin dielectrics, the
++// refraction, the light; rneeState 2 in Li()) drops its emission only if the solver,
++// started at x, finds that same crossing: the connection has counted it. Crossings the
++// solver misses (several solutions near edges, far ones) stay with BSDF sampling, so
++// nothing is lost or counted twice. The two are not MIS-weighted: that would need the
++// Jacobian on every such path too, and measured no less noise on a glaze slab.
++STAT_PERCENT("Integrator/Refracted light connections not converged", rneeUnconverged,
++             rneeConnections);
++STAT_PERCENT("Integrator/Refracted light Jacobians from the tangent plane", rneePlanarJ,
++             rneeJacobians);
++
++namespace {
++
++// Where the connection from x to z crosses a plane: x at depth a on one side, z at
++// height b on the other, their feet on the plane D apart, etaRatio = eta on x's side /
++// eta on z's side. Returns the distance from x's foot. Snell's law,
++//   etaRatio t / sqrt(t^2 + a^2) = (D - t) / sqrt((D - t)^2 + b^2),
++// has its left minus right side increasing in t, so Newton steps are kept in a bracket.
++double PlanarCrossing(double a, double b, double D, double etaRatio) {
++    if (D <= 0)
++        return 0;
++    auto g = [&](double t) {
++        return etaRatio * t / std::sqrt(t * t + a * a) -
++               (D - t) / std::sqrt((D - t) * (D - t) + b * b);
++    };
++    auto dg = [&](double t) {
++        return etaRatio * a * a / std::pow(t * t + a * a, 1.5) +
++               b * b / std::pow((D - t) * (D - t) + b * b, 1.5);
++    };
++    double lo = 0, hi = D;
++    double sinZ = D / std::sqrt(D * D + b * b);
++    double sinX = std::min(0.999999, sinZ / etaRatio);
++    double t = Clamp(a * sinX / std::sqrt(1 - sinX * sinX), lo, hi);
++    for (int i = 0; i < 60; ++i) {
++        double gt = g(t);
++        if (gt > 0)
++            hi = t;
++        else
++            lo = t;
++        double d = dg(t);
++        double tn = d > 0 ? t - gt / d : 0.5 * (lo + hi);
++        if (!(tn > lo && tn < hi))
++            tn = 0.5 * (lo + hi);
++        bool done = std::abs(tn - t) <= 1e-12 * (a + D);
++        t = tn;
++        if (done)
++            break;
++    }
++    return t;
++}
++
++// dw_x / dA_z for a refraction at a plane: a, b distances of x and z from it, the
++// cosines to its normal on x's side (X) and z's side (Z), cosL the cosine at the light.
++// With r = a tan X + b tan Z between the feet, dw_x = sin X dX dphi and
++// dA_z = r dr dphi cos Z / cosL. Exact for a plane; a fallback when differencing fails.
++double PlanarRefractionJacobian(double a, double b, double cosX, double cosZ,
++                                double etaRatio, double cosL) {
++    if (cosX <= 0 || cosZ <= 0)
++        return 0;
++    double sinX = std::sqrt(std::max(0.0, 1 - cosX * cosX));
++    double sinZ = std::sqrt(std::max(0.0, 1 - cosZ * cosZ));
++    if (sinX < 1e-7)
++        return cosL / ((a + b * etaRatio) * (a + b * etaRatio));
++    double r = a * sinX / cosX + b * sinZ / cosZ;
++    double drdX = a / (cosX * cosX) + b / (cosZ * cosZ) * etaRatio * cosX / cosZ;
++    return sinX / (r * drdX) * cosL / cosZ;
++}
++
++// The material that decides what happens at a surface, mixes resolved as GetBSDF() does.
++Material ResolvedMaterial(const SurfaceInteraction &si) {
++    Material m = si.material;
++    while (m.Is<MixMaterial>())
++        m = m.Cast<MixMaterial>()->ChooseMaterial(UniversalTextureEvaluator(), si);
++    return m;
++}
++
++bool IsRefractiveNEE(Material m) {
++    const DielectricMaterial *d = m.CastOrNullptr<DielectricMaterial>();
++    return d && d->RefractiveNEE();
++}
++
++}  // namespace
++
++// The first "refractivenee" dielectric along the ray from x in direction d, no farther
++// than reach, passing null surfaces and thin dielectrics; false at anything else.
++bool VolPathIntegrator::RefractiveCrossing(const Interaction &x, Vector3f d, Float reach,
++                                           SampledWavelengths lambda, Sampler sampler,
++                                           ScratchBuffer &scratchBuffer,
++                                           SurfaceInteraction *y, BSDF *yBSDF) const {
++    Point3f target = x.p() + Normalize(d) * reach;
++    Ray r = x.SpawnRayTo(target);
++    while (true) {
++        pstd::optional<ShapeIntersection> si = Intersect(r, 1 - ShadowEpsilon);
++        if (!si)
++            return false;
++        Material m = ResolvedMaterial(si->intr);
++        if (!m || m.Is<ThinDielectricMaterial>()) {
++            r = si->intr.SpawnRayTo(target);
++            continue;
++        }
++        if (!IsRefractiveNEE(m))
++            return false;
++        *y = si->intr;
++        *yBSDF = y->GetBSDF(RayDifferential(r), lambda, camera, scratchBuffer, sampler);
++        return (bool)*yBSDF;
++    }
++}
++
++pstd::optional<VolPathIntegrator::RefractedConnection> VolPathIntegrator::SolveRefraction(
++    const Interaction &x, Vector3f guide, Point3f pz, const SampledWavelengths &lambda,
++    Sampler sampler, ScratchBuffer &scratchBuffer) const {
++    Point3f px = x.p();
++    Float reach = Distance(px, pz);
++    for (int start = LengthSquared(guide) > 0 ? 0 : 1; start < 2; ++start) {
++        // Start from the interface along the guide, else on the straight line to z
++        Vector3f d = start == 0 ? guide : pz - px;
++        SurfaceInteraction y;
++        BSDF yBSDF;
++        if (!RefractiveCrossing(x, d, reach, lambda, sampler, scratchBuffer, &y, &yBSDF))
++            continue;
++        Vector3f n;
++        Float eta, hx, hz;
++        auto planeAtY = [&]() {
++            n = Normalize(yBSDF.LocalToRender(Vector3f(0, 0, 1)));
++            eta = yBSDF.GetBxDF<DielectricBxDF>()->Eta();
++            hx = Dot(px - y.p(), n);
++            hz = Dot(pz - y.p(), n);
++        };
++        planeAtY();
++        // The direction x -> y is built from the solved angle, not from the two nearby
++        // points: x is often a hair under the surface. Each step undershoots by about
++        // (depth / curvature radius)(1 - cos_z / (eta cos_x)): one step on a vase wall,
++        // up to 0.4 per step at a 1.5 mm rim.
++        bool lost = false;
++        for (int iter = 0; iter < 16 && hx * hz < 0; ++iter) {
++            // eta is the index behind the normal over the one in front of it
++            Float etaRatio = hx < 0 ? eta : 1 / eta;
++            Vector3f along = (pz - hz * n) - (px - hx * n);
++            Float D = Length(along);
++            double t = PlanarCrossing(std::abs(hx), std::abs(hz), D, etaRatio);
++            Vector3f d2 = (hx < 0 ? n : -n) * std::abs(hx);
++            if (D > 0)
++                d2 += along * Float(t / D);
++            SurfaceInteraction y2;
++            BSDF y2BSDF;
++            if (!RefractiveCrossing(x, d2, reach, lambda, sampler, scratchBuffer, &y2,
++                                    &y2BSDF)) {
++                lost = true;
++                break;
++            }
++            Float moved = Distance(y2.p(), y.p());
++            y = y2;
++            yBSDF = y2BSDF;
++            d = d2;
++            planeAtY();
++            if (moved <= 1e-5f * std::abs(hx) + 1e-6f * MaxComponentValue(Abs(y.p())))
++                break;
++        }
++        if (lost || hx * hz >= 0)
++            continue;
++        // Snell's law at y with y's own normal
++        Vector3f wx = -Normalize(d), wz = Normalize(pz - y.p()), wt;
++        Float etap;
++        if (!Refract(wx, Normal3f(n), eta, &etap, &wt) || Length(Cross(wt, wz)) > 1e-3f ||
++            Dot(wt, wz) <= 0) {
++            ++rneeUnconverged;
++            continue;
++        }
++        return RefractedConnection{y, -wx, Normal3f(n), eta, etap};
++    }
++    return {};
++}
++
++// dw_x / dA_z of the connection c from x to the light's tangent plane at pz: directions
++// h off c.w are traced through the interface (normals as shaded, so curvature and bumps
++// count) and differenced against c.w's own trace. Each offset is tried on both sides, so
++// a connection near the critical angle steps away from total reflection. The tangent
++// plane at y stands in only if both sides fail (a crossing at an edge of the interface).
++Float VolPathIntegrator::RefractedJacobian(const Interaction &x,
++                                           const RefractedConnection &c, Point3f pz,
++                                           Normal3f nz, const SampledWavelengths &lambda,
++                                           Sampler sampler,
++                                           ScratchBuffer &scratchBuffer) const {
++    ++rneeJacobians;
++    Float reach = Distance(x.p(), pz);
++    auto toLightPlane = [&](Vector3f dir, Point3f *pl) {
++        SurfaceInteraction yh;
++        BSDF yhBSDF;
++        if (!RefractiveCrossing(x, dir, reach, lambda, sampler, scratchBuffer, &yh,
++                                &yhBSDF))
++            return false;
++        Vector3f nh = Normalize(yhBSDF.LocalToRender(Vector3f(0, 0, 1))), wt;
++        Float etap, cosL;
++        if (!Refract(-Normalize(dir), Normal3f(nh), yhBSDF.GetBxDF<DielectricBxDF>()->Eta(),
++                     &etap, &wt) ||
++            (cosL = Dot(wt, Vector3f(nz))) == 0)
++            return false;
++        *pl = yh.p() + wt * (Dot(pz - yh.p(), Vector3f(nz)) / cosL);
++        return true;
++    };
++    Vector3f e[2];
++    CoordinateSystem(c.w, &e[0], &e[1]);
++    constexpr Float h = 3e-4f;
++    Point3f z0, zh;
++    Vector3f dz[2];
++    bool ok = toLightPlane(c.w, &z0);
++    for (int k = 0; k < 2 && ok; ++k) {
++        if (toLightPlane(c.w + h * e[k], &zh))
++            dz[k] = zh - z0;
++        else if (toLightPlane(c.w - h * e[k], &zh))
++            dz[k] = z0 - zh;
++        else
++            ok = false;
++    }
++    Float J = ok ? h * h / Length(Cross(dz[0], dz[1])) : 0;
++    if (J > 0 && !IsInf(J))
++        return J;
++    ++rneePlanarJ;
++    Vector3f n(c.n), wz = Normalize(pz - c.y.p());
++    Float hx = Dot(x.p() - c.y.p(), n);
++    return PlanarRefractionJacobian(std::abs(hx), std::abs(Dot(pz - c.y.p(), n)),
++                                    AbsDot(c.w, n), AbsDot(wz, n),
++                                    hx < 0 ? c.eta : 1 / c.eta, AbsDot(wz, nz));
++}
++
++// Whether SampleLdRefracted() at x (light sampling context ctx, guide) counts the light
++// reached at `light` through the crossing py: it can sample that point and its solver
++// finds that crossing.
++bool VolPathIntegrator::RefractionCovered(const Interaction &x,
++                                          const LightSampleContext &ctx, Vector3f guide,
++                                          Point3f py, const SurfaceInteraction &light,
++                                          const SampledWavelengths &lambda,
++                                          Sampler sampler,
++                                          ScratchBuffer &scratchBuffer) const {
++    Light l(light.areaLight);
++    Vector3f toZ = Normalize(light.p() - ctx.p());
++    if (lightSampler.PMF(ctx, l) == 0 || l.PDF_Li(ctx, toZ, false) == 0 ||
++        !l.L(light.p(), light.n, light.uv, -toZ, lambda))
++        return false;
++    pstd::optional<RefractedConnection> c =
++        SolveRefraction(x, guide, light.p(), lambda, sampler, scratchBuffer);
++    return c && Distance(c->y.p(), py) <=
++                    1e-2f * Distance(x.p(), py) + 1e-5f * MaxComponentValue(Abs(py));
++}
++
++SampledSpectrum VolPathIntegrator::SampleLdRefracted(const Interaction &intr,
++                                                     const BSDF *bsdf, Vector3f guide,
++                                                     SampledWavelengths &lambda,
++                                                     Sampler sampler,
++                                                     ScratchBuffer &scratchBuffer,
++                                                     SampledSpectrum beta,
++                                                     SampledSpectrum r_p,
++                                                     int depth) const {
++    // Sample a point z on an area light; its density over the light's area
++    LightSampleContext ctx =
++        bsdf ? LightSampleContext(intr.AsSurface()) : LightSampleContext(intr);
++    Float u = sampler.Get1D();
++    pstd::optional<SampledLight> sampledLight = lightSampler.Sample(ctx, u);
++    Point2f uLight = sampler.Get2D();
++    if (!sampledLight || sampledLight->light.Type() != LightType::Area)
++        return SampledSpectrum(0.f);
++    Light light = sampledLight->light;
++    pstd::optional<LightLiSample> ls = light.SampleLi(ctx, uLight, lambda, false);
++    if (!ls || ls->pdf == 0)
++        return SampledSpectrum(0.f);
++    Point3f pz = ls->pLight.p();
++    Normal3f nz = ls->pLight.n;
++    Vector3f toZ = pz - ctx.p();
++    Float dist = Length(toZ);
++    Float pA = sampledLight->p * ls->pdf * AbsDot(nz, toZ / dist) / Sqr(dist);
++    if (pA == 0)
++        return SampledSpectrum(0.f);
++
++    ++rneeConnections;
++    pstd::optional<RefractedConnection> c =
++        SolveRefraction(intr, guide, pz, lambda, sampler, scratchBuffer);
++    if (!c)
++        return SampledSpectrum(0.f);
++
++    // Scattering at x toward y
++    Vector3f wi = c->w;
++    SampledSpectrum f_hat;
++    if (bsdf)
++        f_hat = bsdf->f(intr.wo, wi) * AbsDot(wi, intr.AsSurface().shading.n);
++    else
++        f_hat = SampledSpectrum(intr.AsMedium().phase.p(intr.wo, wi));
++    if (!f_hat)
++        return SampledSpectrum(0.f);
++
++    // Light leaving z toward y, through the interface
++    Vector3f wz = Normalize(pz - c->y.p());
++    SampledSpectrum Le = light.L(pz, nz, ls->pLight.uv, -wz, lambda);
++    if (!Le)
++        return SampledSpectrum(0.f);
++    Float T_F = 1 - FrDielectric(Dot(-wi, c->n), c->eta);
++    SampledSpectrum L_in = Le * T_F / Sqr(c->etap);
++
++    // Transmittance x -> y (thin dielectrics included) and y -> z, ratio tracking as in
++    // SampleLd()
++    SampledSpectrum T_ray(1.f), r_l(1.f), r_u(1.f);
++    RNG rng(Hash(intr.p()), Hash(pz));
++    auto track = [&](const Ray &ray, Float tMax) {
++        if (!ray.medium)
++            return;
++        Float u = rng.Uniform<Float>();
++        SampledSpectrum T_maj = SampleT_maj(
++            ray, tMax, u, rng, lambda,
++            [&](Point3f p, MediumProperties mp, SampledSpectrum sigma_maj,
++                SampledSpectrum T_maj) {
++                SampledSpectrum sigma_n = ClampZero(sigma_maj - mp.sigma_a - mp.sigma_s);
++                Float pdf = T_maj[0] * sigma_maj[0];
++                T_ray *= T_maj * sigma_n / pdf;
++                r_l *= T_maj * sigma_maj / pdf;
++                r_u *= T_maj * sigma_n / pdf;
++                SampledSpectrum Tr = T_ray / (r_l + r_u).Average();
++                if (Tr.MaxComponentValue() < 0.05f) {
++                    Float q = 0.75f;
++                    if (rng.Uniform<Float>() < q)
++                        T_ray = SampledSpectrum(0.);
++                    else
++                        T_ray /= 1 - q;
++                }
++                return (bool)T_ray;
++            });
++        T_ray *= T_maj / T_maj[0];
++        r_l *= T_maj / T_maj[0];
++        r_u *= T_maj / T_maj[0];
++    };
++    int nThin = 0;
++    // A zero direction: x lies within y's rounding error, nothing between them (as in
++    // SampleLd(); a ray with no direction intersects at t = NaN)
++    Ray ray = intr.SpawnRayTo(c->y);
++    while (ray.d != Vector3f(0, 0, 0)) {
++        pstd::optional<ShapeIntersection> si = Intersect(ray, 1 - ShadowEpsilon);
++        track(ray, si ? si->tHit : 1 - ShadowEpsilon);
++        if (!T_ray)
++            return SampledSpectrum(0.f);
++        if (!si)
++            break;
++        Material m = ResolvedMaterial(si->intr);
++        if (m) {
++            if (!m.Is<ThinDielectricMaterial>())
++                return SampledSpectrum(0.f);
++            ++nThin;
++            SampledWavelengths lambdaThin = lambda;
++            BSDF thin = si->intr.GetBSDF(RayDifferential(ray), lambdaThin, camera,
++                                         scratchBuffer, sampler);
++            if (lambdaThin.SecondaryTerminated())
++                ErrorExit("Refracted light connections pass thin dielectrics only "
++                          "with a constant \"eta\".");
++            // (SpawnRayTo's direction is not unit length: normalise it for the cosine)
++            T_ray *= thin.GetBxDF<ThinDielectricBxDF>()->Transmittance(
++                thin.RenderToLocal(Normalize(-ray.d)));
++            if (!T_ray)
++                return SampledSpectrum(0.f);
++        }
++        ray = si->intr.SpawnRayTo(c->y);
++    }
++    // BSDF sampling would stop at y if the depth ran out there
++    if (depth + nThin >= maxDepth)
++        return SampledSpectrum(0.f);
++    ray = c->y.SpawnRayTo(ls->pLight);
++    while (ray.d != Vector3f(0, 0, 0)) {
++        pstd::optional<ShapeIntersection> si = Intersect(ray, 1 - ShadowEpsilon);
++        if (si && ResolvedMaterial(si->intr))
++            return SampledSpectrum(0.f);
++        track(ray, si ? si->tHit : 1 - ShadowEpsilon);
++        if (!T_ray)
++            return SampledSpectrum(0.f);
++        if (!si)
++            break;
++        ray = si->intr.SpawnRayTo(ls->pLight);
++    }
++
++    // Like a delta light: BSDF sampling does not count these paths
++    Float J = RefractedJacobian(intr, *c, pz, nz, lambda, sampler, scratchBuffer);
++    if (!(J > 0))
++        return SampledSpectrum(0.f);
++    r_l *= r_p * (pA / J);
++    return beta * f_hat * T_ray * L_in / r_l.Average();
++}
++
+ std::string VolPathIntegrator::ToString() const {
+     return StringPrintf(
+-        "[ VolPathIntegrator maxDepth: %d lightSampler: %s regularize: %s ]", maxDepth,
+-        lightSampler, regularize);
++        "[ VolPathIntegrator maxDepth: %d lightSampler: %s regularize: %s "
++        "refractiveNEE: %s ]",
++        maxDepth, lightSampler, regularize, refractiveNEE);
+ }
+ 
+ std::unique_ptr<VolPathIntegrator> VolPathIntegrator::Create(
+@@ -1401,8 +1847,18 @@ std::unique_ptr<VolPathIntegrator> VolPathIntegrator::Create(
+     int maxDepth = parameters.GetOneInt("maxdepth", 5);
+     std::string lightStrategy = parameters.GetOneString("lightsampler", "bvh");
+     bool regularize = parameters.GetOneBool("regularize", false);
++    // gewu: "refractivenee": sample lights through "refractivenee" dielectrics. The
++    // connection needs light sampling that covers the whole light from any point; a
++    // sphere's covers only the cap facing the shading point.
++    bool refractiveNEE = parameters.GetOneBool("refractivenee", false);
++    if (refractiveNEE)
++        for (const Light &light : lights)
++            if (const DiffuseAreaLight *area = light.CastOrNullptr<DiffuseAreaLight>();
++                area && area->GetShape().Is<Sphere>())
++                ErrorExit(loc, "\"refractivenee\" does not work with sphere area lights.");
+     return std::make_unique<VolPathIntegrator>(maxDepth, camera, sampler, aggregate,
+-                                               lights, lightStrategy, regularize);
++                                               lights, lightStrategy, regularize,
++                                               refractiveNEE);
+ }
+ 
+ // AOIntegrator Method Definitions
+diff --git a/src/pbrt/cpu/integrators.h b/src/pbrt/cpu/integrators.h
+index eb38543..238721e 100644
+--- a/src/pbrt/cpu/integrators.h
++++ b/src/pbrt/cpu/integrators.h
+@@ -264,11 +264,12 @@ class VolPathIntegrator : public RayIntegrator {
+     VolPathIntegrator(int maxDepth, Camera camera, Sampler sampler, Primitive aggregate,
+                       std::vector<Light> lights,
+                       const std::string &lightSampleStrategy = "bvh",
+-                      bool regularize = false)
++                      bool regularize = false, bool refractiveNEE = false)
+         : RayIntegrator(camera, sampler, aggregate, lights),
+           maxDepth(maxDepth),
+           lightSampler(LightSampler::Create(lightSampleStrategy, lights, Allocator())),
+-          regularize(regularize) {}
++          regularize(regularize),
++          refractiveNEE(refractiveNEE) {}
+ 
+     SampledSpectrum Li(RayDifferential ray, SampledWavelengths &lambda, Sampler sampler,
+                        ScratchBuffer &scratchBuffer,
+@@ -285,11 +286,38 @@ class VolPathIntegrator : public RayIntegrator {
+     SampledSpectrum SampleLd(const Interaction &intr, const BSDF *bsdf,
+                              SampledWavelengths &lambda, Sampler sampler,
+                              SampledSpectrum beta, SampledSpectrum inv_w_u) const;
++    // gewu: direct light through one "refractivenee" dielectric (see integrators.cpp)
++    struct RefractedConnection {
++        SurfaceInteraction y;  // where the connection crosses the interface
++        Vector3f w;            // unit direction x -> y
++        Normal3f n;            // shading normal at y
++        Float eta, etap;       // the interface's eta; eta on z's side over x's side
++    };
++    bool RefractiveCrossing(const Interaction &x, Vector3f d, Float reach,
++                            SampledWavelengths lambda, Sampler sampler,
++                            ScratchBuffer &scratchBuffer, SurfaceInteraction *y,
++                            BSDF *yBSDF) const;
++    pstd::optional<RefractedConnection> SolveRefraction(
++        const Interaction &x, Vector3f guide, Point3f pz, const SampledWavelengths &lambda,
++        Sampler sampler, ScratchBuffer &scratchBuffer) const;
++    Float RefractedJacobian(const Interaction &x, const RefractedConnection &c,
++                            Point3f pz, Normal3f nz, const SampledWavelengths &lambda,
++                            Sampler sampler, ScratchBuffer &scratchBuffer) const;
++    bool RefractionCovered(const Interaction &x, const LightSampleContext &ctx,
++                           Vector3f guide, Point3f py, const SurfaceInteraction &light,
++                           const SampledWavelengths &lambda, Sampler sampler,
++                           ScratchBuffer &scratchBuffer) const;
++    SampledSpectrum SampleLdRefracted(const Interaction &intr, const BSDF *bsdf,
++                                      Vector3f guide, SampledWavelengths &lambda,
++                                      Sampler sampler, ScratchBuffer &scratchBuffer,
++                                      SampledSpectrum beta, SampledSpectrum r_p,
++                                      int depth) const;
+ 
+     // VolPathIntegrator Private Members
+     int maxDepth;
+     LightSampler lightSampler;
+     bool regularize;
++    bool refractiveNEE;
+ };
+ 
+ // AOIntegrator Definition
+diff --git a/src/pbrt/film.cpp b/src/pbrt/film.cpp
+index 0f9c06b..f304c57 100644
+--- a/src/pbrt/film.cpp
++++ b/src/pbrt/film.cpp
+@@ -482,7 +482,8 @@ STAT_MEMORY_COUNTER("Memory/Film pixels", filmPixelMemory);
+ 
+ // RGBFilm Method Definitions
+ RGBFilm::RGBFilm(FilmBaseParameters p, const RGBColorSpace *colorSpace,
+-                 Float maxComponentValue, bool writeFP16, Allocator alloc)
++                 Float maxComponentValue, bool writeFP16, Allocator alloc,
++                 bool rawSensor)
+     : FilmBase(p),
+       pixels(p.pixelBounds, alloc),
+       colorSpace(colorSpace),
+@@ -494,6 +495,11 @@ RGBFilm::RGBFilm(FilmBaseParameters p, const RGBColorSpace *colorSpace,
+     filmPixelMemory += pixelBounds.Area() * sizeof(Pixel);
+     // Compute _outputRGBFromSensorRGB_ matrix
+     outputRGBFromSensorRGB = colorSpace->RGBFromXYZ * sensor->XYZFromSensorRGB;
++    // gewu: "rawsensor" writes the camera's own RGB (before the sensor-to-XYZ
++    // matrix), so the camera chain downstream can mosaic, add noise and
++    // demosaic like a real camera does.
++    if (rawSensor)
++        outputRGBFromSensorRGB = SquareMatrix<3>();
+ }
+ 
+ PBRT_CPU_GPU void RGBFilm::AddSplat(Point2f p, SampledSpectrum L, const SampledWavelengths &lambda) {
+@@ -575,13 +581,14 @@ RGBFilm *RGBFilm::Create(const ParameterDictionary &parameters, Float exposureTi
+                          const FileLoc *loc, Allocator alloc) {
+     Float maxComponentValue = parameters.GetOneFloat("maxcomponentvalue", Infinity);
+     bool writeFP16 = parameters.GetOneBool("savefp16", true);
++    bool rawSensor = parameters.GetOneBool("rawsensor", false);
+ 
+     PixelSensor *sensor =
+         PixelSensor::Create(parameters, colorSpace, exposureTime, loc, alloc);
+     FilmBaseParameters filmBaseParameters(parameters, filter, sensor, loc);
+ 
+     return alloc.new_object<RGBFilm>(filmBaseParameters, colorSpace, maxComponentValue,
+-                                     writeFP16, alloc);
++                                     writeFP16, alloc, rawSensor);
+ }
+ 
+ // GBufferFilm Method Definitions
+diff --git a/src/pbrt/film.h b/src/pbrt/film.h
+index 0fd7f05..34cba08 100644
+--- a/src/pbrt/film.h
++++ b/src/pbrt/film.h
+@@ -275,7 +275,7 @@ class RGBFilm : public FilmBase {
+ 
+     RGBFilm(FilmBaseParameters p, const RGBColorSpace *colorSpace,
+             Float maxComponentValue = Infinity, bool writeFP16 = true,
+-            Allocator alloc = {});
++            Allocator alloc = {}, bool rawSensor = false);
+ 
+     static RGBFilm *Create(const ParameterDictionary &parameters, Float exposureTime,
+                            Filter filter, const RGBColorSpace *colorSpace,
+diff --git a/src/pbrt/lights.h b/src/pbrt/lights.h
+index 76caca7..91ff6ad 100644
+--- a/src/pbrt/lights.h
++++ b/src/pbrt/lights.h
+@@ -467,6 +467,10 @@ class DiffuseAreaLight : public LightBase {
+     PBRT_CPU_GPU
+     Float PDF_Li(LightSampleContext ctx, Vector3f wi, bool allowIncompletePDF) const;
+ 
++    // gewu: the refractive NEE checks which shapes it can sample completely
++    PBRT_CPU_GPU
++    Shape GetShape() const { return shape; }
++
+   private:
+     // DiffuseAreaLight Private Members
+     Shape shape;
+diff --git a/src/pbrt/materials.cpp b/src/pbrt/materials.cpp
+index 450b982..cfded2e 100644
+--- a/src/pbrt/materials.cpp
++++ b/src/pbrt/materials.cpp
+@@ -43,9 +43,9 @@ std::string NormalBumpEvalContext::ToString() const {
+ std::string DielectricMaterial::ToString() const {
+     return StringPrintf(
+         "[ DielectricMaterial displacement: %s normalMap: %s uRoughness: %s "
+-        "vRoughness: %s eta: %s remapRoughness: %s ]",
++        "vRoughness: %s eta: %s remapRoughness: %s refractiveNEE: %s ]",
+         displacement, normalMap ? normalMap->ToString() : std::string("(nullptr)"),
+-        uRoughness, vRoughness, eta, remapRoughness);
++        uRoughness, vRoughness, eta, remapRoughness, refractiveNEE);
+ }
+ 
+ DielectricMaterial *DielectricMaterial::Create(
+@@ -68,9 +68,15 @@ DielectricMaterial *DielectricMaterial::Create(
+ 
+     FloatTexture displacement = parameters.GetFloatTextureOrNull("displacement", alloc);
+     bool remapRoughness = parameters.GetOneBool("remaproughness", true);
++    // gewu: "refractivenee": the roughness only blurs reflection, transmission stays
++    // smooth, and the volpath integrator samples lights through this interface. The
++    // connection is solved for one index of refraction, so eta must not vary.
++    bool refractiveNEE = parameters.GetOneBool("refractivenee", false);
++    if (refractiveNEE && !eta.Is<ConstantSpectrum>())
++        ErrorExit(loc, "\"refractivenee\" needs a constant \"eta\".");
+ 
+     return alloc.new_object<DielectricMaterial>(uRoughness, vRoughness, eta, displacement,
+-                                                normalMap, remapRoughness);
++                                                normalMap, remapRoughness, refractiveNEE);
+ }
+ 
+ // ThinDielectricMaterial Method Definitions
+@@ -92,8 +98,12 @@ ThinDielectricMaterial *ThinDielectricMaterial::Create(
+         eta = alloc.new_object<ConstantSpectrum>(1.5f);
+ 
+     FloatTexture displacement = parameters.GetFloatTextureOrNull("displacement", alloc);
++    // gewu: the slab's internal transmittance for one crossing at normal incidence
++    SpectrumTexture transmittance = parameters.GetSpectrumTextureOrNull(
++        "transmittance", SpectrumType::Albedo, alloc);
+ 
+-    return alloc.new_object<ThinDielectricMaterial>(eta, displacement, normalMap);
++    return alloc.new_object<ThinDielectricMaterial>(eta, displacement, normalMap,
++                                                    transmittance);
+ }
+ 
+ // MixMaterial Method Definitions
+@@ -628,6 +638,58 @@ std::string Material::ToString() const {
+     return DispatchCPU(toStr);
+ }
+ 
++// gewu: ThinFilmMaterial Method Definitions
++std::string ThinFilmMaterial::ToString() const {
++    return StringPrintf("[ ThinFilmMaterial displacement: %s normalMap: %s filmEta: %s "
++                        "filmK: %s eta: %s k: %s reflectance: %s thickness: %s "
++                        "uRoughness: %s vRoughness: %s remapRoughness: %s ]",
++                        displacement,
++                        normalMap ? normalMap->ToString() : std::string("(nullptr)"),
++                        filmEta, filmK, eta, k, reflectance, thickness, uRoughness,
++                        vRoughness, remapRoughness);
++}
++
++ThinFilmMaterial *ThinFilmMaterial::Create(const TextureParameterDictionary &parameters,
++                                           Image *normalMap, const FileLoc *loc,
++                                           Allocator alloc) {
++    // no defaults for the optics: a missing index is an error, not a guess
++    auto need = [&](const char *name) {
++        SpectrumTexture t =
++            parameters.GetSpectrumTextureOrNull(name, SpectrumType::Unbounded, alloc);
++        if (!t)
++            ErrorExit(loc, "thinfilm: \"%s\" must be given.", name);
++        return t;
++    };
++    SpectrumTexture filmEta = need("filmeta"), eta = need("eta");
++    auto zeroOr = [&](const char *name) {
++        SpectrumTexture t =
++            parameters.GetSpectrumTextureOrNull(name, SpectrumType::Unbounded, alloc);
++        return t ? t : alloc.new_object<SpectrumConstantTexture>(
++                           alloc.new_object<ConstantSpectrum>(0.f));
++    };
++    SpectrumTexture filmK = zeroOr("filmk"), k = zeroOr("k");
++    FloatTexture thickness = parameters.GetFloatTextureOrNull("thickness", alloc);
++    if (!thickness)
++        ErrorExit(loc, "thinfilm: \"thickness\" (nm) must be given.");
++    SpectrumTexture reflectance =
++        parameters.GetSpectrumTextureOrNull("reflectance", SpectrumType::Albedo, alloc);
++    if (!reflectance)
++        reflectance = alloc.new_object<SpectrumConstantTexture>(
++            alloc.new_object<ConstantSpectrum>(0.f));
++
++    FloatTexture uRoughness = parameters.GetFloatTextureOrNull("uroughness", alloc);
++    FloatTexture vRoughness = parameters.GetFloatTextureOrNull("vroughness", alloc);
++    if (!uRoughness)
++        uRoughness = parameters.GetFloatTexture("roughness", 0.f, alloc);
++    if (!vRoughness)
++        vRoughness = parameters.GetFloatTexture("roughness", 0.f, alloc);
++    FloatTexture displacement = parameters.GetFloatTextureOrNull("displacement", alloc);
++    bool remapRoughness = parameters.GetOneBool("remaproughness", true);
++    return alloc.new_object<ThinFilmMaterial>(filmEta, filmK, eta, k, thickness,
++                                              reflectance, uRoughness, vRoughness,
++                                              displacement, normalMap, remapRoughness);
++}
++
+ STAT_COUNTER("Scene/Materials", nMaterialsCreated);
+ 
+ Material Material::Create(const std::string &name,
+@@ -657,6 +719,8 @@ Material Material::Create(const std::string &name,
+         material = HairMaterial::Create(parameters, loc, alloc);
+     else if (name == "conductor")
+         material = ConductorMaterial::Create(parameters, normalMap, loc, alloc);
++    else if (name == "thinfilm")
++        material = ThinFilmMaterial::Create(parameters, normalMap, loc, alloc);
+     else if (name == "measured")
+         material = MeasuredMaterial::Create(parameters, normalMap, loc, alloc);
+     else if (name == "subsurface")
+diff --git a/src/pbrt/materials.h b/src/pbrt/materials.h
+index 5a86cf1..efe3533 100644
+--- a/src/pbrt/materials.h
++++ b/src/pbrt/materials.h
+@@ -146,13 +146,15 @@ class DielectricMaterial {
+ 
+     // DielectricMaterial Public Methods
+     DielectricMaterial(FloatTexture uRoughness, FloatTexture vRoughness, Spectrum eta,
+-                       FloatTexture displacement, Image *normalMap, bool remapRoughness)
++                       FloatTexture displacement, Image *normalMap, bool remapRoughness,
++                       bool refractiveNEE = false)
+         : normalMap(normalMap),
+           displacement(displacement),
+           uRoughness(uRoughness),
+           vRoughness(vRoughness),
+-          eta(eta),
+-          remapRoughness(remapRoughness) {}
++          remapRoughness(remapRoughness),
++          refractiveNEE(refractiveNEE),
++          eta(eta) {}
+ 
+     static const char *Name() { return "DielectricMaterial"; }
+ 
+@@ -165,6 +167,8 @@ class DielectricMaterial {
+     FloatTexture GetDisplacement() const { return displacement; }
+     PBRT_CPU_GPU
+     const Image *GetNormalMap() const { return normalMap; }
++    PBRT_CPU_GPU
++    bool RefractiveNEE() const { return refractiveNEE; }
+ 
+     static DielectricMaterial *Create(const TextureParameterDictionary &parameters,
+                                       Image *normalMap, const FileLoc *loc,
+@@ -199,7 +203,7 @@ class DielectricMaterial {
+         TrowbridgeReitzDistribution distrib(urough, vrough);
+ 
+         // Return BSDF for dielectric material
+-        return DielectricBxDF(sampledEta, distrib);
++        return DielectricBxDF(sampledEta, distrib, refractiveNEE);
+     }
+ 
+   private:
+@@ -208,6 +212,8 @@ class DielectricMaterial {
+     FloatTexture displacement;
+     FloatTexture uRoughness, vRoughness;
+     bool remapRoughness;
++    // gewu: smooth transmission; the volpath integrator connects lights through it
++    bool refractiveNEE;
+     Spectrum eta;
+ };
+ 
+@@ -219,7 +225,7 @@ class ThinDielectricMaterial {
+     // ThinDielectricMaterial Public Methods
+     template <typename TextureEvaluator>
+     PBRT_CPU_GPU bool CanEvaluateTextures(TextureEvaluator texEval) const {
+-        return true;
++        return texEval.CanEvaluate({}, {transmittance});  // gewu
+     }
+ 
+     template <typename TextureEvaluator>
+@@ -236,11 +242,18 @@ class ThinDielectricMaterial {
+             sampledEta = 1;
+ 
+         // Return BxDF for _ThinDielectricMaterial_
++        if (transmittance)  // gewu: an absorbing slab (or, with eta 1, a film)
++            return ThinDielectricBxDF(sampledEta,
++                                      ClampZero(texEval(transmittance, ctx, lambda)));
+         return ThinDielectricBxDF(sampledEta);
+     }
+ 
+-    ThinDielectricMaterial(Spectrum eta, FloatTexture displacement, Image *normalMap)
+-        : displacement(displacement), normalMap(normalMap), eta(eta) {}
++    ThinDielectricMaterial(Spectrum eta, FloatTexture displacement, Image *normalMap,
++                           SpectrumTexture transmittance = nullptr)
++        : displacement(displacement),
++          normalMap(normalMap),
++          eta(eta),
++          transmittance(transmittance) {}
+ 
+     static const char *Name() { return "ThinDielectricMaterial"; }
+ 
+@@ -266,6 +279,7 @@ class ThinDielectricMaterial {
+     FloatTexture displacement;
+     Image *normalMap;
+     Spectrum eta;
++    SpectrumTexture transmittance;  // gewu
+ };
+ 
+ // MixMaterial Definition
+@@ -550,6 +564,78 @@ class ConductorMaterial {
+     bool remapRoughness;
+ };
+ 
++// gewu: ThinFilmMaterial Definition (ThinFilmBxDF: a coherent thin film on an absorbing substrate)
++class ThinFilmMaterial {
++  public:
++    using BxDF = ThinFilmBxDF;
++    using BSSRDF = void;
++
++    template <typename TextureEvaluator>
++    PBRT_CPU_GPU bool CanEvaluateTextures(TextureEvaluator texEval) const {
++        return texEval.CanEvaluate({uRoughness, vRoughness, thickness},
++                                   {filmEta, filmK, eta, k, reflectance});
++    }
++
++    template <typename TextureEvaluator>
++    PBRT_CPU_GPU ThinFilmBxDF GetBxDF(TextureEvaluator texEval, MaterialEvalContext ctx,
++                                      SampledWavelengths &lambda) const {
++        Float uRough = texEval(uRoughness, ctx), vRough = texEval(vRoughness, ctx);
++        if (remapRoughness) {
++            uRough = TrowbridgeReitzDistribution::RoughnessToAlpha(uRough);
++            vRough = TrowbridgeReitzDistribution::RoughnessToAlpha(vRough);
++        }
++        SampledSpectrum lam;
++        for (int i = 0; i < NSpectrumSamples; ++i)
++            lam[i] = lambda[i];
++        Float d = std::max<Float>(0, texEval(thickness, ctx));
++        SampledSpectrum rho = Clamp(texEval(reflectance, ctx, lambda), 0, 1);
++        return ThinFilmBxDF(TrowbridgeReitzDistribution(uRough, vRough), lam, d,
++                            texEval(filmEta, ctx, lambda), texEval(filmK, ctx, lambda),
++                            texEval(eta, ctx, lambda), texEval(k, ctx, lambda), rho);
++    }
++
++    ThinFilmMaterial(SpectrumTexture filmEta, SpectrumTexture filmK, SpectrumTexture eta,
++                     SpectrumTexture k, FloatTexture thickness, SpectrumTexture reflectance,
++                     FloatTexture uRoughness, FloatTexture vRoughness,
++                     FloatTexture displacement, Image *normalMap, bool remapRoughness)
++        : displacement(displacement),
++          normalMap(normalMap),
++          filmEta(filmEta),
++          filmK(filmK),
++          eta(eta),
++          k(k),
++          reflectance(reflectance),
++          thickness(thickness),
++          uRoughness(uRoughness),
++          vRoughness(vRoughness),
++          remapRoughness(remapRoughness) {}
++
++    static const char *Name() { return "ThinFilmMaterial"; }
++
++    PBRT_CPU_GPU
++    FloatTexture GetDisplacement() const { return displacement; }
++    PBRT_CPU_GPU
++    const Image *GetNormalMap() const { return normalMap; }
++
++    static ThinFilmMaterial *Create(const TextureParameterDictionary &parameters,
++                                    Image *normalMap, const FileLoc *loc, Allocator alloc);
++
++    template <typename TextureEvaluator>
++    PBRT_CPU_GPU void GetBSSRDF(TextureEvaluator texEval, MaterialEvalContext ctx,
++                                SampledWavelengths &lambda) const {}
++
++    PBRT_CPU_GPU static constexpr bool HasSubsurfaceScattering() { return false; }
++
++    std::string ToString() const;
++
++  private:
++    FloatTexture displacement;
++    Image *normalMap;
++    SpectrumTexture filmEta, filmK, eta, k, reflectance;
++    FloatTexture thickness, uRoughness, vRoughness;
++    bool remapRoughness;
++};
++
+ // CoatedDiffuseMaterial Definition
+ class CoatedDiffuseMaterial {
+   public:
+diff --git a/src/pbrt/textures.cpp b/src/pbrt/textures.cpp
+index 0c96e88..e8c9230 100644
+--- a/src/pbrt/textures.cpp
++++ b/src/pbrt/textures.cpp
+@@ -19,6 +19,7 @@
+ #include <pbrt/util/stats.h>
+ 
+ #include <algorithm>
++#include <map>
+ #include <mutex>
+ 
+ #include <Ptexture.h>
+@@ -880,6 +881,173 @@ std::string GPUSpectrumPtexTexture::ToString() const {
+                         spectrumType, faceValues);
+ }
+ 
++// gewu: FamilyMapSpectrumTexture Method Definitions
++namespace {
++
++// The arrays of an .npz written by numpy's np.savez (a zip of .npy files, stored, not
++// compressed; numpy writes zip64 sizes in the local headers). Float64 or float32,
++// little-endian, C order.
++std::map<std::string, std::pair<std::vector<int>, std::vector<double>>> ReadNpz(
++    const std::string &filename, const FileLoc *loc) {
++    std::string b = ReadFileContents(filename);
++    auto u16 = [&](size_t o) {
++        return uint32_t(uint8_t(b[o])) | (uint32_t(uint8_t(b[o + 1])) << 8);
++    };
++    auto u32 = [&](size_t o) { return u16(o) | (u16(o + 2) << 16); };
++    auto u64 = [&](size_t o) { return uint64_t(u32(o)) | (uint64_t(u32(o + 4)) << 32); };
++    std::map<std::string, std::pair<std::vector<int>, std::vector<double>>> out;
++    size_t o = 0;
++    while (o + 30 <= b.size() && u32(o) == 0x04034b50) {
++        uint32_t flags = u16(o + 6), method = u16(o + 8);
++        uint64_t csize = u32(o + 18), usize = u32(o + 22);
++        uint32_t nl = u16(o + 26), el = u16(o + 28);
++        std::string name = b.substr(o + 30, nl);
++        size_t e = o + 30 + nl, eEnd = e + el;
++        while (e + 4 <= eEnd) {
++            uint32_t id = u16(e), sz = u16(e + 2);
++            if (id == 1) {
++                size_t f = e + 4;
++                if (usize == 0xffffffff) {
++                    usize = u64(f);
++                    f += 8;
++                }
++                if (csize == 0xffffffff) {
++                    csize = u64(f);
++                    f += 8;
++                }
++            }
++            e += 4 + sz;
++        }
++        if (method != 0 || (flags & 8) || csize != usize)
++            ErrorExit(loc, "%s: %s is compressed or streamed; write the family with np.savez",
++                      filename, name);
++        size_t d = o + 30 + nl + el;
++        if (d + csize > b.size())
++            ErrorExit(loc, "%s: truncated", filename);
++        std::string npy = b.substr(d, csize);
++        if (npy.size() < 10 || npy.compare(0, 6, "\x93NUMPY") != 0)
++            ErrorExit(loc, "%s: %s is not an .npy array", filename, name);
++        int major = uint8_t(npy[6]);
++        size_t hl = major == 1 ? size_t(uint8_t(npy[8]) | (uint8_t(npy[9]) << 8))
++                               : size_t(uint8_t(npy[8]) | (uint8_t(npy[9]) << 8) |
++                                        (uint8_t(npy[10]) << 16) | (uint8_t(npy[11]) << 24));
++        size_t h0 = major == 1 ? 10 : 12;
++        std::string header = npy.substr(h0, hl);
++        bool f8 = header.find("'<f8'") != std::string::npos;
++        bool f4 = header.find("'<f4'") != std::string::npos;
++        if ((!f8 && !f4) || header.find("'fortran_order': False") == std::string::npos)
++            ErrorExit(loc, "%s: %s must be little-endian float64/float32 in C order (%s)",
++                      filename, name, header);
++        size_t sp = header.find("'shape': (");
++        if (sp == std::string::npos)
++            ErrorExit(loc, "%s: %s has no shape", filename, name);
++        std::vector<int> shape;
++        size_t q = sp + 10;
++        while (q < header.size() && header[q] != ')') {
++            if (isdigit(header[q])) {
++                size_t r = q;
++                while (r < header.size() && isdigit(header[r]))
++                    ++r;
++                shape.push_back(std::stoi(header.substr(q, r - q)));
++                q = r;
++            } else
++                ++q;
++        }
++        size_t count = 1;
++        for (int v : shape)
++            count *= v;
++        size_t data = h0 + hl, width = f8 ? 8 : 4;
++        if (data + count * width > npy.size())
++            ErrorExit(loc, "%s: %s is truncated", filename, name);
++        std::vector<double> v(count);
++        for (size_t j = 0; j < count; ++j) {
++            if (f8) {
++                double x;
++                memcpy(&x, npy.data() + data + 8 * j, 8);
++                v[j] = x;
++            } else {
++                float x;
++                memcpy(&x, npy.data() + data + 4 * j, 4);
++                v[j] = x;
++            }
++        }
++        if (name.size() > 4 && name.compare(name.size() - 4, 4, ".npy") == 0)
++            name = name.substr(0, name.size() - 4);
++        out[name] = {shape, v};
++        o = d + csize;
++    }
++    return out;
++}
++
++}  // namespace
++
++std::string FamilyMapSpectrumTexture::ToString() const {
++    return StringPrintf("[ FamilyMapSpectrumTexture map: %s members: %d samples: %d ]",
++                        map->ToString(), c.size(), lambda.size());
++}
++
++FamilyMapSpectrumTexture *FamilyMapSpectrumTexture::Create(
++    const Transform &renderFromTexture, const TextureParameterDictionary &parameters,
++    SpectrumType spectrumType, const FileLoc *loc, Allocator alloc) {
++    std::string family = ResolveFilename(parameters.GetOneString("family", ""));
++    std::string mapName = ResolveFilename(parameters.GetOneString("map", ""));
++    if (family.empty() || mapName.empty())
++        ErrorExit(loc, "familymap needs \"string family\" and \"string map\"");
++    if (!parameters.GetFloatArray("scale").empty() ||
++        !parameters.GetBoolArray("invert").empty())
++        ErrorExit(loc, "familymap reads c as the map's value; \"scale\" and \"invert\" "
++                       "are not handled");
++    auto arrays = ReadNpz(family, loc);
++    for (const char *k : {"lambda_nm", "c", "R"})
++        if (arrays.find(k) == arrays.end())
++            ErrorExit(loc, "%s: no array \"%s\"", family, k);
++    const auto &L = arrays["lambda_nm"], &C = arrays["c"], &Rr = arrays["R"];
++    size_t K = L.second.size(), N = C.second.size();
++    if (Rr.first.size() != 2 || Rr.first[0] != (int)N || Rr.first[1] != (int)K || N < 2 ||
++        K < 2)
++        ErrorExit(loc, "%s: need c (N>=2), lambda_nm (K>=2) and R of shape (N, K)", family);
++    for (size_t i = 1; i < N; ++i)
++        if (!(C.second[i] > C.second[i - 1]))
++            ErrorExit(loc, "%s: c must ascend strictly", family);
++    for (size_t i = 1; i < K; ++i)
++        if (!(L.second[i] > L.second[i - 1]))
++            ErrorExit(loc, "%s: lambda_nm must ascend strictly", family);
++    for (double r : Rr.second)
++        if (r < 0 || r > 1)
++            ErrorExit(loc, "%s: R must lie in [0, 1]", family);
++
++    // The map: a float image texture as "imagemap" reads it, with scale 1 and no inversion
++    TextureMapping2D map =
++        TextureMapping2D::Create(parameters, renderFromTexture, loc, alloc);
++    MIPMapFilterOptions filterOptions;
++    filterOptions.maxAnisotropy = parameters.GetOneFloat("maxanisotropy", 8.f);
++    std::string filter = parameters.GetOneString("filter", "bilinear");
++    pstd::optional<FilterFunction> ff = ParseFilter(filter);
++    if (!ff)
++        ErrorExit(loc, "%s: filter function unknown", filter);
++    filterOptions.filter = *ff;
++    std::string wrapString = parameters.GetOneString("wrap", "repeat");
++    pstd::optional<WrapMode> wrapMode = ParseWrapMode(wrapString.c_str());
++    if (!wrapMode)
++        ErrorExit(loc, "%s: wrap mode unknown", wrapString);
++    const char *defaultEncoding = HasExtension(mapName, "png") ? "sRGB" : "linear";
++    ColorEncoding encoding =
++        ColorEncoding::Get(parameters.GetOneString("encoding", defaultEncoding), alloc);
++    FloatImageTexture *cmap = alloc.new_object<FloatImageTexture>(
++        map, mapName, filterOptions, *wrapMode, 1.f, false, encoding, alloc);
++
++    pstd::vector<Float> lambda(alloc), c(alloc), R(alloc);
++    for (double v : L.second)
++        lambda.push_back(v);
++    for (double v : C.second)
++        c.push_back(v);
++    for (double v : Rr.second)
++        R.push_back(v);
++    return alloc.new_object<FamilyMapSpectrumTexture>(cmap, std::move(lambda), std::move(c),
++                                                      std::move(R));
++}
++
++
+ // ScaledTexture Method Definitions
+ std::string FloatScaledTexture::ToString() const {
+     return StringPrintf("[ FloatScaledTexture tex: %s scale: %s ]", tex, scale);
+@@ -1534,7 +1702,10 @@ SpectrumTexture SpectrumTexture::Create(const std::string &name,
+         else
+             tex = SpectrumPtexTexture::Create(renderFromTexture, parameters, spectrumType,
+                                               loc, alloc);
+-    } else
++    } else if (name == "familymap")  // gewu
++        tex = FamilyMapSpectrumTexture::Create(renderFromTexture, parameters, spectrumType,
++                                               loc, alloc);
++    else
+         ErrorExit(loc, "%s: spectrum texture type unknown.", name);
+ 
+     if (!tex)
+diff --git a/src/pbrt/textures.h b/src/pbrt/textures.h
+index 4a074e9..25936d9 100644
+--- a/src/pbrt/textures.h
++++ b/src/pbrt/textures.h
+@@ -1049,6 +1049,57 @@ class FloatScaledTexture {
+     FloatTexture tex, scale;
+ };
+ 
++// gewu: FamilyMapSpectrumTexture Definition
++// A spectrum that runs through a one-parameter family R(lambda; c), c read from a float image
++// map (docs/textures.md "familymap"): the members are piecewise linear in lambda (zero outside
++// their samples, as PiecewiseLinearSpectrum), the family is linear in c between members and
++// clamped to the first and last member. The family is an .npz file (numpy's np.savez, not
++// compressed) with lambda_nm (K,), c (N,) strictly ascending, R (N, K).
++class FamilyMapSpectrumTexture {
++  public:
++    FamilyMapSpectrumTexture(FloatImageTexture *map, pstd::vector<Float> lambda,
++                             pstd::vector<Float> c, pstd::vector<Float> R)
++        : map(map), lambda(std::move(lambda)), c(std::move(c)), R(std::move(R)) {}
++
++    PBRT_CPU_GPU
++    SampledSpectrum Evaluate(TextureEvalContext ctx, SampledWavelengths lambdas) const {
++#ifdef PBRT_IS_GPU_CODE
++        assert(!"Should not be called in GPU code");
++        return SampledSpectrum(0.f);
++#else
++        Float cv = Clamp(map->Evaluate(ctx), c.front(), c.back());
++        int n = c.size(), k = lambda.size();
++        int i = FindInterval(n, [&](int j) { return c[j] <= cv; });
++        Float t = (cv - c[i]) / (c[i + 1] - c[i]);
++        SampledSpectrum s;
++        for (int w = 0; w < NSpectrumSamples; ++w) {
++            Float l = lambdas[w];
++            if (l < lambda.front() || l > lambda.back()) {
++                s[w] = 0;
++                continue;
++            }
++            int o = FindInterval(k, [&](int j) { return lambda[j] <= l; });
++            Float u = (l - lambda[o]) / (lambda[o + 1] - lambda[o]);
++            Float r0 = Lerp(u, R[i * k + o], R[i * k + o + 1]);
++            Float r1 = Lerp(u, R[(i + 1) * k + o], R[(i + 1) * k + o + 1]);
++            s[w] = Lerp(t, r0, r1);
++        }
++        return s;
++#endif
++    }
++
++    static FamilyMapSpectrumTexture *Create(const Transform &renderFromTexture,
++                                            const TextureParameterDictionary &parameters,
++                                            SpectrumType spectrumType, const FileLoc *loc,
++                                            Allocator alloc);
++
++    std::string ToString() const;
++
++  private:
++    FloatImageTexture *map;
++    pstd::vector<Float> lambda, c, R;
++};
++
+ // SpectrumScaledTexture Definition
+ class SpectrumScaledTexture {
+   public:

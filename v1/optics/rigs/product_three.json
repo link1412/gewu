@@ -1,0 +1,142 @@
+{
+ "name": "product_three",
+ "title": "产品三灯",
+ "what": "Three lamps for a glossy object framed close (the film's arc): the key a large softbox above and behind, whose reflection lies over the visible top of the object as a soft gradient; a low strip behind, whose reflection runs along the arc; a soft fill from the front left for the body's colour; a wash on the ground behind.",
+ "look_target": {
+  "film": "ref/reference-film.mp4",
+  "note": "a reference film: a look target for the light only, never material truth",
+  "shots": [
+   {
+    "shot": 17,
+    "frame": 240,
+    "what": "cloisonne on purple: soft key from the upper left, bright rim on the far edge, background brighter behind"
+   },
+   {
+    "shot": 20,
+    "frame": 271,
+    "what": "jade on pink: soft key, specular sheen along the edge, graded background"
+   },
+   {
+    "shot": 35,
+    "frame": 386,
+    "what": "enamel and shell on yellow: soft key, many small highlights, even background"
+   }
+  ]
+ },
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "key",
+   "group": "key",
+   "shape": "rect",
+   "size": {
+    "R": [
+     6,
+     4
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 180,
+    "elevation_deg": 50,
+    "distance": {
+     "R": 3
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 2000,
+   "why": "our choice: a large softbox close (6 R x 4 R at 3 R), above and behind. S3 review: the highlights were small and hard, the look targets have large soft light with gradients; framed as the film (the camera 20 degrees down, the top of the object filling the frame) a glossy surface mirrors only what is above and behind it (20 to 70 degrees up), so the soft source has to be there"
+  },
+  {
+   "name": "rim",
+   "group": "rim",
+   "shape": "strip",
+   "size": {
+    "R": [
+     10,
+     0.4
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 180,
+    "elevation_deg": 12,
+    "distance": {
+     "R": 5
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 2000,
+   "why": "our choice: a long low strip behind; near the arc the surface turns to grazing and mirrors it, a bright line along the edge"
+  },
+  {
+   "name": "fill",
+   "group": "fill",
+   "shape": "rect",
+   "size": {
+    "R": [
+     5,
+     4
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -40,
+    "elevation_deg": 35,
+    "distance": {
+     "R": 3
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "our choice: the first version's key, made large and close (S3 review); from the front it lights the body, not the gloss"
+  },
+  {
+   "name": "bg",
+   "group": "bg",
+   "shape": "disk",
+   "size": {
+    "R": 1.5
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 125,
+    "elevation_deg": 30,
+    "distance": {
+     "R": 4
+    }
+   },
+   "aim": {
+    "anchor": "ground_seen"
+   },
+   "lux": 600,
+   "why": "washes the ground the camera sees behind the arc, from behind right, out of frame (from straight behind and above, the key's black body shadowed it: S3, 0.1% of the light)"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "grey_18",
+  "distance": {
+   "R": 7
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 18
+  },
+  "why": "the default ground; a recipe sets the colour for its object (backdrop.material)"
+ }
+}

@@ -1,0 +1,127 @@
+goldleaf — 真实摄影外观参考
+用途：仅作本地渲染外观参照，不再发布。
+核对日期：2026-11-05。像素为实际下载文件解码结果；源文件像素另列。
+图片未在本地裁切、调色、去水印或放大。官方标准尺寸图片/图库 JPEG 可能经过来源服务器缩放、压缩。
+作者未署名时如实注明；发布单位或工艺作者不冒充摄影师。
+
+[01] goldleaf_01.jpg
+文件名：goldleaf_01.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Pure_Gold_Foil_(Talai_Warq_or_Sonay_Ka_Warq).JPG
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Pure_Gold_Foil_%28Talai_Warq_or_Sonay_Ka_Warq%29.JPG/1920px-Pure_Gold_Foil_%28Talai_Warq_or_Sonay_Ka_Warq%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC0
+许可链接：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者：Miansari66
+像素：1920 × 1440 px
+文件：JPEG，668,762 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：2816 × 2112 px
+来源标题：Pure Gold Foil (Talai Warq or Sonay Ka Warq).JPG
+来源署名/机构：Own work
+参照内容与限制：纯金箔实物近摄，撕裂边、皱褶和高光；不是金色塑料。
+SHA-256：4cbc32ef97c47796b0fe01d3c9ad52dc63d70c7a268aaed03e8f6c776a4ebe4d
+
+[02] goldleaf_02.jpg
+文件名：goldleaf_02.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Blattgold_an_der_Kyaikto_Pagode.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Blattgold_an_der_Kyaikto_Pagode.jpg/960px-Blattgold_an_der_Kyaikto_Pagode.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Stefan Fussan
+像素：960 × 627 px
+文件：JPEG，269,840 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1200 × 784 px
+来源标题：Blattgold an der Kyaikto Pagode.jpg
+来源署名/机构：Own work - This image is a scanned slide My images are also available on MyPortfolio
+参照内容与限制：佛塔表面已贴附金箔的微距纹理；显示重叠、褶皱和反射，不是悬浮松散箔片。
+SHA-256：f7f7eb0be8c355cfb49115a45293a7f8ad18f94161f14b1ee2758da80b2e2dbd
+
+[03] goldleaf_03.jpg
+文件名：goldleaf_03.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Kinpaku.JPG
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Kinpaku.JPG/960px-Kinpaku.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 2.1 jp
+许可链接：https://creativecommons.org/licenses/by-sa/2.1/jp/deed.en
+作者：Yoshikazu0323
+像素：960 × 936 px
+文件：JPEG，234,778 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1158 × 1129 px
+来源标题：Kinpaku.JPG
+来源署名/机构：Own work
+参照内容与限制：金箔片正面实拍，纸上褶皱与细小高光；公开原图较小。
+SHA-256：7c77aaa0446780c06de6255e4ed8353fa0d93d7c6927f5bd78566f394b10016f
+
+[04] goldleaf_04.jpg
+文件名：goldleaf_04.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Blattgold,_2010_(01).jpg
+图片下载地址：https://upload.wikimedia.org/wikipedia/commons/e/eb/Blattgold%2C_2010_%2801%29.jpg
+许可：CC BY-SA 2.0
+许可链接：https://creativecommons.org/licenses/by-sa/2.0
+作者：brandbook.de
+像素：3894 × 2190 px
+文件：JPEG，3,571,389 bytes
+下载版本：Wikimedia 原始上传文件
+来源标示原始像素：3894 × 2190 px
+来源标题：Blattgold, 2010 (01).jpg
+来源署名/机构：Blattgold 0 auf flickr
+参照内容与限制：金箔册置于裁切皮垫上的实拍：叶片皱褶、边缘及工具；金箔只占画面一部分。
+SHA-256：5747d4151890a764dc69ed651e4da5b55b302544f6fe4f51aa45d34ba89ca7e9
+
+[05] goldleaf_05.jpg
+文件名：goldleaf_05.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Gold_Leaf_Close_Up.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Gold_Leaf_Close_Up.jpg/1920px-Gold_Leaf_Close_Up.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY 4.0
+许可链接：https://creativecommons.org/licenses/by/4.0
+作者：Tim Denholm
+像素：1920 × 1440 px
+文件：JPEG，485,221 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3200 × 2400 px
+来源标题：Gold Leaf Close Up.jpg
+来源署名/机构：Own work
+参照内容与限制：纯金箔焦点堆栈微距摄影：明显皱褶、裂口、薄边与强反光。非渲染。
+SHA-256：5dffe6e130ad6e54f15f328788c39bdc4e7fbab0746ef5088081c440953320fb
+
+[06] goldleaf_06.jpg
+文件名：goldleaf_06.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Goldfolie_Durchlicht.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Goldfolie_Durchlicht.jpg/3840px-Goldfolie_Durchlicht.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Heiko4
+像素：3840 × 2560 px
+文件：JPEG，2,441,371 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：6000 × 4000 px
+来源标题：Goldfolie Durchlicht.jpg
+来源署名/机构：Own work
+参照内容与限制：金箔在显微镜下的透射光摄影：裂纹、孔隙、重叠；蓝绿透射色，不能直接当反射金色参考。
+SHA-256：20575c52c99a23334999d8cf985a7f0a80265debc604b6c3ce5925c3d3dac6d0
+
+[07] goldleaf_07.jpg
+文件名：goldleaf_07.jpg
+来源页：https://unsplash.com/photos/textured-gold-leaf-surface-shLU6SZfIQY
+图片下载地址：https://images.unsplash.com/photo-1618352357270-ef40d25bcef8?fm=jpg&q=95
+许可：Unsplash License（自定义免费许可；非 CC／非公共领域）
+许可链接：https://unsplash.com/license
+作者：Kier in Sight Archives
+像素：2500 × 2500 px
+文件：JPEG，3,150,073 bytes
+下载版本：公开全尺寸 JPEG（图库服务器返回；非相机 RAW）
+参照内容与限制：摄影者标记的真实 gold leaf 表面摄影；按全尺寸公开 JPEG 获取，非相机 RAW。
+SHA-256：916d620c774973a096fcc3fac68b62f2f0d533857f2f457e93a44b31f9b6d66d
+
+[08] goldleaf_08.jpg
+文件名：goldleaf_08.jpg
+来源页：https://unsplash.com/photos/a-textured-golden-surface-with-light-reflections-Hjp111tSqKc
+图片下载地址：https://images.unsplash.com/photo-1760784213106-5ee511ace879?fm=jpg&q=95
+许可：Unsplash License（自定义免费许可；非 CC／非公共领域）
+许可链接：https://unsplash.com/license
+作者：Colin Watts
+像素：4000 × 2667 px
+文件：JPEG，2,617,409 bytes
+下载版本：公开全尺寸 JPEG（图库服务器返回；非相机 RAW）
+参照内容与限制：摄影者标记的真实 gold leaf 表面摄影；按全尺寸公开 JPEG 获取，非相机 RAW。
+SHA-256：c83b9b76cefeea75cf0d6d0befcacfd5ebe7798538d4c8b23c809d208cf50da1

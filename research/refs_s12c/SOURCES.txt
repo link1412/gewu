@@ -1,0 +1,337 @@
+摄影参照总来源清单
+四类详细记录也分别保存在各子目录 SOURCES.txt。
+
+yinni/ 真实实物摄影参照来源记录
+采集日期：2026-11-05（Asia/Tokyo）
+用途：本地外观参照；本次未发布、未购买、未联系作者。
+像素为下载文件解码后的宽×高；原图按字节保存，未做重绘、裁切或去水印。
+摄影者未署名时明确记为未署名；文章作者、商家、藏品作者分别记录。
+
+[01.jpg]
+主题：上品印泥：瓷盒内翻调与拉丝
+来源页：https://www.peopleapp.com/rmharticle/30018596353
+图片下载地址：https://rmrbcmsonline.peopleapp.com/upload/zw/bjh_image/1606374826_671c8e33b76020124840c1cd5dbaad13.jpeg
+作者／摄影者：文章作者／发布者：枣娃娃（人民号）；照片摄影者未署名，不能将文章署名等同摄影署名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1181 × 930 px（宽 × 高）
+文件：JPEG；148,668 bytes
+可观察细节：近照清楚显示成束纤维、翻调形成的沟痕、油性高光与盒口。
+限制／辨别事项：图注为“上品印泥”，文章讨论朱砂／朱磦印泥；单图未独立注明具体配方。
+SHA-256：49771e5eebb6ace2fe3e731cad04b0fd6d8fedde5d1d9fe864943ff07bdba97f
+
+[02.jpg]
+主题：西泠美丽朱砂印泥：用过的表面
+来源页：https://book.kongfz.com/151391/6111199896/
+图片下载地址：https://www0.kfzimg.com/sw/kfz-cos/kfzimg/4211542/447e814ed92866f4_b.jpg
+作者／摄影者：照片提供者：孔夫子旧书网店铺151391卖家；摄影者未署名。制作者按商品描述为上海西泠印社。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1200 × 798 px（宽 × 高）
+文件：JPEG；146,413 bytes
+可观察细节：瓷盒占画面主体，可见蘸压后凹凸纹和油光；源站水印保留。
+限制／辨别事项：原图1200px宽，不能把所有反光条纹都解释成独立艾绒。
+SHA-256：1a3f6a400138dc1728ea40e8ea313221b75f023843a8523acd234d8cb3a22048
+
+[03.jpg]
+主题：朱砂印泥：盒内俯拍
+来源页：https://www.peopleapp.com/rmharticle/30018596353
+图片下载地址：https://rmrbcmsonline.peopleapp.com/upload/zw/bjh_image/1606374825_ef704965b703319329d83387f2079db8.jpeg
+作者／摄影者：文章作者／发布者：枣娃娃（人民号）；照片摄影者未署名，不能将文章署名等同摄影署名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1181 × 1181 px（宽 × 高）
+文件：JPEG；193,767 bytes
+可观察细节：瓷盒内红色印泥俯拍，能参考表面细纹、压平区与边缘积泥。
+限制／辨别事项：仅用于外观观察；颜色受原拍摄光线及网络处理影响。
+SHA-256：2211b964a3e99c5f9b3e3358f6d5b3ebb30f02df0a4a26fb5fbc86c0c1929b49
+
+[04.jpg]
+主题：潜泉美丽朱砂印泥：印筋翻调
+来源页：https://detail.youzan.com/show/goods?alias=2onupxgfgrq5f&from_source=gbox_seo
+图片下载地址：https://img01.yzcdn.cn/upload_files/2016/06/20/FhkMztm7XlwG5w4vE_qlPA_SZRuu.jpg
+作者／摄影者：商品图发布者：金石印坊；摄影者未署名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：800 × 800 px（宽 × 高）
+文件：JPEG；269,069 bytes
+可观察细节：瓷盒中堆起的泥体、翻调沟槽、尖峰和拉伸形状；保留金石印坊水印。
+限制／辨别事项：800×800，为本组较低分辨率补充；主要参考整体稠度和翻调痕。
+SHA-256：432c466527b0ee708394c97ade1bf5990f9b74fa4d5242d7bc1fe287a84541c1
+
+[05.jpg]
+主题：朱砂印泥：青花盒内泥面近照
+来源页：https://www.peopleapp.com/rmharticle/30018596353
+图片下载地址：https://rmrbcmsonline.peopleapp.com/upload/zw/bjh_image/1606374827_e158da4efd6800780734a5cccfdfa2f5.jpeg
+作者／摄影者：文章作者／发布者：枣娃娃（人民号）；照片摄影者未署名，不能将文章署名等同摄影署名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1181 × 849 px（宽 × 高）
+文件：JPEG；89,063 bytes
+可观察细节：来源图注明确为朱砂印泥；青花盒内泥面有细密纹理、浅凹区和不同方向的油性反光。
+限制／辨别事项：保留来源原文件；网络图有压缩痕，微细纤维清晰度低于01。
+SHA-256：00f8194646ae895e5ac04fb2169b4647308e2e9506b774f495d3894919bf48f2
+
+[06.jpg]
+主题：手工印泥：小瓷碟内纤维堆峰
+来源页：https://www.peopleapp.com/rmharticle/30018596353
+图片下载地址：https://rmrbcmsonline.peopleapp.com/upload/zw/bjh_image/1606374828_2e0ffe6d8e7c6fc2a97ce7f2cdad7a6f.jpeg
+作者／摄影者：文章作者／发布者：枣娃娃（人民号）；照片摄影者未署名，不能将文章署名等同摄影署名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1181 × 787 px（宽 × 高）
+文件：JPEG；96,673 bytes
+可观察细节：瓷碟中的红色印泥堆峰，斜向浅景深，参考纤维蓬松感及泥体边缘。
+限制／辨别事项：图注为“手工印泥”；文章讨论传统印泥，单图未独立注明配方。
+SHA-256：b219a7690f9a0e723de5b5a44c43ff61343de2c4546e824602cbd1f595d45b3b
+
+
+jianzhi/ 真实实物摄影参照来源记录
+采集日期：2026-11-05（Asia/Tokyo）
+用途：本地外观参照；本次未发布、未购买、未联系作者。
+像素为下载文件解码后的宽×高；原图按字节保存，未做重绘、裁切或去水印。
+摄影者未署名时明确记为未署名；文章作者、商家、藏品作者分别记录。
+
+[01.jpg]
+主题：白色六分荷花团花：展开平放
+来源页：https://k.sina.com.cn/article_6995117639_p1a0f1064700100jffq.html
+图片下载地址：https://n.sinaimg.cn/sinacn10122/566/w1984h1782/20190608/4392-hyeztyr8679447.jpg
+作者／摄影者：来源页发布账号／文章署名：运势秘密论；个人摄影者未署名；学生作品未署学生姓名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1984 × 1782 px（宽 × 高）
+文件：JPEG；573,224 bytes
+可观察细节：白色／淡蓝纸放在红色织物上，尖锐剪口、中央放射锯齿、折痕与投影清楚。
+限制／辨别事项：手工制作过程照片，非图案文件；可见剪口和折痕，但纸纤维不达到显微级清晰度。
+SHA-256：de7cb570bd0d301e79ac870521ffb451a24ce1bc74b1793cc364293f8a7953b4
+
+[02.jpg]
+主题：白色团花：手持展开过程
+来源页：https://k.sina.com.cn/article_6995117639_p1a0f1064700100jffq.html
+图片下载地址：https://n.sinaimg.cn/sinacn10122/166/w1772h1594/20190608/0a38-hyeztyr8679341.jpg
+作者／摄影者：来源页发布账号／文章署名：运势秘密论；个人摄影者未署名；学生作品未署学生姓名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1772 × 1594 px（宽 × 高）
+文件：JPEG；522,850 bytes
+可观察细节：能看到纸厚、层叠、弯折和细剪口；有手作为比例参照，背景为红布。
+限制／辨别事项：手工制作过程照片，非图案文件；可见剪口和折痕，但纸纤维不达到显微级清晰度。
+SHA-256：56915402cd0d3244d2c704649c4452eea8abdc0d8145b8b03e6bdff2675ffa3c
+
+[03.jpg]
+主题：浅粉色荷花团花：学生作品
+来源页：https://k.sina.com.cn/article_6995117639_p1a0f1064700100jffq.html
+图片下载地址：https://n.sinaimg.cn/sinacn10122/690/w2048h1842/20190608/036b-hyeztyr8679551.jpg
+作者／摄影者：来源页发布账号／文章署名：运势秘密论；个人摄影者未署名；学生作品未署学生姓名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：2048 × 1842 px（宽 × 高）
+文件：JPEG；1,073,582 bytes
+可观察细节：另一件同题学生剪纸，布面近照，参考手剪不完全规整的剪口与折痕。
+限制／辨别事项：手工制作过程照片，非图案文件；可见剪口和折痕，但纸纤维不达到显微级清晰度。
+SHA-256：cd9ebc175e9125fde85ec5d9093448b455a875026854cd59f18b3a65c0bcb99f
+
+[04.jpg]
+主题：红色石榴团花：蓝色切割垫上
+来源页：https://k.sina.com.cn/article_6995117639_p1a0f1064700100jffq.html
+图片下载地址：https://n.sinaimg.cn/sinacn10122/469/w1932h1737/20190608/9167-hyeztyr8679130.jpg
+作者／摄影者：来源页发布账号／文章署名：运势秘密论；个人摄影者未署名；学生作品未署学生姓名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1932 × 1737 px（宽 × 高）
+文件：JPEG；499,232 bytes
+可观察细节：红纸放在带网格切割垫的桌面；锯齿剪口、翘起边缘、重复纹样可见。
+限制／辨别事项：手工制作过程照片，非图案文件；可见剪口和折痕，但纸纤维不达到显微级清晰度。
+SHA-256：636a5e2c787686d657d664d9b02129b3b7727c12a051d1fb86fbbb7621da0bed
+
+[05.jpg]
+主题：黄色石榴团花：红布上
+来源页：https://k.sina.com.cn/article_6995117639_p1a0f1064700100jffq.html
+图片下载地址：https://n.sinaimg.cn/sinacn10122/582/w2048h1734/20190608/5a67-hyeztyr8679053.jpg
+作者／摄影者：来源页发布账号／文章署名：运势秘密论；个人摄影者未署名；学生作品未署学生姓名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：2048 × 1734 px（宽 × 高）
+文件：JPEG；1,080,258 bytes
+可观察细节：黄色纸实物的布面斜照，负形剪口、内缘小锯齿和投影清楚。
+限制／辨别事项：手工制作过程照片，非图案文件；可见剪口和折痕，但纸纤维不达到显微级清晰度。
+SHA-256：b506e2c2c1e34bc958b3ff0ee8be243fe701f776627c3ffce9d52a067bdb363b
+
+[06.jpg]
+主题：红色福字窗花：木质桌面
+来源页：https://commons.wikimedia.org/wiki/File:Paper-cut.jpg
+图片下载地址：https://upload.wikimedia.org/wikipedia/commons/f/f5/Paper-cut.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+作者／摄影者：摄影：Fanghong；来源自述“Shot by myself”。
+许可：CC BY-SA 3.0（可选择；页面另列GFDL 1.2或后续版本）。https://creativecommons.org/licenses/by-sa/3.0/
+实际像素：1920 × 2560 px（宽 × 高）
+文件：JPEG；524,564 bytes
+可观察细节：木桌上的真实窗花照片，参考复杂镂空、红纸边缘与桌面反射。
+限制／辨别事项：较早拍摄的整体近照，边缘微纤维细节弱于前五张。
+SHA-256：eb05bbe2ec915607128a89a4aa48b5a489a2cebc0a4662b6022007fb83dabee0
+
+
+nijin/ 真实实物摄影参照来源记录
+采集日期：2026-11-05（Asia/Tokyo）
+用途：本地外观参照；本次未发布、未购买、未联系作者。
+像素为下载文件解码后的宽×高；原图按字节保存，未做重绘、裁切或去水印。
+摄影者未署名时明确记为未署名；文章作者、商家、藏品作者分别记录。
+
+[01.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 卷首佛教故事金线画
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt1_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1590 px（宽 × 高）
+文件：TIFF；23,861,124 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：cc351c795b9fc3bb421edcf88fad11bd53f11b562afeb698cad2fa2391395576
+
+[02.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文序品开头：妙法莲华经序品第一
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt2_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1629 px（宽 × 高）
+文件：TIFF；24,446,288 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：befcd861b3bd09c34f89a6c209c76eec96a5fbe4f786d5e685effa8a262a86cc
+
+[03.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文序品不同后续段落
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt3_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1574 px（宽 × 高）
+文件：TIFF；23,621,208 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：08535cb9dc366950d5e85408008ea40950aca194c9a4adddf5ec1ec9b37f214f
+
+[04.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文中段
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt7_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1558 px（宽 × 高）
+文件：TIFF；23,381,240 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：ae659593c17ed11524cc31a238657d4329a738c1a8f4d3eb0e3ead86679d1d46
+
+[05.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文后段
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt14_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 1558 px（宽 × 高）
+文件：TIFF；23,381,098 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：880df0d9026260181ec36a8edaefb964617ed18753700014534f0ae433ecc063
+
+[06.tif]
+主题：Lotus Sutra with a Frontispiece / 妙法蓮華經序品 — 经文卷末及题名
+来源页：https://www.clevelandart.org/art/1970.64
+图片下载地址：https://openaccess-cdn.clevelandart.org/1970.64/1970.64_alt15_full.tif
+作者／摄影者：作者未署名（馆藏API creators为空）；个人摄影者未署名；图像提供机构 The Cleveland Museum of Art
+许可：CC0（官方API share_license_status=CC0；作品页明确允许复制、修改、分发）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：5000 × 2566 px（宽 × 高）
+文件：TIFF；38,502,830 bytes
+可观察细节：中国，宋代；handscroll; gold ink on indigo sutra paper；馆方原始不同段落实物摄影；靛蓝底、金色笔画和细线、磨损与局部不均可见。不是我方对同图裁切。
+限制／辨别事项：同一件宋代卷的不同原始分段照片；非显微近摄，微米级颜料颗粒无法保证辨认。
+机构元数据：https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1970.64
+SHA-256：7de3403d61f7b3ca11650e41ccc6fd3907c7a5b47e6e53043b0f1de2e7c50194
+
+[07.jpg]
+主题：“Devadatta,” Chapter 12 of the Lotus Sutra (Hoke-kyō, Daibadatta-bon) — 法华经提婆达多品卷首金泥佛画
+来源页：https://www.metmuseum.org/art/collection/search/44851
+图片下载地址：https://images.metmuseum.org/CRDImages/as/original/DP-31563-023.jpg
+作者／摄影者：作者未署名；个人摄影者未署名；图像提供机构 The Metropolitan Museum of Art
+许可：Public Domain；The Met Open Access / CC0（官方API isPublicDomain=true，作品页Public Domain）；https://creativecommons.org/publicdomain/zero/1.0/
+实际像素：3000 × 4000 px（宽 × 高）
+文件：JPEG；3,860,931 bytes
+可观察细节：日本；作为紺纸金泥近似材质补充，不冒充中国磁青纸；Handscroll; gold and silver on indigo-dyed paper；馆方原始实物摄影，可见金泥笔画或金线边缘不均、局部金色颗粒斑驳与纸面折痕。
+限制／辨别事项：日本靛蓝染纸实物，为中国磁青纸泥金的近似材质；非显微摄影。
+机构元数据：https://collectionapi.metmuseum.org/public/collection/v1/objects/44851
+SHA-256：53c8e01681cd3bca840a2b77f16b6bfb5b40990b947e3ada83001f0ecfee59a6
+
+
+sajin/ 真实实物摄影参照来源记录
+采集日期：2026-11-05（Asia/Tokyo）
+用途：本地外观参照；本次未发布、未购买、未联系作者。
+像素为下载文件解码后的宽×高；原图按字节保存，未做重绘、裁切或去水印。
+摄影者未署名时明确记为未署名；文章作者、商家、藏品作者分别记录。
+
+[01.jpg]
+主题：红洒金笺墨迹：多／盘附近近照
+来源页：https://book.kongfz.com/683369/6346425536/
+图片下载地址：https://www0.kfzimg.com/sw/kfz-cos/kfzimg/cdbbadcc/466b72290d0a04cc_b.jpg
+作者／摄影者：照片提供者：若愚集雅（店铺／店主）；摄影者未另署名。书法落款潘龄皋，商品仅标“潘龄皋款”，未作真伪认定。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1200 × 1600 px（宽 × 高）
+文件：JPEG；388,443 bytes
+可观察细节：金箔状碎片的非规则形状、墨线边缘、墨中露底和纸面折痕清楚。
+限制／辨别事项：同一副红洒金笺对联的不同原始实拍，不是本次裁切；墨的露底有些可能是磨损或金片遮断，不能全作飞白。
+SHA-256：b11ffd6f467f0ff99f3f0a342b4224744c7bbcf56b2184c5de4f56cbfc688575
+
+[02.jpg]
+主题：红洒金笺墨迹：古／梅附近近照
+来源页：https://book.kongfz.com/683369/6346425536/
+图片下载地址：https://www0.kfzimg.com/sw/kfz-cos/kfzimg/efedfcef/ecaa586192245e31_b.jpg
+作者／摄影者：照片提供者：若愚集雅（店铺／店主）；摄影者未另署名。书法落款潘龄皋，商品仅标“潘龄皋款”，未作真伪认定。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1200 × 1600 px（宽 × 高）
+文件：JPEG；309,856 bytes
+可观察细节：密集细碎金片与大墨字同框，可参考金片尺寸差异及纸面纤维方向。
+限制／辨别事项：同一副红洒金笺对联的不同原始实拍，不是本次裁切；墨的露底有些可能是磨损或金片遮断，不能全作飞白。
+SHA-256：0f0d4f9958ae7567d54fb8fb6c7168e409a43de60820088ce3d63cfecb00a05f
+
+[03.jpg]
+主题：红洒金笺墨迹：落款与印章近照
+来源页：https://book.kongfz.com/683369/6346425536/
+图片下载地址：https://www0.kfzimg.com/sw/kfz-cos/kfzimg/bbbafeca/ce5d21ff49d97923_b.jpg
+作者／摄影者：照片提供者：若愚集雅（店铺／店主）；摄影者未另署名。书法落款潘龄皋，商品仅标“潘龄皋款”，未作真伪认定。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1200 × 1600 px（宽 × 高）
+文件：JPEG；319,529 bytes
+可观察细节：金片、墨笔画、印章并列，可参考各材料覆盖与留白关系。
+限制／辨别事项：同一副红洒金笺对联的不同原始实拍，不是本次裁切；墨的露底有些可能是磨损或金片遮断，不能全作飞白。
+SHA-256：a0f02deebf09ad7f43237e140fed4c71327fdbb7140693af8658ed034d499b86
+
+[04.jpg]
+主题：红洒金笺墨迹：折叠交叠斜拍
+来源页：https://book.kongfz.com/683369/6346425536/
+图片下载地址：https://www0.kfzimg.com/sw/kfz-cos/kfzimg/dcaaaced/cfa486250acd8808_b.jpg
+作者／摄影者：照片提供者：若愚集雅（店铺／店主）；摄影者未另署名。书法落款潘龄皋，商品仅标“潘龄皋款”，未作真伪认定。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1200 × 1600 px（宽 × 高）
+文件：JPEG；305,175 bytes
+可观察细节：独立斜拍视角，参考反光差异、纸张褶皱以及金片和墨线的相对关系。
+限制／辨别事项：同一副红洒金笺对联的不同原始实拍，不是本次裁切；墨的露底有些可能是磨损或金片遮断，不能全作飞白。
+SHA-256：2b3c591483a8ee07beaae58fde7538aa5956d86297327349f671c5366fe47100
+
+[05.jpg]
+主题：白洒金笺楷书：四字近照
+来源页：https://book.kongfz.com/108675/2055969171/
+图片下载地址：https://www0.kfzimg.com/sw/kfzimg/1486/011a66241ee9a78efa_b.jpg
+作者／摄影者：书法作者：欧老师（来源页自述）；商品照片摄影者未署名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1200 × 1200 px（宽 × 高）
+文件：JPEG；104,978 bytes
+可观察细节：白色洒金笺上的楷书近照，金片轮廓与墨线边缘清楚，补充白纸材质。
+限制／辨别事项：来源站提供的局部图；未把同一全幅的其他局部重复计入。干笔飞白较少。
+SHA-256：3ddb3aca51810c6d8284b67445b47bd6bea9af30fd2b4a94b21a60983147fb8a
+
+[06.jpg]
+主题：白洒金宣纸：墨字及水墨试笔
+来源页：https://www.inkston.com/shop/paper/half-sized-xuan-paper/inkston-half-sized-gold-flakes-xuan-paper/
+图片下载地址：https://www.inkston.com/wp-content/uploads/2016/12/gold-fleck-half-sized_4.jpg
+作者／摄影者：图像提供者：Inkston；个人摄影者、试笔作者未署名。
+许可：来源页未标注图片开放许可；未取得转载或发布授权，原权利人保留版权。
+实际像素：1280 × 1280 px（宽 × 高）
+文件：JPEG；194,510 bytes
+可观察细节：洒金宣纸上有黑墨字和淡墨／彩墨试笔，可参考金片、吸水边界和薄纸肌理。
+限制／辨别事项：试笔包括彩色颜料；黑色墨字位于左上。以淡墨扩散为主，明显飞白较少。
+SHA-256：acc9b8d2a94694fdd8e88a15e4dde3bd68218965601a1dca04e7af5d7a2603c0
+

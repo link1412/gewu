@@ -1,0 +1,148 @@
+{
+ "name": "yanzhi_met_fit",
+ "title": "胭脂红卡：拟合到 Met 照片的灯",
+ "what": "museum_flat refitted to Met 1971.180.248 (materials/yanzhi/lightfit; docs/materials/yanzhi.md, round 2). Fitted on a probe grid (60 cm softboxes at 1 m), see the doc for residuals.",
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "mainL",
+   "group": "main",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 48,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] the left reflection in the inside's far wall, photo u -0.38 v 0.52 (probe az 60 el 45: -0.37, 0.60; el 60: 0.30)"
+  },
+  {
+   "name": "mainR",
+   "group": "main",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 72,
+    "elevation_deg": 48,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] the right reflection, photo u +0.45 v 0.54 (probe az 75 el 45: +0.46, 0.58); the photo's pair is not symmetric"
+  },
+  {
+   "name": "rearL",
+   "group": "rear",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -135,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 250,
+   "why": "[F] rgfit.py: a rear pair at 0.25 x the main's illuminance brightens the outer wall's sides and the sweep"
+  },
+  {
+   "name": "rearR",
+   "group": "rear",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 135,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 250,
+   "why": "as rearL"
+  },
+  {
+   "name": "top",
+   "group": "top",
+   "shape": "rect",
+   "size": {
+    "R": [
+     5,
+     5
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 0,
+    "elevation_deg": 75,
+    "distance": {
+     "R": 7
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 250,
+   "why": "[F] lightfit/rgfit.py: 0.5 x museum_flat's top (500 lux) relative to the main pair's 1000"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "white_90",
+  "distance": {
+   "R": 10
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 30
+  },
+  "why": "[F/A] the photo's backdrop is 0.66-0.73 of the inside's white and the wall's neutral sheen (G channel) needs a bright surround: rgfit.py's best reflectance 0.72-0.84; white_90 is the nearest material in optics/backdrops.json (rho 0.84 scores 0.685 against 0.650)"
+ }
+}

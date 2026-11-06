@@ -1,0 +1,104 @@
+{
+ "what": "The state of the CMA lotus dish (Cleveland 1918.933, Yuan) as the parameters of the physical processes on it (crafts/wear, weathering, dust, duanwen), fitted or measured on the photo. The lacquer's own parameters (material.json) are those of a new, polished film and do not stand in for any of these. A new piece: every process at its 'new' value.",
+ "tags": "M measured (here: by us on the CMA photo), I looked up, D derived, F fitted on this card against the photo, A assumed",
+ "wear": {
+  "edge_radius_mm": {
+   "value": 0.25,
+   "tag": "A",
+   "note": "arrises of the petals read round, not sharp, at 15 px/mm"
+  },
+  "touch_radius_mm": {
+   "value": 8.0,
+   "tag": "A",
+   "note": "a cloth over a fingertip"
+  },
+  "touch_reach_mm": {
+   "value": 0.1,
+   "tag": "A"
+  },
+  "rubbed_alpha": {
+   "value": 0.15,
+   "tag": "F",
+   "range": [
+    0.02,
+    0.15
+   ],
+   "note": "fitted with skin_alpha on the overview (k350 lights): fine-scale detail and no lamp shape against G/R, B/R"
+  },
+  "scratch_per_cm2": {
+   "value": 3,
+   "tag": "M",
+   "note": "counted by eye on the detail crops"
+  },
+  "scratch_len_mm": {
+   "value": 3,
+   "tag": "M"
+  },
+  "scratch_depth_um": {
+   "value": 6,
+   "tag": "A"
+  },
+  "scratch_width_mm": {
+   "value": 0.06,
+   "tag": "M"
+  },
+  "scratch_alpha": {
+   "value": 0.3,
+   "tag": "A"
+  }
+ },
+ "weathering": {
+  "skin_alpha": {
+   "value": 0.25,
+   "tag": "F",
+   "range": [
+    0.1,
+    0.4
+   ],
+   "note": "the satin of the photo: a broad weak sheen, no lamp shape"
+  }
+ },
+ "dust": {
+  "on": {
+   "value": 1,
+   "tag": "M",
+   "note": "thin grey-dark lines at the foot of the walls and in the cracks (detail crop)"
+  },
+  "corner_radius_mm": {
+   "value": 0.5,
+   "tag": "A"
+  },
+  "min_depth_mm": {
+   "value": 0.05,
+   "tag": "F",
+   "note": "to the width of the dark lines at the walls' foot, by eye on the detail crop"
+  },
+  "in_cracks": {
+   "value": 1,
+   "tag": "M"
+  }
+ },
+ "duanwen": {
+  "per_100cm2": {
+   "value": 5,
+   "tag": "M",
+   "note": "counted on the whole dish"
+  },
+  "len_mm": {
+   "value": 10,
+   "tag": "A"
+  },
+  "depth_mm": {
+   "value": 0.08,
+   "tag": "A"
+  },
+  "width_mm": {
+   "value": 0.1,
+   "tag": "A"
+  },
+  "radial": {
+   "value": 1,
+   "tag": "M"
+  }
+ }
+}

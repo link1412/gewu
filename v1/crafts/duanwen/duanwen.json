@@ -1,0 +1,11 @@
+{
+ "name": "duanwen",
+ "what": "断纹: shrinkage cracks of the lacquer film (duanwen.py). A physical process; 'old' is a result, not a knob. New: none.",
+ "parameters": {
+  "per_100cm2": {"unit": "cracks per 100 cm^2", "new": 0},
+  "len_mm": {"unit": "mm (lognormal median, sigma 0.5)", "new": 10},
+  "depth_mm": {"unit": "mm", "new": 0.08},
+  "width_mm": {"unit": "mm at the mouth", "new": 0.1},
+  "radial": {"unit": "bool: cracks run radially about the piece's centre", "new": 0}
+ }
+}

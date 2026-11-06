@@ -1,0 +1,248 @@
+{
+ "name": "qinghua",
+ "what": "Blue-and-white porcelain (青花): a clear glaze over a white porcelain body, with cobalt painted on the body before glazing and dissolved into the glaze-body boundary in the firing. Substance only: what is painted where (the brush), the vessel's shape and the light are other layers (crafts/painting, objects, optics).",
+ "tags": {
+  "M": "量的: a measured value reported in a source, or one we measured off a photo or a render",
+  "I": "查到的: a value a source gives but did not measure itself (a handbook, a catalogue, a review)",
+  "D": "推的: computed from other values, the algorithm stated",
+  "F": "拟合的: tuned so a render matches a reference (a material card's output; what was matched and how stated)",
+  "A": "假设: our assumption or placeholder"
+ },
+ "model": "Glaze (dielectric slab of index eta, GGX roughness, thickness h, optional absorption) over a cobalt film (pure absorption, optical depth c * kappa(lambda) at normal incidence, crossed at the angle inside the glaze) over a Lambertian body of albedo rho(lambda). True geometry in both renderers (tools/coat.py, docs/coats.md): the glaze's surface is h above the body, so total internal reflection recycles the body's light and walks it sideways. Two parameter sets of the one model: modern (bright new Jingdezhen ware) and kangxi (翠毛蓝, the historical reference).",
+ "units": {
+  "c": "g CoO per m^2 of the boundary (the cobalt's column density); tau(595 nm) = 0.588 per g/m^2 with kappa below"
+ },
+ "cobalt": {
+  "kappa": {
+   "file": "data/thiemsorn2007_fig7_co5.csv",
+   "per": "g CoO / m^2, natural-log optical depth at normal incidence",
+   "how": "optics.cobalt_kappa(): Thiemsorn et al. 2007 Fig. 7 solid curve (glass Co5) [M], read from the PDF's vector paths (digitize.py; its 595 nm value 3.090 /cm against their Table 4's 3.09); minus the base glass's floor 0.03 /cm (its 750-900 nm value) [D]; below 400 nm held at the 400 nm value, the rise there being the glass's UV edge [A]; per column: tau = ln10 * 0.1 (A/d)/C / M_CoO with C = 0.016 mol/L [M, their Table 3] and M_CoO = 74.93 g/mol [I]. Carried from a soda-lime glass to a porcelain glaze [A]: the test is Hsieh 2023's band positions and shape (tests/qinghua/check_spectrum.py)",
+   "tag": "D",
+   "source": "Thiemsorn, Keowkamnerd, Phanichphant & Hessenkemper 2007, J. Solid Mech. Mater. Eng. 1(4) 508-518, doi:10.1299/jmmp.1.508: soda-lime-silica glass, bands at 525, 595, 650 nm"
+  },
+  "eps595_L_per_mol_cm": {
+   "value": 193.1,
+   "range": [
+    152.5,
+    193.1
+   ],
+   "tag": "M",
+   "source": "Thiemsorn 2007 Table 4: Co1-Co5 rise with the glass's basicity 0.557-0.587; Co5 is the curve used, so c carries this +-12% as a unit"
+  },
+  "band_positions_in_glaze_nm": {
+   "value": [
+    520,
+    583,
+    672
+   ],
+   "tag": "M",
+   "source": "Hsieh, Fischer & Orillaneda 2023, Heritage Science 11:106, Table 2: FORS minima of mid-Ming Jingdezhen blue (12 dishes: 517-522, 581-586, 655-679). Not used in kappa: it is the test of kappa (tests/qinghua/check_spectrum.py)"
+  }
+ },
+ "sets": {
+  "modern": {
+   "what": "new Jingdezhen ware, refined cobalt oxide, clear glaze, very white body",
+   "glaze": {
+    "eta": {
+     "value": 1.52,
+     "unit": "",
+     "range": [
+      1.48,
+      1.56
+     ],
+     "tag": "A",
+     "source": "no measured index of a Jingdezhen glaze found (S3 调研, qinghua-stack). Bounds: (1) Appen's additive factors (as transcribed in WO2014207244A1, its table image not checked) on the measured Yuan glaze YQH-185 [M, Sun et al. 2026 Materials 19:2254 Table 3, wt% -> mol%] give 1.485-1.493 [D, Fe2O3 left out, no factor found]; (2) Jingdezhen lime-alkali transparent glazes read 96-98 on a WGG60A gloss meter [M, 卢希龙 et al. 2017 陶瓷学报 38(2) 154], which, if those are 60 deg GU, a smooth surface reaches only with n 1.54-1.56 [D, tools/gloss.py]; (3) soda-lime-silica glasses nD 1.518-1.530 [M, Thiemsorn 2007 Table 1]. 1.52 sits between; Ming-Qing glazes carry more CaO than YQH-185, which raises n [I]"
+    },
+    "thickness_mm": {
+     "value": 0.3,
+     "unit": "mm",
+     "range": [
+      0.2,
+      0.5
+     ],
+     "tag": "A",
+     "source": "Yuan blue-and-white 0.18-0.22 mm by OCT [M, Sun et al. 2026, Materials 19:2254]; Jingdezhen glazes 0.2-0.5 mm [I, Miao & Yu 1996, a cited statement]; a modern body glazed 0.5 mm thick [I, CN113480298A, a patent's example]; nothing measured on modern ware"
+    },
+    "ggx_alpha": {
+     "value": 0.003,
+     "unit": "",
+     "range": [
+      0.0,
+      0.006
+     ],
+     "tag": "A",
+     "source": "Jingdezhen transparent lime-alkali glazes fired at 1310 C read 96-98 (unit printed as %) on a WGG60A meter [M, 卢希龙 et al. 2017]; a smooth n = 1.50 surface reads 89.1 GU at 60 deg [D, tools/gloss.py], so at the meter's resolution the glaze is smooth; 0.006 is what 85 GU would give [D]. The mm-scale waviness (orange peel) is the object's geometry, not this. Modern ware not measured; the card's rotation frames can fit it [F, later]"
+    },
+    "sigma_a_per_mm": {
+     "value": 0.0,
+     "unit": "1/mm",
+     "tag": "A",
+     "source": "a clear glaze; the faint blue-green of Fe2+ is not quantified anywhere found (research S3)"
+    }
+   },
+   "body": {
+    "albedo": {
+     "value": 0.85,
+     "unit": "",
+     "range": [
+      0.8,
+      0.95
+     ],
+     "tag": "A",
+     "source": "no body reflectance spectrum found (research S3, qinghua-stack). Whiteness, which is not albedo and cannot be converted without its method: GB/T 3532-2022 white ware >= 70.0 (top grade) [I, a grade limit]; glazed modern ware 85-87% [I, CN113480298A, method not given]. With the glaze, 0.85 gives a white of 0.67 (diffuse, hemispherical) + 0.04 specular. The card fits it [F, later]"
+    },
+    "translucency": {
+     "value": null,
+     "tag": "A",
+     "source": "not modelled: the body is a Lambertian surface. Porcelain bodies scatter light sideways under the glaze too: Japanese porcelain bodies (Tokai) have an apparent attenuation of 0.6-1.9 /mm, total transmittance 10-27% at 1 mm [M, Sugiyama, Horiuchi & Osaki 1996, J. Ceram. Soc. Japan 104:877]; for an albedo of 0.85 that puts the transport length near 0.1 mm and the diffusion length near 1 mm [D, diffusion theory] -- the same scale as the glaze's walk. Nothing for Jingdezhen bodies"
+    }
+   },
+   "pigment": {
+    "colourants": {
+     "value": "Co only",
+     "tag": "A",
+     "source": "refined cobalt oxide; its Mn and Fe are not reported (research S3: 'must not be assumed zero'), taken as zero here",
+     "decision": "the colour must not be set by taste: it stays the measured cobalt-in-glass spectrum, unfitted, until a measured basis exists (docs/materials/qinghua.md, to-do 1)"
+    }
+   },
+   "bleed_um": {
+    "value": 40,
+    "unit": "um",
+    "range": [
+     30,
+     50
+    ],
+    "tag": "A",
+    "what": "sigma of the Gaussian that the firing blurs the painted cobalt with (crafts/painting)",
+    "source": "modern experimental blue-and-white: lines broaden by 60-100 um, back to ~60 um as the glaze's BaO/CaO rises to 1.71 [M, 李小龙 et al. 2026 陶瓷学报 47(1) 180, abstract; Ba-modified glazes, not ordinary ware]; taking that broadening as the full width added where the Gaussian edge falls from 90% to 10% would give sigma = d / (2 x 2.56) = 12-20 um, and as the distance to the edge's foot (2 sigma) 30-50 um [D, both]: which one is not stated, so sigma is assumed at 40 um. Zhengde/Jiajing ~100 um early, 180-650 um late [M, Li et al. 2025 J. Ceram. Process. Res. 26(5) 742]"
+   }
+  },
+  "kangxi": {
+   "what": "Kangxi 翠毛蓝: refined Zhejiang (or Yunnan) ore, Mn-rich, on a white body under a slightly bluish glaze",
+   "glaze": {
+    "eta": {
+     "value": 1.52,
+     "unit": "",
+     "range": [
+      1.48,
+      1.56
+     ],
+     "tag": "A",
+     "source": "no measured index of a Jingdezhen glaze found (S3 调研, qinghua-stack). Bounds: (1) Appen's additive factors (as transcribed in WO2014207244A1, its table image not checked) on the measured Yuan glaze YQH-185 [M, Sun et al. 2026 Materials 19:2254 Table 3, wt% -> mol%] give 1.485-1.493 [D, Fe2O3 left out, no factor found]; (2) Jingdezhen lime-alkali transparent glazes read 96-98 on a WGG60A gloss meter [M, 卢希龙 et al. 2017 陶瓷学报 38(2) 154], which, if those are 60 deg GU, a smooth surface reaches only with n 1.54-1.56 [D, tools/gloss.py]; (3) soda-lime-silica glasses nD 1.518-1.530 [M, Thiemsorn 2007 Table 1]. 1.52 sits between; Ming-Qing glazes carry more CaO than YQH-185, which raises n [I]"
+    },
+    "thickness_mm": {
+     "value": 0.3,
+     "unit": "mm",
+     "range": [
+      0.2,
+      0.5
+     ],
+     "tag": "A",
+     "source": "Yuan blue-and-white 0.18-0.22 mm by OCT [M, Sun et al. 2026, Materials 19:2254]; Jingdezhen glazes 0.2-0.5 mm [I, Miao & Yu 1996, a cited statement]; a modern body glazed 0.5 mm thick [I, CN113480298A, a patent's example]; nothing measured on modern ware"
+    },
+    "ggx_alpha": {
+     "value": 0.003,
+     "unit": "",
+     "range": [
+      0.0,
+      0.006
+     ],
+     "tag": "A",
+     "source": "Jingdezhen transparent lime-alkali glazes fired at 1310 C read 96-98 (unit printed as %) on a WGG60A meter [M, 卢希龙 et al. 2017]; a smooth n = 1.50 surface reads 89.1 GU at 60 deg [D, tools/gloss.py], so at the meter's resolution the glaze is smooth; 0.006 is what 85 GU would give [D]. The mm-scale waviness (orange peel) is the object's geometry, not this. Modern ware not measured; the card's rotation frames can fit it [F, later]"
+    },
+    "sigma_a_per_mm": {
+     "value": 0.0,
+     "unit": "1/mm",
+     "tag": "A",
+     "source": "'clear, slightly bluish' [I, Fuchs 2024, Dresden catalogue, a description]; not quantified, so 0"
+    }
+   },
+   "body": {
+    "albedo": {
+     "value": 0.85,
+     "unit": "",
+     "range": [
+      0.8,
+      0.95
+     ],
+     "tag": "A",
+     "source": "no body reflectance spectrum found (research S3, qinghua-stack). Whiteness, which is not albedo and cannot be converted without its method: GB/T 3532-2022 white ware >= 70.0 (top grade) [I, a grade limit]; glazed modern ware 85-87% [I, CN113480298A, method not given]. With the glaze, 0.85 gives a white of 0.67 (diffuse, hemispherical) + 0.04 specular. The card fits it [F, later]"
+    },
+    "translucency": {
+     "value": null,
+     "tag": "A",
+     "source": "not modelled: the body is a Lambertian surface. Porcelain bodies scatter light sideways under the glaze too: Japanese porcelain bodies (Tokai) have an apparent attenuation of 0.6-1.9 /mm, total transmittance 10-27% at 1 mm [M, Sugiyama, Horiuchi & Osaki 1996, J. Ceram. Soc. Japan 104:877]; for an albedo of 0.85 that puts the transport length near 0.1 mm and the diffusion length near 1 mm [D, diffusion theory] -- the same scale as the glaze's walk. Nothing for Jingdezhen bodies"
+    },
+    "tint": {
+     "t": {
+      "value": -0.0016,
+      "unit": "per 100 nm",
+      "tag": "F"
+     },
+     "q": {
+      "value": -0.0244,
+      "unit": "per (100 nm)^2",
+      "tag": "F"
+     },
+     "what": "optics.body_albedo: albedo x (1 + t x + q x^2), x = (lambda - 550)/100",
+     "source": "card.py measure: the tint that gives the 1-D stack's white (WB on the 5500 K key) the photo's white r/g, b/g (linear, [0.4233, 0.4397, 0.4179])",
+     "stands_for": "the photo's white balance, or the 300-year-old plate's dirt and wear: a process result, not the body's colour. Kangxi set only; the modern set stays white"
+    }
+   },
+   "pigment": {
+    "colourants": {
+     "value": "Co + an iron-like companion (fitted)",
+     "tag": "F",
+     "source": "Qing fired blue MnO/CoO 5-7, Fe2O3/CoO 0.4-1 [M, Chen, Guo & Zhang 1978, 3 specimens]; Mn mostly Mn2+, Fe mostly Fe3+ in a synthetic pigment of the Kangxi recipe, in spinel [M, Luo et al. 2018 JACerS 101:2130, abstract]; Mn3+ absorbs at 480 nm [M, Thiemsorn 2007 Fig. 4], which would make the blue more violet, not less. The photo's blue is less violet and less red than cobalt alone can make it; the companion below is what the card fits"
+    },
+    "companion": {
+     "model": "iron_like",
+     "what": "optics.iron_like_kappa: fe3 x an exponential edge from 400 nm (scale 40 nm) [shape: Fe3+'s violet bands, Mehdikhani & Borhani 2013 Fig. 2; the edge's form A] + fe2 x a Gaussian in wavenumber at 1100 nm, sigma 2100 /cm [peak: Fe2+, Ceglia et al. 2015; width A]; per g CoO / m^2, natural-log optical depth",
+     "fe3": {
+      "value": 0.49,
+      "unit": "per g CoO / m^2 at 400 nm",
+      "tag": "F",
+      "source": "card.py measure: fitted with fe2 and one c per level to the five blue levels of Met 18.61.2 (linear sRGB over its white, assumed colour-correct [A]); log-RMS 0.156 against 0.78 for cobalt alone and 0.25 for the linear companion of round 1"
+     },
+     "fe2": {
+      "value": 12.1049,
+      "unit": "per g CoO / m^2 at 1100 nm (5%% of it at 700 nm)",
+      "tag": "F",
+      "source": "as fe3"
+     },
+     "stands_for": "NOT a measured iron. Dissolved Fe2+ at the pigment's Fe2O3/CoO 0.4-1 and eps(1100) 27.5 L/(mol cm) [M, Ceglia 2015] gives 0.03-0.08 per g CoO / m^2 at 1100 nm [D], two to three orders below the fit; Fe3+'s visible bands are weaker still. So the fit stands for whatever makes the photo's blue less violet: the photo's processing (the Met's is not published), cobalt in another environment (spinel, crystals), or scattering. A measured reflectance spectrum of Kangxi blue decides (Hu et al. 2020 Fig. 2, samples H1, H2: located, not yet digitized; docs/materials/qinghua.md to-do)",
+     "superseded": {
+      "linear_companion": {
+       "r": {
+        "value": 10.0,
+        "unit": "per g CoO / m^2 (natural-log optical depth at 550 nm)",
+        "tag": "F",
+        "source": "card round 1 (materials/qinghua/card.py measure): fitted with s and one c per level to the five blue levels of Met 18.61.2 (pixels binned by blue / white, linear sRGB over the unpainted glaze), assuming the photo is sRGB-correct [A]; r sits at the fit's bound, so the fit wants the companion to do nearly all the absorbing and the cobalt's bands to vanish: log-RMS 0.25 against 0.78 for cobalt alone"
+       },
+       "s": {
+        "value": 0.548,
+        "unit": "per 100 nm",
+        "tag": "F",
+        "source": "as r: the companion rises toward the red"
+       },
+       "status": "NOT adopted (optics.pigment_kappa reads 'companion', not this): fitted to an uncalibrated photo whose deep blues may be gamut-mapped; cobalt alone puts them outside sRGB (G < 0). Needs a measured spectrum of Kangxi blue to decide (research qinghua-spectra, S3)"
+      },
+      "why": "round 1's line in lambda hit its bound; the iron-like shape fits better with fewer free shapes"
+     }
+    }
+   },
+   "bleed_um": {
+    "value": 40,
+    "unit": "um",
+    "range": [
+     30,
+     100
+    ],
+    "tag": "A",
+    "what": "sigma of the Gaussian that the firing blurs the painted cobalt with (crafts/painting)",
+    "source": "not measured for Kangxi (research S3, qinghua-stack: not found); its lines read as crisp, so the modern value; the upper end is the early-Zhengde measurement"
+   }
+  }
+ },
+ "tag_note": "docs/layers.md's scheme (S3). A tag says what the value IS for this material; a value measured elsewhere and carried over is [A] (or [I]) with the measurement cited as [M] in its source."
+}

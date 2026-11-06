@@ -1,0 +1,48 @@
+{
+ "about": "glossiness A/B on the modern dish (A): museum_flat as the first look; denoised (OIDN, after mixing)",
+ "object": {
+  "file": "out/materials/qinghua/dish/modern/dish.pbrt"
+ },
+ "rig": "optics/rigs/museum_flat.json",
+ "camera": {
+  "focal_mm": 100,
+  "f_number": 11,
+  "azimuth_deg": 0,
+  "elevation_deg": 35,
+  "distance_mm": 840,
+  "aim": "centre",
+  "why": "our choice: oblique (35 degrees up, from the photo's bottom edge), so the well, the cavetto and the lip read and the glaze shows its highlights; 840 mm with a 100 mm lens puts the dish across about 60% of the width ('fill' frames by the height, which for a dish is its 38 mm)"
+ },
+ "render": {
+  "spp": 1024,
+  "maxdepth": 48,
+  "refractivenee": true,
+  "denoise": true,
+  "seed": 0
+ },
+ "mix": {},
+ "develop": {
+  "sensor": "canon_eos_5d_mkiv",
+  "iso": 100,
+  "expose": {
+   "raw_ref": 336.373,
+   "of_saturation": 0.75,
+   "why": "A's own 99th percentile, frozen so B can match the well's white (mean raw G over the albedo-neutral pixels of the medallion)"
+  },
+  "develop": {
+   "ev": 0.0,
+   "shoulder_from": 0.6,
+   "contrast": 1.0,
+   "pivot": 0.18,
+   "why": "neutral: no grade"
+  },
+  "sharpen": {
+   "amount": 0.0,
+   "sigma_px": 0.7
+  },
+  "seed": 1
+ },
+ "sheet": {
+  "stops": 1
+ }
+}

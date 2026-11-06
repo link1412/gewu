@@ -1,0 +1,171 @@
+cinnabar — 辰砂晶簇
+照片数量：12
+下载日期：2026-11-05
+
+保留下载文件的原像素；未做放大。
+“原始图 URL”指来源原文件；“实际下载 URL”可为服务端标准尺寸版本，像素以本文件所列为准。
+
+[01] 文件名：cinnabar_commons_22073665.jpg
+名称：Cinabre, dolomite, quartz 1.JPG
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/d/d7/Cinabre%2C_dolomite%2C_quartz_1.JPG
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Cinabre%2C_dolomite%2C_quartz_1.JPG/3840px-Cinabre%2C_dolomite%2C_quartz_1.JPG
+来源页面：https://commons.wikimedia.org/wiki/File:Cinabre,_dolomite,_quartz_1.JPG
+许可：CC BY-SA 3.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/3.0
+作者／摄影／机构署名：Parent Géry
+像素：3840 × 2550
+文件：JPEG；1,097,767 bytes
+SHA-256：5adf4136ed4315e585ca15475e1600340a33c583fd9785ebe8050c03a884be97
+来源内容说明：cinnabar, dolomite, quartz : Wanshan Mine, Wanshan District, Tongren Prefecture, Guizhou Province, China
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图4288×2848。
+
+[02] 文件名：cinnabar_commons_23808762.jpg
+名称：Cinabre, dolomite, quartz 3.JPG
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/7/7e/Cinabre%2C_dolomite%2C_quartz_3.JPG
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Cinabre%2C_dolomite%2C_quartz_3.JPG/3840px-Cinabre%2C_dolomite%2C_quartz_3.JPG
+来源页面：https://commons.wikimedia.org/wiki/File:Cinabre,_dolomite,_quartz_3.JPG
+许可：CC BY-SA 3.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/3.0
+作者／摄影／机构署名：Parent Géry
+像素：3840 × 2774
+文件：JPEG；1,184,022 bytes
+SHA-256：b95f6a49be95b40857d704f14974bc5fcc3f22e46de3112a139874096fc2c570
+来源内容说明：cinnabar, dolomite, quartz : Chatien Mine (Tsa Tien Mine), Fenghuang Co., Xiangxi Autonomous Prefecture, Hunan Province, China
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图3880×2803。
+
+[03] 文件名：cinnabar_commons_22073669.jpeg
+名称：Cinabre, dolomite, quartz 3.jpeg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/c/c5/Cinabre%2C_dolomite%2C_quartz_3.jpeg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Cinabre%2C_dolomite%2C_quartz_3.jpeg/3840px-Cinabre%2C_dolomite%2C_quartz_3.jpeg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinabre,_dolomite,_quartz_3.jpeg
+许可：CC BY-SA 3.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/3.0
+作者／摄影／机构署名：Parent Géry
+像素：3840 × 2550
+文件：JPEG；839,879 bytes
+SHA-256：3c4c2299ae789faa78e59595f4ba0ce9ef314100f6454b75e34e53029c7d7c51
+来源内容说明：cinnabar, quartz, dolomite : Chatian Mine (Tsa Tien Mine), Fenghuang Co., Xiangxi Autonomous Prefecture, Hunan Province, China
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图4288×2848。
+
+[04] 文件名：cinnabar_commons_6801645.jpg
+名称：Cinabre, dolomite et quartz (Chine).jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/a/a0/Cinabre%2C_dolomite_et_quartz_%28Chine%29.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Cinabre%2C_dolomite_et_quartz_%28Chine%29.jpg/3840px-Cinabre%2C_dolomite_et_quartz_%28Chine%29.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinabre,_dolomite_et_quartz_(Chine).jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Cinabre,_dolomite_et_quartz_(Chine).jpg
+作者／摄影／机构署名：Parent Géry
+像素：3840 × 2550
+文件：JPEG；1,332,060 bytes
+SHA-256：456f223cc4d6929d181e5fa61ae517001954753d0ff8d7ddd6040468ef4c3e88
+来源内容说明：Macles de Cinabre avec cristaux de Dolomite et cristaux de Quartz
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图4288×2848。
+
+[05] 文件名：cinnabar_commons_8990484.jpg
+名称：Cinabre et dolomite (Chine) .jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/6/6f/Cinabre_et_dolomite_%28Chine%29_.jpg
+实际下载 URL：https://upload.wikimedia.org/wikipedia/commons/6/6f/Cinabre_et_dolomite_%28Chine%29_.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinabre_et_dolomite_(Chine)_.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Cinabre_et_dolomite_(Chine)_.jpg
+作者／摄影／机构署名：Parent Géry
+像素：4288 × 2848
+文件：JPEG；8,577,512 bytes
+SHA-256：fa430ea7dabd468d05f27e6299b2575522c5d3d1341ee9c3a0b5bfab7cfdee37
+来源内容说明：Macle de cinabre et cristaux rhomboédriques de dolomite
+
+[06] 文件名：cinnabar_commons_16123961.jpg
+名称：Cinabre et dolomite 2 (Chine).JPG
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/c/cd/Cinabre_et_dolomite_2_%28Chine%29.JPG
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Cinabre_et_dolomite_2_%28Chine%29.JPG/3840px-Cinabre_et_dolomite_2_%28Chine%29.JPG
+来源页面：https://commons.wikimedia.org/wiki/File:Cinabre_et_dolomite_2_(Chine).JPG
+许可：CC BY-SA 3.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/3.0
+作者／摄影／机构署名：Géry PARENT
+像素：3840 × 2034
+文件：JPEG；865,737 bytes
+SHA-256：1b5b16e60f95c9af1df52d56135dfb8bdad99b9e2e150bec6f7c929cf2b4c0de
+来源内容说明：cinnabar, quartz, dolomite : Chatian Mine (Tsa Tien Mine), Fenghuang Co., Xiangxi Autonomous Prefecture, Hunan Province, China
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图4128×2187。
+
+[07] 文件名：cinnabar_commons_4243193.jpg
+名称：Cinabre maclé et quartz sur dolomite.(Chine).jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/6/6c/Cinabre_macl%C3%A9_et_quartz_sur_dolomite.%28Chine%29.jpg
+实际下载 URL：https://upload.wikimedia.org/wikipedia/commons/6/6c/Cinabre_macl%C3%A9_et_quartz_sur_dolomite.%28Chine%29.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinabre_macl%C3%A9_et_quartz_sur_dolomite.(Chine).jpg
+许可：Copyrighted free use
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Cinabre_macl%C3%A9_et_quartz_sur_dolomite.(Chine).jpg
+作者／摄影／机构署名：Géry Parent
+像素：3008 × 2000
+文件：JPEG；4,575,086 bytes
+SHA-256：6c661ddccda1a3c0ef40413b0aa23a5a1671e24946fc37d24962d414e3bbbfbf
+来源内容说明：cinnabar, dolomite, quartz : Wanshan Mine, Wanshan District, Tongren Prefecture, Guizhou Province, China
+
+[08] 文件名：cinnabar_commons_6910843.jpg
+名称：Cinnabar, dolomite.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/b/bc/Cinnabar%2C_dolomite.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Cinnabar%2C_dolomite.jpg/3840px-Cinnabar%2C_dolomite.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinnabar,_dolomite.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Cinnabar,_dolomite.jpg
+作者／摄影／机构署名：Géry PARENT
+像素：3840 × 2550
+文件：JPEG；849,230 bytes
+SHA-256：30a3c85d25ea64a3e32eb6a945c5733f7ab8bc612380360ddfa3c28feef4bef2
+来源内容说明：cinnabar, dolomite : Fenghuang Co., Xiangxi Autonomous Prefecture, Hunan Province, China
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图4288×2848。
+
+[09] 文件名：cinnabar_commons_10007849.jpg
+名称：Cinnabar, quartz, dolomite 1.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/6/63/Cinnabar%2C_quartz%2C_dolomite_1.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Cinnabar%2C_quartz%2C_dolomite_1.jpg/3840px-Cinnabar%2C_quartz%2C_dolomite_1.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinnabar,_quartz,_dolomite_1.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Cinnabar,_quartz,_dolomite_1.jpg
+作者／摄影／机构署名：Géry PARENT
+像素：3840 × 2550
+文件：JPEG；1,428,460 bytes
+SHA-256：b082684385eaa4280d16ca0044a176c02af60672bd2e34829715e45e35bb70a0
+来源内容说明：cinnabar, dolomite, quartz : Wanshan Mine, Wanshan District, Tongren Prefecture, Guizhou Province, China
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图4288×2848。
+
+[10] 文件名：cinnabar_commons_9402304.jpg
+名称：Cinnabar, quartz, dolomite 2.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/3/37/Cinnabar%2C_quartz%2C_dolomite_2.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Cinnabar%2C_quartz%2C_dolomite_2.jpg/3840px-Cinnabar%2C_quartz%2C_dolomite_2.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinnabar,_quartz,_dolomite_2.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Cinnabar,_quartz,_dolomite_2.jpg
+作者／摄影／机构署名：Géry PARENT
+像素：3840 × 2550
+文件：JPEG；818,289 bytes
+SHA-256：ecc43e8692eafec0033830097fecc76119f54dfef25b1327d5db4a2c1c9e6774
+来源内容说明：cinnabar, quartz, dolomite : Chatian Mine (Tsa Tien Mine), Fenghuang Co., Xiangxi Autonomous Prefecture, Hunan Province, China
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图4288×2848。
+
+[11] 文件名：cinnabar_commons_5828587.jpg
+名称：Cinnabar, quartz, dolomite 3.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/8/81/Cinnabar%2C_quartz%2C_dolomite_3.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Cinnabar%2C_quartz%2C_dolomite_3.jpg/3840px-Cinnabar%2C_quartz%2C_dolomite_3.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinnabar,_quartz,_dolomite_3.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Cinnabar,_quartz,_dolomite_3.jpg
+作者／摄影／机构署名：Géry PARENT
+像素：3840 × 2550
+文件：JPEG；1,326,282 bytes
+SHA-256：a4b24af3e45255c99dbc78833a324d7ed8e7ca6a6b700ace9660027edce9874a
+来源内容说明：cinnabar, quartz, dolomite : Wanshan Mine, Wanshan District, Tongren Prefecture, Guizhou Province, China
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载3840px版本。原图4288×2848。
+
+[12] 文件名：cinnabar_commons_5828550.jpg
+名称：Cinnabar, quartz, dolomite 4.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/b/bf/Cinnabar%2C_quartz%2C_dolomite_4.jpg
+实际下载 URL：https://upload.wikimedia.org/wikipedia/commons/b/bf/Cinnabar%2C_quartz%2C_dolomite_4.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Cinnabar,_quartz,_dolomite_4.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Cinnabar,_quartz,_dolomite_4.jpg
+作者／摄影／机构署名：Géry PARENT
+像素：4288 × 2848
+文件：JPEG；6,866,394 bytes
+SHA-256：c742a9d8a122ce6500aa8a3257a203ba9f746c941f2680607ae0c4a2f486ff26
+来源内容说明：cinnabar, quartz, dolomite : Wanshan Mine, Wanshan District, Tongren Prefecture, Guizhou Province, China

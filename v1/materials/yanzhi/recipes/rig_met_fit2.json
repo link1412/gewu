@@ -1,0 +1,124 @@
+{
+ "name": "yanzhi_met_fit2",
+ "title": "胭脂红卡：拟合到 Met 照片的灯(第二轮的最佳组合，直接渲)",
+ "what": "rig_met_fit.json with lightfit/clean.py best weights written in (S8 r1: rear pair x3 = 750 lux, no top light), so one render gives the fitted light directly (no group mixing). The sweep reflectance 0.51 [F] is patched into the staged rig by lightfit/direct.py (optics/backdrops.json has no 0.5 paper).",
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "mainL",
+   "group": "main",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 48,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] the left reflection in the inside's far wall, photo u -0.38 v 0.52 (probe az 60 el 45: -0.37, 0.60; el 60: 0.30)"
+  },
+  {
+   "name": "mainR",
+   "group": "main",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 72,
+    "elevation_deg": 48,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] the right reflection, photo u +0.45 v 0.54 (probe az 75 el 45: +0.46, 0.58); the photo's pair is not symmetric"
+  },
+  {
+   "name": "rearL",
+   "group": "rear",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -135,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 750,
+   "why": "[F] lightfit/clean.py (S8 r1): the rear pair at 3 x rig_met_fit.json (0.75 x the main pair)"
+  },
+  {
+   "name": "rearR",
+   "group": "rear",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 135,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 750,
+   "why": "[F] lightfit/clean.py (S8 r1): the rear pair at 3 x rig_met_fit.json (0.75 x the main pair)"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "white_90",
+  "distance": {
+   "R": 10
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 30
+  },
+  "why": "[F/A] the photo's backdrop is 0.66-0.73 of the inside's white and the wall's neutral sheen (G channel) needs a bright surround: rgfit.py's best reflectance 0.72-0.84; white_90 is the nearest material in optics/backdrops.json (rho 0.84 scores 0.685 against 0.650)"
+ }
+}

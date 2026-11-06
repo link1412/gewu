@@ -1,0 +1,195 @@
+{
+ "name": "gilt_copper",
+ "what": "Mercury (fire) gilding on copper or bronze (鎏金铜): a micron-thick layer of gold holding some mercury and copper, over the copper. Substance and its surface statistics only; the object's form and where it is worn are the object and craft layers. The card (card.py) puts it on a dome.",
+ "tags": {
+  "M": "measured: a value a source reports from its own measurement, or one we measured (photo, render)",
+  "I": "looked up: a value a source gives that it did not measure itself (handbook, catalogue, review, pbrt's data)",
+  "D": "derived: computed from other values, the computation stated",
+  "F": "fitted: tuned until the card matches the reference; what it matches and how are stated",
+  "A": "assumed or placeholder"
+ },
+ "reference_photo": "Cleveland Museum of Art 1970.149.1, seated Buddha, Ming, 16th c., gilt bronze, H 99 mm, CC0 (ref/metals/cleveland/SOURCES.txt); measured by measure_ref.py",
+ "gold": {
+  "eta": {
+   "value": "metal-Au-eta",
+   "unit": "1",
+   "tag": "I, stand-in [A]",
+   "source": "pbrt-v4's named spectrum for pure gold. A stand-in: fire gilding is gold with mercury and copper (below); no measured n, k of Au-Hg or of fire gilding was found (research 2026-10-29, ref/metals/research/report.md: Paulauskas 2018 fits an Au-Hg layer by TIRE + EMA, no table obtained)"
+  },
+  "k": {
+   "value": "metal-Au-k",
+   "unit": "1",
+   "tag": "I, stand-in [A]",
+   "source": "as eta"
+  },
+  "layer_thickness_um": {
+   "value": 4.0,
+   "unit": "um",
+   "range": [
+    2.0,
+    10.0
+   ],
+   "tag": "A (value), M (range)",
+   "source": "range: Ma et al. 2025, npj Herit. Sci. 13:93 (Han gilded fittings, SEM/FIB: 2.3-4.8, 2.2-3.0, >10 um); Joshi et al. 2022, IJPAP 60:117 (modern fire gilding, SEM ~2 um). Not used by the optics: any of these is opaque (gold's 1/e intensity depth 4 pi k / lambda is ~ 15-25 nm in the visible [D])"
+  },
+  "mercury_wt_pct": {
+   "value": null,
+   "unit": "wt%",
+   "range": [
+    2.6,
+    17.4
+   ],
+   "tag": "M (range)",
+   "source": "Ma et al. 2025 (11 of 14 Han pieces; 3 others < 0.8); Margreiter et al. 2022, Archaeometry 64:1465 (normal fire gilding rarely below ~5%); Joshi 2022 EDS 5.5-6.7 wt% with Au 57-72 wt%. Not in the optics (no Au-Hg n, k): a known gap"
+  },
+  "copper_wt_pct": {
+   "value": null,
+   "unit": "wt%",
+   "range": [
+    3.3,
+    9.7
+   ],
+   "tag": "M (range)",
+   "source": "Ma 2025 (FIB layers: Cu 3.3-3.5 wt%); Joshi 2022 (3.7 smooth, 9.7 porous). Not in the optics"
+  }
+ },
+ "surface": {
+  "ggx_alpha": {
+   "value": 0.02,
+   "unit": "1 (GGX alpha, pbrt remaproughness false)",
+   "tag": "F",
+   "source": "card sweeps (2026-10-29, knee piece, fitted rig): 0.02 keeps the band's edge as sharp as the photo's; 0.05 softens it and lifts the darkest 5% (p5 0.40 against the photo's 0.20); 0.01-0.02 earlier sweeps alike"
+  },
+  "afm_rms_nm": {
+   "value": null,
+   "unit": "nm",
+   "range": [
+    6.6,
+    34.0
+   ],
+   "tag": "M (range)",
+   "source": "Joshi 2022 IJPAP (rms 34/24 nm single/double coat; 20.3 -> 6.6 nm burnished; 30 -> 11 nm); Joshi 2022 JNPS 8(3):13 (8.1 nm). A height statistic without a correlation length: not convertible to alpha; well below the visible wavelength, so a small haze, not the gloss we see"
+  },
+  "scratches": {
+   "what": "burnishing and handling marks: short straight grooves, random in position and direction, cut into the gold layer (fire gilding is burnished after the mercury is driven off, and handled for centuries). One mechanism this round; casting/chasing texture under the gilding, patchy wear of the burnish and dirt are to-dos (docs/materials/gilt_copper.md)",
+   "direction": {
+    "value": "isotropic",
+    "unit": "-",
+    "tag": "M",
+    "source": "structure tensor of the photo's knee_r front (lower half, no edges of the form): the marks' direction has mean resultant length 0.03 (0 = no preferred direction), histogram by 30 degrees 0.20, 0.08, 0.28, 0.11, 0.12, 0.22"
+   },
+   "per_mm2": {
+    "value": 20.0,
+    "unit": "1/mm^2",
+    "range": [
+     1.5,
+     200.0
+    ],
+    "tag": "F",
+    "source": "card sweep 1.5/20/80/200 per mm^2 x depth 1/2/3 um: the crop's detail by scale (tools/detail.py) against the photo's; 20 with 2 um brings the fine bands (0.04-0.3 mm) of the whole crop to the photo's while the band's edge stays whole; 80-200 shred the edge into glints the photo does not have"
+   },
+   "width_um": {
+    "value": 20.0,
+    "unit": "um (FWHM)",
+    "tag": "A",
+    "source": "below the photo's resolution (27 um per pixel; 54 um at the compared resolution): only their contrast is seen"
+   },
+   "depth_um": {
+    "value": 2.0,
+    "unit": "um (the deepest; each 0.3-1 x this)",
+    "range": [
+     1.0,
+     3.0
+    ],
+    "tag": "F",
+    "source": "the same sweep; a groove 2 um deep and 20 um wide has slopes ~0.2: it sends the light ~20 degrees off, which is what makes a mark visible on a mirror. Less than the gold's 2-10 um thickness: no copper shows"
+   },
+   "length_mm": {
+    "value": [
+     0.5,
+     4.0
+    ],
+    "unit": "mm",
+    "tag": "A",
+    "source": "the photo's visible marks run ~1-3 mm (by eye)"
+   }
+  },
+  "undulation": {
+   "what": "the finish's long-wavelength relief (casting, chasing, burnishing): what makes the reflection mottled",
+   "rms_slope": {
+    "value": 0.01,
+    "unit": "1 (rms |grad h|)",
+    "tag": "F",
+    "source": "card sweeps (knee piece): 0.03 breaks the band's lower edge into lobes the photo does not have; 0.01 leaves it whole. The detail it adds is small against the scratches'"
+   },
+   "corr_mm": {
+    "value": 0.1,
+    "unit": "mm",
+    "tag": "A",
+    "source": "0.04 and 0.1 mm swept at slope 0.01-0.03: little difference in the detail bands; 0.1 kept"
+   }
+  }
+ },
+ "processes": {
+  "note": "Age is the result of these processes, not a knob (docs/layers.md). Each is a physical process with physical parameters; a new gilt piece has them all at zero. For the card they are fitted to the reference photo's state [F] or set [A], as marked.",
+  "abrasion": {
+   "what": "rubbing wears the gold down on the exposed (high) parts; where the wear depth exceeds the local gold thickness, the copper shows (card.py: per dome triangle, exposure e = height above the base / dome height)",
+   "wear_depth_at_top_um": {
+    "value": 0.0,
+    "unit": "um",
+    "tag": "F",
+    "source": "the reference's right knee shows no rubbed-through patch larger than ~0.3 mm (its dark marks are pits, below): 0 fits; the demonstration frame of the card uses 5 um [A] (exposes ~1/3 of the dome's triangles, the top)"
+   },
+   "exposure_power": {
+    "value": 2.0,
+    "unit": "1",
+    "tag": "A",
+    "source": "wear depth = wear_depth_at_top x e^p: concentrated on the top"
+   },
+   "gold_thickness_cv": {
+    "value": 0.3,
+    "unit": "1",
+    "tag": "A",
+    "source": "the gilding's thickness varies (Ma 2025: 2.2-4.8 um within a class); a lognormal field of this coefficient of variation"
+   },
+   "gold_thickness_corr_mm": {
+    "value": 0.3,
+    "unit": "mm",
+    "tag": "A",
+    "source": "the field's correlation length; placeholder"
+   }
+  },
+  "oxidation": {
+   "what": "on the exposed copper, a film of cuprite (Cu2O) grows; its colour follows its thickness (thin-film interference over copper, card.py cuprite_on_copper). Later green corrosion products are not modelled",
+   "cuprite_nm": {
+    "value": 0.0,
+    "unit": "nm",
+    "range": [
+     0,
+     10000
+    ],
+    "tag": "F (0 with no exposed copper); range M",
+    "source": "range: Kosec 2024 (bronze outdoors 9 years, 5-10 um), Chang 2017 (historic roofs, 1-10 um), Leygraf 2019 (~0.8 um already brown-black); the demonstration frame uses 100 nm [A] (red: channel reflectance 0.52, 0.21, 0.19 against bare copper's 0.80, 0.64, 0.58)"
+   },
+   "cu2o_n_k": {
+    "value": "ref/metals/research/data/Cu2O_Palik_visible_nk.csv",
+    "unit": "1",
+    "tag": "I",
+    "source": "Ribbing & Roos in Palik II (1991), from Karlsson et al. 1982; a public transcription, 50 nm nodes (ref/, not in git: the handbook's copyright)"
+   },
+   "copper_eta_k": {
+    "value": [
+     "metal-Cu-eta",
+     "metal-Cu-k"
+    ],
+    "unit": "1",
+    "tag": "I",
+    "source": "pbrt's copper"
+   }
+  },
+  "not_modelled": {
+   "dark_spots": "the photo's dark spots (knee_r 0.29, band 0.48, knee_l 1.09 per mm^2, 0.13-0.21 mm across, measured by measure_ref.py [M]) are not modelled: no source yet says what they are (losses of the gilding with corroded copper, pores, dirt). The gilding's pores in Joshi 2022 are sub-micron, far too small. Earlier cards drew them as dark decals; removed (main, 2026-10-29) until a process with a source explains them",
+   "green_corrosion": "basic copper salts on exposed copper: later"
+  }
+ }
+}

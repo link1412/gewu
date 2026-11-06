@@ -1,0 +1,94 @@
+{
+ "name": "raking_hard",
+ "title": "斜扫硬光",
+ "what": "A small, far source almost level with the object from the side: every relief, crack and tool mark throws a shadow. A weak soft fill from the camera side keeps the shadows from going black.",
+ "look_target": {
+  "film": "ref/reference-film.mp4",
+  "note": "a reference film: a look target for the light only, never material truth",
+  "shots": [
+   {
+    "shot": 10,
+    "frame": 154,
+    "what": "wood end grain: a low warm light from the left, cracks and rings in relief, dark background"
+   },
+   {
+    "shot": 13,
+    "frame": 196,
+    "what": "carved red lacquer: light raking from the upper left, the carving in sharp relief"
+   },
+   {
+    "shot": 31,
+    "frame": 359,
+    "what": "silver repousse: hard light across the relief"
+   }
+  ]
+ },
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "rake",
+   "group": "rake",
+   "shape": "disk",
+   "size": {
+    "R": 0.4
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -85,
+    "elevation_deg": 12,
+    "distance": {
+     "R": 15
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 3000,
+   "why": "hard: 0.4 R across at 15 R, 1.5 degrees as seen from the object"
+  },
+  {
+   "name": "fill",
+   "group": "fill",
+   "shape": "rect",
+   "size": {
+    "R": [
+     4,
+     4
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 30,
+    "elevation_deg": 15,
+    "distance": {
+     "R": 8
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 150,
+   "why": "soft fill from the camera side, four stops under"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "black_flock",
+  "distance": {
+   "R": 8
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 18
+  },
+  "why": "the default ground; a recipe sets the colour for its object (backdrop.material). Black flock (0.003): S3, framed as the film the ground in view is the floor just behind the object, lit by the same lamps; black velvet (0.01) came out dark grey there"
+ }
+}

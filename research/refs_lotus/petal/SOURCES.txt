@@ -1,0 +1,226 @@
+荷花实拍外观参考 / petal
+下载及许可记录日期：2026-11-05（日本时间）
+用途：仅用于本地渲染外观观察，不再发布照片。
+像素为实际下载文件尺寸；网站缩放版与原文件明确区分。
+许可取自逐张 Commons 文件页；CC BY/CC BY-SA 仍受版权保护，但附有开放许可。
+未进行本地裁切、放大或重编码。
+
+文件名：01_pink_petal_macro.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera-IMG_3509.jpg
+来源原文件名：Nelumbo nucifera-IMG 3509.jpg
+许可状态：开放许可；CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：C T Johansson
+像素：3840 × 2560 px（宽 × 高）
+来源原图像素：5184 × 3456 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Nelumbo_nucifera-IMG_3509.jpg/3840px-Nelumbo_nucifera-IMG_3509.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/4/43/Nelumbo_nucifera-IMG_3509.jpg
+摄影原来源：Own work
+观察重点：粉瓣近景，脉纹、渐变与自然背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：0b12690784a77c138da1c63fba26a2f9d766d96b1fc685d7bb662bdb4791deae
+
+------------------------------------------------------------------------
+
+文件名：02_pink_petal_inner_macro.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Inside_a_Lotus_Flower_-_Flickr_-_treegrow.jpg
+来源原文件名：Inside a Lotus Flower - Flickr - treegrow.jpg
+许可状态：开放许可；CC BY 2.0
+许可链接：https://creativecommons.org/licenses/by/2.0
+作者：Katja Schulz from Washington, D. C., USA
+像素：1600 × 1200 px（宽 × 高）
+来源原图像素：1600 × 1200 px
+下载规格：Flickr 原文件（o 尺寸）
+下载地址：https://live.staticflickr.com/4079/4820330400_2ef1f2ae92_o.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/1/17/Inside_a_Lotus_Flower_-_Flickr_-_treegrow.jpg
+摄影原来源：Inside a Lotus Flower
+观察重点：粉色内花瓣微距，细脉纹和透光渐变。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：2225a6d2c53df9944f575609fce58d5dd99e6ca2c1c8dfb9ca9f3220e188d196
+原文件校验：下载 SHA-1 与 Commons 原文件记录完全相同。
+
+------------------------------------------------------------------------
+
+文件名：03_white_petal_dew_macro.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lotus_-_Nelumbo_nucifera,_Kenilworth_Aquatic_Gardens,_Washington,_D.C._-_7624772622.jpg
+来源原文件名：Lotus - Nelumbo nucifera, Kenilworth Aquatic Gardens, Washington, D.C. - 7624772622.jpg
+许可状态：开放许可；CC BY 2.0
+许可链接：https://creativecommons.org/licenses/by/2.0
+作者：Judy Gallagher
+像素：4512 × 2898 px（宽 × 高）
+来源原图像素：4512 × 2898 px
+下载规格：Flickr 原文件（o 尺寸）
+下载地址：https://live.staticflickr.com/8154/7624772622_25ff9a8c50_o.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/0/08/Lotus_-_Nelumbo_nucifera%2C_Kenilworth_Aquatic_Gardens%2C_Washington%2C_D.C._-_7624772622.jpg
+摄影原来源：https://www.flickr.com/photos/52450054@N04/7624772622/
+观察重点：白色带粉花瓣微距，表面纹理和细密水珠。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：adad771e1a6efe15739099d3a1e276a09548dc9e24da5b900d762ef9889635d6
+原文件校验：下载 SHA-1 与 Commons 原文件记录完全相同。
+
+------------------------------------------------------------------------
+
+文件名：04_white_petals_close.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera_003.JPG
+来源原文件名：Nelumbo nucifera 003.JPG
+许可状态：开放许可；CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：H. Zell
+像素：1280 × 1706 px（宽 × 高）
+来源原图像素：1357 × 1809 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Nelumbo_nucifera_003.JPG/1280px-Nelumbo_nucifera_003.JPG
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/b/b6/Nelumbo_nucifera_003.JPG
+摄影原来源：Own work
+观察重点：白瓣近景，透光、阴影和花瓣曲率。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：c06f86115d0e16be572eafa87353f952ddd19459f85ae7ca0eaf3ff019a68825
+
+------------------------------------------------------------------------
+
+文件名：05_pink_translucent_backlight.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Translucent_pink_petals_(Unsplash).jpg
+来源原文件名：Translucent pink petals (Unsplash).jpg
+许可状态：开放许可；CC0 1.0（Commons 记录：2017-06-05 前的 Unsplash 作品；页面仍有 Images from Unsplash (review needed) 分类）
+许可链接：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者：kazuend kazuend
+像素：5760 × 3840 px（宽 × 高）
+来源原图像素：5760 × 3840 px
+下载规格：摄影来源原尺寸文件（Unsplash）
+下载地址：https://images.unsplash.com/photo-1436891436013-5965265af5fc
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/8/8b/Translucent_pink_petals_%28Unsplash%29.jpg
+摄影原来源：https://unsplash.com/photos/JHMDtWaNZaA archive copy at the Wayback Machine Image at the Wayback Machine
+观察重点：粉花逆光，花瓣透射与自然绿色背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：72d58847299cbd94289be46ce660da4de906ae1b8176562b6957a98d5154e22e
+备注：按页面历史许可记录保留，不将现行 Unsplash 通用许可冒充该图许可。
+
+------------------------------------------------------------------------
+
+文件名：06_pink_white_backlit_flower.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Jardin_des_Martels_-_Lotus_sacr%C3%A9_-_2016-08-07_-_03.jpg
+来源原文件名：Jardin des Martels - Lotus sacré - 2016-08-07 - 03.jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：MathieuMD
+像素：1920 × 1920 px（宽 × 高）
+来源原图像素：3792 × 3792 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Jardin_des_Martels_-_Lotus_sacr%C3%A9_-_2016-08-07_-_03.jpg/1920px-Jardin_des_Martels_-_Lotus_sacr%C3%A9_-_2016-08-07_-_03.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/2/28/Jardin_des_Martels_-_Lotus_sacr%C3%A9_-_2016-08-07_-_03.jpg
+摄影原来源：Self-photographed
+观察重点：粉白整朵近景，逆光透射，天然水岸背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：ec96a86c626c067f3305eee9d6be5798202dc5479cf703ee15218870ad245c95
+
+------------------------------------------------------------------------
+
+文件名：07_pink_open_flower.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lotus_-_Nelumbo_nucifera,_Kenilworth_Aquatic_Gardens,_Washington,_D.C._-_21052462028.jpg
+来源原文件名：Lotus - Nelumbo nucifera, Kenilworth Aquatic Gardens, Washington, D.C. - 21052462028.jpg
+许可状态：开放许可；CC BY 2.0
+许可链接：https://creativecommons.org/licenses/by/2.0
+作者：Judy Gallagher
+像素：5184 × 3456 px（宽 × 高）
+来源原图像素：5184 × 3456 px
+下载规格：Flickr 原文件（o 尺寸）
+下载地址：https://live.staticflickr.com/610/21052462028_33e67f0a14_o.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/7/74/Lotus_-_Nelumbo_nucifera%2C_Kenilworth_Aquatic_Gardens%2C_Washington%2C_D.C._-_21052462028.jpg
+摄影原来源：https://www.flickr.com/photos/52450054@N04/21052462028/
+观察重点：粉色盛开近景，自然植被背景，弯曲花瓣的光影。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：a7b6c7c054193dbbce3446677bdfcbdbf9d8299f98ffe1fe6daa211734ffa88f
+原文件校验：下载 SHA-1 与 Commons 原文件记录完全相同。
+
+------------------------------------------------------------------------
+
+文件名：08_pink_flower_soft_background.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Nelumbo_Nucifera_2017_1_%E3%83%8F%E3%82%B9_(221714585).jpeg
+来源原文件名：Nelumbo Nucifera 2017 1 ハス (221714585).jpeg
+许可状态：开放许可；CC BY 3.0
+许可链接：https://creativecommons.org/licenses/by/3.0
+作者：Chihiro H
+像素：1920 × 1280 px（宽 × 高）
+来源原图像素：2048 × 1365 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Nelumbo_Nucifera_2017_1_%E3%83%8F%E3%82%B9_%28221714585%29.jpeg/1920px-Nelumbo_Nucifera_2017_1_%E3%83%8F%E3%82%B9_%28221714585%29.jpeg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/2/2c/Nelumbo_Nucifera_2017_1_%E3%83%8F%E3%82%B9_%28221714585%29.jpeg
+摄影原来源：Imported from 500px ( archived version ) by the Archive Team . ( detail page )
+观察重点：粉色整朵近景，明显叶脉、柔化自然背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：6b41d04af29735b7499d16e4c020fdf5447fa4297836cf06e094329283d1c91e
+
+------------------------------------------------------------------------
+
+文件名：09_white_whole_flower.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera_(white_flower)_Md_Sharif_Hossain_Sourav.jpg
+来源原文件名：Nelumbo nucifera (white flower) Md Sharif Hossain Sourav.jpg
+许可状态：开放许可；CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：MSH Sourav
+像素：1920 × 1440 px（宽 × 高）
+来源原图像素：2592 × 1944 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Nelumbo_nucifera_%28white_flower%29_Md_Sharif_Hossain_Sourav.jpg/1920px-Nelumbo_nucifera_%28white_flower%29_Md_Sharif_Hossain_Sourav.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/0/08/Nelumbo_nucifera_%28white_flower%29_Md_Sharif_Hossain_Sourav.jpg
+摄影原来源：Own work
+观察重点：白色整朵近景，水生叶片与自然背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：d3b6344a3d413924f091bc02de73e86969316f6e87b7fbf011c9bb2f0e4b62b0
+
+------------------------------------------------------------------------
+
+文件名：10_pink_white_rain_flower.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Fleur_de_lotus_sacr%C3%A9.jpg
+来源原文件名：Fleur de lotus sacré.jpg
+许可状态：开放许可；CC BY 4.0
+许可链接：https://creativecommons.org/licenses/by/4.0
+作者：FreCha
+像素：3840 × 2565 px（宽 × 高）
+来源原图像素：4000 × 2672 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Fleur_de_lotus_sacr%C3%A9.jpg/3840px-Fleur_de_lotus_sacr%C3%A9.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/3/39/Fleur_de_lotus_sacr%C3%A9.jpg
+摄影原来源：Own work
+观察重点：粉白花近景，花瓣脉纹、附着水珠与自然背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：05b6fd7f37a35347fca8b7b4a4553cd0e7fe02c0b4382b290644948a1cf34b18
+
+------------------------------------------------------------------------
+
+文件名：11_pale_pink_whole_flower.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Nelumbo_nucifera-IMG_6230.jpg
+来源原文件名：Nelumbo nucifera-IMG 6230.jpg
+许可状态：开放许可；CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：C T Johansson
+像素：1920 × 1920 px（宽 × 高）
+来源原图像素：3118 × 3118 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Nelumbo_nucifera-IMG_6230.jpg/1920px-Nelumbo_nucifera-IMG_6230.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/6/6b/Nelumbo_nucifera-IMG_6230.jpg
+摄影原来源：Own work
+观察重点：浅粉整朵近景，花瓣叠层与自然背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：8b29b3e847b29e9b2c21b4867cc16d8245b41f2683ce520c494dd6b217658afa
+
+------------------------------------------------------------------------
+
+文件名：12_white_pink_veined_petals.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Indian_Lotus_-_Nelumbo_-_%E8%93%AE%E3%81%AE%E8%8A%B1_-_Flickr_-_titanium22.jpg
+来源原文件名：Indian Lotus - Nelumbo - 蓮の花 - Flickr - titanium22.jpg
+许可状态：开放许可；CC BY-SA 2.0
+许可链接：https://creativecommons.org/licenses/by-sa/2.0
+作者：titanium22
+像素：1920 × 1277 px（宽 × 高）
+来源原图像素：3008 × 2000 px
+下载规格：Wikimedia 标准尺寸缩放版（非原文件）
+下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Indian_Lotus_-_Nelumbo_-_%E8%93%AE%E3%81%AE%E8%8A%B1_-_Flickr_-_titanium22.jpg/1920px-Indian_Lotus_-_Nelumbo_-_%E8%93%AE%E3%81%AE%E8%8A%B1_-_Flickr_-_titanium22.jpg
+来源原文件地址：https://upload.wikimedia.org/wikipedia/commons/5/55/Indian_Lotus_-_Nelumbo_-_%E8%93%AE%E3%81%AE%E8%8A%B1_-_Flickr_-_titanium22.jpg
+摄影原来源：Indian Lotus / Nelumbo / 蓮の花
+观察重点：白瓣粉尖近景，清楚脉纹与明暗透射，深色自然背景。
+物种依据：来源页学名或分类明确为 Nelumbo nucifera。
+SHA-256：906714f0dee2bb911cfce3edb3b20115a3d57d79e5234d7b49774df9edddafe5
+
+------------------------------------------------------------------------

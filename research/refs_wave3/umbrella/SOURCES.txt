@@ -1,0 +1,194 @@
+umbrella — 真实摄影外观参考
+用途：仅作本地渲染外观参照，不再发布。
+核对日期：2026-11-05。像素为实际下载文件解码结果；源文件像素另列。
+图片未在本地裁切、调色、去水印或放大。官方标准尺寸图片/图库 JPEG 可能经过来源服务器缩放、压缩。
+作者未署名时如实注明；发布单位或工艺作者不冒充摄影师。
+
+[01] umbrella_01.jpg
+文件名：umbrella_01.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Oiled_Paper_Umbrella_of_Fuzhou_2013-07.JPG
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Oiled_Paper_Umbrella_of_Fuzhou_2013-07.JPG/3840px-Oiled_Paper_Umbrella_of_Fuzhou_2013-07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：猫猫的日记本
+像素：3840 × 2880 px
+文件：JPEG，1,818,346 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：4320 × 3240 px
+来源标题：Oiled Paper Umbrella of Fuzhou 2013-07.JPG
+来源署名/机构：Own work
+参照内容与限制：中国伞博物馆福州油纸伞内侧：密集竹骨、纸面和伞心；室内漫射光。
+SHA-256：e2733eaeeeccf5b86c58754ae7d1db875d5e3fff0c602d311214c3ba240bca52
+
+[02] umbrella_02.jpg
+文件名：umbrella_02.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Oiled_Paper_Umbrella_of_Yingyang,_Yunnan_Province_2013-07.JPG
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Oiled_Paper_Umbrella_of_Yingyang%2C_Yunnan_Province_2013-07.JPG/3840px-Oiled_Paper_Umbrella_of_Yingyang%2C_Yunnan_Province_2013-07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：猫猫的日记本
+像素：3840 × 2880 px
+文件：JPEG，1,791,554 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：4320 × 3240 px
+来源标题：Oiled Paper Umbrella of Yingyang, Yunnan Province 2013-07.JPG
+来源署名/机构：Own work
+参照内容与限制：中国伞博物馆云南荥阳油纸伞内侧：伞骨与图案叠加；不是户外强逆光。
+SHA-256：843670dc7a64d3ce839718342c9289750a2b83be84a2bdadcaf1f22e5e7e444c
+
+[03] umbrella_03.jpg
+文件名：umbrella_03.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Yuanxiangyuan_Paper_Umbrella,_Taiwan_2013-07.JPG
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Yuanxiangyuan_Paper_Umbrella%2C_Taiwan_2013-07.JPG/3840px-Yuanxiangyuan_Paper_Umbrella%2C_Taiwan_2013-07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：猫猫的日记本
+像素：3840 × 2880 px
+文件：JPEG，1,752,719 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：4320 × 3240 px
+来源标题：Yuanxiangyuan Paper Umbrella, Taiwan 2013-07.JPG
+来源署名/机构：Own work
+参照内容与限制：台湾原乡源纸伞实物展陈：内侧竹骨、绿色纸面与纹样；漫射透光。
+SHA-256：2ee90bd2559233f609966ce70163aff6da1abbb8838823506192ba70af7ec4d9
+
+[04] umbrella_04.jpg
+文件名：umbrella_04.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E4%BA%91%E5%8D%97%E8%8D%A5%E9%98%B3%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/%E4%BA%91%E5%8D%97%E8%8D%A5%E9%98%B3%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg/1920px-%E4%BA%91%E5%8D%97%E8%8D%A5%E9%98%B3%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：三猎
+像素：1920 × 1419 px
+文件：JPEG，693,907 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3216 × 2376 px
+来源标题：云南荥阳油纸伞.jpg
+来源署名/机构：Own work
+参照内容与限制：云南荥阳油纸伞内侧：伞心、竹骨、图案与纸面皱褶。
+SHA-256：94ed9e3bca29e9d344b048718a5f22cb6e956e3beb3c2e8cae9b1d97e6172cd7
+
+[05] umbrella_05.jpg
+文件名：umbrella_05.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E5%9B%9B%E5%B7%9D%E6%B3%B8%E5%B7%9E%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/%E5%9B%9B%E5%B7%9D%E6%B3%B8%E5%B7%9E%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg/1920px-%E5%9B%9B%E5%B7%9D%E6%B3%B8%E5%B7%9E%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：三猎
+像素：1920 × 1279 px
+文件：JPEG，463,829 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3568 × 2376 px
+来源标题：四川泸州油纸伞.jpg
+来源署名/机构：Own work
+参照内容与限制：四川泸州油纸伞内侧：绑线、伞骨及暗部透光。
+SHA-256：86e8e480819e362cb34d78beff0ee91973fb651270f1ab919f7341af9b1346b0
+
+[06] umbrella_06.jpg
+文件名：umbrella_06.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E6%B2%B9%E7%BA%B8%E4%BC%9E1-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/%E6%B2%B9%E7%BA%B8%E4%BC%9E1-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg/960px-%E6%B2%B9%E7%BA%B8%E4%BC%9E1-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY 3.0
+许可链接：https://creativecommons.org/licenses/by/3.0
+作者：爵士鼓手
+像素：960 × 674 px
+文件：JPEG，106,421 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1024 × 719 px
+来源标题：油纸伞1-爵士鼓手 - panoramio.jpg
+来源署名/机构：https://web.archive.org/web/20161014232912/http://www.panoramio.com/photo/37012322
+参照内容与限制：制伞现场：裸竹骨和穿线结构；尚未糊纸，作为结构补充。
+SHA-256：f9e3f243024ed5757556a3e90edc5a262e3425c582ea4828704ca784698699c5
+
+[07] umbrella_07.jpg
+文件名：umbrella_07.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E6%B2%B9%E7%BA%B8%E4%BC%9E2-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/%E6%B2%B9%E7%BA%B8%E4%BC%9E2-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg/960px-%E6%B2%B9%E7%BA%B8%E4%BC%9E2-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY 3.0
+许可链接：https://creativecommons.org/licenses/by/3.0
+作者：爵士鼓手
+像素：960 × 709 px
+文件：JPEG，100,130 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1024 × 756 px
+来源标题：油纸伞2-爵士鼓手 - panoramio.jpg
+来源署名/机构：https://web.archive.org/web/20161014232950/http://www.panoramio.com/photo/37012327
+参照内容与限制：制伞现场：红色伞面内侧、竹撑及绑线；原始公开照片分辨率较低。
+SHA-256：3108f6d3b2e9b599614a506488a1f53e6bfc26f0024da64c19c8c575c7bf4b0e
+
+[08] umbrella_08.jpg
+文件名：umbrella_08.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E6%B2%B9%E7%BA%B8%E4%BC%9E3-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg
+图片下载地址：https://upload.wikimedia.org/wikipedia/commons/f/fd/%E6%B2%B9%E7%BA%B8%E4%BC%9E3-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg
+许可：CC BY 3.0
+许可链接：https://creativecommons.org/licenses/by/3.0
+作者：爵士鼓手
+像素：1024 × 1024 px
+文件：JPEG，382,604 bytes
+下载版本：Wikimedia 原始上传文件
+来源标示原始像素：1024 × 1024 px
+来源标题：油纸伞3-爵士鼓手 - panoramio.jpg
+来源署名/机构：https://web.archive.org/web/20161014183049/http://www.panoramio.com/photo/37012333
+参照内容与限制：制伞现场：红色纸伞透光、花卉图案及竹骨；较强匹配。
+SHA-256：1ee9a7a5e0101e6d19449afcff1932ab74a26f68a4d74b863317cb2827ca0844
+
+[09] umbrella_09.jpg
+文件名：umbrella_09.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E6%B2%B9%E7%BA%B8%E4%BC%9E4-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/%E6%B2%B9%E7%BA%B8%E4%BC%9E4-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg/960px-%E6%B2%B9%E7%BA%B8%E4%BC%9E4-%E7%88%B5%E5%A3%AB%E9%BC%93%E6%89%8B_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY 3.0
+许可链接：https://creativecommons.org/licenses/by/3.0
+作者：爵士鼓手
+像素：960 × 638 px
+文件：JPEG，146,606 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1024 × 681 px
+来源标题：油纸伞4-爵士鼓手 - panoramio.jpg
+来源署名/机构：https://web.archive.org/web/20161014172941/http://www.panoramio.com/photo/37012343
+参照内容与限制：红色油纸伞阵近景：逆光透纸、骨架阴影、手绘花卉。
+SHA-256：a4dec01676c8b9cf076a4833712d82a0c9565c2b2c01f587cacdf842b57db682
+
+[10] umbrella_10.jpg
+文件名：umbrella_10.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E6%B5%99%E6%B1%9F%E4%BD%99%E6%9D%AD%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/%E6%B5%99%E6%B1%9F%E4%BD%99%E6%9D%AD%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg/1920px-%E6%B5%99%E6%B1%9F%E4%BD%99%E6%9D%AD%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：三猎
+像素：1920 × 1279 px
+文件：JPEG，595,200 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3568 × 2376 px
+来源标题：浙江余杭油纸伞.jpg
+来源署名/机构：Own work
+参照内容与限制：浙江余杭油纸伞内侧：竹骨径向排列、图案与纸质。
+SHA-256：02efb8b356680b8ad67cc4b540072584ebdbeb171b332a1df48eef983610f65a
+
+[11] umbrella_11.jpg
+文件名：umbrella_11.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E7%A6%8F%E5%BB%BA%E6%B4%8B%E5%8F%A3%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/%E7%A6%8F%E5%BB%BA%E6%B4%8B%E5%8F%A3%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg/1920px-%E7%A6%8F%E5%BB%BA%E6%B4%8B%E5%8F%A3%E6%B2%B9%E7%BA%B8%E4%BC%9E.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：三猎
+像素：1920 × 1354 px
+文件：JPEG，621,576 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3368 × 2376 px
+来源标题：福建洋口油纸伞.jpg
+来源署名/机构：Own work
+参照内容与限制：福建洋口油纸伞内侧：竹撑、伞心、纸面和图案。
+SHA-256：0a06f8be93a154e79735495b1b4f67175197e41cca59c04fa9d5166527591240
+
+[12] umbrella_12.jpg
+文件名：umbrella_12.jpg
+来源页：https://sucai.redocn.com/hangyebaitai_11240118.html
+图片下载地址：https://img.redocn.com/sheying/20201124/yangpaihuizhiyusan_11240118.jpg
+许可：保留版权／未购买商业许可；公开带水印预览，仅作本地外观参照，不构成再发布授权。
+作者：sunrainpla（红动中国供稿摄影师）
+像素：700 × 497 px
+文件：JPEG，142,595 bytes
+下载版本：公开带水印预览；付费原图未下载
+来源标示原始像素：5472 × 3648 px
+参照内容与限制：仰拍绘制雨伞：中式纸伞、竹骨、内侧绑线、纸面透光及水墨图案；保留来源水印。
+SHA-256：2589d152a5a0bdf8a8149eb318fc0f0f237009ebdbcfc114e4032ca2c912bcd1

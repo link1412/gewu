@@ -1,0 +1,114 @@
+cloisonne — 明清掐丝珐琅
+照片数量：8
+下载日期：2026-11-05
+
+保留下载文件的原像素；未做放大。
+“原始图 URL”指来源原文件；“实际下载 URL”可为服务端标准尺寸版本，像素以本文件所列为准。
+
+[01] 文件名：cloisonne_cma_153760_main.tif
+名称：Mandala Base
+原始图 URL：https://openaccess-cdn.clevelandart.org/1987.58/1987.58_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/1987.58/1987.58_full.tif
+来源页面：https://clevelandart.org/art/1987.58
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：6770 × 5735
+文件：TIFF；116,489,886 bytes
+SHA-256：768bb1bbf667a844def5958f79c54c37a1efcc4a523a6accd6eb0f421bcb9bc9
+来源内容说明：Mandala Base, early 1400s. China, Ming dynasty (1368–1644). Cloisonné enamel; diameter: 30.8 cm (12 1/8 in.). The Cleveland Museum of Art, Purchase from the J. H. Wade Fund, 1987.58
+
+[02] 文件名：cloisonne_cma_154737_main.tif
+名称：Bowl with Splayed Foot
+原始图 URL：https://openaccess-cdn.clevelandart.org/1989.319/1989.319_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/1989.319/1989.319_full.tif
+来源页面：https://clevelandart.org/art/1989.319
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：4394 × 3320
+文件：TIFF；43,787,560 bytes
+SHA-256：961ed3d5cd1f4aaab2e393b7a63e00a034e261d45d8ce647527653c1ca87496d
+来源内容说明：Bowl with Splayed Foot, 1700s. China, Qing dynasty (1644-1911). Cloisonné enamel; diameter: 10.5 cm (4 1/8 in.); overall: 6.6 cm (2 5/8 in.). The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin, 1989.319
+
+[03] 文件名：cloisonne_cma_154740_main.tif
+名称：Vase with Three Rams' Heads
+原始图 URL：https://openaccess-cdn.clevelandart.org/1989.321/1989.321_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/1989.321/1989.321_full.tif
+来源页面：https://clevelandart.org/art/1989.321
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：4801 × 5056
+文件：TIFF；72,845,840 bytes
+SHA-256：66477142e6e671798cb6925ff8f3f68478811affa6b33b9640e1a6b4cf201e1d
+来源内容说明：Vase with Three Rams' Heads, 1736–1795. China, Jiangxi province, Jingdezhen, Qing dynasty (1644-1911), Qianlong mark and reign (1736-1795). Cloisonné enamel; diameter: 9.4 cm (3 11/16 in.); overall: 14 cm (5 1/2 in.). The Cleveland Museum of Art, Bequest of Mrs. Severance A. Millikin, 1989.321
+
+[04] 文件名：cloisonne_cma_144661_main.tif
+名称：Vase with Floral Scrolls
+原始图 URL：https://openaccess-cdn.clevelandart.org/1969.285/1969.285_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/1969.285/1969.285_full.tif
+来源页面：https://clevelandart.org/art/1969.285
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：5885 × 7811
+文件：TIFF；137,921,274 bytes
+SHA-256：e6f5a6ea74891e83f55f53de1a10fd5089ca7aa9c15b07d66c311d494935272d
+来源内容说明：Vase with Floral Scrolls, 1600s. China, Ming dynasty (1368–1644). Cloisonné enamel; overall: 25.7 cm (10 1/8 in.). The Cleveland Museum of Art, The Norweb Collection, 1969.285
+
+[05] 文件名：cloisonne_commons_132475055.jpg
+名称：DP-24605-005.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/a/a8/DP-24605-005.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/DP-24605-005.jpg/3840px-DP-24605-005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:DP-24605-005.jpg
+许可：CC0
+许可说明 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者／摄影／机构署名：The Metropolitan Museum of Art
+像素：3840 × 2882
+文件：JPEG；1,325,030 bytes
+SHA-256：aad4032f278dcd53f9f47e722923ddb3b36bc6edef75d7a31b317612b024887b
+来源内容说明：明晚期 銅胎掐絲琺瑯花鳥紋座墩 Title: Garden seat with birds and flowers Period: Ming dynasty (1368–1644) Date: late 16th–17th century Culture: China Medium: Cloisonné enamel Dimensions: H. 15 1/2 in. (39.4 cm); W. 13 1/4 in. (33.7 cm); D. 13 1/4 in. (33.7 cm) Classification: Cloisonné Credit Line: Gift of Edward G. Kennedy, 1929 Accession Number: 29.110.16 Edward Guthrie Kennedy American, born Ireland, New York, 1929; donated to MMA
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸3840px。原图4000×3002。
+
+[06] 文件名：cloisonne_commons_132466611.jpg
+名称：DP-24606-006.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/5/5b/DP-24606-006.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/DP-24606-006.jpg/3840px-DP-24606-006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:DP-24606-006.jpg
+许可：CC0
+许可说明 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者／摄影／机构署名：The Metropolitan Museum of Art
+像素：3840 × 2882
+文件：JPEG；1,493,285 bytes
+SHA-256：6f37bb3938e5180c4058852b1ae5f564763f5e7246aab8c7be1add8b89e1b42f
+来源内容说明：晚明清初 掐絲琺瑯仿古方尊 Title: Vase in the form of an archaic wine vessel (fangzun) Period: Late Ming (1368–1644) to early Qing dynasty (1644–1911) Date: 17th century Culture: China Medium: Cloisonné enamel Dimensions: H. 21 1/4 in. (54 cm); W. 13 3/4 in. (34.9 cm; D. 13 1/2 in. (34.3 cm) Classification: Cloisonné Credit Line: Gift of Edward G. Kennedy, 1929 Accession Number: 29.110.91 Edward Guthrie Kennedy American, born Ireland, New York, 1929; donated to MMA
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸3840px。原图4000×3002。
+
+[07] 文件名：cloisonne_commons_76696090.jpg
+名称：Mandala base, China, Ming dynasty, probably Yongle period, early 1400s AD, cloisonne - Freer Gallery of Art - DSC05004.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/4/4c/Mandala_base%2C_China%2C_Ming_dynasty%2C_probably_Yongle_period%2C_early_1400s_AD%2C_cloisonne_-_Freer_Gallery_of_Art_-_DSC05004.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Mandala_base%2C_China%2C_Ming_dynasty%2C_probably_Yongle_period%2C_early_1400s_AD%2C_cloisonne_-_Freer_Gallery_of_Art_-_DSC05004.jpg/3840px-Mandala_base%2C_China%2C_Ming_dynasty%2C_probably_Yongle_period%2C_early_1400s_AD%2C_cloisonne_-_Freer_Gallery_of_Art_-_DSC05004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Mandala_base,_China,_Ming_dynasty,_probably_Yongle_period,_early_1400s_AD,_cloisonne_-_Freer_Gallery_of_Art_-_DSC05004.jpg
+许可：Public domain
+许可说明 URL：https://commons.wikimedia.org/wiki/File:Mandala_base,_China,_Ming_dynasty,_probably_Yongle_period,_early_1400s_AD,_cloisonne_-_Freer_Gallery_of_Art_-_DSC05004.jpg
+作者／摄影／机构署名：Daderot
+像素：3840 × 3476
+文件：JPEG；2,579,801 bytes
+SHA-256：f2accdb41d69b590dba707c350f8cf48bd52d7b796f6d2cf83f9d2d06d6ef9af
+来源内容说明：Exhibit in the Freer Gallery of Art, Washington, D.C., USA. F1998.295
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸3840px。原图3922×3550。
+
+[08] 文件名：cloisonne_commons_96631803.jpg
+名称：Ming Cloisonne Gu.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/b/b4/Ming_Cloisonne_Gu.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ming_Cloisonne_Gu.jpg/1920px-Ming_Cloisonne_Gu.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Ming_Cloisonne_Gu.jpg
+许可：CC0
+许可说明 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者／摄影／机构署名：Gary Todd
+像素：1920 × 2880
+文件：JPEG；910,472 bytes
+SHA-256：a6e1b75e66d18b3c6c30e993699cab163a5b1a5ab4a85dbe99e860cd70f1a346
+来源内容说明：Xuande reign. National Museum: China through the Ages, Exhibit 8. Complete indexed photo collection at WorldHistoryPics.com.
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载1920px版本。原图3456×5184。

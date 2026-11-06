@@ -1,0 +1,179 @@
+{
+ "source": "Cleveland Museum of Art 1957.40, Ru ware washer; photo Gary Kirchenbauer, CC0 (reference only, ref/ru/photos/cma_1957.40.jpg)",
+ "frame": "mm; z up along the axis, z = 0 on the ground; profile r(z) of the glaze's outer surface",
+ "scale": {
+  "diameter_mm": {
+   "value": 128.0,
+   "tag": "M",
+   "how": "the museum's record; the rim's outer diameter"
+  },
+  "height_mm_museum": {
+   "value": 38.0,
+   "tag": "M",
+   "how": "the museum's record; ground to the lip's top. NOT used unless fit --museum-height: with D = 128 mm the photo fits H = fitted.height_mm (see docs/objects/ru_washer.md)"
+  }
+ },
+ "fitted": {
+  "r_foot_bottom": {
+   "value": 43.8401,
+   "sd": 0.6325,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "r_foot_top": {
+   "value": 45.3417,
+   "sd": 1.8437,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "h_foot": {
+   "value": 4.8818,
+   "sd": 1.9435,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "wall_a": {
+   "value": 3.6113,
+   "sd": 19.7957,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "wall_alpha_deg": {
+   "value": 0.0,
+   "sd": 150.3608,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "wall_p2r": {
+   "value": 53.8943,
+   "sd": 8.4303,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "wall_p2z": {
+   "value": 11.1573,
+   "sd": 9.8068,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "wall_p3r": {
+   "value": 56.0736,
+   "sd": 2.5674,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "wall_p3z": {
+   "value": 11.7753,
+   "sd": 13.4984,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "wall_b": {
+   "value": 6.6322,
+   "sd": 4.5649,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  },
+  "height_mm": {
+   "value": 32.9595,
+   "sd": 0.1348,
+   "tag": "M",
+   "how": "fitted to the photo's edges (form.py fit)"
+  }
+ },
+ "measured": {
+  "lip_mm": {
+   "value": 1.4,
+   "tag": "M",
+   "how": "the lip band's width at the rim's two ends (LIP_MM)"
+  }
+ },
+ "assumed": {
+  "wall_mm": {
+   "value": 3.0,
+   "why": "the body's wall thickness below the lip (with the glaze); the lip itself is measured (lip_mm); the wall thickens from the lip to this over the upper third"
+  },
+  "floor_z_mm": {
+   "value": 7.0,
+   "why": "the inner floor's height above the ground (the base ~5 mm thick over its recessed underside); where the inner wall ends higher, the floor is there"
+  },
+  "floor_fillet_mm": {
+   "value": 6.0,
+   "why": "the inner floor turns into the inner wall in a broad curve, as a thrown washer does"
+  },
+  "base_under_frac": {
+   "value": 0.6,
+   "why": "the base's underside inside the foot ring, recessed above the ground by this fraction of the ring's measured height"
+  },
+  "foot_width_mm": {
+   "value": 4.5,
+   "why": "the foot ring's thickness at its bottom (its inner face is hidden)"
+  },
+  "bead_mm": {
+   "value": 1.2,
+   "why": "the foot ring's rounded bottom edge: its bright band in the photo is ~1.5 mm tall (read off by eye, 30 px at 20 px/mm)"
+  },
+  "foot_top_fillet_mm": {
+   "value": 0.8,
+   "why": "the crease where the outer wall meets the foot ring's outer face (concave): rounded, as glaze pooled in it would round it"
+  },
+  "foot_inner_fillets_mm": {
+   "value": 0.8,
+   "why": "the foot ring's inner edges and the base underside's corner"
+  }
+ },
+ "wall_bezier": [
+  [
+   45.3417,
+   4.8818
+  ],
+  [
+   48.9529,
+   4.8818
+  ],
+  [
+   53.8943,
+   11.1573
+  ],
+  [
+   56.0736,
+   11.7753
+  ],
+  [
+   64.0,
+   25.6273
+  ],
+  [
+   64.0,
+   32.2595
+  ]
+ ],
+ "derived": {
+  "foot_diameter_max_mm": 90.367,
+  "foot_diameter_ground_contact_outer_mm": 86.325,
+  "foot_diameter_top_mm": 90.683,
+  "foot_height_mm": 4.882,
+  "foot_splay_deg": -17.097,
+  "lip_thickness_mm": 1.4,
+  "rim_diameter_mm": 128.0,
+  "max_outer_radius_mm": 64.0,
+  "outer_wall_radius_at_z_mm": {
+   "6": 48.298,
+   "8": 50.86,
+   "10": 52.867,
+   "15": 56.788,
+   "20": 59.791,
+   "25": 62.139,
+   "30": 63.732
+  },
+  "floor_z_mm": 7.882,
+  "depth_inside_mm": 30.118,
+  "fillets_used_mm": {
+   "c_floor": 6.0,
+   "foot_top": 0.8,
+   "bead": 1.2,
+   "c_foot_inner": 0.8,
+   "c_base": 0.8
+  }
+ }
+}

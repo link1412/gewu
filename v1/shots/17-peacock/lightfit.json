@@ -1,0 +1,119 @@
+{
+ "camera": "shots/17-peacock/camera.json",
+ "shot": 17,
+ "res": [
+  640,
+  360
+ ],
+ "basis": "out/shots/17-peacock/r3/raw/{frame}/x.{light}.exr",
+ "frames": [
+  {
+   "name": "f00",
+   "target": "236-243"
+  }
+ ],
+ "target": {
+  "kind": "regions",
+  "mask": [],
+  "regions": {
+   "top60": [
+    {
+     "rows": [
+      0,
+      0.05555555555555555
+     ]
+    }
+   ],
+   "middle": [
+    {
+     "rows": [
+      0.3333333333333333,
+      0.6666666666666666
+     ]
+    }
+   ],
+   "bottom": [
+    {
+     "rows": [
+      0.6666666666666666,
+      1
+     ]
+    }
+   ],
+   "upper": [
+    {
+     "rows": [
+      0.05555555555555555,
+      0.3333333333333333
+     ]
+    }
+   ],
+   "bottom_left": [
+    {
+     "rows": [
+      0.6666666666666666,
+      1
+     ]
+    },
+    {
+     "cols": [
+      0,
+      0.5
+     ]
+    }
+   ],
+   "bottom_right": [
+    {
+     "rows": [
+      0.6666666666666666,
+      1
+     ]
+    },
+    {
+     "cols": [
+      0.5,
+      1
+     ]
+    }
+   ]
+  }
+ },
+ "weights": "channel",
+ "lights": {
+  "key": {
+   "tie": "gel"
+  },
+  "key2": {
+   "tie": "gel"
+  },
+  "top": {
+   "tie": "gel"
+  },
+  "b0q0": {
+   "tie": "gel"
+  },
+  "b0q1": {
+   "tie": "gel"
+  },
+  "b0q2": {
+   "tie": "gel"
+  },
+  "b0q3": {
+   "tie": "gel"
+  }
+ },
+ "smooth": [
+  {
+   "chain": [
+    "b0q0",
+    "b0q1",
+    "b0q2",
+    "b0q3",
+    "b0q0"
+   ],
+   "weight": 0.5
+  }
+ ],
+ "notes": "r2: a key from the lower right, one from the left (slightly low), one from the top, a dome fill (4 azimuth quadrants); one gel shared by every lamp (tie), a band's quadrants kept near equal (smooth) [A, a lighting choice]; target: shotcheck's own row regions plus the bottom's halves",
+ "target_average": "codes"
+}

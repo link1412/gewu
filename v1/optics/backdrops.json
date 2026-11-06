@@ -1,0 +1,69 @@
+{
+ "about": "Backdrop materials for optics/studio.py: a diffuse reflectance, flat (one number) or a pbrt interleaved spectrum [nm, value, ...], with where the number comes from and what kind it is: [spec] a maker's nominal value, [M] measured, [E] someone's estimate, [A] our assumption. All are Lambertian here, an approximation for velvet and flock, whose pile scatters back towards the light. Found in research (S3), report and data in ref/studio/ (not in git). Colours (entries with rgb, a linear sRGB albedo that pbrt turns into its sigmoid spectrum) are ours, [A] our choice (S3): the reference film looks good half because of complementary grounds (red behind blue-and-white, purple behind enamel, yellow behind silver, blue sky behind a red lantern); no paper maker's spectrum behind them.",
+ "materials": {
+  "grey_18": {
+   "reflectance": 0.18,
+   "source": "[spec] Colorama 'Granite' seamless paper is the one meant 'where 18% grey is required' (Colorama brochure 2015, p.2, footnote; https://daylightstudios.com/wp-content/uploads/colorama-muestra-2015_RGB-colours.pdf); Kodak Gray Card Plus grey 0.18 (https://www.kodak.com/en/motion/page/gray-card/). No spectrum was found as numbers: flat over the visible is [A]. The British Museum shot a collection object on Colorama 'Storm Grey' (image record Oc1944,02.2109), value not found."
+  },
+  "white_90": {
+   "reflectance": 0.9,
+   "source": "[spec] Kodak Gray Card Plus white side 0.90 (same Kodak page); a white card, not seamless paper (white seamless measurements exist in the Chromaxion spectral library, numbers not recovered); flat is [A]."
+  },
+  "black_velvet": {
+   "reflectance": 0.01,
+   "source": "[E] 'typical value' 0.01 for black velvet in lecture notes (IIIT Allahabad, Image Processing lecture series, PDF p.20, https://silp.iiita.ac.in/wp-content/uploads/cv_Image_Processing_2.pdf), low confidence: no wavelength or geometry. Angular measurements of velvet cloth exist (Hsia & Richmond 1976, NBS J. Res. 80A, Fig. 6.6) but no number was recovered. Flat and Lambertian are [A]."
+  },
+  "black_flock": {
+   "reflectance": 0.003,
+   "source": "[spec] Musou VL Flock Sheet, total hemispherical reflectance 0.003 at 550 nm, visible <= 0.005 (maker's table, https://www.musoublack.com/products/vl-flock-sheet); flat over the visible is [A] (their 950 nm point is 0.10, outside the sensor's range)."
+  },
+  "rose": {
+   "rgb": [
+    0.7305,
+    0.402,
+    0.402
+   ],
+   "source": "[A] our choice (S3), a complementary ground; display colour [222, 170, 170] (sRGB-encoded), written as its linear albedo; behind celadon and jade (the jade on pink of the reference film's shot 20)"
+  },
+  "cinnabar_red": {
+   "rgb": [
+    0.5149,
+    0.0212,
+    0.0144
+   ],
+   "source": "[A] our choice (S3), a complementary ground; display colour [190, 40, 32] (sRGB-encoded), written as its linear albedo; behind blue-and-white"
+  },
+  "violet": {
+   "rgb": [
+    0.0612,
+    0.0212,
+    0.1413
+   ],
+   "source": "[A] our choice (S3), a complementary ground; display colour [70, 40, 105] (sRGB-encoded), written as its linear albedo; behind cloisonne enamel (shot 17)"
+  },
+  "ochre_yellow": {
+   "rgb": [
+    0.8308,
+    0.4564,
+    0.0612
+   ],
+   "source": "[A] our choice (S3), a complementary ground; display colour [235, 180, 70] (sRGB-encoded), written as its linear albedo; behind silver (shot 35)"
+  },
+  "sky_blue": {
+   "rgb": [
+    0.1144,
+    0.3515,
+    0.7529
+   ],
+   "source": "[A] our choice (S3), a complementary ground; display colour [95, 160, 225] (sRGB-encoded), written as its linear albedo; behind a red lantern or a warm glow (shot 37)"
+  },
+  "warm_paper": {
+   "rgb": [
+    0.8388,
+    0.7758,
+    0.6584
+   ],
+   "source": "[A] our choice (S3), a complementary ground; display colour [236, 228, 212] (sRGB-encoded), written as its linear albedo; a cream paper ground (shots 24, 25)"
+  }
+ }
+}

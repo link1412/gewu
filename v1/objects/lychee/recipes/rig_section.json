@@ -1,0 +1,208 @@
+{
+ "name": "lychee_section",
+ "title": "荔枝横截面:背光、湿面",
+ "what": "objects/lychee's cut fruit, its cut face to the camera: backlit.json's through lamp and rims for the tubercles' glowing tips; a broad softbox above the lens for the lobes' tops; a low strip under the lens, where the vertical wet face mirrors; a dark red ground lit faintly.",
+ "look_target": {
+  "film": "ref/reference-film.mp4",
+  "shots": [
+   {
+    "shot": 4,
+    "frame": 89,
+    "what": "lychee flesh, rim of red tubercles"
+   }
+  ],
+  "note": "a look target for the light only"
+ },
+ "spectrum": {
+  "blackbody_K": 4000,
+  "why": "our choice (S4, toward the look target's warm cream and crimson): every lamp 4000 K, the camera balanced for 5500 K (the recipe's develop.white_balance), as a photographer warms a shot with the light"
+ },
+ "lamps": [
+  {
+   "name": "through",
+   "group": "through",
+   "shape": "disk",
+   "size": {
+    "R": 0.15
+   },
+   "at": {
+    "anchor": "top",
+    "dz": {
+     "R": -0.35
+    },
+    "azimuth_deg": 180,
+    "elevation_deg": 0,
+    "distance": {
+     "R": 0.25
+    }
+   },
+   "aim": {
+    "anchor": "top",
+    "dz": {
+     "R": -0.35
+    }
+   },
+   "lux": 5000,
+   "behind_object": true,
+   "why": "backlit.json's through lamp, lower (dz -0.35 R): looking 8 degrees down over a half fruit, the default showed above the arc"
+  },
+  {
+   "name": "rim_left",
+   "group": "rims",
+   "shape": "rect",
+   "size": {
+    "R": [
+     1.2,
+     1.2
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -150,
+    "elevation_deg": 40,
+    "distance": {
+     "R": 4
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 1500,
+   "why": "as backlit.json, a little lower and wider apart: the tubercles' tips lit through from behind"
+  },
+  {
+   "name": "rim_right",
+   "group": "rims",
+   "shape": "rect",
+   "size": {
+    "R": [
+     1.2,
+     1.2
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 150,
+    "elevation_deg": 40,
+    "distance": {
+     "R": 4
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 1500,
+   "why": "see rim_left"
+  },
+  {
+   "name": "top",
+   "group": "top",
+   "shape": "rect",
+   "size": {
+    "R": [
+     3,
+     2
+    ]
+   },
+   "at": {
+    "anchor": "top",
+    "azimuth_deg": 0,
+    "elevation_deg": 35,
+    "distance": {
+     "R": 8
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 1500,
+   "why": "our choice: a broad softbox above the lens; the sacs' domes catch it on their upper flanks"
+  },
+  {
+   "name": "side_left",
+   "group": "sides",
+   "shape": "rect",
+   "size": {
+    "R": [
+     1.0,
+     0.6
+    ]
+   },
+   "at": {
+    "anchor": "top",
+    "azimuth_deg": -35,
+    "elevation_deg": -6,
+    "distance": {
+     "R": 3.5
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 1500,
+   "why": "our choice (S4 v6, in place of a strip under the lens): a pair of softboxes level with the face, 35 degrees off the lens to either side. They light the vertical cut face (cos 35 = 0.82) and graze the skin's upper surface, so the flesh is lit while the rim stays crimson. The flat face mirrors them away from the lens, so only flanks tilted 12-23 degrees sideways (the sacs' domes by their creases, the beads) glint, in lines, as in the look target; v5's strip under the lens made every flat patch of juice a white blot"
+  },
+  {
+   "name": "side_right",
+   "group": "sides",
+   "shape": "rect",
+   "size": {
+    "R": [
+     1.0,
+     0.6
+    ]
+   },
+   "at": {
+    "anchor": "top",
+    "azimuth_deg": 35,
+    "elevation_deg": -6,
+    "distance": {
+     "R": 3.5
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 1500,
+   "why": "our choice (S4 v6, in place of a strip under the lens): a pair of softboxes level with the face, 35 degrees off the lens to either side. They light the vertical cut face (cos 35 = 0.82) and graze the skin's upper surface, so the flesh is lit while the rim stays crimson. The flat face mirrors them away from the lens, so only flanks tilted 12-23 degrees sideways (the sacs' domes by their creases, the beads) glint, in lines, as in the look target; v5's strip under the lens made every flat patch of juice a white blot"
+  },
+  {
+   "name": "ground",
+   "group": "ground",
+   "shape": "disk",
+   "size": {
+    "R": 2
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 170,
+    "elevation_deg": 55,
+    "distance": {
+     "R": 4
+    }
+   },
+   "aim": {
+    "anchor": "ground_seen"
+   },
+   "lux": 800,
+   "why": "as backlit.json: lights the ground seen behind the fruit"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "cinnabar_red",
+  "distance": {
+   "R": 20
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 35.0
+  },
+  "width": {
+   "R": 45.0
+  },
+  "why": "our choice: a dark red ground, far back (20 R: the rims' and the strip's spill falls off ~2.6 stops more than at 8 R) and lit faintly, for the look target's maroon dark (bg 28, 0, 1)"
+ }
+}

@@ -1,0 +1,257 @@
+山楂冰糖葫芦真实照片来源记录
+整理日期：2026-11-06（Asia/Tokyo）
+仅记录 photos/。
+未裁剪、未去水印、未放大；宽高为文件存储像素，EXIF 旋转另列。
+“未见明显水印”是目视结论。公开可浏览不等于开放许可。
+
+[01] photos/photo_01_studio_shell_neck.jpg
+标题：糖葫芦
+来源页面 URL：https://cookidoo.com.cn/recipes/recipe/zh-hans-cn/r765629
+作者：摄影师不明；食谱发布方／结构化作者：福维克家电有限公司（Cookidoo）
+许可：不明（未见图片开放许可；页面版权归福维克相关公司）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：4359 × 4359 px；按 EXIF 显示：4359 × 4359 px
+日期：页面未标明拍摄日期
+下载类型：食谱摄影公开图
+下载图片 URL：https://assets.tmecosys.cn/image/upload/img/recipe/ras/Assets/0ebe8bc543c02cb0b528c73967b5c56e/Derivates/b90c51a2551fb7daef995413c2311d4819dde3fb.jpg
+SHA-256：c34a89cd33deaf8c7ed66c5c3f7d5678080f1244a33d0149dd9c3ea2ffd846a1
+备注：专业食谱实拍，深色木板布景。
+
+[02] photos/photo_02_amber_wing_bubbles.jpg
+标题：_DSC2711
+来源页面 URL：https://www.flickr.com/photos/minghesdf/9512087008/
+作者：冥河（Flickr: 冥河）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：2400 × 3600 px；按 EXIF 显示：3600 × 2400 px
+日期：2013-04-29 12:55:58；上传日期 2013-08-14
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/3738/9512087008_d1e1df3f2a_o.jpg
+SHA-256：a3727b36ddba37d7e5c65e9357837971a9360e8fa94107114bc8ec627addc362
+备注：芝麻覆盖了部分果体，优先用作糖片参考。
+
+[03] photos/photo_03_backlit_sugar_wings.jpg
+标题：冰糖葫芦
+来源页面 URL：https://www.flickr.com/photos/yan-long/7155469620/
+作者：龙颜大悦（Flickr: 龙颜大悦）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：4288 × 2848 px；按 EXIF 显示：2848 × 4288 px
+日期：2011-11-10 10:43:33；上传日期 2012-05-08
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/8004/7155469620_5cf11fb924_o.jpg
+SHA-256：00bf465c3c066e7379ca24dd0e1f0b700ad6531d45dfe1c7fac5aecd182eeb3c
+备注：混合果摊，重点看右侧圆山楂与其糖翅。
+
+[04] photos/photo_04_single_hawthorn_macro.jpg
+标题：Winter in Beijing
+来源页面 URL：https://www.flickr.com/photos/inhiu/6606736157/
+作者：Xiao Yang（Flickr: inhiu）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：1600 × 1489 px；按 EXIF 显示：1600 × 1489 px
+日期：2011-12-27 19:25:55；上传日期 2011-12-31
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/7024/6606736157_a43b2b3346_h.jpg
+SHA-256：69a2c9656d270268e403de39f0673e611634f5227d11a3c4e25553cf980a43f8
+备注：极近特写，暗部噪点较多。
+
+[05] photos/photo_05_dark_macro_flow.jpg
+标题：糖衣弹丸 / Tanghulu
+来源页面 URL：https://www.flickr.com/photos/nimrod_zhang/6294642740/
+作者：Nimrod Zhang（Flickr: Nimrod Zhang）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：有：右上 NIMRODZHANG PHOTOGRAPHY，完整保留
+尺寸：1280 × 865 px；按 EXIF 显示：1280 × 865 px
+日期：2011-10-30 15:36:17；上传日期 2011-10-30
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/6040/6294642740_e701342c24_o.jpg
+SHA-256：deeab357084ba6e4a04150bb801c2ec9cdbd1490ba5d0c0892146021a93224c9
+备注：1280 px；右上作者水印。
+
+[06] photos/photo_06_styled_thick_shell.jpg
+标题：中国传统小吃冰糖葫芦（255920064）
+来源页面 URL：https://depositphotos.com/cn/photo/chinese-traditional-snack-ice-sugar-gourd-255920064.html
+作者：badboydt7
+许可：Depositphotos 商业图库；标准／扩展许可需另行购买，本文件为公开带水印预览，不代表取得商用授权
+许可 URL：https://depositphotos.com/license.html
+水印：有：全图 Depositphotos 网格文字及底部标识，完整保留
+尺寸：1600 × 1167 px；按 EXIF 显示：1600 × 1167 px
+日期：2019-04-08 上传（来源页）
+下载类型：专业图库公开预览
+下载图片 URL：https://st4.depositphotos.com/5316224/25592/i/1600/depositphotos_255920064-stock-photo-chinese-traditional-snack-ice-sugar.jpg?forcejpeg=true
+SHA-256：b9d64a494c0d433fbe29e53096f158e039c72daab84d543041a5d660c4274b32
+备注：专业图库带水印预览；含夹心和糖霜山楂。
+
+[07] photos/photo_07_shell_bridges.jpg
+标题：A Chorus Line
+来源页面 URL：https://www.flickr.com/photos/32686931@N07/11168088006/
+作者：JebbiePix（Flickr: JebbiePix）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：2048 × 1360 px；按 EXIF 显示：2048 × 1360 px
+日期：2013-11-26 16:58:37；上传日期 2013-12-02
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/3710/11168088006_07bc9aae47_k.jpg
+SHA-256：75e63e2e2cb631cf4c92a9cf7669bff54a2c179da52824055c9fca674a0a89c3
+备注：摊位近景，灯光偏色。
+
+[08] photos/photo_08_flattened_hawthorn_board.jpg
+标题：IMG_6905
+来源页面 URL：https://www.flickr.com/photos/lnsklndr/46970284531/
+作者：Lιηυѕ（Flickr: Lιηυѕ）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：2400 × 1600 px；按 EXIF 显示：2400 × 1600 px
+日期：2019-02-03 07:52:46；上传日期 2019-02-03
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/4878/46970284531_d947f11b00_o.jpg
+SHA-256：fdca635adee05cc425f02701a11d1c915fc2b3f3e9d285b30c6fdb84515114b6
+备注：制作近景；前后景虚化，重点看中间一排。
+
+[09] photos/photo_09_amber_shards_closeup.jpg
+标题：Sweets
+来源页面 URL：https://www.flickr.com/photos/96434059@N00/416046134/
+作者：Sheila（Flickr: sheilaz413）
+许可：CC BY-NC-ND 2.0
+许可 URL：https://creativecommons.org/licenses/by-nc-nd/2.0/
+水印：未见明显水印（人工目视）
+尺寸：800 × 533 px；按 EXIF 显示：800 × 533 px
+日期：2007-02-18 11:21:29；上传日期 2007-03-10
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/176/416046134_93dcc4f898_c.jpg
+SHA-256：467e6e0b538ee6f166eac40c3214bc06d1365f67583ed276969f52c215e0690c
+备注：800 px；混合山楂与菠萝串。
+
+[10] photos/photo_10_neck_skewer_wings.jpg
+标题：前门大栅栏糖葫芦
+来源页面 URL：https://www.flickr.com/photos/chenying/2993750372/
+作者：Ying Chen（Flickr: Deepblue Space）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：3504 × 2336 px；按 EXIF 显示：3504 × 2336 px
+日期：2008-11-01 14:40:20；上传日期 2008-11-01
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/3024/2993750372_8a4a5b4fbf_o.jpg
+SHA-256：1912defe2373329fd36ed23c741935ec1338f80eb56302ae0831f3a02a8ec129
+备注：混合果摊，重点看左侧和右侧的纯红山楂串。
+
+[11] photos/photo_11_side_sheet_bubble.jpg
+标题：冰糖葫芦
+来源页面 URL：https://www.flickr.com/photos/shoppen/5432664656/
+作者：Shoppen Guo（Flickr: Shoppen）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：4272 × 2848 px；按 EXIF 显示：4272 × 2848 px
+日期：2011-02-03 13:57:29；上传日期 2011-02-10
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/5255/5432664656_8e6116e41c_o.jpg
+SHA-256：cad611a79f453fe3775c8af052240e7bd2d257298b35f2ddc5be46bf55cc9e5d
+备注：画面同时有其他果串，重点看左前方和中间山楂。
+
+[12] photos/photo_12_long_sugar_flow.jpg
+标题：A traditional winter treat in Northern China, 糖葫芦 #tanghulu are skewers of sugar-dipped fruits such as grapes, strawberries and tangerines, but most commonly, the fruit of the Chinese Hawthorn. These ones have also been dipped in sesame seeds. Delicious,
+来源页面 URL：https://www.flickr.com/photos/culturalkeys/24125120269/
+作者：Cultural Keys（Flickr: Cultural Keys）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：有：左下淡色 Cultural Keys 标识，完整保留
+尺寸：1080 × 1080 px；按 EXIF 显示：1080 × 1080 px
+日期：2016-01-19 20:01:25；上传日期 2016-01-20
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/1604/24125120269_ec9bafde56_o.jpg
+SHA-256：8622d608544264519f3fad18638fca89c5b20ebb9ee74602c2d50d5c67704fee
+备注：1080 px；左下有淡水印，芝麻覆盖部分果子。
+
+[13] photos/photo_13_irregular_shell_reflections.jpg
+标题：冰糖葫芦 icy-sugar-hawkthrown, Beijing Snack
+来源页面 URL：https://www.flickr.com/photos/kingdomany/8328273224/
+作者：Will Wang（Flickr: kingdomany）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：1024 × 768 px；按 EXIF 显示：1024 × 768 px
+日期：2012-12-30 12:02:14；上传日期 2012-12-31
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/8073/8328273224_78057c61a6_b.jpg
+SHA-256：a41c7280ca415aefaec3d50b30ee8ccbe4f37e366d8c9720963dc78ecbbc5232
+备注：1024 px；背景和部分高光过曝。
+
+[14] photos/photo_14_strong_backlight_rim.jpg
+标题：Sweet Yet Sour- Day 79 of the Project 365
+来源页面 URL：https://www.flickr.com/photos/91105870@N02/16153791179/
+作者：Vivian  L（Flickr: V L8）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：4000 × 2248 px；按 EXIF 显示：4000 × 2248 px
+日期：2015-01-01 00:29:44；上传日期 2015-01-22
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/7582/16153791179_b27eb9234f_o.jpg
+SHA-256：e20e6848b6f5eb651035364ed75e56c89bb96c96a5a9e43dc13ab6d95bf71833
+备注：有眩光和局部过曝，适合看整体受光。
+
+[15] photos/photo_15_thin_vs_bubbly_shells.jpg
+标题：TangHuLu.JPG
+来源页面 URL：https://commons.wikimedia.org/wiki/File:TangHuLu.JPG
+作者：Popo le Chien
+许可：CC0
+许可 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+水印：未见明显水印（人工目视）
+尺寸：1920 × 1280 px；按 EXIF 显示：1920 × 1280 px
+日期：2013-03-27 13:51:32
+下载类型：Wikimedia Commons 标准大图
+下载图片 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/TangHuLu.JPG/1920px-TangHuLu.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+SHA-256：0df6d52f3361472b51fc222643f1c6a67ea86b82b0affe67863fc4641c6a639e
+备注：Commons 1920 px 标准大图，非原始最大尺寸。
+
+[16] photos/photo_16_dark_golden_edges.jpg
+标题：Bing Tang Hu Lu / 冰糖葫蘆
+来源页面 URL：https://www.flickr.com/photos/flyingpillow/2240646095/
+作者：Flying Pillow（Flickr: mrstimothychung）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：830 × 1250 px；按 EXIF 显示：830 × 1250 px
+日期：2008-01-20 05:23:07；上传日期 2008-02-04
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/2388/2240646095_dfa10e1f1b_o.jpg
+SHA-256：040b862b6a5b22f6c65a7e6611937ed03a6e1ab8df126dca351964ed25d4abed
+备注：1250 px；市集现场光，不声称为摄影棚拍摄。
+
+[17] photos/photo_17_filled_hawthorn_highlights.jpg
+标题：Bing Tang Hulu
+来源页面 URL：https://www.flickr.com/photos/56751239@N05/8206154430/
+作者：Ten batsu（Flickr: Guimin）
+许可：All Rights Reserved（保留所有权利）
+许可 URL：无／不明
+水印：未见明显水印（人工目视）
+尺寸：2048 × 1152 px；按 EXIF 显示：2048 × 1152 px
+日期：2012-06-16 20:56:34；上传日期 2012-11-21
+下载类型：Flickr 作者页面公开最大可用尺寸
+下载图片 URL：https://live.staticflickr.com/8340/8206154430_f1ebd97a74_k.jpg
+SHA-256：ebdbd2086c459053444f69c61f665598fc25967dfff0f2f67bf65cab21c6062e
+备注：混合果摊；只参考左侧与中部山楂，右侧有草莓。
+
+[18] photos/photo_18_dipping_and_cooling.jpg
+标题：Making candied fruit in Tianjin China.JPG
+来源页面 URL：https://commons.wikimedia.org/wiki/File:Making_candied_fruit_in_Tianjin_China.JPG
+作者：Kilroy238
+许可：CC BY-SA 3.0
+许可 URL：https://creativecommons.org/licenses/by-sa/3.0
+水印：未见明显水印（人工目视）
+尺寸：1920 × 1078 px；按 EXIF 显示：1920 × 1078 px
+日期：Taken on 30 May 2009
+下载类型：Wikimedia Commons 标准大图
+下载图片 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Making_candied_fruit_in_Tianjin_China.JPG/1920px-Making_candied_fruit_in_Tianjin_China.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+SHA-256：16b4e0eaac242cbb649f65bd687fe66903dcbcab483ee9528774b813d13a576d
+备注：制作过程辅助图，非极近微距；Commons 1920 px。

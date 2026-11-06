@@ -1,0 +1,60 @@
+{
+ "notes": [
+  "What tools/film.py puts in each shot of our film. A shot that is not listed here (or has no frames/still) gets a placeholder drawn from spec/shots.json.",
+  "frames: a directory of developed PNGs named by FILM frame (fNNNN.png, e.g. out/dev from tools/camera.py develop); every frame of the shot must be there.",
+  "still: one PNG held for the whole shot (say so in note).",
+  "status: preview | final. subject: overrides the DESIGN.md section 4 table's 'our subject' column."
+ ],
+ "shots": {
+  "2": {
+   "subject": "曜变天目",
+   "subject_note": "DESIGN §0 S8: 建盏点茶 replaced by the yohen tenmoku"
+  },
+  "6": {
+   "frames": "out/shots/06-guan/v1/dev",
+   "status": "preview",
+   "note": "S8 v1: S2 guan vase re-rendered, all 6 frames, after the S8 orient-normals fix (Cycles GPU, 1080p 128 spp + OIDN, seed 0; glaze sealed); same scene.py and camera.json (docs/shots/06-guan.md S8 v1)"
+  },
+  "19": {
+   "subject": "黑漆嵌螺钿山水人物盘",
+   "frames": "out/shots/19-luodian/r1/dev1080",
+   "status": "preview",
+   "note": "S8 r1 螺钿 (fix pass): black-lacquer dish inlaid with coloured mother-of-pearl (TMM nacre LUT d 240-560 nm, per-piece tablet thickness, tilt, curvature and in-phase flame bands), silver rim on the arc, still dish and camera, a horizontal key strip rising 38->64 deg; Cycles GPU 960x540 256 spp, light groups mixed (fit.py, key half the body, lacquer L* 13) + OIDN, float Lanczos (PIL) to 1080 then camera chain (docs/shots/19-luodian.md)"
+  },
+  "1": {
+   "frames": "out/shots/01-38-ink/r2/dev1080",
+   "status": "preview",
+   "note": "r2: sky fix (r2b fix pass). S8 ending r2b (numpy KM model; ambient back-light, directional lamps, two-part lens veil, glossy ink film, paper texture tiled; light refit on frames 0+420+470, 456/485 held out; 960x540 16-bit, Lanczos to 1080 rgb48, no camera chain); shot 38 sky 18.5 vs 18.5; frame 0 band rms 11.5 (r1 13.29), top sky 31.1 vs 29.8"
+  },
+  "38": {
+   "frames": "out/shots/01-38-ink/r2/dev1080",
+   "status": "preview",
+   "note": "r2: sky fix (r2b fix pass). S8 ending r2b (numpy KM model; ambient back-light, directional lamps, two-part lens veil, glossy ink film, paper texture tiled; light refit on frames 0+420+470, 456/485 held out; 960x540 16-bit, Lanczos to 1080 rgb48, no camera chain); shot 38 sky 18.5 vs 18.5; frame 0 band rms 11.5 (r1 13.29), top sky 31.1 vs 29.8"
+  },
+  "17": {
+   "subject": "孔雀羽毛的眼",
+   "subject_note": "DESIGN §4 S9: 青绿山水的石绿 replaced by the peacock feather",
+   "frames": "out/shots/17-peacock/r3/dev1080",
+   "status": "preview",
+   "note": "r3: barbs blend (fine 1.8° glints, both rows alike), region 2 grades into region 3 over 2 mm, back feather as two blurred eyes (ring arcs), key-led sheen band (others <= 60% of the key); shotcheck ±3 all regions"
+  },
+  "21": {
+   "subject": "暮色里的远山(平远)",
+   "frames": "out/shots/21-yuanshan/r1/dev1080",
+   "status": "preview",
+   "note": "S9 v1 shader shot (DESIGN 3.8): procedural ridge (height field + ~4000 noise-displaced rocks + small pines/shrubs) silhouetted against stacked emitting sky planes (9 gradient bases, light groups), sun from behind for the rim, fill and lens veil; Cycles GPU 960x540 1024 spp, one still render (the shot does not move); weights by lightfit then codefit.py on 8-bit codes [F], sun fixed [A]; OIDN, PIL float Lanczos to 1080, camera chain per-frame noise (docs/shots/21-yuanshan.md)"
+  },
+  "34": {
+   "subject": "风水罗盘",
+   "frames": "out/shots/34-luopan/r1/dev1080",
+   "status": "preview",
+   "note": "S9 v1 shader shot (DESIGN 3.8): luopan plate from straight above, pale lacquer face (face.py: rings, ticks, Songti characters as texture, red rings), red silk cross threads, near-flush in a warm white board; Cycles GPU 960x540 512 spp, one still render (the shot does not move); key panel + sky (colour tied) fitted by lightfit then codefit.py on 8-bit block means [F]; OIDN, PIL float Lanczos to 1080, camera chain per-frame noise (docs/shots/34-luopan.md)"
+  },
+  "27": {
+   "subject": "洒金的金箔堆与飘落的金箔",
+   "frames": "out/shots/27-jinbo/r2/dev1080",
+   "status": "preview",
+   "note": "S9 r2 shader shot (DESIGN 3.8): heap of hand-beaten gold leaf (30k large flat flakes along the slope, beating direction along the arc, anisotropic metallic roughness 0.05, 8% standing up for glints; ramp between a deeper and a paler leaf alloy by view elevation [A]) + 420 small falling flakes off the focus plane as bokeh specks; black studio, front softbox + glint lights + high and low backlights; f/1.2 on the crest, built at 1/10 and scaled x10; Cycles GPU 960x540 256 spp per frame; groups denoised before a code-space fit on block + band means [F]; OIDN, PIL Lanczos to 1080, camera chain (docs/shots/27-jinbo.md)"
+  }
+ }
+}

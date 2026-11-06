@@ -1,0 +1,15 @@
+{
+ "name": "wear",
+ "what": "磨损 and 划痕: rubbing (handling, wiping) rounds the arrises and leaves the touched surface rubbed; scratching cuts fine lines. Physical processes with physical parameters; 'old' is one of their results, not a knob (docs/layers.md). A new piece: all zero. Each piece's values live with the piece (or its material card), tagged there.",
+ "parameters": {
+  "edge_radius_mm": {"unit": "mm", "new": 0, "what": "radius the arrises and points are worn round to"},
+  "touch_radius_mm": {"unit": "mm", "new": 0, "what": "radius of the rubbing body pressed from above (a cloth over a fingertip: fingertips are ~16-20 mm wide [A]); 0 = never rubbed"},
+  "touch_reach_mm": {"unit": "mm", "new": 0.1, "what": "e-fold depth below the rubbing body's envelope that a compliant cloth still reaches"},
+  "rubbed_alpha": {"unit": "GGX alpha (rms slope ~ alpha / sqrt 2)", "new": null, "what": "roughness of the rubbed surface; unused where nothing is touched"},
+  "scratch_per_cm2": {"unit": "1/cm^2", "new": 0},
+  "scratch_len_mm": {"unit": "mm (lognormal median, sigma 0.6)", "new": 3},
+  "scratch_depth_um": {"unit": "um (each scratch 0.3-1 of it)", "new": 0},
+  "scratch_width_mm": {"unit": "mm", "new": 0.06},
+  "scratch_alpha": {"unit": "GGX alpha", "new": null, "what": "roughness inside a scratch, at least"}
+ }
+}

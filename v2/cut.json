@@ -1,0 +1,613 @@
+{
+ "note": "The film's cut, in order. Sets what is in the film and for how long; see the docstring of film.py. Reasons in IMAGERY.md.",
+ "shots": [
+  {
+   "src": "s01_moyun",
+   "name": "墨晕",
+   "len": 31,
+   "apex_y": 0.481
+  },
+  {
+   "src": "s02_yaobian",
+   "name": "曜变",
+   "len": 34,
+   "apex_y": 0.478
+  },
+  {
+   "src": "s05_yinni",
+   "name": "印泥",
+   "len": 12,
+   "apex_y": 0.5
+  },
+  {
+   "src": "s06_junyao",
+   "name": "钧窑",
+   "len": 10,
+   "apex_y": 0.447
+  },
+  {
+   "src": "s07_cijing",
+   "name": "磁青",
+   "len": 13,
+   "still": true,
+   "push": 0,
+   "apex_y": 0.456
+  },
+  {
+   "src": "s09_yinxing",
+   "name": "银杏",
+   "len": 36,
+   "apex_y": 0.45,
+   "dy": 0.1
+  },
+  {
+   "src": "s61_tihong",
+   "name": "剔红",
+   "len": 22,
+   "apex_y": 0.476
+  },
+  {
+   "src": "s11_jiangdou",
+   "name": "豇豆红",
+   "len": 16,
+   "apex_y": 0.463
+  },
+  {
+   "src": "s59_suxiu",
+   "name": "苏绣",
+   "len": 26,
+   "apex_y": 0.464
+  },
+  {
+   "src": "s54_zoumadeng",
+   "name": "走马灯",
+   "len": 30,
+   "slow": 1
+  },
+  {
+   "src": "s15_zheshan",
+   "name": "折扇",
+   "len": 22,
+   "apex_y": 0.27,
+   "caption": "苟日新",
+   "first": 2,
+   "slow": 1
+  },
+  {
+   "src": "s16_lizhi_v1",
+   "name": "荔枝",
+   "len": 16,
+   "apex_y": 0.474,
+   "caption": "苟日新",
+   "still": true,
+   "push": 0
+  },
+  {
+   "src": "s55_diancui",
+   "name": "点翠",
+   "len": 18,
+   "apex_y": 0.482,
+   "caption": "苟日新"
+  },
+  {
+   "src": "s14_datiehua",
+   "name": "打铁花",
+   "len": 22,
+   "apex_y": 0.48,
+   "caption": "苟日新"
+  },
+  {
+   "src": "s66_xieyang",
+   "name": "油纸伞",
+   "len": 24,
+   "apex_y": 0.42,
+   "caption": "日日新",
+   "slow": 1
+  },
+  {
+   "src": "s46_luopan",
+   "name": "螺钿",
+   "len": 24,
+   "apex_y": 0.431,
+   "caption": "日日新"
+  },
+  {
+   "src": "s20_denglong",
+   "name": "红灯笼",
+   "len": 12,
+   "apex_y": 0.458,
+   "caption": "日日新"
+  },
+  {
+   "src": "s24_jianzhi",
+   "name": "剪纸",
+   "len": 9,
+   "apex_y": 0.464,
+   "caption": "日日新",
+   "first": 11
+  },
+  {
+   "src": "s63_nanhong",
+   "name": "南红",
+   "len": 34,
+   "apex_y": 0.45,
+   "caption": "又日新",
+   "slow": 1,
+   "first": 4
+  },
+  {
+   "src": "s27_jinbo",
+   "name": "金箔",
+   "len": 8,
+   "apex_y": 0.42,
+   "caption": "又日新"
+  },
+  {
+   "src": "s28_dehua",
+   "name": "德化白瓷",
+   "len": 12,
+   "apex_y": 0.447,
+   "caption": "又日新"
+  },
+  {
+   "src": "s39_hehua",
+   "name": "荷花",
+   "len": 36,
+   "apex_y": 0.27,
+   "caption": "又日新"
+  },
+  {
+   "src": "s19_luodian",
+   "name": "螺钿竹",
+   "len": 10,
+   "apex_y": 0.5,
+   "caption": "又日新",
+   "still": true,
+   "push": 0
+  },
+  {
+   "src": "s35_kuangcao",
+   "name": "狂草",
+   "len": 10,
+   "apex_y": 0.46,
+   "caption_ink": [
+    0.09,
+    0.08,
+    0.07
+   ],
+   "caption": "又日新"
+  },
+  {
+   "src": "s76_yidi",
+   "name": "一滴",
+   "len": 36,
+   "apex_y": 0.445,
+   "caption_ink": [
+    0.09,
+    0.08,
+    0.07
+   ],
+   "caption": "又日新",
+   "slow": 1
+  },
+  {
+   "src": "s73_heisan",
+   "name": "油纸伞·黑",
+   "len": 24,
+   "apex_y": 0.435,
+   "caption": "又日新",
+   "slow": 1,
+   "still": true,
+   "push": 0
+  },
+  {
+   "src": "s45_kongque",
+   "name": "孔雀羽",
+   "len": 28,
+   "apex_y": 0.476,
+   "caption": "又日新",
+   "first": 4
+  },
+  {
+   "src": "s36_nanzhu",
+   "name": "南珠",
+   "len": 24,
+   "apex_y": 0.486,
+   "caption": "又日新"
+  },
+  {
+   "src": "s30_huali",
+   "name": "黄花梨",
+   "len": 12,
+   "apex_y": 0.482,
+   "caption": "又日新",
+   "still": true,
+   "push": 0
+  },
+  {
+   "src": "s50_qinghua",
+   "name": "青花",
+   "len": 12,
+   "apex_y": 0.456,
+   "caption": "又日新"
+  },
+  {
+   "src": "s37_jinyu",
+   "name": "金鱼",
+   "len": 13,
+   "apex_y": 0.355,
+   "caption": "又日新"
+  },
+  {
+   "src": "s49_falang",
+   "name": "珐琅",
+   "len": 9,
+   "apex_y": 0.433,
+   "caption": "又日新"
+  },
+  {
+   "src": "s69_mutan_raw",
+   "name": "木炭",
+   "len": 36,
+   "apex_y": 0.426,
+   "caption": "又日新",
+   "slow": 1
+  },
+  {
+   "src": "s38_richu",
+   "name": "日出",
+   "len": 128,
+   "first": 8,
+   "end": true,
+   "slow": 0.7143
+  }
+ ],
+ "bench": [
+  {
+   "src": "s40_chanyi",
+   "name": "蝉翼",
+   "len": 10,
+   "apex_y": 0.27,
+   "caption": "日日新",
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s03_tianhuang",
+    "s04_zisha",
+    "s05_yinni",
+    "s18_jiagu",
+    "s06_junyao",
+    "s07_cijing",
+    "s08_qingtingyan",
+    "s09_yinxing",
+    "s23_jingtailan",
+    "s61_tihong",
+    "s11_jiangdou",
+    "s13_guqin",
+    "s64_heye",
+    "s59_suxiu",
+    "s54_zoumadeng",
+    "s15_zheshan",
+    "s16_lizhi_v1",
+    "s55_diancui",
+    "s14_datiehua"
+   ]
+  },
+  {
+   "src": "s26_qinghua",
+   "name": "青花",
+   "len": 12,
+   "apex_y": 0.462,
+   "caption": "日日新",
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s03_tianhuang",
+    "s04_zisha",
+    "s05_yinni",
+    "s18_jiagu",
+    "s06_junyao",
+    "s07_cijing",
+    "s08_qingtingyan",
+    "s09_yinxing",
+    "s23_jingtailan",
+    "s61_tihong",
+    "s11_jiangdou",
+    "s13_guqin",
+    "s64_heye",
+    "s59_suxiu",
+    "s54_zoumadeng",
+    "s15_zheshan",
+    "s16_lizhi_v1",
+    "s55_diancui",
+    "s14_datiehua",
+    "s21_youzhisan",
+    "s46_luopan",
+    "s24_jianzhi",
+    "s20_denglong"
+   ]
+  },
+  {
+   "src": "s41_feicui",
+   "name": "翡翠",
+   "len": 10,
+   "apex_y": 0.465,
+   "caption": "又日新",
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s03_tianhuang",
+    "s04_zisha",
+    "s05_yinni",
+    "s18_jiagu",
+    "s06_junyao",
+    "s07_cijing",
+    "s08_qingtingyan",
+    "s09_yinxing",
+    "s23_jingtailan",
+    "s61_tihong",
+    "s11_jiangdou",
+    "s13_guqin",
+    "s64_heye",
+    "s59_suxiu",
+    "s54_zoumadeng",
+    "s15_zheshan",
+    "s16_lizhi_v1",
+    "s55_diancui",
+    "s14_datiehua",
+    "s21_youzhisan",
+    "s46_luopan",
+    "s24_jianzhi",
+    "s20_denglong",
+    "s45_kongque",
+    "s42_yaohuo",
+    "s28_dehua",
+    "s39_hehua",
+    "s56_yunjin",
+    "s19_luodian",
+    "s34_canjian"
+   ]
+  },
+  {
+   "src": "s34_canjian",
+   "name": "蚕茧",
+   "len": 8,
+   "apex_y": 0.467,
+   "caption": "又日新",
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s03_tianhuang",
+    "s04_zisha",
+    "s05_yinni",
+    "s18_jiagu",
+    "s06_junyao",
+    "s07_cijing",
+    "s08_qingtingyan",
+    "s09_yinxing",
+    "s23_jingtailan",
+    "s61_tihong",
+    "s11_jiangdou",
+    "s13_guqin",
+    "s64_heye",
+    "s59_suxiu",
+    "s54_zoumadeng",
+    "s15_zheshan",
+    "s16_lizhi_v1",
+    "s55_diancui",
+    "s14_datiehua",
+    "s21_youzhisan",
+    "s46_luopan",
+    "s24_jianzhi",
+    "s20_denglong",
+    "s45_kongque",
+    "s42_yaohuo",
+    "s28_dehua",
+    "s39_hehua",
+    "s56_yunjin",
+    "s19_luodian"
+   ]
+  },
+  {
+   "src": "s56_yunjin",
+   "name": "云锦",
+   "len": 9,
+   "apex_y": 0.362,
+   "caption": "又日新",
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s03_tianhuang",
+    "s04_zisha",
+    "s05_yinni",
+    "s18_jiagu",
+    "s06_junyao",
+    "s07_cijing",
+    "s08_qingtingyan",
+    "s09_yinxing",
+    "s23_jingtailan",
+    "s61_tihong",
+    "s11_jiangdou",
+    "s13_guqin",
+    "s64_heye",
+    "s59_suxiu",
+    "s54_zoumadeng",
+    "s15_zheshan",
+    "s16_lizhi_v1",
+    "s55_diancui",
+    "s14_datiehua",
+    "s21_youzhisan",
+    "s46_luopan",
+    "s24_jianzhi",
+    "s20_denglong",
+    "s45_kongque",
+    "s42_yaohuo",
+    "s28_dehua",
+    "s39_hehua"
+   ]
+  },
+  {
+   "src": "s08_qingtingyan",
+   "name": "蜻蜓眼",
+   "len": 15,
+   "apex_y": 0.474,
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s03_tianhuang",
+    "s04_zisha",
+    "s05_yinni",
+    "s18_jiagu",
+    "s06_junyao",
+    "s07_cijing"
+   ]
+  },
+  {
+   "src": "s13_guqin",
+   "name": "古琴",
+   "len": 12,
+   "apex_y": 0.48,
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s03_tianhuang",
+    "s04_zisha",
+    "s05_yinni",
+    "s18_jiagu",
+    "s06_junyao",
+    "s07_cijing",
+    "s09_yinxing",
+    "s23_jingtailan",
+    "s61_tihong",
+    "s11_jiangdou"
+   ]
+  },
+  {
+   "src": "s03_tianhuang",
+   "name": "田黄",
+   "len": 26,
+   "apex_y": 0.478,
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian"
+   ]
+  },
+  {
+   "src": "s04_zisha",
+   "name": "紫砂",
+   "len": 14,
+   "apex_y": 0.482,
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian"
+   ]
+  },
+  {
+   "src": "s18_jiagu",
+   "name": "甲骨",
+   "len": 12,
+   "apex_y": 0.479,
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s05_yinni"
+   ]
+  },
+  {
+   "src": "s23_jingtailan",
+   "name": "景泰蓝",
+   "len": 10,
+   "apex_y": 0.481
+  },
+  {
+   "src": "s52_ruyao",
+   "name": "汝窑",
+   "len": 12,
+   "apex_y": 0.421,
+   "caption": "又日新"
+  },
+  {
+   "src": "s64_heye",
+   "name": "荷",
+   "apex_y": 0.215,
+   "len": 24,
+   "still": true,
+   "push": 0
+  },
+  {
+   "src": "s47_yaobian",
+   "name": "曜变",
+   "len": 12,
+   "apex_y": 0.46,
+   "caption": "又日新",
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s05_yinni",
+    "s06_junyao",
+    "s07_cijing",
+    "s09_yinxing",
+    "s61_tihong",
+    "s11_jiangdou",
+    "s59_suxiu",
+    "s54_zoumadeng",
+    "s15_zheshan",
+    "s16_lizhi_v1",
+    "s55_diancui",
+    "s14_datiehua",
+    "s66_xieyang",
+    "s46_luopan",
+    "s24_jianzhi",
+    "s20_denglong",
+    "s63_nanhong",
+    "s27_jinbo",
+    "s45_kongque",
+    "s42_yaohuo",
+    "s28_dehua",
+    "s39_hehua",
+    "s19_luodian"
+   ]
+  },
+  {
+   "src": "s42_yaohuo",
+   "name": "窑火",
+   "len": 12,
+   "apex_y": 0.445,
+   "caption": "又日新",
+   "prev": [
+    "s01_moyun",
+    "s02_yaobian",
+    "s05_yinni",
+    "s06_junyao",
+    "s07_cijing",
+    "s09_yinxing",
+    "s61_tihong",
+    "s11_jiangdou",
+    "s59_suxiu",
+    "s54_zoumadeng",
+    "s15_zheshan",
+    "s16_lizhi_v1",
+    "s55_diancui",
+    "s14_datiehua",
+    "s66_xieyang",
+    "s46_luopan",
+    "s20_denglong",
+    "s24_jianzhi",
+    "s63_nanhong",
+    "s27_jinbo",
+    "s28_dehua",
+    "s39_hehua",
+    "s19_luodian",
+    "s35_kuangcao",
+    "s76_yidi",
+    "s73_heisan",
+    "s45_kongque",
+    "s36_nanzhu",
+    "s30_huali",
+    "s50_qinghua",
+    "s37_jinyu",
+    "s49_falang"
+   ]
+  }
+ ]
+}

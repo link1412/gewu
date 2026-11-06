@@ -1,0 +1,32 @@
+{
+ "shot": 21,
+ "subject": "暮色里的远山(平远)",
+ "note": "shader shot: procedural ridge + rocks + small pines silhouetted against stacked emitting sky planes (light groups), sun from behind fixed [A], fill, lens veil (docs/shots/21-yuanshan.md)",
+ "optics": {
+  "f_number": 2.0,
+  "magnification": 0.163,
+  "focal_mm": 135.0
+ },
+ "res": [
+  960,
+  540
+ ],
+ "spp": 1024,
+ "camera": {
+  "seed": 2121
+ },
+ "bases": {
+  "veil": "uniform"
+ },
+ "fit": {
+  "lights": {
+   "sun": {
+    "fixed": [
+     4.5,
+     2.25,
+     0.38
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "sensor": "canon_eos_5d_mkiv",
+ "light": {"blackbody_K": 5500, "why": "the key light of scene.py (itself a PLACEHOLDER); weights the diffraction"},
+ "white_balance": {"K": 4200, "why": "set cooler than the light, as a photographer would, so that the glaze (its measured colour, a grey green) comes out the original's grey blue: object mean (112,127,145) against (117,134,150), S2 preview"},
+ "iso": 100,
+ "expose": {"percentile": 99.9, "of_saturation": 0.7, "why": "our choice: the brightest highlights half a stop under clipping, as a careful photographer exposes"},
+ "develop": {"ev": 0.0, "shoulder_from": 0.5, "contrast": 1.244, "pivot": 0.18, "why": "contrast fitted with the lights' strengths (scene.py, S2) to the original's frame 103: luma blurred 40 px over the object (median, 90th percentile), the hotspot and the sky; its darkest tenth is its own dark glaze, weighted lightly"},
+ "sharpen": {"amount": 0.0, "sigma_px": 0.7},
+ "seed": 6
+}

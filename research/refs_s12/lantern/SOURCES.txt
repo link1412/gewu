@@ -1,0 +1,86 @@
+lantern — 中国皮影实物
+照片数量：6
+下载日期：2026-11-05
+
+保留下载文件的原像素；未做放大。
+“原始图 URL”指来源原文件；“实际下载 URL”可为服务端标准尺寸版本，像素以本文件所列为准。
+
+[01] 文件名：lantern_commons_1005355.jpg
+名称：B-Schattenpuppe-Zhongkui (Peking).JPG
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/4/48/B-Schattenpuppe-Zhongkui_%28Peking%29.JPG
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/B-Schattenpuppe-Zhongkui_%28Peking%29.JPG/1280px-B-Schattenpuppe-Zhongkui_%28Peking%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:B-Schattenpuppe-Zhongkui_(Peking).JPG
+许可：CC BY-SA 3.0
+许可说明 URL：http://creativecommons.org/licenses/by-sa/3.0/
+作者／摄影／机构署名：来源未单列摄影者；参见来源页面
+像素：1280 × 1771
+文件：JPEG；630,075 bytes
+SHA-256：b76f79ad42124caa3eb29c5625381c8004f4efc49533494ea2f5f7431b97ed93
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸1280px。原图1897×2625。
+
+[02] 文件名：lantern_commons_1067986.jpg
+名称：OFB-Qianlongsatz03-Krieger.JPG
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/b/ba/OFB-Qianlongsatz03-Krieger.JPG
+实际下载 URL：https://upload.wikimedia.org/wikipedia/commons/b/ba/OFB-Qianlongsatz03-Krieger.JPG
+来源页面：https://commons.wikimedia.org/wiki/File:OFB-Qianlongsatz03-Krieger.JPG
+许可：CC BY-SA 3.0
+许可说明 URL：http://creativecommons.org/licenses/by-sa/3.0/
+作者／摄影／机构署名：来源未单列摄影者；参见来源页面
+像素：2590 × 1996
+文件：JPEG；767,348 bytes
+SHA-256：64eacb8a7104645e8a40990a3c81ff4912bc9f9bf73fdc6021099675a880d222
+
+[03] 文件名：lantern_commons_1068019.jpg
+名称：OFB-Mandschuprinzsatz18-Truppenwimpel.JPG
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/1/11/OFB-Mandschuprinzsatz18-Truppenwimpel.JPG
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/OFB-Mandschuprinzsatz18-Truppenwimpel.JPG/1920px-OFB-Mandschuprinzsatz18-Truppenwimpel.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:OFB-Mandschuprinzsatz18-Truppenwimpel.JPG
+许可：CC BY-SA 3.0
+许可说明 URL：http://creativecommons.org/licenses/by-sa/3.0/
+作者／摄影／机构署名：来源未单列摄影者；参见来源页面
+像素：1920 × 2560
+文件：JPEG；830,482 bytes
+SHA-256：6a2d024932ea4ec88ed83ea93cd5d678389b4bd10bab8a8efeedde8da41b7dfe
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸1920px。原图2112×2816。
+
+[04] 文件名：lantern_commons_17131794.jpg
+名称：The Childrens Museum of Indianapolis - Han shadow puppet.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/4/4e/The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet.jpg/500px-The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet.jpg
+许可：CC BY-SA 3.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/3.0
+作者／摄影／机构署名：Hai Lu, Han peoples
+像素：500 × 648
+文件：JPEG；58,886 bytes
+SHA-256：f6ece672d34017858ebcf2e6c838ff57cc3d5ef4e26fe8bfa9dcbfb356ca27d1
+来源内容说明：A Shadow puppet in the permanent collection of The Children’s Museum of Indianapolis.
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸500px。原图593×768。
+
+[05] 文件名：lantern_commons_17131795.jpg
+名称：The Childrens Museum of Indianapolis - Han shadow puppet - detail 1.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/2/23/The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet_-_detail_1.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet_-_detail_1.jpg/500px-The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet_-_detail_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet_-_detail_1.jpg
+许可：CC BY-SA 3.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/3.0
+作者／摄影／机构署名：Hai Lu, Han peoples
+像素：500 × 750
+文件：JPEG；58,893 bytes
+SHA-256：e45ffef46d7c1e7892accc199f50aaff308675fa905699c17e8b1d202595f9a4
+来源内容说明：A Shaddow puppet in the permanent collection of The Children’s Museum of Indianapolis.
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸500px。原图512×768。
+
+[06] 文件名：lantern_commons_17131797.jpg
+名称：The Childrens Museum of Indianapolis - Han shadow puppet - detail 2.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/b/b5/The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet_-_detail_2.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet_-_detail_2.jpg/500px-The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet_-_detail_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:The_Childrens_Museum_of_Indianapolis_-_Han_shadow_puppet_-_detail_2.jpg
+许可：CC BY-SA 3.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/3.0
+作者／摄影／机构署名：Hai Lu, Han peoples
+像素：500 × 481
+文件：JPEG；57,080 bytes
+SHA-256：a05d5dea87ae41a2b3bcc928e9ab9b36bc214a1708c3d6463013857e8e0da983
+来源内容说明：A Shaddow puppet in the permanent collection of The Children’s Museum of Indianapolis.
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸500px。原图768×739。

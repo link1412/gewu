@@ -1,0 +1,1396 @@
+{
+ "name": "probe",
+ "title": "胭脂红卡：灯的探针",
+ "what": "probe grid of softbox pairs (materials/yanzhi/lightfit)",
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "a030e20s0600L",
+   "group": "a030e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -30,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a030e20s0600R",
+   "group": "a030e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 30,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a030e32s0600L",
+   "group": "a030e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -30,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a030e32s0600R",
+   "group": "a030e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 30,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a030e45s0600L",
+   "group": "a030e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -30,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a030e45s0600R",
+   "group": "a030e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 30,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a030e60s0600L",
+   "group": "a030e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -30,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a030e60s0600R",
+   "group": "a030e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 30,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a045e20s0600L",
+   "group": "a045e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -45,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a045e20s0600R",
+   "group": "a045e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 45,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a045e32s0600L",
+   "group": "a045e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -45,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a045e32s0600R",
+   "group": "a045e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 45,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a045e45s0600L",
+   "group": "a045e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -45,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a045e45s0600R",
+   "group": "a045e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 45,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a045e60s0600L",
+   "group": "a045e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -45,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a045e60s0600R",
+   "group": "a045e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 45,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a060e20s0600L",
+   "group": "a060e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a060e20s0600R",
+   "group": "a060e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 60,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a060e32s0600L",
+   "group": "a060e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a060e32s0600R",
+   "group": "a060e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 60,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a060e45s0600L",
+   "group": "a060e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a060e45s0600R",
+   "group": "a060e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 60,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a060e60s0600L",
+   "group": "a060e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a060e60s0600R",
+   "group": "a060e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 60,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a075e20s0600L",
+   "group": "a075e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -75,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a075e20s0600R",
+   "group": "a075e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 75,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a075e32s0600L",
+   "group": "a075e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -75,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a075e32s0600R",
+   "group": "a075e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 75,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a075e45s0600L",
+   "group": "a075e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -75,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a075e45s0600R",
+   "group": "a075e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 75,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a075e60s0600L",
+   "group": "a075e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -75,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a075e60s0600R",
+   "group": "a075e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 75,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a090e20s0600L",
+   "group": "a090e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -90,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a090e20s0600R",
+   "group": "a090e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 90,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a090e32s0600L",
+   "group": "a090e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -90,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a090e32s0600R",
+   "group": "a090e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 90,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a090e45s0600L",
+   "group": "a090e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -90,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a090e45s0600R",
+   "group": "a090e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 90,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a090e60s0600L",
+   "group": "a090e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -90,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a090e60s0600R",
+   "group": "a090e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 90,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a110e20s0600L",
+   "group": "a110e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -110,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a110e20s0600R",
+   "group": "a110e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 110,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a110e32s0600L",
+   "group": "a110e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -110,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a110e32s0600R",
+   "group": "a110e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 110,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a110e45s0600L",
+   "group": "a110e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -110,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a110e45s0600R",
+   "group": "a110e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 110,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a110e60s0600L",
+   "group": "a110e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -110,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a110e60s0600R",
+   "group": "a110e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 110,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a135e20s0600L",
+   "group": "a135e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -135,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a135e20s0600R",
+   "group": "a135e20s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 135,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a135e32s0600L",
+   "group": "a135e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -135,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a135e32s0600R",
+   "group": "a135e32s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 135,
+    "elevation_deg": 32,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a135e45s0600L",
+   "group": "a135e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -135,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a135e45s0600R",
+   "group": "a135e45s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 135,
+    "elevation_deg": 45,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a135e60s0600L",
+   "group": "a135e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -135,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "a135e60s0600R",
+   "group": "a135e60s0600",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 135,
+    "elevation_deg": 60,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "probe: a softbox pair on the grid (fit.py picks one)"
+  },
+  {
+   "name": "top",
+   "group": "top",
+   "shape": "rect",
+   "size": {
+    "R": [
+     5,
+     5
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 0,
+    "elevation_deg": 75,
+    "distance": {
+     "R": 7
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 500,
+   "why": "meng: a top light; its size (5 R), height and strength (a stop under the sides) are our choice"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "grey_18",
+  "distance": {
+   "R": 10
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 30
+  },
+  "why": "museum_flat's grey sweep, moved back (10 R) so the rear probes fit in front of it [A]"
+ }
+}

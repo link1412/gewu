@@ -1,0 +1,4 @@
+Two factual questions for a procedural film (reference only). Use primary or museum / gemological sources; give URLs; say what is measured and what is claimed. Write report.md, short.
+
+1. Pearl nacre surface as seen at 10-60x (GIA, Gems & Gemology, papers): growth steps / fingerprint-like terraces: spacing and step height in micrometres, whether lines are parallel or contour-like; circled pearls (ring grooves: depth and width); typical small blemishes. Any measured BRDF or description of orient (interference vs diffraction).
+2. Chinese filigree and pierced enamel: 花丝 / 累丝 with 烧蓝 / 点蓝, openwork (镂空) on cloisonne dishes, and plique-a-jour (空窗珐琅, shotai-shippo): how made, typical wire gauge and cell size, how light through it looks, and real dated Chinese examples of a pierced rim or panel in a museum, with links. Also how 缠枝莲 is composed by the craftsman: main stem, branches, flower heads seen from front and side.

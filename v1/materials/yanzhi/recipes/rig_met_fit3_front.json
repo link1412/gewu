@@ -1,0 +1,202 @@
+{
+ "name": "yanzhi_met_fit3_front",
+ "title": "胭脂红卡：第三版灯 + 机位下方的正面补光(S8 r3 的检验)",
+ "what": "S8 r2: the inside's reflections in the photo are about a third of the round-2 rig's in width and height (blob w 0.16-0.18 / h 0.25-0.30 of the bowl against 0.49-0.51 / 0.70, lightfit/fit.py blobs) [M]; the round-2 rear pair's reflections (u +-0.85) are not in the photo; two smaller blobs near the far rim (u -0.40 v 0.09, u +0.52 v 0.16) [M] read as a higher pair at the same azimuths. Groups: main, high, bg (lamps behind the bowl lighting the sweep's wall). A low side pair was tried (render D) and dropped: its reflections (u +-0.68, v 0.77) are not in the photo. Strengths fitted by lightfit/fit3.py. S8 r3 test: a front fill under the camera (group front) [A]: the photo foot ring is 2-6x brighter in R than the render [M] and the floor just in front of the foot 1.3x; a large dim source low on the camera side would light both without a reflection on the front wall (the front wall reflects the floor, 56 degrees down [D]).",
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "mainL",
+   "group": "main",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     220,
+     220
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 48,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] the left reflection in the inside's far wall, photo u -0.38 v 0.52 (probe az 60 el 45: -0.37, 0.60; el 60: 0.30); size 220 mm [F: the blobs' width ratio 0.17 / 0.5 x 600 mm]"
+  },
+  {
+   "name": "mainR",
+   "group": "main",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     220,
+     220
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 72,
+    "elevation_deg": 48,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "[F] the right reflection, photo u +0.45 v 0.54 (probe az 75 el 45: +0.46, 0.58); the photo's pair is not symmetric; size 220 mm [F: the blobs' width ratio 0.17 / 0.5 x 600 mm]"
+  },
+  {
+   "name": "highL",
+   "group": "high",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     220,
+     220
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -60,
+    "elevation_deg": 78,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 187.5,
+   "why": "[F] the photo's small blobs near the far rim (u -0.40 v 0.09, u +0.52 v 0.16) [M]: at el 68 this pair's blob sat at v 0.28 (render D), so 78; same azimuths as the main pair [A]; 250 lux = 0.25 x the main pair [F, lightfit/fit3.py on render E]; S8 r3: 187.5 lux (0.75 x 250) refitted with the front fill [F]"
+  },
+  {
+   "name": "highR",
+   "group": "high",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     220,
+     220
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 72,
+    "elevation_deg": 78,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 187.5,
+   "why": "[F] the photo's small blobs near the far rim (u -0.40 v 0.09, u +0.52 v 0.16) [M]: at el 68 this pair's blob sat at v 0.28 (render D), so 78; same azimuths as the main pair [A]; 250 lux = 0.25 x the main pair [F, lightfit/fit3.py on render E]; S8 r3: 187.5 lux (0.75 x 250) refitted with the front fill [F]"
+  },
+  {
+   "name": "bgL",
+   "group": "bg",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     400,
+     400
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -115,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 700
+    }
+   },
+   "aim": {
+    "anchor": "wall",
+    "height": {
+     "mm": 300
+    }
+   },
+   "lux": 750,
+   "why": "[A] background lights behind the bowl aimed at the sweep's wall (common studio practice, not seen in the photo): the photo's backdrop is 0.66-0.73 of the inside's white, the main and high pairs alone give less (render D: backdrop residual 0.7 in log); 750 lux at the wall = 0.75 x [F, lightfit/fit3.py on render E]"
+  },
+  {
+   "name": "bgR",
+   "group": "bg",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     400,
+     400
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 115,
+    "elevation_deg": 20,
+    "distance": {
+     "mm": 700
+    }
+   },
+   "aim": {
+    "anchor": "wall",
+    "height": {
+     "mm": 300
+    }
+   },
+   "lux": 750,
+   "why": "[A] background lights behind the bowl aimed at the sweep's wall (common studio practice, not seen in the photo): the photo's backdrop is 0.66-0.73 of the inside's white, the main and high pairs alone give less (render D: backdrop residual 0.7 in log); 750 lux at the wall = 0.75 x [F, lightfit/fit3.py on render E]"
+  },
+  {
+   "name": "front",
+   "group": "front",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     800,
+     300
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 0,
+    "elevation_deg": 8,
+    "distance": {
+     "mm": 1800
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 225,
+   "why": "[A] S8 r3 test: a low front fill (a bounce card or softbox under the lens is common on a copy stand); its strength is fitted per light group (fit3.py); 225 lux = 0.75 x the 300 lux test [F, lightfit/fit3.py on out/s8/yanzhi/r3/render/front: score 1.187, against 1.241 without it]"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "white_90",
+  "distance": {
+   "R": 10
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 30
+  },
+  "why": "[F/A] the photo's backdrop is 0.66-0.73 of the inside's white and the wall's neutral sheen (G channel) needs a bright surround: rgfit.py's best reflectance 0.72-0.84; white_90 is the nearest material in optics/backdrops.json (rho 0.84 scores 0.685 against 0.650)"
+ }
+}

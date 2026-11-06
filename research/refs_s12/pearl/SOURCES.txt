@@ -1,0 +1,87 @@
+pearl — 天然珍珠
+照片数量：6
+下载日期：2026-11-05
+
+保留下载文件的原像素；未做放大。
+“原始图 URL”指来源原文件；“实际下载 URL”可为服务端标准尺寸版本，像素以本文件所列为准。
+
+[01] 文件名：pearl_commons_75100651.jpg
+名称：Black lipped oyster with natural pearl, Robert Wan Pearl Museum.JPG
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/f/f1/Black_lipped_oyster_with_natural_pearl%2C_Robert_Wan_Pearl_Museum.JPG
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Black_lipped_oyster_with_natural_pearl%2C_Robert_Wan_Pearl_Museum.JPG/1920px-Black_lipped_oyster_with_natural_pearl%2C_Robert_Wan_Pearl_Museum.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Black_lipped_oyster_with_natural_pearl,_Robert_Wan_Pearl_Museum.JPG
+许可：CC0
+许可说明 URL：http://creativecommons.org/publicdomain/zero/1.0/deed.en
+作者／摄影／机构署名：Wmpearl
+像素：1920 × 2039
+文件：JPEG；606,877 bytes
+SHA-256：daf769978829fc3a4cc485689c8a595c0afe9fcb1dcdfb3f0de5f227f8fd8cce
+来源内容说明：Black lipped oyster with natural pearl, Robert Wan Pearl Museum
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸1920px。原图2835×3010。
+
+[02] 文件名：pearl_commons_17579839.jpg
+名称：Abalone with conical pearl.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/e/e6/Abalone_with_conical_pearl.jpg
+实际下载 URL：https://upload.wikimedia.org/wikipedia/commons/e/e6/Abalone_with_conical_pearl.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Abalone_with_conical_pearl.jpg
+许可：CC BY-SA 3.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/3.0
+作者／摄影／机构署名：Worldexplorer82
+像素：1000 × 750
+文件：JPEG；117,370 bytes
+SHA-256：3b3241b177a294352497377d2a722b43f3a1ca364c66fb11d1f4265f09aadcb4
+来源内容说明：Natural Abalone with conical pearl taken at Oakura beach New Zealand
+
+[03] 文件名：pearl_gia_pearl_02.jpg
+名称：The cellular surface pattern displayed by the non-nacreous pearls.
+原始图 URL：https://www.gia.edu/dam/migrated-assets/_assets/e59b74afdb482735-SU21-GNI-Fig5-266403-468p.jpg
+实际下载 URL：https://www.gia.edu/dam/migrated-assets/_assets/e59b74afdb482735-SU21-GNI-Fig5-266403-468p.jpg
+来源页面：https://www.gia.edu/gems-gemology/summer-2021-gemnews-natural-freshwater-pearls-from-europe-russia-scotland-germany
+许可：版权所有；网页未声明 Creative Commons 等开放许可，转载需联系权利人。
+许可说明 URL：https://www.gia.edu/copyrights-trademarks
+作者／摄影／机构署名：Nathan Renfro
+像素：468 × 325
+文件：JPEG；102,085 bytes
+SHA-256：b9fa677f89f88a3756f37db1d4d72039cb54c74260a60ec02cd682dc27dc06ba
+来源内容说明：The cellular surface pattern displayed by the non-nacreous pearls.
+画面说明：非珍珠层天然淡水珍珠的细胞状表面，视场1.00毫米；不是常见珠光面的示例。
+
+[04] 文件名：pearl_gia_pearl_large_01.jpg
+名称：Natural freshwater pearl found in Tennessee River.
+原始图 URL：https://www.gia.edu/dam/migrated-assets/_assets/86983c1be669f4e8-SP20-GNI-Fig1-254009-636px.jpg
+实际下载 URL：https://www.gia.edu/dam/migrated-assets/_assets/86983c1be669f4e8-SP20-GNI-Fig1-254009-636px.jpg
+来源页面：https://www.gia.edu/gems-gemology/spring-2020-gemnews-exceptional-natural-freshwater-pearl
+许可：版权所有；网页未声明 Creative Commons 等开放许可，转载需联系权利人。
+许可说明 URL：https://www.gia.edu/copyrights-trademarks
+作者／摄影／机构署名：Emily Lane; courtesy of Gina Latendresse
+像素：636 × 358
+文件：JPEG；37,238 bytes
+SHA-256：b3b9e6acd4add2666e74ecaeaa58c1c40146579c30adf12d53a854085a842e92
+来源内容说明：28.38 ct 天然淡水珍珠，来源图注说明于2019年发现于Cumberland River沿岸。
+
+[05] 文件名：pearl_gia_pearl_necklace_01.jpg
+名称：Natural Mexican pearl necklace
+原始图 URL：https://www.gia.edu/dam/migrated-assets/_assets/48948f5e3eea7756-FA24-LN-Fig20-327902-636px.jpg
+实际下载 URL：https://www.gia.edu/dam/migrated-assets/_assets/48948f5e3eea7756-FA24-LN-Fig20-327902-636px.jpg
+来源页面：https://www.gia.edu/gems-gemology/fall-2024-lab-notes-natural-pearl-necklace
+许可：© GIA；All rights reserved；未声明开放许可，转载需联系权利人。
+许可说明 URL：https://www.gia.edu/copyrights-trademarks
+作者／摄影／机构署名：Annie Haynes
+像素：636 × 358
+文件：JPEG；90,698 bytes
+SHA-256：f3c460715f1c33642fff2969222435deaa98b116095139cb4e1aff33e563646f
+来源内容说明：GIA检验确认天然海水珍珠、天然颜色。项链含63颗不同颜色与形状的天然珍珠，可看晕彩。
+
+[06] 文件名：pearl_gia_pearl_necklace_02.jpg
+名称：Natural pen pearl nacre surface, 3.68 mm field of view
+原始图 URL：https://www.gia.edu/dam/migrated-assets/_assets/51460b97f07e5e42-FA24-LN-Fig21-327901-636px.jpg
+实际下载 URL：https://www.gia.edu/dam/migrated-assets/_assets/51460b97f07e5e42-FA24-LN-Fig21-327901-636px.jpg
+来源页面：https://www.gia.edu/gems-gemology/fall-2024-lab-notes-natural-pearl-necklace
+许可：© GIA；All rights reserved；未声明开放许可，转载需联系权利人。
+许可说明 URL：https://www.gia.edu/copyrights-trademarks
+作者／摄影／机构署名：Artitaya Homkrajae
+像素：636 × 358
+文件：JPEG；151,224 bytes
+SHA-256：c22ab0ba116935170310969c09106805a79e5d8d79611ad98ddc36f18848f02e
+来源内容说明：GIA检验确认天然海水珍珠、天然颜色。表面珍珠层实拍，视场3.68毫米。
+画面说明：天然海水珍珠层表面显微实拍，视场3.68毫米。

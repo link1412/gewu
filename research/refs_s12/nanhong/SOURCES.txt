@@ -1,0 +1,71 @@
+nanhong — 南红玛瑙
+照片数量：5
+下载日期：2026-11-05
+
+保留下载文件的原像素；未做放大。
+“原始图 URL”指来源原文件；“实际下载 URL”可为服务端标准尺寸版本，像素以本文件所列为准。
+
+[01] 文件名：nanhong_gia_nanhong_01.jpg
+名称：Polished “Bing Piao” red agate.
+原始图 URL：https://www.gia.edu/dam/migrated-assets/_assets/421c5aaa891c91c1-SU21-GNI-Fig1-266407-636px.jpg
+实际下载 URL：https://www.gia.edu/dam/migrated-assets/_assets/421c5aaa891c91c1-SU21-GNI-Fig1-266407-636px.jpg
+来源页面：https://www.gia.edu/gems-gemology/summer-2021-gemnews-unique-metal-sulfide-inclusion-in-bing-piao-red-agate-from-liangshan-china
+许可：版权所有；网页未声明 Creative Commons 等开放许可，转载需联系权利人。
+许可说明 URL：https://www.gia.edu/copyrights-trademarks
+作者／摄影／机构署名：Su Xu
+像素：636 × 358
+文件：JPEG；53,195 bytes
+SHA-256：1eeb15499c31a79a17c9cfa51cacb73eb0dc051e12e213d61479351521f361b4
+来源内容说明：来源论文明确为四川凉山南红中的冰飘品种；Fig.2 为显微实拍，视场9毫米。
+
+[02] 文件名：nanhong_gia_nanhong_02.jpg
+名称：Polished “Bing Piao” red agate.
+原始图 URL：https://www.gia.edu/dam/migrated-assets/_assets/aa6e717624b49d7f-SU21-GNI-Fig2-266406-468p.jpg
+实际下载 URL：https://www.gia.edu/dam/migrated-assets/_assets/aa6e717624b49d7f-SU21-GNI-Fig2-266406-468p.jpg
+来源页面：https://www.gia.edu/gems-gemology/summer-2021-gemnews-unique-metal-sulfide-inclusion-in-bing-piao-red-agate-from-liangshan-china
+许可：版权所有；网页未声明 Creative Commons 等开放许可，转载需联系权利人。
+许可说明 URL：https://www.gia.edu/copyrights-trademarks
+作者／摄影／机构署名：Xiaoping Shi
+像素：468 × 390
+文件：JPEG；77,133 bytes
+SHA-256：f2d9105da17992af47e8d13b29d9588eb7f9d9bf549caba58ef5d502d6255878
+来源内容说明：来源论文明确为四川凉山南红中的冰飘品种；Fig.2 为显微实拍，视场9毫米。
+
+[03] 文件名：nanhong_nanhong_beijing_01.jpg
+名称：中国地质博物馆南红玛瑙雕件
+原始图 URL：https://r1.visitbeijing.com.cn/vbj-s/2022/0608/c0ef1e983e13890d3e3a590a17083771.jpg
+实际下载 URL：https://r1.visitbeijing.com.cn/vbj-s/2022/0608/c0ef1e983e13890d3e3a590a17083771.jpg
+来源页面：https://s.visitbeijing.com.cn/gallery/19384
+许可：版权所有；网页未声明 Creative Commons 等开放许可，转载需联系权利人。
+许可说明 URL：https://s.visitbeijing.com.cn/gallery/19384
+作者／摄影／机构署名：Sipa photo（图片边缘署名）；北京市文化和旅游局宣传中心发布
+像素：680 × 1024
+文件：JPEG；180,194 bytes
+SHA-256：dc22c825b489a65eda5e28c8360da65a8d0a64e1b2a5441ec95e29d8f8e3081d
+画面说明：照片底缘保留Sipa的小幅版权署名条，无覆盖主体的大水印。
+
+[04] 文件名：nanhong_nanhong_beijing_02.jpg
+名称：中国地质博物馆南红玛瑙雕件
+原始图 URL：https://r1.visitbeijing.com.cn/vbj-s/2022/0608/3e856cf7dc91d1d66e213de9e4874330.jpg
+实际下载 URL：https://r1.visitbeijing.com.cn/vbj-s/2022/0608/3e856cf7dc91d1d66e213de9e4874330.jpg
+来源页面：https://s.visitbeijing.com.cn/gallery/19384
+许可：版权所有；网页未声明 Creative Commons 等开放许可，转载需联系权利人。
+许可说明 URL：https://s.visitbeijing.com.cn/gallery/19384
+作者／摄影／机构署名：Sipa photo（图片边缘署名）；北京市文化和旅游局宣传中心发布
+像素：1024 × 680
+文件：JPEG；188,721 bytes
+SHA-256：f9c60a216dd32d30cf824624ce3173dfbfb450ba30a2dc654b11fa1429674a3c
+画面说明：照片底缘保留Sipa的小幅版权署名条，无覆盖主体的大水印。
+
+[05] 文件名：nanhong_nanhong_beijing_03.jpg
+名称：中国地质博物馆南红玛瑙雕件
+原始图 URL：https://r1.visitbeijing.com.cn/vbj-s/2022/0608/ac22a9cc18b62bf3d224a52ba2374164.jpg
+实际下载 URL：https://r1.visitbeijing.com.cn/vbj-s/2022/0608/ac22a9cc18b62bf3d224a52ba2374164.jpg
+来源页面：https://s.visitbeijing.com.cn/gallery/19384
+许可：版权所有；网页未声明 Creative Commons 等开放许可，转载需联系权利人。
+许可说明 URL：https://s.visitbeijing.com.cn/gallery/19384
+作者／摄影／机构署名：Sipa photo（图片边缘署名）；北京市文化和旅游局宣传中心发布
+像素：1024 × 680
+文件：JPEG；182,967 bytes
+SHA-256：de41ad9ee799dfddc19a42c670d65ac14325b1207445e39df12f31241517574f
+画面说明：照片底缘保留Sipa的小幅版权署名条，无覆盖主体的大水印。

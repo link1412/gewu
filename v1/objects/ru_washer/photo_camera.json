@@ -1,0 +1,97 @@
+{
+ "about": "the pinhole of the CMA 1957.40 photo, solved with the washer's form (objects/ru_washer/form.py); object frame: mm, z up, the axis at the origin, z = 0 the ground; right-handed (scene.py turns it into pbrt's left-handed LookAt)",
+ "photo": "ref/ru/photos/cma_1957.40.jpg",
+ "photo_size_px": [
+  3400,
+  1942
+ ],
+ "model": "pinhole, principal point at the photo's centre [A], square pixels, no distortion [A]",
+ "f_px": {
+  "value": 12127.06,
+  "sd": 38.65
+ },
+ "fov_y_deg": 9.15568,
+ "focal_mm_if_36mm_wide": 128.4,
+ "eye_mm": [
+  0.0,
+  -607.6498,
+  121.2711
+ ],
+ "forward": [
+  0.000881,
+  0.98812,
+  -0.15368
+ ],
+ "down": [
+  -0.00303,
+  -0.153676,
+  -0.988117
+ ],
+ "target_mm": [
+  0.5428,
+  1.2261,
+  26.5744
+ ],
+ "params": {
+  "dist_mm": {
+   "value": 616.19617,
+   "sd": 1.84578
+  },
+  "elev_deg": {
+   "value": 9.55369,
+   "sd": 0.07982
+  },
+  "dyaw_deg": {
+   "value": 0.05108,
+   "sd": 0.00915
+  },
+  "dpitch_deg": {
+   "value": -0.71347,
+   "sd": 0.00991
+  },
+  "roll_deg": {
+   "value": 0.16575,
+   "sd": 0.09973
+  }
+ },
+ "distance_to_rim_centre_mm": 614.03,
+ "elevation_over_rim_deg": 8.269,
+ "residuals_px": {
+  "outline_top": {
+   "n": 2499,
+   "median_px": 1.126,
+   "p90_px": 6.063,
+   "rms_px": 2.899,
+   "max_px": 11.82
+  },
+  "outline_side": {
+   "n": 1080,
+   "median_px": 1.454,
+   "p90_px": 8.349,
+   "rms_px": 4.681,
+   "max_px": 34.55
+  },
+  "outline_bottom": {
+   "n": 1711,
+   "median_px": 2.53,
+   "p90_px": 18.244,
+   "rms_px": 8.783,
+   "max_px": 34.51
+  },
+  "lip_front": {
+   "n": 930,
+   "median_px": 3.738,
+   "p90_px": 12.83,
+   "rms_px": 6.709,
+   "max_px": 14.63
+  },
+  "foot_top": {
+   "n": 502,
+   "median_px": 7.851,
+   "p90_px": 9.493,
+   "rms_px": 7.691,
+   "max_px": 10.18
+  }
+ },
+ "residuals_about": "distance from each edge point (measure.py) to the projected edge of the fitted form, photo px (20 px/mm at the rim); the fit is robust (soft L1, 1.5 px), so a few far points are edge-finding failures (the right lower wall's soft limb, the foot's left end in shadow)"
+}

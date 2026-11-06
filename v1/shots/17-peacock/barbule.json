@@ -1,0 +1,72 @@
+{
+ "notes": [
+  "Shot 17 peacock barbules: the effective-medium multilayer of Freyer & Stavenga 2020 (Faraday Discuss. 223:49-62, doi 10.1039/D0FD00033G; ref/peacock/papers/optics_Freyer_Stavenga_2020_tail.pdf), which they fitted to measured MSP spectra of the six eye regions (their Fig. 6).",
+  "Model (their Materials and methods, p. 51-52): keratin cortex c on top, then Nm layers of melanosomes (rods, diameter Dm, depth period a, lateral period b) with air channels (diameter Da) between them; sliced into thin layers, each with volume fractions fk, fm, fa and n_eff = (fk nk^w + fm nm^w + fa na^w)^(1/w), w_TE 2.5, w_TM -1.5 (their FDTD-adjusted values, p. 52; the minus is lost in the PDF text, read from the research report and two-phase EMT w_TM = -2); unpolarised = mean of TE and TM.",
+  "keratin nk = 1.532 + 5890/lam^2 (Leertouwer 2011, via Freyer p. 51); melanin nm = 1.648 + 23700/lam^2, km = 0.56 exp(-lam/270) (Stavenga 2015, via Freyer p. 51-52).",
+  "[A] ours: air channels centred midway between rod layers (Nm-1 of them; Zi 2003's air holes sit in the centre of the rod lattice's cells); the substrate under the stack is keratin and what enters it is lost (Freyer p. 55: the lower stack and the interior's random melanosomes add 'at most a very small fraction'); slices 2 nm.",
+  "Per-barbule spread (the table's s axis) is the lattice period a, over the anatomical ranges Freyer's Table 1 lists (R2: Durrer 157-175, Jiang 153-178, Yoshioka 150, Zi 150; R3: Durrer 198-223, Zi/Li 185, Medina 198); the other parameters stay at Freyer's model values. How a is distributed over the barbules is [A].",
+  "amplitude_scale [F]: the tables of R3 are scaled by 0.44 relative to R2 so their peak ratio is Freyer Fig. 5's probe ratio (R3 0.06 / R2 0.24 measured, vs 0.20 / 0.35 from this model at the model a): the model alone makes the brown ring ~2.3x too bright against the blue-green zone. Why the model over-predicts R3 is not resolved (tilted / disordered cells, Freyer p. 58). r1 then lowered it to 0.33 [F]: with 0.44 the ring came out +10 codes and the zone -7 against the original, and the shared lights cannot move one without the other; 0.33 is a fit to the original, 0.44 the measured ratio."
+ ],
+ "regions": {
+  "R2_blue_green": {
+   "a_model": 160,
+   "b": 170,
+   "c": 100,
+   "Dm": 110,
+   "Da": 33,
+   "Nm": 9,
+   "first_air_omitted": false,
+   "a_table": [
+    150,
+    180
+   ],
+   "measured_peak_nm": 500,
+   "source": "Freyer 2020 Table 1 R2 'Model'; measured peak 500 nm (p. 56, Fig. 5b)",
+   "amplitude_scale": 1.0
+  },
+  "R3_brown": {
+   "a_model": 190,
+   "b": 150,
+   "c": 70,
+   "Dm": 110,
+   "Da": 50,
+   "Nm": 5,
+   "first_air_omitted": false,
+   "a_table": [
+    180,
+    225
+   ],
+   "measured_peak_nm": [
+    530,
+    660
+   ],
+   "source": "Freyer 2020 Table 1 R3 'Model'; measured peaks 530 and 660 nm (p. 56, Fig. 5c)",
+   "amplitude_scale": 0.33
+  },
+  "R4_green_yellow": {
+   "a_model": 195,
+   "b": 150,
+   "c": 130,
+   "Dm": 120,
+   "Da": 55,
+   "Nm": 5,
+   "first_air_omitted": false,
+   "a_table": [
+    185,
+    220
+   ],
+   "measured_peak_nm": 600,
+   "source": "Freyer 2020 Table 1 R4 'Model'; measured peak 600 nm (p. 56, Fig. 5d); used only as a check",
+   "amplitude_scale": 1.0
+  }
+ },
+ "table": {
+  "n_s": 13,
+  "n_mu": 33,
+  "slice_nm": 2.0
+ },
+ "tilt": {
+  "theta0_deg": 15.0,
+  "source": "Yoshioka & Kinoshita 2002 (Forma 17:169-181) Fig. 7: the tilt of the barbules' multilayer, Gaussian exp(-t^2/theta0^2), theta0 15 deg, reproduces their angle-resolved spectra"
+ }
+}

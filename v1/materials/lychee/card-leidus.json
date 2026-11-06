@@ -1,0 +1,20 @@
+{
+ "about": "the lychee material card (materials/lychee/card.py): the Leidus photograph's three pieces under its light (materials/lychee/rig_card.json), to compare with ref/lychee/leidus_lychee_fruits_and_seed.jpg; render with objects/lychee/run.py --res 960x540 (16:9: the camera chain develops 1920x1080 and its fractions only; the photo is 3:2) and --no-diffraction (the photo is a focus stack: f/64 here only for its depth of field)",
+ "material_set": "leidus",
+ "object": {"file": "out/lychee/objects/leidus_card/leidus_card.pbrt"},
+ "rig": "materials/lychee/rig_card.json",
+ "camera": {
+  "focal_mm": 105, "f_number": 64, "azimuth_deg": 0, "elevation_deg": 12, "distance_mm": 349.0, "aim": "centre",
+  "aim_offset_mm": [0, 0, 2],
+  "why": "the photo's lens (105 mm) at its magnification if the fruit is 30 mm (frame about 84 mm across); about 12 degrees down, by eye; f/64 stands in for the photo's focus stack"
+ },
+ "render": {"spp": 128, "maxdepth": 256, "refractivenee": false, "denoise": true, "seed": 0},
+ "mix": {"key": 0.0, "fill": 0.0, "top": 0.0},
+ "develop": {
+  "sensor": "canon_eos_5d_mkiv", "iso": 100,
+  "expose": {"percentile": 99.5, "of_saturation": 0.7, "why": "as the other cards; brightness is compared as ratios between the pieces"},
+  "develop": {"ev": 0.0, "shoulder_from": 0.5, "contrast": 1.0, "pivot": 0.18, "why": "neutral"},
+  "sharpen": {"amount": 0.0, "sigma_px": 0.7}, "seed": 1
+ },
+ "sheet": {"stops": 1}
+}

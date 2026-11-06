@@ -1,0 +1,164 @@
+cicada — 真实摄影外观参考
+用途：仅作本地渲染外观参照，不再发布。
+核对日期：2026-11-05。像素为实际下载文件解码结果；源文件像素另列。
+图片未在本地裁切、调色、去水印或放大。官方标准尺寸图片/图库 JPEG 可能经过来源服务器缩放、压缩。
+作者未署名时如实注明；发布单位或工艺作者不冒充摄影师。
+
+[01] cicada_01.jpg
+文件名：cicada_01.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Magicicada_cassinii,_1,_back_2021-05-24-16.49.16_ZS_PMax_UDR_rtg_(51213497913).jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Magicicada_cassinii%2C_1%2C_back_2021-05-24-16.49.16_ZS_PMax_UDR_rtg_%2851213497913%29.jpg/3840px-Magicicada_cassinii%2C_1%2C_back_2021-05-24-16.49.16_ZS_PMax_UDR_rtg_%2851213497913%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：Public domain
+作者：USGS Bee Inventory and Monitoring Lab from Beltsville, Maryland, USA
+像素：3840 × 1982 px
+文件：JPEG，1,267,113 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：5190 × 2679 px
+来源标题：Magicicada cassinii, 1, back 2021-05-24-16.49.16 ZS PMax UDR rtg (51213497913).jpg
+来源署名/机构：magicicada cassinii, 1, back_2021-05-24-16.49.16 ZS PMax UDR rtg
+参照内容与限制：USGS 实体蝉标本焦点堆栈摄影；背面双翼、翅脉分叉和膜面细节。非渲染。
+SHA-256：cf469bdeed2bd25a506d1e650cf348a562b7351d349e0d7ed2fa1db7688fb50d
+
+[02] cicada_02.jpg
+文件名：cicada_02.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Brood_X_cicada_newly_molted_2021-05-17_222116_1_crop.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Brood_X_cicada_newly_molted_2021-05-17_222116_1_crop.jpg/1920px-Brood_X_cicada_newly_molted_2021-05-17_222116_1_crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY 4.0
+许可链接：https://creativecommons.org/licenses/by/4.0
+作者：G. Edward Johnson
+像素：1920 × 1920 px
+文件：JPEG，441,685 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：2156 × 2156 px
+来源标题：Brood X cicada newly molted 2021-05-17 222116 1 crop.jpg
+来源署名/机构：Own work
+参照内容与限制：新羽化蝉，双翼透明，明暗分明的翅脉；不是单独截取的翅。
+SHA-256：029901bca81e4ffac83362b6bb2ea08a623bd03cb9abcb74271bf5699c671155
+
+[03] cicada_03.jpg
+文件名：cicada_03.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Cicadidae_with_exuvia,_immediately_after_moulting,_in_Laos,_side_view.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Cicadidae_with_exuvia%2C_immediately_after_moulting%2C_in_Laos%2C_side_view.jpg/3840px-Cicadidae_with_exuvia%2C_immediately_after_moulting%2C_in_Laos%2C_side_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Basile Morin
+像素：3840 × 5760 px
+文件：JPEG，4,338,077 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3925 × 5887 px
+来源标题：Cicadidae with exuvia, immediately after moulting, in Laos, side view.jpg
+来源署名/机构：Own work
+参照内容与限制：老挝新羽化蝉侧面：淡色翅脉与透明膜面。
+SHA-256：8b7d721eef73fe288f811010f3aee13b7fe554152ff8ff5401830f9863e7001e
+
+[04] cicada_04.jpg
+文件名：cicada_04.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Cicada_orni-Cigale-Ailes-20130626.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cicada_orni-Cigale-Ailes-20130626.jpg/1920px-Cicada_orni-Cigale-Ailes-20130626.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Daniel VILLAFRUELA .
+像素：1920 × 1280 px
+文件：JPEG，465,492 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3000 × 2000 px
+来源标题：Cicada orni-Cigale-Ailes-20130626.jpg
+来源署名/机构：Own work
+参照内容与限制：自然环境中蝉翼近摄：翅脉、反光与透明度，植物背景虚化。
+SHA-256：0544c623548c1c0d1d3f15deeb1392fa85e31bb094a916f80381989754a9a939
+
+[05] cicada_05.jpg
+文件名：cicada_05.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Cicada_(5079731585).jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Cicada_%285079731585%29.jpg/1920px-Cicada_%285079731585%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY 2.0
+许可链接：https://creativecommons.org/licenses/by/2.0
+作者：Ian Sutton from Oberon, Australia
+像素：1920 × 1361 px
+文件：JPEG，812,972 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3691 × 2617 px
+来源标题：Cicada (5079731585).jpg
+来源署名/机构：Cicada
+参照内容与限制：翅基极近摄：粗细脉、褶皱、反光和膜面纹理。
+SHA-256：176c46d73b22e77977f59989d7f7c8cdaf1abc41d93bfbd5940c7ab5a5f66de0
+
+[06] cicada_06.jpg
+文件名：cicada_06.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Huechys_sanguinea_05.JPG
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Huechys_sanguinea_05.JPG/3840px-Huechys_sanguinea_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Chih-Horng Kuo
+像素：3840 × 2560 px
+文件：JPEG，1,169,435 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：5616 × 3744 px
+来源标题：Huechys sanguinea 05.JPG
+来源署名/机构：Own work
+参照内容与限制：红蝉翼局部透射/背光实拍：粗主脉、细网脉和翅面纹理；翅较深色。
+SHA-256：edb174ae445e80b8d99a6ab819619189e13356860379a9aa7044f0a00b47a791
+
+[07] cicada_07.jpg
+文件名：cicada_07.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Huechys_sanguinea_06.JPG
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Huechys_sanguinea_06.JPG/3840px-Huechys_sanguinea_06.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Chih-Horng Kuo
+像素：3840 × 2560 px
+文件：JPEG，858,169 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：5616 × 3744 px
+来源标题：Huechys sanguinea 06.JPG
+来源署名/机构：Own work
+参照内容与限制：红蝉整片翅透射/背光实拍：脉系及外缘；翅较深色。
+SHA-256：fbc61c1c3e31c8ac05b39085f1a3a5f274d8f94df98fcd6c4ebb1f2d9a95c212
+
+[08] cicada_08.jpg
+文件名：cicada_08.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Magicicada_septendecim_55zz.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Magicicada_septendecim_55zz.jpg/960px-Magicicada_septendecim_55zz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Photo by David J. Stang
+像素：960 × 604 px
+文件：JPEG，55,332 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1000 × 629 px
+来源标题：Magicicada septendecim 55zz.jpg
+来源署名/机构：source: David Stang. First published at ZipcodeZoo.com
+参照内容与限制：透明蝉翼的近距离透光摄影；原始公开图较小。
+SHA-256：a43ba293f2e51ffa85be3aa849f67c9ed2ac7912b1e3da58aca9f001c3fd5a66
+
+[09] cicada_09.jpg
+文件名：cicada_09.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Neotibicen_lyricen_lyricen_P1450721a.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Neotibicen_lyricen_lyricen_P1450721a.jpg/3840px-Neotibicen_lyricen_lyricen_P1450721a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：xpda
+像素：3840 × 2284 px
+文件：JPEG，1,425,214 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：4564 × 2715 px
+来源标题：Neotibicen lyricen lyricen P1450721a.jpg
+来源署名/机构：Own work
+参照内容与限制：透明蝉翼自然光近摄：脉系、膜面反光及粗细变化。
+SHA-256：b7367b8052a0fc3d954520bdc36a8fb02a77582141dffced5ce360b3d83a9033
+
+[10] cicada_10.jpg
+文件名：cicada_10.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Neotibicen_lyricen_lyricen_P1450722a.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Neotibicen_lyricen_lyricen_P1450722a.jpg/3840px-Neotibicen_lyricen_lyricen_P1450722a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：xpda
+像素：3840 × 3194 px
+文件：JPEG，1,745,242 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3933 × 3271 px
+来源标题：Neotibicen lyricen lyricen P1450722a.jpg
+来源署名/机构：Own work
+参照内容与限制：透明蝉翼更近视图：翅脉、细胞格与表面反光。
+SHA-256：60c2486c8f4511d0555c52559c9c92f655e478fc192da82cf6c7f9d939f8af18

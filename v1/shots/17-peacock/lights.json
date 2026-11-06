@@ -1,0 +1,89 @@
+{
+ "about": "shots/17-peacock/codefit.py: lightfit's weights refined on shotcheck's region mean codes [F]",
+ "weights": {
+  "key": [
+   17.219164,
+   12.597907,
+   10.105416
+  ],
+  "key2": [
+   0.000676,
+   0.000494,
+   0.000396
+  ],
+  "top": [
+   146.858339,
+   107.444693,
+   86.186797
+  ],
+  "b0q0": [
+   0.00728,
+   0.005326,
+   0.004272
+  ],
+  "b0q1": [
+   0.028719,
+   0.021011,
+   0.016854
+  ],
+  "b0q2": [
+   0.005443,
+   0.003982,
+   0.003195
+  ],
+  "b0q3": [
+   3.881631,
+   2.839884,
+   2.278014
+  ]
+ },
+ "basis": {
+  "key": "out/shots/17-peacock/r3/raw/{frame}/x.{light}.exr",
+  "key2": "out/shots/17-peacock/r3/raw/{frame}/x.{light}.exr",
+  "top": "out/shots/17-peacock/r3/raw/{frame}/x.{light}.exr",
+  "b0q0": "out/shots/17-peacock/r3/raw/{frame}/x.{light}.exr",
+  "b0q1": "out/shots/17-peacock/r3/raw/{frame}/x.{light}.exr",
+  "b0q2": "out/shots/17-peacock/r3/raw/{frame}/x.{light}.exr",
+  "b0q3": "out/shots/17-peacock/r3/raw/{frame}/x.{light}.exr"
+ },
+ "variant": "base",
+ "gain": 1.0,
+ "tie_chroma": {
+  "gel": [
+   1.352092,
+   1.0,
+   0.804246
+  ]
+ },
+ "tie_rounds": 6,
+ "residuals": {
+  "f00": {
+   "held_out": false,
+   "entries": 6,
+   "rms_8bit": [
+    3.351,
+    4.887,
+    9.458
+   ],
+   "bias_8bit": [
+    -0.705,
+    0.217,
+    -2.335
+   ],
+   "luma_rms": 3.928,
+   "luma_bias": -0.164,
+   "luma_p95_abs": 5.967,
+   "within_3_codes": true
+  }
+ },
+ "variants": [
+  {
+   "variant": "base",
+   "objective": 0.06153642796646426
+  }
+ ],
+ "seconds": {
+  "load": 0.79,
+  "solve": 0.002
+ }
+}

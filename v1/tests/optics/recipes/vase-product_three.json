@@ -1,0 +1,48 @@
+{
+ "about": "the optics tests' vase under optics/rigs/product_three.json (tests/optics/gen_object.py makes the object)",
+ "object": {
+  "file": "out/optics/objects/vase/vase.pbrt"
+ },
+ "rig": "optics/rigs/product_three.json",
+ "camera": {
+  "focal_mm": 100,
+  "f_number": 11,
+  "azimuth_deg": 0,
+  "elevation_deg": 5,
+  "fill": 0.8,
+  "aim": "centre",
+  "why": "our choice: a 100 mm lens at f/11, the whole vase 80% of the height, a little above its middle"
+ },
+ "render": {
+  "spp": 128,
+  "maxdepth": 32,
+  "refractivenee": true,
+  "denoise": true,
+  "seed": 0
+ },
+ "mix": {},
+ "develop": {
+  "sensor": "canon_eos_5d_mkiv",
+  "iso": 100,
+  "expose": {
+   "percentile": 99.9,
+   "of_saturation": 0.7,
+   "why": "our choice, as shots/06-guan/camera.json"
+  },
+  "develop": {
+   "ev": 0.0,
+   "shoulder_from": 0.5,
+   "contrast": 1.0,
+   "pivot": 0.18,
+   "why": "neutral: no grade yet"
+  },
+  "sharpen": {
+   "amount": 0.0,
+   "sigma_px": 0.7
+  },
+  "seed": 1
+ },
+ "sheet": {
+  "stops": 1
+ }
+}

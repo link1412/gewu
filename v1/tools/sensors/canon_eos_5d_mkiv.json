@@ -1,0 +1,61 @@
+{
+ "name": "Canon EOS 5D Mark IV",
+ "pbrt_sensor": "canon_eos_5d_mkiv",
+ "photosites": [
+  6720,
+  4480
+ ],
+ "sensor_mm": [
+  36.0,
+  24.0
+ ],
+ "photosites_source": "Canon, Specifications (EOS 5D Mark IV), https://asia.canon/en/support/6200376100: L (Large) 6720 x 4480; image sensor 36.0 x 24.0 mm",
+ "saturation_e_at_base_iso": 67871,
+ "base_iso": 100,
+ "unity_gain_iso": 429,
+ "read_noise_e": {
+  "100": {
+   "log2_e": 3.52,
+   "e": 11.47
+  },
+  "200": {
+   "log2_e": 2.55,
+   "e": 5.86
+  },
+  "400": {
+   "log2_e": 1.99,
+   "e": 3.97
+  },
+  "800": {
+   "log2_e": 1.53,
+   "e": 2.89
+  },
+  "1600": {
+   "log2_e": 1.23,
+   "e": 2.35
+  },
+  "3200": {
+   "log2_e": 0.99,
+   "e": 1.99
+  },
+  "6400": {
+   "log2_e": 0.77,
+   "e": 1.71
+  },
+  "12800": {
+   "log2_e": 0.72,
+   "e": 1.65
+  },
+  "25600": {
+   "log2_e": 0.69,
+   "e": 1.61
+  }
+ },
+ "source": "Photons to Photos (Bill Claff), Read Noise in Electrons chart, series \"Canon EOS 5D Mark IV_14\" (14-bit raw): fwc, unityEv, loEv and the measured log2 read noise per ISO setting (ISO = 3.125 x 2^x), https://www.photonstophotos.net/Charts/RN_e.htm, fetched 2026-10-28",
+ "saturation_rule": "the chart itself: saturation = fwc / 2^(isoEv - loEv) above the base ISO, i.e. halves per stop",
+ "not_modelled": {
+  "prnu": "no measurement found for this sensor; behind the ~12 photosites of a 1080p pixel it averages down by ~3.5x",
+  "quantisation": "14-bit at 4.29 e-/DN (ISO 100) adds 1.24 e- rms, beside 11.5 e- read noise",
+  "pattern_noise": "row/column banding not measured here"
+ }
+}

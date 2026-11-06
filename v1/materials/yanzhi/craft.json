@@ -1,0 +1,144 @@
+{
+ "name": "yanzhi_craft",
+ "what": "The craft layer of the 胭脂红 card (docs/layers.md: material -> craft -> object): how the Met bowl 1971.180.248 was made shows up as its form's departures from a lathe surface and as the enamel's uneven thickness. Read by craft.py. Tags as material.json (M measured, I quoted, D derived, F fitted, A assumed).",
+ "lobes": {
+  "count": {
+   "value": 6,
+   "tag": "M",
+   "source": "counted on the Met's bottom view (Met_1971.180.248_底.jpg): six notches round the rim's outline, +-1 (the stand hides part of the lower edge); the Met calls it a 'Lobed bowl' [I, S7 调研 report, M1]"
+  },
+  "notch_depth_mm": {
+   "value": 0.5,
+   "tag": "A",
+   "source": "the side view's notches are a few pixels deep at 5.86 px/mm (by eye, not measured); 1.0 mm (the first try) read as a six-petal flower, far stronger than the photo, so halved (judged against the photo by eye)"
+  },
+  "notch_width_deg": {
+   "value": 3.0,
+   "tag": "A",
+   "source": "the notches look like sharp V cuts in the side and inside views"
+  },
+  "fade_mm": {
+   "value": 8.0,
+   "tag": "A",
+   "source": "the notch's depth fades to a faint rib (rib_depth_mm) over this length below the rim; the bottom view shows faint ribs down the wall"
+  },
+  "rib_depth_mm": {
+   "value": 0.1,
+   "tag": "A",
+   "source": "faint vertical ribs under the notches, bottom view (by eye)"
+  },
+  "phase_deg": {
+   "value": 17.0,
+   "tag": "A",
+   "source": "the notches' angle round the bowl relative to the camera; the side view shows one near the far rim's left third"
+  }
+ },
+ "warp": {
+  "ovality": {
+   "value": 0.004,
+   "tag": "A",
+   "source": "kiln warping of a thrown bowl: the rim's radius as r (1 + e cos 2(theta - phi)), e 0.4% (0.4 mm on 95.5 mm); the side view's rim is 'slightly warped' (judges) but not measured; fades to 0 at the foot"
+  },
+  "ovality_phase_deg": {
+   "value": 40.0,
+   "tag": "A",
+   "source": "arbitrary"
+  },
+  "tilt_mm": {
+   "value": 0.4,
+   "tag": "A",
+   "source": "the rim's height varies +- this round the bowl (a sagged or unevenly trimmed lip), by eye"
+  }
+ },
+ "glaze_surface": {
+  "slope_rms_deg": {
+   "value": 0.8,
+   "tag": "A",
+   "source": "the glaze's surface undulates (throwing, trimming, the glaze's flow): a sum of random waves of 4-25 mm wavelength along the normal, scaled to this rms slope. Chosen so the lamps' reflections on the inside break up into blotches as in the photo (judged by eye, not fitted); no profilometry of a Jingdezhen glaze found"
+  },
+  "wavelength_mm": {
+   "value": [
+    4.0,
+    25.0
+   ],
+   "tag": "A",
+   "source": "the mesh resolves about 2 mm (0.5 mm along the profile, 0.83 mm round at the rim); finer orange peel is below the card's resolution"
+  },
+  "seed": 7
+ },
+ "enamel_thickness": {
+  "streak_rms": {
+   "value": 0.025,
+   "tag": "D",
+   "source": "vertical streaks of the enamel's application: the photo's front wall, R channel high-passed (gaussian 1 px over 12 px, 5.86 px/mm), rms 3.1-3.9% per pixel, 1.0-1.5% after averaging 10% of the bowl's height down each column [M]; backdrop 0.5% / 0.14% (JPEG and noise). d ln R / d ln c is -0.80 to -0.88 at c 0.45-0.56 (stack.py) [D]: c varies 1.2-4%; 2.5% taken"
+  },
+  "streak_width_mm": {
+   "value": [
+    0.8,
+    4.0
+   ],
+   "tag": "A",
+   "source": "the streaks in the photo are about 1-3 mm wide (by eye); correlated over 20-60 mm down the wall"
+  },
+  "patch_rms": {
+   "value": 0.04,
+   "tag": "A",
+   "source": "slow patchiness of the enamel's thickness (10-40 mm), 'patchy, uneven red' (judges); not separable from the light in the photo"
+  },
+  "down_gradient": {
+   "value": 0.08,
+   "tag": "A",
+   "source": "a low-fired lead enamel runs down when it melts: c rises linearly by this fraction from the white lip to the foot's junction"
+  },
+  "pool_at_foot": {
+   "value": 0.35,
+   "tag": "A",
+   "source": "the enamel pools in the angle between the wall and the foot ring: c up by this fraction there, gaussian over 2.5 mm; the photo's foot shows a darker band at its top"
+  },
+  "lip_taper_mm": {
+   "value": 0.6,
+   "tag": "A",
+   "source": "the enamel thins to nothing over this length at its top edge (the white lip's boundary is soft in the photo)"
+  },
+  "seed": 11,
+  "foot_wear": {
+   "value": 0.5,
+   "tag": "A",
+   "source": "S8 r3: the photo's foot ring is a lighter red than the wall (centre column, R over the white 0.11-0.17 on the ring against 0.05-0.11 on the wall above [M]; round 2's render 0.05-0.06 on the ring [M]): the enamel on the ring is thinner (wiped, worn on the edge the bowl stands on). c on the ring times this, over 1.5 mm below the pool; the value is a first guess, round 3's renders test it"
+  },
+  "foot_edge_wear": {
+   "value": 0.3,
+   "tag": "A",
+   "source": "S8 r3: the ring's lowest 1.2 mm (the edge it stands on, 'worn, lighter' in the judges' words) a further factor, ragged round the bowl (rms 40% of the drop, 3-10 mm patches)"
+  },
+  "lip_wander_mm": {
+   "value": [
+    0.0,
+    0.5
+   ],
+   "tag": "A",
+   "source": "S8 r3: the enamel's top edge wanders below the 1.2 mm white lip by 0-0.5 mm round the bowl (correlated over 5-15 mm): the judges saw a white edge of even width all round, the photo's varies (not measured)"
+  }
+ },
+ "specks": {
+  "count_inside": {
+   "value": 30,
+   "tag": "D",
+   "source": "S8 r3: dark specks in the photo's inside (Y over a 15 px median, below 0.95, at least 3 px): 18 in the visible 13,400 mm^2 (projected) [M]; about half the inside is seen, so about 30 over the whole inside [D]; threshold 0.92: 3, so most are faint"
+  },
+  "diameter_mm": {
+   "value": [
+    0.25,
+    0.6
+   ],
+   "tag": "D",
+   "source": "the photo's specks are 6-71 px (0.4-1.6 mm across) at a contrast of 0.85-0.93 [M]: blurred by the lens and the JPEG; a dark disc of 0.25-0.6 mm and albedo 0.2 takes out about as much light (area x contrast) [D]"
+  },
+  "albedo": {
+   "value": 0.2,
+   "tag": "A",
+   "source": "iron specks and kiln grit under a Jingdezhen glaze are dark brown to black; grey 0.2 taken"
+  },
+  "seed": 5
+ }
+}

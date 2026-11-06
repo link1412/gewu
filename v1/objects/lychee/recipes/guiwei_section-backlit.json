@@ -1,0 +1,66 @@
+{
+ "about": "the Guiwei lychee cut across (objects/lychee/lychee.py --section), its cut face to the camera, under objects/lychee/recipes/rig_section.json, framed to the arc of the original's shot 4",
+ "material_set": "guiwei",
+ "object": {
+  "file": "out/lychee/objects/guiwei_section/guiwei_section.pbrt"
+ },
+ "rig": "objects/lychee/recipes/rig_section.json",
+ "camera": {
+  "focal_mm": 65,
+  "f_number": 256,
+  "azimuth_deg": 0,
+  "elevation_deg": 8,
+  "frame": {
+   "arc_of_shot": 4
+  },
+  "why": "our choice: a 65 mm macro (as shot 19) looking 8 degrees down at the cut face; placed and focused so the pericarp's upper edge is the arc of the original's shot 4. f/256 renders a focus stack's depth (see focus_stack)"
+ },
+ "focus_stack": {
+  "slice_f_number": 8,
+  "why": "at 2.55x, f/8 holds 0.26 mm in focus and the rim is 1-2 mm deep, the face 2.4 mm in front of the arc: a macro photographer stacks slices at f/8. Stand-in: the render's lens is nearly a pinhole (f/256, all in focus) and the camera chain diffracts as one slice, at f/8 (1 + m) (objects/lychee/run.py writes optics.json)"
+ },
+ "render": {
+  "spp": 128,
+  "maxdepth": 256,
+  "refractivenee": false,
+  "denoise": true,
+  "seed": 0
+ },
+ "render_why": "256 bounces: light crosses the aril (about 16 mm, mu_s about 1.7 /mm) by tens of scatterings, the pericarp's layers by more",
+ "mix": {
+  "through": 0.0,
+  "rims": 4.0,
+  "top": 0.0,
+  "sides": 2.0,
+  "ground": -5.0
+ },
+ "develop": {
+  "sensor": "canon_eos_5d_mkiv",
+  "iso": 100,
+  "expose": {
+   "percentile": 99.9,
+   "of_saturation": 0.7,
+   "why": "our choice, as shots/06-guan/camera.json"
+  },
+  "develop": {
+   "ev": 0.5,
+   "shoulder_from": 0.5,
+   "contrast": 1.0,
+   "pivot": 0.18,
+   "why": "neutral curve; +0.5 EV: the exposure is set on the 99.9th percentile, which the juice's glints own"
+  },
+  "sharpen": {
+   "amount": 0.0,
+   "sigma_px": 0.7
+  },
+  "seed": 1,
+  "white_balance": {
+   "K": 5000,
+   "why": "our choice: balanced for 5000 K under the rig's 4000 K lamps, so the shot is warm (5500 made the rim orange)"
+  }
+ },
+ "sheet": {
+  "stops": 1
+ },
+ "mix_why": "S4, toward the look target's numbers (bg 28,0,1; rim 192,69,66; flesh 211,181,149): rims carry the tubercles, the side pair the flesh and its glints, the top light the domes' upper flanks (higher, it turns the rim coral), the ground nearly off; a first guess, set after the render with the sheet"
+}

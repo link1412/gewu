@@ -1,0 +1,100 @@
+{
+ "name": "glossy_dark",
+ "title": "釉亮(试)",
+ "what": "A test rig for glossy ware (S3, the coordinator's A/B on the 青花 dish): small bright sources and long thin strips placed where the glaze mirrors them, against black flock, so their reflections stand clear of the white under the glaze. Our choice [A], not a validated rig.",
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "as optics/rigs: one spectrum for all lamps (rgbscene's key)"
+ },
+ "lamps": [
+  {
+   "name": "key",
+   "group": "key",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     120,
+     120
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -30,
+    "elevation_deg": 58,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1500,
+   "why": "small (0.014 sr): its mirror image, R x L ~ 0.045 x 1500/0.014, is several times the white under the glaze; front-left and high, where the far inner wall mirrors (a wall sloping ~40 deg seen from 35 deg up mirrors ~65 deg up in front)"
+  },
+  {
+   "name": "top",
+   "group": "top",
+   "shape": "strip",
+   "size": {
+    "mm": [
+     700,
+     40
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 0,
+    "elevation_deg": 68,
+    "distance": {
+     "mm": 900
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 700,
+   "why": "a long thin strip overhead, a little in front, across the view: its image runs along the far inner wall"
+  },
+  {
+   "name": "back",
+   "group": "back",
+   "shape": "strip",
+   "size": {
+    "mm": [
+     700,
+     30
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 180,
+    "elevation_deg": 24,
+    "distance": {
+     "mm": 600
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 500,
+   "why": "a strip low behind: the flat well and the far lip mirror ~35 deg up behind, the lip's round over a range"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "black_flock",
+  "distance": {
+   "R": 6
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 18
+  },
+  "why": "dark surroundings: the glaze mirrors black where there is no lamp"
+ }
+}

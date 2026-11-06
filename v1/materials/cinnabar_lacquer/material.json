@@ -1,0 +1,266 @@
+{
+ "name": "cinnabar_lacquer",
+ "what": "Vermilion lacquer (朱漆): alpha-HgS (cinnabar / vermilion) pigment in cured Asian lacquer (urushi, 大漆), polished; with the black lacquer that carved lacquer builds with it (剔红 marker lines, 剔犀 bands). Substance only: the carving, the layer stack are crafts/carving; wear, haze, scratches, cracks and grime are crafts/aging.",
+ "tags": {
+  "M": "measured: a measurement reported in the source, or measured by us on a photo or a render",
+  "I": "looked up: a value a source gives but did not measure itself (handbook, catalogue, review)",
+  "D": "derived: computed from other values, the method written out",
+  "F": "fitted: tuned until the render matches the reference; an output of the material card, with what it matched and how",
+  "A": "assumed: our assumption or a placeholder"
+ },
+ "model": "an opaque body (Lambertian, reflectance R(lambda) per lacquer) under a smooth-to-glossy dielectric interface of the lacquer polymer (GGX). The interface is where the gloss and the Saunderson deepening of the colour come from. Until the shared 'clear layer over a diffuse body' lands in the adapter, the card builds it as geometry: a dielectric sheet (the surface) and the body a little below it (coat_gap_mm), both rendered by the existing adapter branches.",
+ "interface": {
+  "eta": {
+   "value": 1.52,
+   "unit": "",
+   "range": [
+    1.52,
+    1.55
+   ],
+   "tag": "M",
+   "source": "refractive index of raw lacquer 1.52, black lacquer 1.55 (保存科学 No. 45, 2006, Tokyo National Research Institute for Cultural Properties, pp. 251-; table of lacquer properties; https://www.tobunken.go.jp/ccr/pdf/45/04524.pdf). The paper's Japanese text did not extract cleanly; the numbers and row labels did. Taken as constant over the visible (no dispersion data) [A]"
+  },
+  "ggx_alpha_fresh": {
+   "value": 0.0054,
+   "unit": "",
+   "range": [
+    0.005,
+    0.006
+   ],
+   "tag": "D",
+   "source": "60-degree gloss of fresh Chinese lacquer films 88.96-90.96 GU (BYK micro-TRI-gloss, 5 points; Hou et al. 2025, Polymers 17:1481, Table 2, doi 10.3390/polym17111481) -> tools/gloss.py with n 1.52. Ra 0.122-0.138 um (MarSurf, same table). A new film, not a centuries-old carved surface"
+  },
+  "ggx_alpha": {
+   "value": 0.0054,
+   "unit": "",
+   "range": [
+    0.005,
+    0.006
+   ],
+   "tag": "D",
+   "source": "the new, polished surface = ggx_alpha_fresh. An old piece's satin is not the material's: it comes from the processes on its surface, by their parameters (crafts/weathering skin_alpha, crafts/wear rubbed_alpha and scratches; docs/crafts/surface.md), fitted on the card to the photo's state (state_cma1918933.json)"
+  },
+  "coat_gap_mm": {
+   "value": 0.01,
+   "unit": "mm",
+   "range": [
+    0.0,
+    0.06
+   ],
+   "tag": "A",
+   "source": "the binder-rich skin above the pigment; only a geometric stand-in for 'the interface lies on the body'. No absorption in it (the binder's absorption is inside the body reflectance). Up to the NGV mean layer 0.059 mm"
+  }
+ },
+ "body": {
+  "what": "body reflectance of each lacquer (no interface): a family the craft indexes by layer (familymap). Spectra in 'derived', made by derive.py",
+  "red": {
+   "spectrum": "derived.cinnabar",
+   "tag": "D",
+   "source": "Reichert et al. 2025, Anal. Bioanal. Chem. 417:4351-4372, doi 10.1007/s00216-025-05948-3; data doi 10.6084/m9.figshare.28639103 (CC BY 4.0): HSI mean spectrum of cinnabar in gum arabic on paper (06A, VNIR, 5 nm) [M], less the flat reading of grape-seed black in the same binder on the same paper (15A, 0.16) [A: that the black's reading is the flat part common to the paints; derive.py]. The pigment is a reference cinnabar for manuscript paints, not the pigment of any lacquer piece. Used as the body under the lacquer's interface as it is [A: a lean matte paint has no smooth interface of its own]",
+   "scattering_S_per_mm": {
+    "value": 150,
+    "unit": "1/mm",
+    "range": [
+     10,
+     500
+    ],
+    "tag": "F",
+    "source": "the Kubelka-Munk scattering coefficient of the pigment in the lacquer: the binder adds K_b/S to the paint's K/S (body = KM R_inf). Not measured for any red lacquer; a recipe of 10 wt% cinnabar to lacquer (Coatings 2025, 15:1229, methods [I]) is ~1.6 vol% (densities 8.1 and ~1.3 [A]) and would give tens per mm for micron grains [D, rough]. Fitted on the card to the photo's colour (G/R, B/R over the lacquer); null = no binder absorption. Fitted value 150 /mm on the overview (k350 lights, process state of the CMA dish): with the binder at 60 /mm the body is too dark and brown (over-backdrop R 0.41 by the 1-D estimate, the c1 card 'jujube red'), without it (S = null) too bright (R 1.23 over the backdrop against the photo's 0.85, glossy frame); 150 gives R 0.85 on the glossy frame and 0.90 with the fitted satin. 100 gives 0.80, 250 gives 1.04"
+   }
+  },
+  "black": {
+   "spectrum": "flat",
+   "value": 0.01,
+   "tag": "A",
+   "source": "black lacquer (urushi with carbon or iron black): the body is near black; the gloss comes from the interface. Not measured"
+  }
+ },
+ "pigment": {
+  "what": "facts about the pigment that are not parameters of the model (no number was found that would make them one)",
+  "band_gap": "alpha-HgS: experimental gap ~2.25 eV (~550 nm) as reported by Cardona et al. 2010 (PRB 82:085210), citing Zallen 1967 [I: secondary report]; the measured paints rise at ~570 nm and inflect at ~600 nm (Fioretti et al. 2023, Heritage 6:1567, Table 5) [M]; derived.cinnabar inflects at the same place",
+  "particle_size": "coarse grades (63-100 um) bluish red, extra fine (<20 um) more orange red, in one Hunan series (Elert & Cardell 2019, Spectrochim. Acta A 216:236) [M, qualitative]; not a general size-to-colour law (their fine Almaden pigment stayed bluish). No parameter",
+  "concentration": "no measured pigment fraction of a historical Chinese red lacquer was found (research carved-lacquer). A modern experimental cinnabar lacquer used 10 wt% pigment to lacquer (Coatings 2025, 15(10):1229, doi 10.3390/coatings15101229) [I]. The body is taken as opaque (R_inf): the NGV fragment has >=17 red layers in ~1 mm [M], and the binder alone absorbs 8-60 /mm [D, binder]",
+  "darkening": "photo-darkening (metallic Hg, Elert et al. 2021; chlorine, Pisu et al. 2023) is not modelled"
+ },
+ "derived": {
+  "what": "made by derive.py from the Reichert 2025 CSVs (ref/, not in git): (R_paint - R_black) / (1 - R_black), sampled 400-780 nm at 10 nm [D]",
+  "cinnabar": [
+   400,
+   0.038,
+   410,
+   0.0331,
+   420,
+   0.0305,
+   430,
+   0.0298,
+   440,
+   0.0292,
+   450,
+   0.0287,
+   460,
+   0.028,
+   470,
+   0.0275,
+   480,
+   0.0268,
+   490,
+   0.0267,
+   500,
+   0.0279,
+   510,
+   0.0296,
+   520,
+   0.0318,
+   530,
+   0.0354,
+   540,
+   0.0395,
+   550,
+   0.0459,
+   560,
+   0.0575,
+   570,
+   0.0794,
+   580,
+   0.1197,
+   590,
+   0.1959,
+   600,
+   0.3286,
+   610,
+   0.5014,
+   620,
+   0.6394,
+   630,
+   0.7196,
+   640,
+   0.7601,
+   650,
+   0.7819,
+   660,
+   0.7962,
+   670,
+   0.8071,
+   680,
+   0.8153,
+   690,
+   0.8206,
+   700,
+   0.825,
+   710,
+   0.829,
+   720,
+   0.8351,
+   730,
+   0.8369,
+   740,
+   0.8405,
+   750,
+   0.8447,
+   760,
+   0.8468,
+   770,
+   0.8514,
+   780,
+   0.8561
+  ],
+  "black_ref_mean": 0.1604,
+  "black_ref_range": [
+   0.1577,
+   0.1662
+  ],
+  "cinnabar_egg_raw_550_650": [
+   0.1029,
+   0.6261
+  ]
+ },
+ "binder": {
+  "what": "the cured lacquer polymer's own absorption, from the visible transmission of a clear (unpigmented) urushi film",
+  "transmission_30um_pct": {
+   "lambda_nm_value": [
+    430,
+    0.8,
+    440,
+    1.8,
+    450,
+    3.3,
+    460,
+    5.2,
+    470,
+    7.4,
+    480,
+    9.9,
+    490,
+    12.8,
+    500,
+    16.1,
+    510,
+    19.5,
+    520,
+    23.3,
+    530,
+    27.2,
+    540,
+    30.8,
+    550,
+    34.4,
+    560,
+    37.8,
+    570,
+    41.1,
+    580,
+    44.4,
+    590,
+    47.4,
+    600,
+    50.5,
+    610,
+    53.4,
+    620,
+    56.1,
+    630,
+    58.7,
+    640,
+    61.0,
+    650,
+    63.3,
+    660,
+    65.2,
+    670,
+    67.1,
+    680,
+    68.8,
+    690,
+    70.4,
+    700,
+    71.8,
+    710,
+    73.1,
+    720,
+    74.3,
+    730,
+    75.2,
+    740,
+    76.0,
+    750,
+    76.7,
+    760,
+    77.4,
+    770,
+    77.8
+   ],
+   "unit": "%",
+   "tag": "M",
+   "source": "Oyabu & Asami 1987, 'Effects of curing condition on transparency of urushi films', J. Jpn. Soc. Colour Mater. (色材) 60(2):94-99, doi 10.4011/shikizai1937.60.94, Fig. 6: sugurome-urushi cured 24 h at 20 C / 80% RH, then 90 days under north-window daylight; transmission corrected by the authors to 30 um (Lambert's law), Shimadzu UV-350A, 380-780 nm. The 90-day curve (the most aged of the three; a centuries-old surface may differ further) read off the scanned figure by us column by column (tick-calibrated, about +-1% T); below 430 nm the curve is at 0. File: ref/carved_lacquer/oyabu1987/"
+  },
+  "absorption_per_mm": {
+   "tag": "D",
+   "method": "a = -ln(T / T0) / 0.030 mm with T0 = (1 - R)^2, R = ((n - 1)/(n + 1))^2 for n 1.52 (two film faces, multiple reflections neglected): a(600 nm) ~ 20 /mm, a(500) ~ 58 /mm, a(700) ~ 8 /mm. Below 430 nm held at the 430 nm value (the figure reads 0 there; the sensor x key weight below 430 nm is ~1%)"
+  },
+  "km_K_over_a": {
+   "value": 2.0,
+   "tag": "I",
+   "source": "Kubelka-Munk K = 2 x the absorption coefficient for diffuse light (the usual relation, e.g. Kortuem 1969)"
+  }
+ }
+}

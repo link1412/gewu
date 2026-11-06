@@ -1,0 +1,675 @@
+{
+ "name": "yinxing",
+ "what": "The autumn ginkgo leaf's tissue (Ginkgo biloba, yellow, before browning): the lamina between the veins, the vein column (the vascular bundle with its sheath and the bundle-sheath extensions, through the leaf's thickness), and the petiole's wall. Substance only: the leaf's outline, its veins' layout and widths and its cupping are the object (objects/yinxing/); the light is optics. Chlorophyll is broken down in autumn and the carotenoids largely stay (Matile, Flach & Eller 1992, abstract), hence the yellow.",
+ "tags": {
+  "M": "量的: a measured value reported in a source, or one we measured off a photo or a render",
+  "I": "查到的: a value a source gives but did not measure itself, or a measured value of another leaf state or species used as a stand-in",
+  "D": "推的: computed from other values, the algorithm stated",
+  "F": "拟合的: tuned so a model matches a reference (what was matched and how stated)",
+  "A": "假设: our assumption or placeholder"
+ },
+ "model": "PROSPECT-D (Feret et al. 2017; materials/yinxing/prospect.py, specific absorption from prosail's dataSpec_PDB.m, materials/yinxing/data/prospect_d_full.csv): a leaf as N plates, hemispherical reflectance R(lambda) and transmittance T(lambda) for light incident within 40 degrees of the normal. Rendered as a two-sided Lambertian reflector and transmitter (pbrt-v4 diffusetransmission; Cycles diffuse + translucent): no specular sheen, no forward peak, the two faces the same [A, round 1]. The vein map c in [0, 1] (the bundle's share of the thickness, objects/yinxing/leaf.py) runs the parameters linearly from the lamina's to the vein column's. The lamp set is the nobbip set: the backlit photo's colours are a phone's (its leaf G/R 0.33 against the model's 0.54 seen the same way; a brown pigment that matches the ratio, Cbrown 2.86, darkens the leaf sevenfold; materials/yinxing/fit.py --lamp), so they are not fitted [A].",
+ "sets": {
+  "nobbip": "the front-lit card: NobbiP's scan of three yellow leaves, upper side (Commons 'Ginkgo biloba top 01', CanoScan LiDE 220, 400 dpi, 1 cm bar, CC BY-SA 3.0; ref/yinxing/commons/)",
+  "lamp": "the backlit card: Fargoh's yellow leaf laid on a lamp (Commons, CC BY-SA 4.0; ref/yinxing/commons/), its spatial variation measured (senescence); its lamina's colour from the calibrated reflectance of another yellow ginkgo leaf (Morimoto et al. 2022, Zenodo 5217752; fit_spectra.py), not from the phone photo, whose colours are tone-mapped and blue-clipped [S8 r1]"
+ },
+ "sources": {
+  "feret2017": "Feret, Gitelson, Noble & Jacquemoud 2017, PROSPECT-D: towards modeling leaf optical properties through a complete lifecycle, Remote Sensing of Environment 193:204-215; coefficients as in prosail (github.com/jbferet/prosail, R/dataSpec_PDB.m, Jan 16 2017)",
+  "matile1992": "Matile, Flach & Eller 1992, Autumn leaves of Ginkgo biloba L.: optical properties, pigments and optical brighteners, Botanica Acta 105(1):13-17 (abstract only; full text not obtained)",
+  "xuye2023": "Xu & Ye 2023, Scientific Reports 13:4694, Fig. 3b, 3d and text: green ginkgo (5 mature summer leaves, Hefei), Cab 42.1 ug/cm2 (ethanol extraction), directional-hemispherical R and T 400-2500 nm (figure only)",
+  "lichtenthaler2023": "Lichtenthaler, Abuslima & Nick 2023 (via the research report): green ginkgo, tree 2, Table 2 Cab 47.1 +- 5.5 and Car 10.3 +- 1.0 ug/cm2 (green leaves), 76.9 / 17.1 (dark green), 26.3 / 8.1 (light green); Table 3 dry mass per area 7.3-10.5 mg/cm2",
+  "li2020": "Li et al. 2020, Horticultural Plant Journal 6(6):396-408, sec. 3.1: Yangzhou, 2017; Chl a + b 1.30 + 0.83 mg/g in September, 0.07 + 0.05 in late November (yellow, near leaf fall); carotenoids 0.47 mg/g at their October peak, 0.31 in late November",
+  "jurcevic2024": "Jurcevic Sangut & Samec 2024, Plants 13(21):3044, Table 1 (mg/g dry weight): Cab 2.07 (July), 0.86 (September), 0.15 (November); Car 0.24 (July), 0.11 (November)",
+  "leigh2011": "Leigh, Zwieniecki, Rockwell, Boyce, Nicotra & Holbrook 2011, New Phytologist 189:459-470, Table 1: lamina thickness away from veins 278 / 206 / 163 um (base / centre / margin, short-shoot leaves), vein spacing 0.67-0.70 mm (short shoots), 0.80-0.85 mm (long shoots)",
+  "klimko2015": "Klimko, Korszun & Bykowska 2015, Acta Sci. Pol. Hortorum Cultus 14(4):169-189, Table 3 p. 182: cultivar means, leaf thickness at a vein 329.6-626.2 um, between veins 316.1-492.1 um (fixed sections); bundles with a parenchyma sheath and bundle-sheath extensions to the epidermis (p. 185, Figs. 57-58)",
+  "nobbip": "NobbiP, Commons, Ginkgo biloba top 01 / bottom 02 (CanoScan LiDE 220, 400 dpi, CC BY-SA 3.0)"
+ },
+ "lamina": {
+  "N": {
+   "value": {
+    "nobbip": 1.791,
+    "lamp": 2.0901
+   },
+   "unit": "1",
+   "range": [
+    1.0,
+    2.5
+   ],
+   "source": "fitted with Cab and Car to the NobbiP scan's blade colour, upper side, median linear sRGB (0.584, 0.366, 0.060) (materials/yinxing/fit.py: three numbers, three parameters, met exactly) [F]; range: Zhou et al. 2024 Plant Phenomics 6:0282 Table 2 (their simulation range for ginkgo, not a measurement); lamp: the nobbip value [A]; lamp: fitted to the calibrated reflectance of a yellow ginkgo leaf (Morimoto, Zhang, Fukuda & Uchikawa 2022, Opt. Express 30:3183, data Zenodo 5217752, CC BY 4.0, sample 2014-12-10, row 306: Topcon SR-2A, D65 booth, 380-780 nm), N 2.09, Cab 0.084, Car 7.45, Cbrown 0.162 with a flat surface term s (0 at the optimum), rms 0.015 over 400-780 nm (materials/yinxing/fit_spectra.py) [F]; the same fit on Morimoto's green ginkgo predicts its measured T within 5-8 % in the camera's green and blue (24 % low in red), and on a yellow Dioscorea leaf within -18..+10 % (front/back) [M, the check of R -> T]",
+   "tag": "F"
+  },
+  "Cab": {
+   "value": {
+    "nobbip": 0.176,
+    "lamp": 0.0838
+   },
+   "unit": "ug/cm2",
+   "range": [
+    2.4,
+    7.3
+   ],
+   "source": "fitted with N and Car to the NobbiP scan (fit.py) [F]. CONFLICT with the range derived from the literature, 2.4-7.3 ug/cm2: the green leaf's 42.1 (xuye2023) times the yellow-to-green ratio of Chl a + b per mass, 0.12/2.13 = 0.056 (li2020, late Nov over Sep) to 0.15/0.86 = 0.17 (jurcevic2024, Nov over Sep), assuming the mass per area unchanged [D/A]; held at 2.4 the scan's colour is missed by dE76 4.4 (greener), at 7.3 by 8.8. The scanned leaves are yellower than the leaves those ratios describe, or the scanner's colour (sRGB, LED spectra unknown) is not the eye's [A]; lamp: the nobbip value; lamp: fitted to the calibrated reflectance of a yellow ginkgo leaf (Morimoto, Zhang, Fukuda & Uchikawa 2022, Opt. Express 30:3183, data Zenodo 5217752, CC BY 4.0, sample 2014-12-10, row 306: Topcon SR-2A, D65 booth, 380-780 nm), N 2.09, Cab 0.084, Car 7.45, Cbrown 0.162 with a flat surface term s (0 at the optimum), rms 0.015 over 400-780 nm (materials/yinxing/fit_spectra.py) [F]; the same fit on Morimoto's green ginkgo predicts its measured T within 5-8 % in the camera's green and blue (24 % low in red), and on a yellow Dioscorea leaf within -18..+10 % (front/back) [M, the check of R -> T]",
+   "tag": "F"
+  },
+  "Car": {
+   "value": {
+    "nobbip": 5.08,
+    "lamp": 7.4539
+   },
+   "unit": "ug/cm2",
+   "range": [
+    4.7,
+    6.8
+   ],
+   "source": "fitted with N and Cab to the NobbiP scan (fit.py) [F], inside the range from the literature: the green leaf's 10.3 (lichtenthaler2023) times the late-November over peak ratio 0.31/0.47 = 0.66 (li2020) = 6.8, and times 0.11/0.24 = 0.46 (jurcevic2024, Nov over July) = 4.7 [D/A]; lamp: the nobbip value; lamp: fitted to the calibrated reflectance of a yellow ginkgo leaf (Morimoto, Zhang, Fukuda & Uchikawa 2022, Opt. Express 30:3183, data Zenodo 5217752, CC BY 4.0, sample 2014-12-10, row 306: Topcon SR-2A, D65 booth, 380-780 nm), N 2.09, Cab 0.084, Car 7.45, Cbrown 0.162 with a flat surface term s (0 at the optimum), rms 0.015 over 400-780 nm (materials/yinxing/fit_spectra.py) [F]; the same fit on Morimoto's green ginkgo predicts its measured T within 5-8 % in the camera's green and blue (24 % low in red), and on a yellow Dioscorea leaf within -18..+10 % (front/back) [M, the check of R -> T]",
+   "tag": "F"
+  },
+  "Anth": {
+   "value": {
+    "nobbip": 0.0,
+    "lamp": 0.0
+   },
+   "unit": "ug/cm2",
+   "source": "no measured value for yellow ginkgo found (research report); yellow ginkgo shows no red [A]",
+   "tag": "A"
+  },
+  "Cbrown": {
+   "value": {
+    "nobbip": 0.0,
+    "lamp": 0.1618
+   },
+   "unit": "PROSPECT's arbitrary units",
+   "source": "a clean yellow leaf without browned patches [A]; the browning of late senescence is a later process (docs/materials/yinxing.md); lamp: fitted to the calibrated reflectance of a yellow ginkgo leaf (Morimoto, Zhang, Fukuda & Uchikawa 2022, Opt. Express 30:3183, data Zenodo 5217752, CC BY 4.0, sample 2014-12-10, row 306: Topcon SR-2A, D65 booth, 380-780 nm), N 2.09, Cab 0.084, Car 7.45, Cbrown 0.162 with a flat surface term s (0 at the optimum), rms 0.015 over 400-780 nm (materials/yinxing/fit_spectra.py) [F]; the same fit on Morimoto's green ginkgo predicts its measured T within 5-8 % in the camera's green and blue (24 % low in red), and on a yellow Dioscorea leaf within -18..+10 % (front/back) [M, the check of R -> T]",
+   "tag": "A"
+  },
+  "Cw": {
+   "value": {
+    "nobbip": 0.012,
+    "lamp": 0.012
+   },
+   "unit": "cm (equivalent water thickness)",
+   "source": "no measured value for yellow ginkgo found; lamina thickness at the centre 206 um (leigh2011, [M]) times a water volume fraction 0.6 [A]; water absorbs little below 830 nm, the visible colour hardly depends on it (docs/materials/yinxing.md)",
+   "tag": "A"
+  },
+  "Cm": {
+   "value": {
+    "nobbip": 0.009,
+    "lamp": 0.009
+   },
+   "unit": "g/cm2",
+   "source": "inside the green leaf's 0.0073-0.0105 (lichtenthaler2023 Table 3, [M]); the senescent leaf's not found [A]",
+   "tag": "A"
+  }
+ },
+ "vein": {
+  "N": {
+   "value": {
+    "nobbip": 1.0,
+    "lamp": 1.3
+   },
+   "unit": "1",
+   "source": "the vein column scatters less than the lamina (a compact bundle and sheath extension, no mesophyll air spaces [A]): in transmission the veins look lighter than the lamina (the lamp photo; DSG7056), in reflection darker (the NobbiP scan). 1.0, the fewest plates PROSPECT allows, chosen, not fitted: the lamp photo's vein contrast is a phone's sharpened JPEG (docs/materials/yinxing.md, the card) [A]; lamp 1.55 (S8): with the lamp set's thicker lamina (N 2.09) a vein of N 1.0 stood out too much (the top-hat over the lamina 0.48 against the photo's 0.29, measure_var.py on both); 1.55 brings the vein's excess transmittance in green (T_vein/T_lamina - 1) to 0.54, near round 1's 0.62 that gave 0.31 [F]; S8 r3 [F]: 1.15 with the pigment factor 0.75: vein top-hat over lamina 0.275 (photo 0.287), the excess G/R over the lamina G/R 1.81 (photo 1.80); S8 r3b [F]: 1.3: on pbrt N 1.15 gave the vein top-hat 0.32 (the proxy had said 0.275: its map, fitted on an older vein family, does not follow a change of the vein family)",
+   "tag": "A/F"
+  },
+  "pigment_factor": {
+   "value": {
+    "nobbip": 0.5,
+    "lamp": 0.75
+   },
+   "unit": "1 (vein column's pigments over the lamina's)",
+   "source": "the bundle and its sheath carry few plastids [A, from Klimko 2015's anatomy]; 0.5 chosen, not fitted (as N) [A]; lamp S8 r2: 0.6 (0.5 left the veins whitish beside the browned lamina, the judges' 'near-white lines') [A]; S8 r3 [F]: 0.75, fitted with N on the vein excess hue (G/R of the vein over the lamina relative to the lamina G/R: 1.81, photo 1.80; 0.6 gave 1.94, paler)",
+   "tag": "F"
+  },
+  "thickness_ratio": {
+   "value": {
+    "nobbip": 1.1,
+    "lamp": 1.1
+   },
+   "unit": "1 (water and dry matter of the vein column over the lamina's)",
+   "source": "leaf thickness at a vein over between veins, cultivar means 1.02-1.14 (klimko2015 Table 3) [D]",
+   "tag": "D"
+  }
+ },
+ "petiole": {
+  "thickness_over_lamina": {
+   "value": {
+    "nobbip": 3.0,
+    "lamp": 3.0
+   },
+   "unit": "1",
+   "source": "the petiole as a leaf of N, pigments, water and dry matter all times this factor: its wall about three laminas thick [A, round 1, not checked]",
+   "tag": "A"
+  }
+ },
+ "senescence": {
+  "what": "Late-autumn browning and the veins' uneven strength as a process (materials/yinxing/senescence.py): streaks along the veins, the margin browning inwards, necrotic spots, all as PROSPECT-D's Cbrown per texel; the veins' strength wandering along each vein. The lamp set is the late leaf of the backlit photo (spotted, its margin brown); the nobbip set is the clean scanned leaves (no browning) [A: NobbiP's three leaves show no spots at the scan's scale].",
+  "seed": {
+   "value": {
+    "lamp": 1,
+    "nobbip": 1
+   },
+   "unit": "1",
+   "source": "[A]",
+   "tag": "A"
+  },
+  "streak_Cb0": {
+   "value": {
+    "lamp": 0.15,
+    "nobbip": 0.0
+   },
+   "unit": "Cbrown",
+   "source": "tuned so the render's streak field (measured as the photo's, measure_var.py: rest std of log green) comes to the photo's 0.36: 0.26 gave 0.29 [F]; 0.32 gave 0.26 (with the narrower margin field), 0.45 [F]; S8 r2: the start of a refit with the narrower distribution (below) [A]; S8 r2 [F]: slope of max(0, n): 0.35 gave rest std 0.41 and lamina median/p90 0.64 (photo 0.36, 0.72); 0.2 gives 0.37, 0.74; S8 r3 [F]: 0.15 (the fibres carry part of the fine streaking now)",
+   "tag": "F"
+  },
+  "streak_sigma_ln": {
+   "value": {
+    "lamp": 0.6,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "unused since S8 r2 (the streak field is max(0, n - theta) now)",
+   "tag": "A"
+  },
+  "streak_across_mm": {
+   "value": {
+    "lamp": 0.14,
+    "nobbip": 0.25
+   },
+   "unit": "mm (Gaussian sigma)",
+   "source": "half the photo's across-vein 1/e autocorrelation length 0.49 mm (a Gaussian field's 1/e length is 2 sigma) [D from M]; the JPEG's 0.5 mm blocks sit at the same scale, so this is an upper bound on the true value; lamp 0.2: the render measured the same way came out at 1.22 / 0.60 mm (along / across) with 0.5 / 0.25, against the photo's 1.0 / 0.49 [F]; S8 r2 [A]: 0.14 (finer streaks; the measured across-length stays at 0.65-0.74, set by the patches and the vein spacing, photo 0.49)",
+   "tag": "F"
+  },
+  "streak_along_mm": {
+   "value": {
+    "lamp": 0.4,
+    "nobbip": 0.5
+   },
+   "unit": "mm (sigma)",
+   "source": "half the photo's along-vein 1/e length 1.0 mm [D from M]; lamp 0.4: the render measured the same way came out at 1.22 / 0.60 mm (along / across) with 0.5 / 0.25, against the photo's 1.0 / 0.49 [F]",
+   "tag": "F"
+  },
+  "margin_A": {
+   "value": {
+    "lamp": 0.9,
+    "nobbip": 0.0
+   },
+   "unit": "Cbrown at the margin",
+   "source": "exponential fitted (log least squares, d 0.6-5.5 mm) to the photo's median dlogG against the distance to the margin (-2.51 at 0.6 mm, -1.07 at 1.9, -0.51 at 3.5, -0.21 at 5.5), converted from the photo's log-green contrast to Cbrown through the lamina's own curve (nobbip lamina, 3000 K, the camera's green: dlogG -0.51 at Cb 0.5, -1.05 at 1.2, -1.56 at 2, -2.10 at 3, -3.05 at 5) [D] [F]; then tuned on the render's own profile (4.8 / 1.6 gave -2.30 at 0.6 mm and -1.34 at 1.9 against the photo's -2.51 and -1.07): 6.5 / 1.15 [F]; S8 r2: now the median along the margin (the margin's A varies along it, margin_arc_sigma_ln) [F, refit below]; S8 r2 [F]: as the median along the margin, 6.0 gives -2.63 / -1.02 / -0.37 at 0.6 / 1.9 / 3.5 mm (photo -2.51 / -1.07 / -0.51); S8 r3 [F]: 1.4 (with margin_l_mm 1.3 and the lateral boost): profile at 0.6 / 1.9 / 3.5 mm close to the photo's; S8 r3b [F]: 0.9 — the band lighter, the margin's darkness carried more by blotches (speck_margin_size_boost 2.0): profile at 0.6 / 1.9 mm -2.44 / -0.92 on the proxy (photo -2.51 / -1.07); r3a's 1.4 drew a continuous dark rim along the distal margin",
+   "tag": "F"
+  },
+  "margin_l_mm": {
+   "value": {
+    "lamp": 1.3,
+    "nobbip": 1.6
+   },
+   "unit": "mm",
+   "source": "with margin_A [F]; the profile flattens beyond 5 mm (a 2.1 mm length fits 0.6-10 mm); S8 r3 [F]: 1.3 with margin_A 1.4 (the lateral boost multiplies A, so A is the median and lower than r2's 6.0)",
+   "tag": "F"
+  },
+  "margin_sigma_ln": {
+   "value": {
+    "lamp": 0.5,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "the margin's browning reaches in unevenly, in tongues along the veins (the photo, by eye) [A]; 0.7 at 0.3 / 1.5 mm (round 2a) made broad dark smudges the photo does not have; S8 r3 [A]: back to 0.5 (0.8 drew long dark tongues across the blade the photo does not have)",
+   "tag": "A"
+  },
+  "margin_across_mm": {
+   "value": {
+    "lamp": 0.12,
+    "nobbip": 0.2
+   },
+   "unit": "mm (sigma)",
+   "source": "[A]; S8 r3 [A]: 0.12, the tongues between the veins (comb)",
+   "tag": "A"
+  },
+  "margin_along_mm": {
+   "value": {
+    "lamp": 1.0,
+    "nobbip": 1.0
+   },
+   "unit": "mm (sigma)",
+   "source": "[A]",
+   "tag": "A"
+  },
+  "Cb_max": {
+   "value": {
+    "lamp": 7.0,
+    "nobbip": 7.0
+   },
+   "unit": "Cbrown",
+   "source": "a cap, inside the family's range [A]",
+   "tag": "A"
+  },
+  "vein_sigma_ln": {
+   "value": {
+    "lamp": 0.6,
+    "nobbip": 0.45
+   },
+   "unit": "1",
+   "source": "S8 r2: the fast along-vein wander (Ornstein-Uhlenbeck in the vein's own arc length, senescence.vein_strength); start [A], tuned on the photo's CV along a vein 0.59; S8 r2 [F/A]: see vein_corr_mm; S8 r3 [F]: 0.6 with vein_corr_mm 1.0: CV along a vein 0.52 (photo 0.59, an upper bound); still continuous lines",
+   "tag": "F"
+  },
+  "margin_arc_sigma_ln": {
+   "value": {
+    "lamp": 1.4,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "S8 r2: the margin's browning differs from lobe to lobe: log green 0.3-1.2 mm in, per 0.5 mm along the margin, std 1.68 in the photo, 0.63 in the r1 render (measure_var.py 'margin_along') [M]; start [A]; S8 r2 [F]: 1.8 gives the along-margin std 1.55 (photo 1.68; the photo's dark end is JPEG black, so it reads high); S8 r3 [F]: 1.1, with the lateral boost carrying the large-scale part; S8 r3b [F]: 1.4, patchier along the margin",
+   "tag": "F"
+  },
+  "margin_arc_mm": {
+   "value": {
+    "lamp": 1.8,
+    "nobbip": 1.8
+   },
+   "unit": "mm (sigma of an isotropic field)",
+   "source": "S8 r2: half the photo's along-margin 1/e correlation length 3.6 mm [D from M]",
+   "tag": "D"
+  },
+  "speck_parents_per_cm2": {
+   "value": {
+    "lamp": 64,
+    "nobbip": 0.0
+   },
+   "unit": "1/cm2",
+   "source": "S8 r2: the photo's dark spots (45 % darker than their 1.5 mm median, >= 4 px) 36.3 per cm2 [M], over speck_per_parent [D]; S8 r2 [F]: 12 x 3 found 24/cm2 (the smallest fall under 4 px, neighbours merge), 72 x 1.5 gives 36.9 against the photo's 36.3; S8 r3 [F]: 64 (with the margin boost) gives about the photo's 36/cm2 over d > 1 mm",
+   "tag": "F"
+  },
+  "speck_per_parent": {
+   "value": {
+    "lamp": 1.5,
+    "nobbip": 3.0
+   },
+   "unit": "1 (Poisson mean)",
+   "source": "S8 r2: the specks come in groups (the judges, and the photo by eye) [A]; tuned on the 3 mm cell dispersion; S8 r2 [F]: 3 at 0.8 mm made ragged clumps; the photo's specks are barely clumped (3 mm cell dispersion 1.12, Clark-Evans 1.15 [M]); 1.5 at 1.5 mm gives 1.02 / 1.15",
+   "tag": "F"
+  },
+  "speck_cluster_mm": {
+   "value": {
+    "lamp": 1.5,
+    "nobbip": 0.8
+   },
+   "unit": "mm (Gaussian sigma along the veins; a third across)",
+   "source": "[A], tuned on the dispersion; S8 r2 [F] with speck_per_parent",
+   "tag": "F"
+  },
+  "speck_diameter_mm": {
+   "value": {
+    "lamp": 0.17,
+    "nobbip": 0.315
+   },
+   "unit": "mm (equivalent diameter, median)",
+   "source": "the photo's spots, p10/50/90 0.158/0.315/0.676 mm [M]; r1 needed 0.24 with a halo; start 0.28 without [A]; S8 r2 [F]: 0.24 gives the photo's measured p10/50/90 (0.16/0.30/0.67 against 0.16/0.32/0.68); S8 r3 [F]: 0.17 (soft edges widen what the threshold catches): measured median 0.29 mm, photo 0.32",
+   "tag": "F"
+  },
+  "speck_diameter_sigma_ln": {
+   "value": {
+    "lamp": 0.57,
+    "nobbip": 0.57
+   },
+   "unit": "1",
+   "source": "(ln p90 - ln p10) / 2.563 of the photo's [D]",
+   "tag": "D"
+  },
+  "speck_elongation": {
+   "value": {
+    "lamp": 2.5,
+    "nobbip": 2.05
+   },
+   "unit": "1 (axis ratio, median)",
+   "source": "the photo's spots, p10/50/90 1.25/2.05/4.03 [M]; S8 r3 [F/A]: 2.5 (the photo's dark spots read as soft dashes along the veins; the thresholded measure gives 2.5 for the render, photo 2.05 — kept a little long by eye)",
+   "tag": "F/A"
+  },
+  "speck_elongation_sigma_ln": {
+   "value": {
+    "lamp": 0.46,
+    "nobbip": 0.46
+   },
+   "unit": "1",
+   "source": "[D] as the diameter's",
+   "tag": "D"
+  },
+  "speck_Cb": {
+   "value": {
+    "lamp": 2.2,
+    "nobbip": 2.6
+   },
+   "unit": "Cbrown (median)",
+   "source": "r1's fit to the photo's depth -1.63 [F]; S8 r2 [F]: 3.0 gave a median depth of -1.89 without the halo, 2.6 gives -1.82 (photo -1.63); S8 r3 [F]: 2.2: depth median -1.53, photo -1.63",
+   "tag": "F"
+  },
+  "speck_Cb_sigma_ln": {
+   "value": {
+    "lamp": 0.9,
+    "nobbip": 0.9
+   },
+   "unit": "1",
+   "source": "r1 [D/A]",
+   "tag": "D"
+  },
+  "speck_Cb_range": {
+   "value": {
+    "lamp": [
+     0.7,
+     6.0
+    ],
+    "nobbip": [
+     0.7,
+     6.0
+    ]
+   },
+   "unit": "Cbrown",
+   "source": "r1 [A]",
+   "tag": "A"
+  },
+  "speck_edge_mm": {
+   "value": {
+    "lamp": 0.07,
+    "nobbip": 0.02
+   },
+   "unit": "mm",
+   "source": "S8 r2: sharp (the necrotic specks are cut off; the photo's edges, 0.20 mm as measured, are the JPEG's and the lens's) [A]; no halo any more (the judges: 'each with a soft brown halo'); S8 r3 [F]: 0.07 median with speck_edge_sigma_ln 0.8 gives the measured edge width p10/50/90 0.12 / 0.16 / 0.25 mm (photo 0.14 / 0.20 / 0.33; part of the photo's is the phone's blur)",
+   "tag": "F"
+  },
+  "speck_rough": {
+   "value": {
+    "lamp": 0.1,
+    "nobbip": 0.2
+   },
+   "unit": "1",
+   "source": "r1 [A]; S8 r2 [A]: 0.1 (0.2 frayed the small ones)",
+   "tag": "A"
+  },
+  "speck_rough_mm": {
+   "value": {
+    "lamp": 0.06,
+    "nobbip": 0.06
+   },
+   "unit": "mm (sigma)",
+   "source": "S8 r2 [A]",
+   "tag": "A"
+  },
+  "patch_per_cm2": {
+   "value": {
+    "lamp": 10.0,
+    "nobbip": 0.0
+   },
+   "unit": "1/cm2",
+   "source": "S8 r2: the photo's diffuse patches (18 % darker than their 4 mm median after the dark spots are filled, >= 0.4 mm; measure_var.py 'patches') 13.2 per cm2 [M]; S8 r2 [F]: the streak and drift fields make patches of their own; 5 generated gives 11/cm2 measured (photo 13.2) — cover 10.6 % against 5.7 %: the fields' broad ones, left; S8 r2 pbrt check: 5 gave cover 9.7 %, 3 [F]; S8 r3 [F/A]: 10 (more of the photo's soft dashes); measured 10.8/cm2 (photo 13.2)",
+   "tag": "F/A"
+  },
+  "patch_diameter_mm": {
+   "value": {
+    "lamp": 0.35,
+    "nobbip": 0.6
+   },
+   "unit": "mm (half-maximum diameter, median)",
+   "source": "the photo's patches, p10/50/90 0.43/0.60/1.03 mm [M]; S8 r2 [F]: 0.5 (0.6 measured larger); S8 r3 [A]: 0.35",
+   "tag": "A"
+  },
+  "patch_diameter_sigma_ln": {
+   "value": {
+    "lamp": 0.34,
+    "nobbip": 0.34
+   },
+   "unit": "1",
+   "source": "(ln 1.03 - ln 0.43) / 2.563 [D]",
+   "tag": "D"
+  },
+  "patch_elongation": {
+   "value": {
+    "lamp": 3.0,
+    "nobbip": 1.5
+   },
+   "unit": "1",
+   "source": "[A]; S8 r3 [A]: 3 (the photo's diffuse patches are dashes along the veins, by eye)",
+   "tag": "A"
+  },
+  "patch_Cb": {
+   "value": {
+    "lamp": 1.0,
+    "nobbip": 0.45
+   },
+   "unit": "Cbrown (median, peak)",
+   "source": "the photo's median depth -0.42 through the lamina's curve (Cb 0.5 -> -0.51) [D]; S8 r3 [A]: 1.0",
+   "tag": "A"
+  },
+  "patch_Cb_sigma_ln": {
+   "value": {
+    "lamp": 0.5,
+    "nobbip": 0.5
+   },
+   "unit": "1",
+   "source": "the photo's depths p10/50/90 -1.19/-0.42/-0.29 [D, rough]",
+   "tag": "D"
+  },
+  "vein_corr_mm": {
+   "value": {
+    "lamp": 1.0,
+    "nobbip": 1.5
+   },
+   "unit": "mm (1/e)",
+   "source": "the photo's along-vein 1/e length of the top-hat, 0.61 mm [M]; S8 r2 [F/A]: 1.5 mm. The photo's 0.61 mm with sigma 0.8 matched the measured CV (0.58) but read as dashes; the photo's CV along a 1 px trace includes the JPEG's noise, so the measured 0.59 is an upper bound [I]; 0.45 at 1.5 mm gives CV 0.39, length 0.40 mm; S8 r3 [F]: 1.0 (with vein_sigma_ln)",
+   "tag": "F"
+  },
+  "vein_slow_sigma_ln": {
+   "value": {
+    "lamp": 0.35,
+    "nobbip": 0.25
+   },
+   "unit": "1",
+   "source": "S8 r2: the veins' difference from one another (the photo's CV between veins 0.26) [A, tuned]; S8 r2 [F]: 0.25 gives the CV between veins 0.23 (photo 0.26); S8 r3 [F]: 0.35: CV between veins 0.26 (photo 0.26); the judges saw r2's veins as all equally bright",
+   "tag": "F"
+  },
+  "vein_slow_corr_mm": {
+   "value": {
+    "lamp": 4.0,
+    "nobbip": 4.0
+   },
+   "unit": "mm (1/e)",
+   "source": "[A]: a vein keeps its strength for millimetres; a fork's daughters start from their parent's",
+   "tag": "A"
+  },
+  "vein_width_exp": {
+   "value": {
+    "lamp": 0.5,
+    "nobbip": 0.5
+   },
+   "unit": "1",
+   "source": "width = w * g^0.5 [A]: the photo's veins vary in width as well as in brightness (the judges)",
+   "tag": "A"
+  },
+  "vein_amount_exp": {
+   "value": {
+    "lamp": 0.5,
+    "nobbip": 0.5
+   },
+   "unit": "1",
+   "source": "the column's share times g^0.5 [A]",
+   "tag": "A"
+  },
+  "vein_brown_factor": {
+   "value": {
+    "lamp": 0.7,
+    "nobbip": 0.7
+   },
+   "unit": "1",
+   "source": "S8 r2: the vein column's Cbrown over the lamina's around it: the photo's veins stay light through the brown margin and the spots (by eye; the top-hat over lamina in the margin band vs inside, measure_var.py) [A, then F]; S8 r2 [F]: the brightest vein pixels' top-hat over lamina 0.3-1.5 mm in / 4-12 mm in: 0.3 gave 1.48 / 0.61, 0.5 1.35 / 0.52, 0.7 (with pigment 0.6) 0.69 / 0.38; photo 0.76 / 0.31",
+   "tag": "F"
+  },
+  "drift_Cb0": {
+   "value": {
+    "lamp": 0.02,
+    "nobbip": 0.0
+   },
+   "unit": "Cbrown (mean)",
+   "source": "S8 r2: the photo's broad drift, log green smoothed over 3 mm with the margin profile and spots taken out, std 0.165 (measure_var.py 'drift_std_dlogG_3mm', the lamp's own gradient divided out) [M]; start [A]; S8 r2 [F]: 0.2 gives the 3 mm drift std 0.19 (photo 0.165); S8 r2 pbrt check: 0.2 gave 0.197, 0.15 [F]; S8 r3 [F]: 0.02: the lateral margin boost now gives most of the broad variation (drift std 0.22, photo 0.165)",
+   "tag": "F"
+  },
+  "drift_sigma_ln": {
+   "value": {
+    "lamp": 0.6,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "unused (the drift field is max(0, n - theta))",
+   "tag": "A"
+  },
+  "drift_mm": {
+   "value": {
+    "lamp": 2.0,
+    "nobbip": 2.0
+   },
+   "unit": "mm (Gaussian sigma)",
+   "source": "[A]",
+   "tag": "A"
+  },
+  "streak_threshold": {
+   "value": {
+    "lamp": 0.0,
+    "nobbip": 0.0
+   },
+   "unit": "1 (in the field's sigmas)",
+   "source": "S8 r2: Cb = Cb0 * max(0, n - theta): half the blade clean at 0 [A]",
+   "tag": "A"
+  },
+  "drift_threshold": {
+   "value": {
+    "lamp": 0.0,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "[A] as streak_threshold",
+   "tag": "A"
+  },
+  "speck_margin_boost": {
+   "value": {
+    "lamp": 2.5,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "S8 r3: the photo's dark spots per cm2 by the distance to the margin, 49.2 (1-3 mm), 36.1 (3-8 mm), 30.4 (> 8 mm) [M, measure_var.py]; lambda(d) = lambda_inf (1 + K exp(-d / l)) through the bins' mean distances (2, 5 mm) and the inner value: K 1.39, l 2.6 mm [D]; S8 r3 [F]: 2.5 (the [D] 1.39 gave no gradient in the measured density, the brown margin hides the spots from the local-median threshold); measured 54 / 38 / 35 per cm2 at 1-3 / 3-8 / > 8 mm (photo 49 / 36 / 30)",
+   "tag": "F"
+  },
+  "speck_margin_l_mm": {
+   "value": {
+    "lamp": 2.6,
+    "nobbip": 2.6
+   },
+   "unit": "mm",
+   "source": "with speck_margin_boost [D]",
+   "tag": "D"
+  },
+  "speck_margin_size_boost": {
+   "value": {
+    "lamp": 2.0,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "S8 r3: near the margin the lesions are bigger, rounder and darker (the photo's lobes: round blotches 0.5-1.2 mm within ~1.5 mm of the margin, by eye) [A]: diameter and Cbrown times 1 + b exp(-d / l), elongation pulled to 1 by the same weight; S8 r3b [A]: 2.0, the margin's darkness as blotches rather than a band (the photo's lobes)",
+   "tag": "A"
+  },
+  "speck_margin_size_l_mm": {
+   "value": {
+    "lamp": 1.0,
+    "nobbip": 1.0
+   },
+   "unit": "mm",
+   "source": "with speck_margin_size_boost [A]",
+   "tag": "A"
+  },
+  "speck_edge_sigma_ln": {
+   "value": {
+    "lamp": 0.8,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "S8 r3: each speck's edge width log-normal round speck_edge_mm (the photo has sharp pin-points and many soft-edged spots; its spots' edge width p10/50/90 0.14 / 0.20 / 0.33 mm [M], r2's render 0.12 / 0.14 / 0.20 with one sharp edge for all) [A, tuned on the measured spread]",
+   "tag": "A"
+  },
+  "speck_halo_share": {
+   "value": {
+    "lamp": 0.25,
+    "nobbip": 0.0
+   },
+   "unit": "1",
+   "source": "S8 r3: the share of specks with a faint halo (the judges saw halos round some of the photo's spots; r1 had one round every spot) [A]",
+   "tag": "A"
+  },
+  "speck_halo_Cb": {
+   "value": {
+    "lamp": 0.35,
+    "nobbip": 0.0
+   },
+   "unit": "Cbrown",
+   "source": "S8 r3: the halo's peak Cbrown [A]",
+   "tag": "A"
+  },
+  "speck_halo_scale": {
+   "value": {
+    "lamp": 2.5,
+    "nobbip": 2.5
+   },
+   "unit": "1",
+   "source": "S8 r3: the halo's Gaussian over the spot's semi-axes [A]",
+   "tag": "A"
+  },
+  "crust_Cb": {
+   "value": {
+    "lamp": 1.5,
+    "nobbip": 0.0
+   },
+   "unit": "Cbrown",
+   "source": "S8 r3: the dried rim, a thin dark crust along the very edge (the photo's margins, by eye; under the 0.5 mm the margin profile starts at, so not measured) [A]; its strength follows the margin's A along the margin (half its log spread); S8 r3b [A]: 1.5 (3.0 in r3a made the rim read as an outline)",
+   "tag": "A"
+  },
+  "crust_mm": {
+   "value": {
+    "lamp": 0.07,
+    "nobbip": 0.07
+   },
+   "unit": "mm",
+   "source": "S8 r3: the crust's e-folding width [A]",
+   "tag": "A"
+  },
+  "fibre_Cb0": {
+   "value": {
+    "lamp": 0.12,
+    "nobbip": 0.0
+   },
+   "unit": "Cbrown",
+   "source": "S8 r3: the fine fibrous mottle between the spots: Cb0 * max(0, n); fitted on the photo's log lamina band-passed 0.06-0.3 mm (std 0.0885 [M]; r2's render 0.067) [F, below]; S8 r3 [F]: 0.12 gives the band-passed std 0.084 (photo 0.0885)",
+   "tag": "F"
+  },
+  "fibre_across_mm": {
+   "value": {
+    "lamp": 0.03,
+    "nobbip": 0.05
+   },
+   "unit": "mm (sigma)",
+   "source": "S8 r3: narrower than the vein spacing (0.69 mm) so the mottle lies between the veins [A]; S8 r3 [A]: 0.03 (finer than the vein spacing)",
+   "tag": "A"
+  },
+  "fibre_along_mm": {
+   "value": {
+    "lamp": 0.4,
+    "nobbip": 0.3
+   },
+   "unit": "mm (sigma)",
+   "source": "S8 r3: the photo's fine mottle is streaky along the veins (its band-passed gradient across / along the veins 1.45 [M]) [A]; S8 r3 [A]: 0.4",
+   "tag": "A"
+  },
+  "margin_lateral_boost": {
+   "value": {
+    "lamp": 3.0,
+    "nobbip": 0.0
+   },
+   "unit": "1 (log A per unit of w)",
+   "source": "S8 r3: the photo's margin (log green 0.3-1.2 mm in, by 20-degree sector from the base) is darker on the lateral margins (-2.72 at -60 deg, -3.41 at +60) than on the distal one (-1.26 to -1.32 at -20..+20) [M]; the process: w = 1 - |n . v| (veins along the margin vs ending on it) [I]; start from the sector contrast through the lamina's Cbrown curve (about x2.5 in Cbrown over w's range ~0.8) [D], then [F]; S8 r3 [F]: 3.0 gives the sectors -3.2 / -1.8 / -1.7 / -1.0 / -1.5 / -2.6 / -3.3 (photo -2.7 / -1.9 / -1.3 / -1.3 / -1.3 / -1.8 / -3.4)",
+   "tag": "F"
+  }
+ }
+}

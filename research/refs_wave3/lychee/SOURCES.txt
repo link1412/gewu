@@ -1,0 +1,164 @@
+lychee — 真实摄影外观参考
+用途：仅作本地渲染外观参照，不再发布。
+核对日期：2026-11-05。像素为实际下载文件解码结果；源文件像素另列。
+图片未在本地裁切、调色、去水印或放大。官方标准尺寸图片/图库 JPEG 可能经过来源服务器缩放、压缩。
+作者未署名时如实注明；发布单位或工艺作者不冒充摄影师。
+
+[01] lychee_01.jpg
+文件名：lychee_01.jpg
+来源页：https://commons.wikimedia.org/wiki/File:CSIRO_ScienceImage_2309_Lychees.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/CSIRO_ScienceImage_2309_Lychees.jpg/1920px-CSIRO_ScienceImage_2309_Lychees.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY 3.0
+许可链接：https://creativecommons.org/licenses/by/3.0
+作者：Plant Industry, CSIRO
+像素：1920 × 1330 px
+文件：JPEG，368,648 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：2400 × 1662 px
+来源标题：CSIRO ScienceImage 2309 Lychees.jpg
+来源署名/机构：http://www.scienceimage.csiro.au/image/2309
+参照内容与限制：树上红荔枝近摄：果串、叶、龟裂片和柔焦背景；未见清晰水珠。
+SHA-256：0547ba131290740339c3129edf20fcf7d21619ee7e7373d7d50844117ba4ad1a
+
+[02] lychee_02.jpg
+文件名：lychee_02.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lychee_Brewster01_Asit.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Lychee_Brewster01_Asit.jpg/1920px-Lychee_Brewster01_Asit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：Asit K. Ghosh Thaumaturgist
+像素：1920 × 1440 px
+文件：JPEG，757,768 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：2560 × 1920 px
+来源标题：Lychee Brewster01 Asit.jpg
+来源署名/机构：Own work
+参照内容与限制：Brewster 荔枝树上果串：红色果皮、小尖与叶；景深较深。
+SHA-256：b591aed1290b7778b520599d6734379749e51dcb4a9f38331c74aaae8075fb5d
+
+[03] lychee_03.jpg
+文件名：lychee_03.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lychee_Mauritius01_Asit.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Lychee_Mauritius01_Asit.jpg/1920px-Lychee_Mauritius01_Asit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：Asit K. Ghosh Thaumaturgist
+像素：1920 × 1440 px
+文件：JPEG，695,849 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3264 × 2448 px
+来源标题：Lychee Mauritius01 Asit.jpg
+来源署名/机构：Own work
+参照内容与限制：Mauritius 树上果串、叶、红绿渐变果皮；光线较平。
+SHA-256：75707ecb11e6a1dc6abecb9b79ce1b868fe176c7422961930d02143bdf95be3a
+
+[04] lychee_04.jpg
+文件名：lychee_04.jpg
+来源页：https://commons.wikimedia.org/wiki/File:A_beleza_da_lichia_no_p%C3%A9.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/A_beleza_da_lichia_no_p%C3%A9.jpg/3840px-A_beleza_da_lichia_no_p%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Tabuba
+像素：3840 × 2880 px
+文件：JPEG，1,751,071 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：4608 × 3456 px
+来源标题：A beleza da lichia no pé.jpg
+来源署名/机构：Own work
+参照内容与限制：树上成熟荔枝密集果串，果皮凸起和日光阴影清楚。
+SHA-256：4306143efaee1cb1d579898bc42440827a6fa3cd53fe0ccd3afab2c9362e41a9
+
+[05] lychee_05.jpg
+文件名：lychee_05.jpg
+来源页：https://commons.wikimedia.org/wiki/File:LICHIA_-_Litchi_chinensis_Sonn.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/LICHIA_-_Litchi_chinensis_Sonn.jpg/960px-LICHIA_-_Litchi_chinensis_Sonn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 2.0
+许可链接：https://creativecommons.org/licenses/by-sa/2.0
+作者：Jônatas Cunha from Itapeúna, Brasil
+像素：960 × 702 px
+文件：JPEG，160,230 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1024 × 749 px
+来源标题：LICHIA - Litchi chinensis Sonn.jpg
+来源署名/机构：LICHIA - Litchi chinensis Sonn
+参照内容与限制：树上果串、叶、果皮和虚化背景；颜色较饱和，适合形状参考。
+SHA-256：228e0b95571cb69e1b878b7b7699b87967f59bc19b00187364cea11fb5abe696
+
+[06] lychee_06.jpg
+文件名：lychee_06.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Litchi_chinensis_fruits.JPG
+图片下载地址：https://upload.wikimedia.org/wikipedia/commons/4/46/Litchi_chinensis_fruits.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original
+许可：CC BY-SA 3.0
+许可链接：http://creativecommons.org/licenses/by-sa/3.0/
+作者：B.navez
+像素：2130 × 1598 px
+文件：JPEG，1,032,020 bytes
+下载版本：Wikimedia 原始上传文件
+来源标示原始像素：2130 × 1598 px
+来源标题：Litchi chinensis fruits.JPG
+来源署名/机构：Self-photographed
+参照内容与限制：树上红荔枝果串与长叶，保留原始上传文件。
+SHA-256：e7ba069c800d255f0f847f56d321bbb17107f4b337bd5b94c55ca0b547e2e555
+
+[07] lychee_07.jpg
+文件名：lychee_07.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Litchi.JPG
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Litchi.JPG/1280px-Litchi.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：Skrissh2013
+像素：1280 × 853 px
+文件：JPEG，139,020 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1620 × 1080 px
+来源标题：Litchi.JPG
+来源署名/机构：Own work
+参照内容与限制：树上三颗荔枝近摄、叶缘与明显背景虚化；色块和果皮凸起清楚。
+SHA-256：1eb3cec2b4b3518854530eb569064de4268c7dc869982237fbdb32f8350e31e2
+
+[08] lychee_08.jpg
+文件名：lychee_08.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Lycheeeeeeee.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Lycheeeeeeee.jpg/1920px-Lycheeeeeeee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 2.0
+许可链接：https://creativecommons.org/licenses/by-sa/2.0
+作者：Len Worthington
+像素：1920 × 1460 px
+文件：JPEG，871,211 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：3234 × 2460 px
+来源标题：Lycheeeeeeee.jpg
+来源署名/机构：Nephelium litchi
+参照内容与限制：树上红荔枝果串，枝、叶和果皮结构；背景较复杂。
+SHA-256：5cce01c1c3960bcff05b96eab8eed153f4c017e9b11a5336835c35f9249f356d
+
+[09] lychee_09.jpg
+文件名：lychee_09.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Nice_Lychee.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Nice_Lychee.jpg/1280px-Nice_Lychee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+作者：Ibrahim Achiri
+像素：1280 × 1921 px
+文件：JPEG，407,640 bytes
+下载版本：Wikimedia 标准尺寸版本（原图端点 HTTP 429；未放大）
+来源标示原始像素：1706 × 2560 px
+来源标题：Nice Lychee.jpg
+来源署名/机构：Own work
+参照内容与限制：单颗树上红荔枝近摄，叶和果皮纹理；不是多果大串。
+SHA-256：8bf05d711b30773ca693f303bff28f83c00fb640e0bce86494e39db030b2dba6
+
+[10] lychee_10.jpg
+文件名：lychee_10.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Unripe_lychee.jpg
+图片下载地址：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Unripe_lychee.jpg/1920px-Unripe_lychee.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+作者：Mk2010
+像素：1920 × 1277 px
+文件：JPEG，382,478 bytes
+下载版本：Wikimedia 标准尺寸版本；未放大
+来源标示原始像素：2400 × 1596 px
+来源标题：Unripe lychee
+参照内容与限制：未成熟荔枝仍在枝上，果皮小尖和浅景深的补充近摄；不是成熟果串照片。
+SHA-256：6fbb67014810fc89dee0bf2ed10e3c09821a0c30c413b32aec98518fc0862ba4

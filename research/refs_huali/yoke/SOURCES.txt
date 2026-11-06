@@ -1,0 +1,125 @@
+yoke — 黄花梨古家具实拍参考
+下载与核对日期：2026-11-05（Asia/Tokyo）
+用途：仅本地渲染外观参照，不再发布。图片本身的版权／许可状态见各项。
+像素均为实际文件宽×高。JPG/TIFF保留下载原始字节；PDF照片只按原始页图像像素裁出，不放大、不调色、不锐化、不生成。
+摄影师与古家具制作者分列，未署名处不推测姓名。
+
+文件名：01_christies_6333031_left_upper.jpg
+来源页：https://www.christies.com/en/lot/lot-6333031
+下载原图／载体：https://images.christies.com/LotImages/2021/NYR/2021_NYR_19547_1003_002(a_pair_of_dali_marble-inset_huanghuali_continuous_horseshoe-back_armch124939).jpg
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6333031
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。
+像素：3200 × 4125 px（JPEG）
+对象与断代：A PAIR OF DALI MARBLE-INSET HUANGHUALI CONTINUOUS HORSESHOE-BACK ARMCHAIRS, 17TH CENTURY；来源断代：17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：左椅上半身近摄，圈口、扶手弯曲木纹和条形高光
+处理记录：未修改的下载原图。
+SHA256：b5e1d8bd2f25e7cf6ccd83fac7a645d89fae6f54a1edf10185316eea3a0a7d32
+
+文件名：02_christies_6333031_right_upper.jpg
+来源页：https://www.christies.com/en/lot/lot-6333031
+下载原图／载体：https://images.christies.com/LotImages/2021/NYR/2021_NYR_19547_1003_003(a_pair_of_dali_marble-inset_huanghuali_continuous_horseshoe-back_armch124939).jpg
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6333031
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。
+像素：3200 × 4125 px（JPEG）
+对象与断代：A PAIR OF DALI MARBLE-INSET HUANGHUALI CONTINUOUS HORSESHOE-BACK ARMCHAIRS, 17TH CENTURY；来源断代：17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：右椅上半身近摄，圈口与扶手连续曲线
+处理记录：未修改的下载原图。
+SHA256：2b6529fb9a9d6287969ca3d64ffa2a8876c61bcaf92dc6e295e9789ae93b4316
+
+文件名：03_christies_6333031_left_splat_joint.jpg
+来源页：https://www.christies.com/en/lot/lot-6333031
+下载原图／载体：https://images.christies.com/LotImages/2021/NYR/2021_NYR_19547_1003_014(a_pair_of_dali_marble-inset_huanghuali_continuous_horseshoe-back_armch124939).jpg
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6333031
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。
+像素：3200 × 3924 px（JPEG）
+对象与断代：A PAIR OF DALI MARBLE-INSET HUANGHUALI CONTINUOUS HORSESHOE-BACK ARMCHAIRS, 17TH CENTURY；来源断代：17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：左椅靠背板与椅圈连接处；中央嵌件为大理石，不是木纹
+处理记录：未修改的下载原图。
+SHA256：b0a62e86da2ab58694512684ef43b8ab9385cf5d6af6f126f327f19162c15a1b
+
+文件名：04_christies_6333031_right_splat_joint.jpg
+来源页：https://www.christies.com/en/lot/lot-6333031
+下载原图／载体：https://images.christies.com/LotImages/2021/NYR/2021_NYR_19547_1003_015(a_pair_of_dali_marble-inset_huanghuali_continuous_horseshoe-back_armch124939).jpg
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6333031
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。
+像素：3200 × 3924 px（JPEG）
+对象与断代：A PAIR OF DALI MARBLE-INSET HUANGHUALI CONTINUOUS HORSESHOE-BACK ARMCHAIRS, 17TH CENTURY；来源断代：17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：右椅靠背板与椅圈连接处；中央嵌件为大理石，不是木纹
+处理记录：未修改的下载原图。
+SHA256：f2e5061f738f58383eb905d4b57b84d51fa20ebdda3cb5253f8e971570c37a3f
+
+文件名：05_christies_5875996_rail_splat.jpg
+来源页：https://www.christies.com/en/lot/lot-5875996
+下载原图／载体：https://images.christies.com/LotImages/2015/NYR/2015_NYR_11418_0041_002(an_extremely_rare_and_important_set_of_four_huanghuali_horseshoe-back061103).jpg
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-5875996
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。
+像素：2133 × 3200 px（JPEG）
+对象与断代：AN EXTREMELY RARE AND IMPORTANT SET OF FOUR HUANGHUALI HORSESHOE-BACK ARMCHAIRS, QUANYI, CHINA, MING DYNASTY, 17TH CENTURY；来源断代：明，17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：圈椅椅圈与三段背板相接处，高光和框板边缘
+处理记录：未修改的下载原图。
+SHA256：c555acfa580a7409f6dae11a89b3600145830200d60ed4362672a3903ea28d17
+
+文件名：06_christies_6580362_dragon_handgrip.jpg
+来源页：https://www.christies.com/en/lot/lot-6580362
+下载原图／载体：https://images.christies.com/LotImages/2026/HGK/2026_HGK_24527_1004_002(a_rare_and_important_huanghuali_horseshoe-back_8216grand_masters8217_c055435).jpg
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6580362
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。
+像素：3200 × 2400 px（JPEG）
+对象与断代：A RARE AND IMPORTANT HUANGHUALI HORSESHOE-BACK ‘GRAND MASTER'S’ CHAIR AND HUANGHUALI FOOTSTOOL, 17TH CENTURY；来源断代：17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：17世纪太师式圈椅龙首扶手末端近摄；雕花变体，用于磨亮边缘与高光观察
+处理记录：未修改的下载原图。
+SHA256：e50bde2f29b2e28d880db4780f723aabd1b756df3df11ad98e59671fd5235816
+
+文件名：07_christies_6106055_pdf_p153_arm.png
+来源页：https://www.christies.com/en/lot/lot-6106055
+下载原图／载体：https://www.chinese-furniture.com/c_resources/curtisevarts_media/2017_christies_horseshoe%20armchair.pdf
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6106055
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。 图录专文作者 Curtis Evarts（柯惕思），并非已证实的摄影师；PDF公开于其专业资料网站。
+像素：1195 × 1650 px（PNG）
+对象与断代：AN EXTREMELY RARE AND IMPORTANT PAIR OF HUANGHUALI HORSESHOE-BACK ARMCHAIRS, QUANYI, MING DYNASTY, 17TH CENTURY；来源断代：明，17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：圈椅扶手大特写，回卷、鹅脖、椅圈下接缝及弯曲处的木纹
+处理记录：从公开图录扫描页提取实拍区域；PDF第7页／图录印刷页153；原页1275×1650；原始像素裁剪框(left,top,right,bottom)=(35,0,1230,1650)；无重采样。
+SHA256：943f3e2674fdc70736af17bcf80bd1a32a86707904fd01c00c7bb7137edd865e
+
+文件名：08_christies_6106055_pdf_p150_fig5.png
+来源页：https://www.christies.com/en/lot/lot-6106055
+下载原图／载体：https://www.chinese-furniture.com/c_resources/curtisevarts_media/2017_christies_horseshoe%20armchair.pdf
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6106055
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。 图录专文作者 Curtis Evarts（柯惕思），并非已证实的摄影师；PDF公开于其专业资料网站。
+像素：437 × 440 px（PNG）
+对象与断代：AN EXTREMELY RARE AND IMPORTANT PAIR OF HUANGHUALI HORSESHOE-BACK ARMCHAIRS, QUANYI, MING DYNASTY, 17TH CENTURY；来源断代：明，17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：原图录图5，椅圈、扶手与三段式背板近景
+处理记录：从公开图录扫描页提取实拍区域；PDF第4页／图录印刷页150，图5；原页1275×1650；原始像素裁剪框(left,top,right,bottom)=(96,77,533,517)；无重采样。
+SHA256：13d24577fd5e9ef92c0d55aa3373294fe6da219bf7f03a33293b0faf955fd136
+
+文件名：09_christies_6106055_pdf_p150_fig6.png
+来源页：https://www.christies.com/en/lot/lot-6106055
+下载原图／载体：https://www.chinese-furniture.com/c_resources/curtisevarts_media/2017_christies_horseshoe%20armchair.pdf
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6106055
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。 图录专文作者 Curtis Evarts（柯惕思），并非已证实的摄影师；PDF公开于其专业资料网站。
+像素：437 × 439 px（PNG）
+对象与断代：AN EXTREMELY RARE AND IMPORTANT PAIR OF HUANGHUALI HORSESHOE-BACK ARMCHAIRS, QUANYI, MING DYNASTY, 17TH CENTURY；来源断代：明，17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：原图录图6，回卷扶手、鹅脖和上下托角牙特写
+处理记录：从公开图录扫描页提取实拍区域；PDF第4页／图录印刷页150，图6；原页1275×1650；原始像素裁剪框(left,top,right,bottom)=(96,588,533,1027)；无重采样。
+SHA256：7e93cd22c482b7ce804adbc2ce7cb3d8107d0fe8940557a08c74b817eadc56b9
+
+文件名：10_christies_6106055_pdf_p150_fig7_joint.png
+来源页：https://www.christies.com/en/lot/lot-6106055
+下载原图／载体：https://www.chinese-furniture.com/c_resources/curtisevarts_media/2017_christies_horseshoe%20armchair.pdf
+许可：未见开放许可；按保留版权处理（公开可见 ≠ 开放授权）。仅按本次要求本地参照，不再发布。
+许可依据页：https://www.christies.com/en/lot/lot-6106055
+作者：摄影师未署名；发布机构：Christie’s（佳士得）；古家具制作者未详，中国。 图录专文作者 Curtis Evarts（柯惕思），并非已证实的摄影师；PDF公开于其专业资料网站。
+像素：437 × 404 px（PNG）
+对象与断代：AN EXTREMELY RARE AND IMPORTANT PAIR OF HUANGHUALI HORSESHOE-BACK ARMCHAIRS, QUANYI, MING DYNASTY, 17TH CENTURY；来源断代：明，17世纪；来源标材：Huanghuali（黄花梨）。
+观察重点：原图录图7，椅圈楔钉榫实拍，能见拼接线、斜置木钉与表面高光
+处理记录：从公开图录扫描页提取实拍区域；PDF第4页／图录印刷页150，图7；原页1275×1650；原始像素裁剪框(left,top,right,bottom)=(96,1115,533,1519)；无重采样。
+SHA256：4347e22eeecf7a1e6f68d5c9b46192decf49b33e0d2a927a4dbd155314a95d1c

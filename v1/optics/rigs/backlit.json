@@ -1,0 +1,170 @@
+{
+ "name": "backlit",
+ "title": "背光、透光",
+ "what": "Light through the object: a small softbox straight behind it, hidden by it (transmitted light: thin porcelain, jade, paper, horn, a leaf glow), two small softboxes high behind for rims along the arc, a weak front fill, and a light on the ground behind (a coloured ground, a sky).",
+ "look_target": {
+  "film": "ref/reference-film.mp4",
+  "note": "a reference film: a look target for the light only, never material truth",
+  "shots": [
+   {
+    "shot": 4,
+    "frame": 89,
+    "what": "lychee flesh: lit through from behind, rim of light on the skin, dark ground"
+   },
+   {
+    "shot": 9,
+    "frame": 141,
+    "what": "leaf: light from behind, the edge and the dew drop glowing on a dark ground"
+   },
+   {
+    "shot": 37,
+    "frame": 397,
+    "what": "red lantern: light through the paper against a bright sky"
+   }
+  ]
+ },
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "through",
+   "group": "through",
+   "shape": "disk",
+   "size": {
+    "R": 0.15
+   },
+   "at": {
+    "anchor": "top",
+    "dz": {
+     "R": -0.15
+    },
+    "azimuth_deg": 180,
+    "elevation_deg": 0,
+    "distance": {
+     "R": 0.25
+    }
+   },
+   "aim": {
+    "anchor": "top",
+    "dz": {
+     "R": -0.15
+    }
+   },
+   "lux": 5000,
+   "behind_object": true,
+   "why": "our choice: a small round softbox close behind the part of the object in the frame, facing it, hidden by it (checked: its outline stays under the object's upper silhouette); small and close, so the glow falls off from its middle (S3: a wide one lit the plate evenly, flat)"
+  },
+  {
+   "name": "rim_left",
+   "group": "rims",
+   "shape": "rect",
+   "size": {
+    "R": [
+     1.2,
+     1.2
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -160,
+    "elevation_deg": 50,
+    "distance": {
+     "R": 4
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 1500,
+   "why": "high behind, left: a rim along the arc"
+  },
+  {
+   "name": "rim_right",
+   "group": "rims",
+   "shape": "rect",
+   "size": {
+    "R": [
+     1.2,
+     1.2
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 160,
+    "elevation_deg": 50,
+    "distance": {
+     "R": 4
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 1500,
+   "why": "high behind, right"
+  },
+  {
+   "name": "front",
+   "group": "front",
+   "shape": "rect",
+   "size": {
+    "R": [
+     4,
+     4
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 25,
+    "elevation_deg": 20,
+    "distance": {
+     "R": 8
+    }
+   },
+   "aim": {
+    "anchor": "top"
+   },
+   "lux": 150,
+   "why": "a weak front fill"
+  },
+  {
+   "name": "ground",
+   "group": "ground",
+   "shape": "disk",
+   "size": {
+    "R": 2
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 170,
+    "elevation_deg": 55,
+    "distance": {
+     "R": 4
+    }
+   },
+   "aim": {
+    "anchor": "ground_seen"
+   },
+   "lux": 800,
+   "why": "washes the ground behind from above, out of frame: a coloured ground or a sky"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "black_velvet",
+  "distance": {
+   "R": 8
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 18
+  },
+  "why": "the default ground; a recipe sets the colour for its object (backdrop.material)"
+ }
+}

@@ -1,0 +1,99 @@
+diancui — 点翠
+照片数量：7
+下载日期：2026-11-05
+
+保留下载文件的原像素；未做放大。
+“原始图 URL”指来源原文件；“实际下载 URL”可为服务端标准尺寸版本，像素以本文件所列为准。
+
+[01] 文件名：diancui_commons_83044305.jpg
+名称：Hairpin, ornamental (AM 1932.38-1).jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/3/36/Hairpin%2C_ornamental_%28AM_1932.38-1%29.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Hairpin%2C_ornamental_%28AM_1932.38-1%29.jpg/1280px-Hairpin%2C_ornamental_%28AM_1932.38-1%29.jpg
+来源页面：https://commons.wikimedia.org/wiki/File:Hairpin,_ornamental_(AM_1932.38-1).jpg
+许可：CC BY 4.0
+许可说明 URL：https://creativecommons.org/licenses/by/4.0
+作者／摄影／机构署名：来源未单列摄影者；参见来源页面
+像素：1280 × 1524
+文件：JPEG；188,567 bytes
+SHA-256：fc461c17291b4c0197bfd4aeb065e049be64c5c985759d5d155bcaaf3b3d838c
+来源内容说明：Ornament hairpin semi-circle silver hairpin; long flat pin at back; raised floral detailing with five small (pearls) on front,pieces of kingfisher feathers adhered to flowers as decoration; long fringe of strung (pearls) with mounted (jade) pieces attached to base of piece.
+下载说明：原文件端点返回429；按Wikimedia官方标准尺寸下载1280px版本。原图1905×2268。
+
+[02] 文件名：diancui_commons_78400090.jpg
+名称：Tian-tsui (kingfisher feather) hair pins.jpg
+原始图 URL：https://upload.wikimedia.org/wikipedia/commons/d/dc/Tian-tsui_%28kingfisher_feather%29_hair_pins.jpg
+实际下载 URL：https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tian-tsui_%28kingfisher_feather%29_hair_pins.jpg/1920px-Tian-tsui_%28kingfisher_feather%29_hair_pins.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail
+来源页面：https://commons.wikimedia.org/wiki/File:Tian-tsui_(kingfisher_feather)_hair_pins.jpg
+许可：CC BY-SA 4.0
+许可说明 URL：https://creativecommons.org/licenses/by-sa/4.0
+作者／摄影／机构署名：Nalin Singapuri
+像素：1920 × 1920
+文件：JPEG；1,349,452 bytes
+SHA-256：fe5b5c2a3570fafb6a65fbc5b183d50877aef87ad5d54d4f162d9203e98aed2b
+来源内容说明：19th century antique Tian-tsui (Kingfisher feather) hair pins. Of Chinese origin, in private collection.
+下载说明：原文件端点返回429；采用Wikimedia API提供的最大可用标准尺寸1920px。原图3053×3053。
+
+[03] 文件名：diancui_cma_161918_main.tif
+名称：Headdress Ornament
+原始图 URL：https://openaccess-cdn.clevelandart.org/2001.179.1/2001.179.1_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/2001.179.1/2001.179.1_full.tif
+来源页面：https://clevelandart.org/art/2001.179.1
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：5858 × 4048
+文件：TIFF；71,150,876 bytes
+SHA-256：a9c3eb029dc9f3ba5d78b41d5b04707fd0a4afec043f73328b649fde92517e39
+来源内容说明：Headdress Ornament, 1700s or 1800s. China, Qing dynasty (1644-1911). Copper-silver alloy, gilding, kingfisher feathers, glass beads; overall: 22 x 28.5 cm (8 11/16 x 11 1/4 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Howard L. Ginaven, 2001.179.1
+
+[04] 文件名：diancui_cma_161920_main.tif
+名称：Headdress Ornament
+原始图 URL：https://openaccess-cdn.clevelandart.org/2001.179.2/2001.179.2_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/2001.179.2/2001.179.2_full.tif
+来源页面：https://clevelandart.org/art/2001.179.2
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：3072 × 2048
+文件：TIFF；18,885,692 bytes
+SHA-256：74832648e713dec061326f40b6cd753336fee37bac36c0c81e1d26cb0e5fc3d7
+来源内容说明：Headdress Ornament, 1800s–1900s. China, Qing dynasty (1644-1911). Copper-silver alloy, gilding, kingfisher feathers, glass beads; overall: 10.7 x 12.4 cm (4 3/16 x 4 7/8 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Howard L. Ginaven, 2001.179.2
+
+[05] 文件名：diancui_cma_161921_main.tif
+名称：Headdress Ornament
+原始图 URL：https://openaccess-cdn.clevelandart.org/2001.179.3/2001.179.3_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/2001.179.3/2001.179.3_full.tif
+来源页面：https://clevelandart.org/art/2001.179.3
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：2048 × 3072
+文件：TIFF；18,885,692 bytes
+SHA-256：35db9fa6aa930b7432254056086fb1e427ae16cb7316ddc8a2e9616f051445a9
+来源内容说明：Headdress Ornament, 1700s or 1800s. China, Qing dynasty (1644-1911). Copper-silver alloy, gilding, kingfisher feathers, glass beads; overall: 7.5 x 3.9 cm (2 15/16 x 1 9/16 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Howard L. Ginaven, 2001.179.3
+
+[06] 文件名：diancui_cma_161922_main.tif
+名称：Headdress Ornament
+原始图 URL：https://openaccess-cdn.clevelandart.org/2001.179.4/2001.179.4_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/2001.179.4/2001.179.4_full.tif
+来源页面：https://clevelandart.org/art/2001.179.4
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：3072 × 2048
+文件：TIFF；18,885,692 bytes
+SHA-256：4b893bd233cca20e7169e9e8b693a03169fbeb741092018d0f07248c82e4e6ff
+来源内容说明：Headdress Ornament, 1800s–1900s. China, Qing dynasty (1644-1911). Copper-silver alloy, gilding, kingfisher feathers, glass beads; overall: 8.9 x 8.6 cm (3 1/2 x 3 3/8 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Howard L. Ginaven, 2001.179.4
+
+[07] 文件名：diancui_cma_161925_main.tif
+名称：Headdress Ornament
+原始图 URL：https://openaccess-cdn.clevelandart.org/2001.179.7/2001.179.7_full.tif
+实际下载 URL：https://openaccess-cdn.clevelandart.org/2001.179.7/2001.179.7_full.tif
+来源页面：https://clevelandart.org/art/2001.179.7
+许可：CC0 1.0
+许可说明 URL：https://creativecommons.org/publicdomain/zero/1.0/
+作者／摄影／机构署名：Cleveland Museum of Art
+像素：3072 × 2048
+文件：TIFF；18,885,692 bytes
+SHA-256：baa955ba82431ffbc52892ac9243f868489d9d730fde03cd3e1d02b40158f86f
+来源内容说明：Headdress Ornament, 1800s–1900s. China, Qing dynasty (1644-1911). Copper-silver alloy, gilding, kingfisher feathers, glass beads; overall: 16 x 7.3 cm (6 5/16 x 2 7/8 in.). The Cleveland Museum of Art, Gift of Mr. and Mrs. Howard L. Ginaven, 2001.179.7

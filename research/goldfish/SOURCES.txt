@@ -1,0 +1,175 @@
+金鱼鳍部实拍照片来源清单
+整理日期：2026-11-05
+数量：10 张；文件位于 photos/，与 report.md 编号一致。
+
+下载说明：原始文件端点返回 HTTP 429，并要求改用标准尺寸缩略图。
+已下载不超过各原图宽度的最大标准尺寸版本（1280、1920 或 3840 像素宽），没有放大。
+“下载像素”是实际文件解码尺寸；“来源原图像素”来自 Commons imageinfo。
+下载文件为站方缩小版本；本地仅重命名，未裁切、调色或锐化。
+标准尺寸说明：https://www.mediawiki.org/wiki/Common_thumbnail_sizes
+
+真实性筛选：保留来源标为作者摄影／自行拍摄或有原摄影来源的照片，结合既有拍摄年代与画面检查；排除插画和历史图版。
+
+
+
+许可说明：下面列出本次采用的许可。CC BY 需署名、链接许可并说明修改；CC BY-SA 另要求改作采用相同或兼容许可。各许可详情以所列链接为准。
+
+[01] photos/01_ryukin_red.jpg
+原始文件名：Yatomi Goldfish Ryukin ac.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Yatomi_Goldfish_Ryukin_ac.jpg
+作者：Asturio Cantabrio
+来源页标注的拍摄／作品日期：2020-09
+摄影来源：Own work
+本次采用许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+下载像素：3840 × 2553 px
+来源原图像素：5398 × 3589 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/3/3e/Yatomi_Goldfish_Ryukin_ac.jpg
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Yatomi_Goldfish_Ryukin_ac.jpg/3840px-Yatomi_Goldfish_Ryukin_ac.jpg
+文件字节数：1829988
+SHA-256：94a06847ce62a749b85fb438fdf2257e82a649da6e18639a89527ec4ee2aa8a4
+处理：站方等比缩小；本地仅重命名。
+
+[02] photos/02_ryukin_red_white.jpg
+原始文件名：OrangeWhite Ryukin.jpg
+来源页：https://commons.wikimedia.org/wiki/File:OrangeWhite_Ryukin.jpg
+作者：Lawrencekhoo
+来源页标注的拍摄／作品日期：2011-07-31 14:10:36
+摄影来源：Own work
+本次采用许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+下载像素：1920 × 1543 px
+来源原图像素：2800 × 2250 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/d/d2/OrangeWhite_Ryukin.jpg
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/OrangeWhite_Ryukin.jpg/1920px-OrangeWhite_Ryukin.jpg
+文件字节数：811834
+SHA-256：5f8d51cb3dc74880896c13a0bc6a15c7b1ccf71b78c9ed58cc56601b14bd0a3f
+处理：站方等比缩小；本地仅重命名。
+
+[03] photos/03_ryukin_red_display.jpg
+原始文件名：Goldfish Ryukin.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Goldfish_Ryukin.jpg
+作者：Lerdsuwa
+来源页标注的拍摄／作品日期：2007-03-11
+摄影来源：Own photo (400D + 50/1.4)
+本次采用许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0/
+下载像素：1280 × 1317 px
+来源原图像素：1298 × 1336 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/b/b8/Goldfish_Ryukin.jpg
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Goldfish_Ryukin.jpg/1280px-Goldfish_Ryukin.jpg
+文件字节数：258133
+SHA-256：61d1d35211fd9daa00370ef6e914545d325e24a10d365fb0a6d4e31b565a18b0
+处理：站方等比缩小；本地仅重命名。
+
+[04] photos/04_sarasa_comet.jpg
+原始文件名：弥富金魚コメット.jpg
+来源页：https://commons.wikimedia.org/wiki/File:%E5%BC%A5%E5%AF%8C%E9%87%91%E9%AD%9A%E3%82%B3%E3%83%A1%E3%83%83%E3%83%88.jpg
+作者：Yatokin
+来源页标注的拍摄／作品日期：2018-01-12
+摄影来源：Own work
+本次采用许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+下载像素：3840 × 2553 px
+来源原图像素：6016 × 4000 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/3/3f/%E5%BC%A5%E5%AF%8C%E9%87%91%E9%AD%9A%E3%82%B3%E3%83%A1%E3%83%83%E3%83%88.jpg
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/%E5%BC%A5%E5%AF%8C%E9%87%91%E9%AD%9A%E3%82%B3%E3%83%A1%E3%83%83%E3%83%88.jpg/3840px-%E5%BC%A5%E5%AF%8C%E9%87%91%E9%AD%9A%E3%82%B3%E3%83%A1%E3%83%83%E3%83%88.jpg
+文件字节数：1777503
+SHA-256：987a89a3d1b23146ab1219e0c4e5724656afb6bb0525f5ab9544ccffc68b1b17
+处理：站方等比缩小；本地仅重命名。
+
+[05] photos/05_common_red.jpg
+原始文件名：Carassius auratus auratus (goldfish) 1.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Carassius_auratus_auratus_(goldfish)_1.jpg
+作者：James St. John
+来源页标注的拍摄／作品日期：2015-06-07 15:47:38
+摄影来源：https://www.flickr.com/photos/47445767@N05/22134240320/
+本次采用许可：CC BY 2.0
+许可链接：https://creativecommons.org/licenses/by/2.0
+下载像素：1920 × 1196 px
+来源原图像素：3278 × 2042 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/f/fa/Carassius_auratus_auratus_%28goldfish%29_1.jpg
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Carassius_auratus_auratus_%28goldfish%29_1.jpg/1920px-Carassius_auratus_auratus_%28goldfish%29_1.jpg
+文件字节数：279520
+SHA-256：6288c986a1c0db1e01e981e6730eaf3a7cd9825cac852a394c3c6b04b3eca24c
+处理：站方等比缩小；本地仅重命名。
+
+[06] photos/06_english_veiltail.jpg
+原始文件名：English Veiltail Goldfish.JPG
+来源页：https://commons.wikimedia.org/wiki/File:English_Veiltail_Goldfish.JPG
+作者：Bkrhodesva
+来源页标注的拍摄／作品日期：2015-10-31 20:22:55
+摄影来源：Own work
+本次采用许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+下载像素：1920 × 1523 px
+来源原图像素：3502 × 2778 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/b/b8/English_Veiltail_Goldfish.JPG
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/English_Veiltail_Goldfish.JPG/1920px-English_Veiltail_Goldfish.JPG
+文件字节数：650035
+SHA-256：5aa83b3349974e9358f8cef83d5db437c1ba5f66dcd5ccfba34856beb4a79230
+处理：站方等比缩小；本地仅重命名。
+
+[07] photos/07_philadelphia_veiltail_red.jpg
+原始文件名：Philadelphia Veiltail Goldfish.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Philadelphia_Veiltail_Goldfish.jpg
+作者：Bkrhodesva
+来源页标注的拍摄／作品日期：2014-10-18 11:08:55
+摄影来源：Own work
+本次采用许可：CC BY-SA 4.0
+许可链接：https://creativecommons.org/licenses/by-sa/4.0
+下载像素：3840 × 2634 px
+来源原图像素：4080 × 2799 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/5/5e/Philadelphia_Veiltail_Goldfish.jpg
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Philadelphia_Veiltail_Goldfish.jpg/3840px-Philadelphia_Veiltail_Goldfish.jpg
+文件字节数：1430532
+SHA-256：0a427f9eb23c0b8fcebf505f51f39898b5c3c6cdd42989f9db4d838f2c437e2e
+处理：站方等比缩小；本地仅重命名。
+
+[08] photos/08_veiltail_red_white.jpg
+原始文件名：Welon (ryba).JPG
+来源页：https://commons.wikimedia.org/wiki/File:Welon_(ryba).JPG
+作者：Bechstein
+来源页标注的拍摄／作品日期：23 April 2007 (original upload date)
+摄影来源：Transferred from pl.wikipedia to Commons.
+本次采用许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0/
+下载像素：1920 × 1256 px
+来源原图像素：2298 × 1503 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/1/15/Welon_%28ryba%29.JPG
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Welon_%28ryba%29.JPG/1920px-Welon_%28ryba%29.JPG
+文件字节数：627950
+SHA-256：1ba4b647aa8efbfff0f863f90ea95d3c627f734e37aea9a13633f9f701a13134
+处理：站方等比缩小；本地仅重命名。
+
+[09] photos/09_goldfish_backlit.jpg
+原始文件名：Goldfish 2.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Goldfish_2.jpg
+作者：ProjectManhattan
+来源页标注的拍摄／作品日期：8 February 2014 (according to Exif data)
+摄影来源：Own work
+本次采用许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+下载像素：1920 × 1201 px
+来源原图像素：3357 × 2099 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/a/a1/Goldfish_2.jpg
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Goldfish_2.jpg/1920px-Goldfish_2.jpg
+文件字节数：402270
+SHA-256：60df569cc607463f9a5a887cea8825f0e0e291dd471f77a7078c801c85fff2bf
+处理：站方等比缩小；本地仅重命名。
+
+[10] photos/10_veiltail_translucent.jpg
+原始文件名：Salon agriculture 2009 - Poisson rouge blanc.jpg
+来源页：https://commons.wikimedia.org/wiki/File:Salon_agriculture_2009_-_Poisson_rouge_blanc.jpg
+作者：KoS
+来源页标注的拍摄／作品日期：2009-02-22
+摄影来源：Own work
+本次采用许可：CC BY-SA 3.0
+许可链接：https://creativecommons.org/licenses/by-sa/3.0
+下载像素：1920 × 1272 px
+来源原图像素：3039 × 2014 px
+来源原图链接（本次返回 429，未下载该原文件）：https://upload.wikimedia.org/wikipedia/commons/3/31/Salon_agriculture_2009_-_Poisson_rouge_blanc.jpg
+实际下载链接：https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Salon_agriculture_2009_-_Poisson_rouge_blanc.jpg/1920px-Salon_agriculture_2009_-_Poisson_rouge_blanc.jpg
+文件字节数：671525
+SHA-256：3e9e0fddbba617ea3faea5d5dadbc19d5771670c7fd72997ae9f661315d4b16e
+处理：站方等比缩小；本地仅重命名。

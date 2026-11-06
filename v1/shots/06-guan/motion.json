@@ -1,0 +1,20 @@
+{
+ "about": "shot 6's motion, fitted by shots/06-guan/motion_fit.py to the original's flow (tools/flow.py); velocity of a world point P (mm) is w x P + t per frame; the rest pose is at frame T_MID of the shot",
+ "w_rad_per_frame": [
+  0.0048593,
+  -0.00306662,
+  -0.00297672
+ ],
+ "t_mm_per_frame": [
+  0.003645,
+  0.026893,
+  -0.047726
+ ],
+ "t_mid_frame": 2.5,
+ "fit": {
+  "blocks": 307,
+  "rms_px_per_frame": 0.862,
+  "turntable_alone_rms_px_per_frame": 2.073,
+  "silhouette_drift_px_at_ends": 0.582
+ }
+}

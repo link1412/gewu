@@ -1,0 +1,2575 @@
+{
+ "source": "Claude Opus 5.5 launch film, x.com/claudeai/status/2102435511222890900 (2026-09-22), 1920x1080 h264, 25 fps",
+ "frames": 500,
+ "fps": 25,
+ "notes": [
+  "arc: y measured downward; apex_x/apex_y are fractions of width/height; sagitta = drop from apex to the frame edges, as a fraction of the width",
+  "motion: compares the first and last frame inside the shot; zoom > 1 means the camera pushes in",
+  "caption beats were read by eye; everything else is computed by this script",
+  "sharpness: luma (Y') power spectra, 128 px Welch tiles; cutoff in cycles/px at 1920 wide where the spectrum meets 2x the noise-like floor; effective_width_px = 3840*cutoff; render_width = smallest of 960/1280/1920 with 0.8*Nyquist >= cutoff; codec = same-options x264 re-encode; see tools/sharpness.py"
+ ],
+ "shots": [
+  {
+   "shot": 1,
+   "frame_in": 0,
+   "frame_out": 31,
+   "seconds": 1.24,
+   "arc": {
+    "apex_x": 0.504,
+    "apex_y": 0.481,
+    "sagitta_of_width": 0.0356,
+    "radius_over_width": 3.51,
+    "fit_inliers": 1.0,
+    "fit_resid_px_at_480": 0.2
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 111.8,
+   "object_rgb": [
+    24,
+    23,
+    22
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     15.0,
+     1.5
+    ],
+    "zoom": 0.915,
+    "residual": 6.9,
+    "mean_abs_diff_per_frame": 0.49
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.4609,
+    "effective_width_px": 1770,
+    "set_by": "sky",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.4609,
+      "luma": 99.0,
+      "tiles": 3828
+     },
+     "object": {
+      "cutoff_cpp": 0.0469,
+      "luma": 36.4,
+      "tiles": 4669
+     },
+     "edge": {
+      "cutoff_cpp": 0.2031,
+      "luma": 73.8,
+      "tiles": 1160
+     }
+    },
+    "codec_cutoff_cpp": 0.4375,
+    "codec_err_rms": 1.08,
+    "limited_by": "codec",
+    "grain_std": 0.13,
+    "grain_luma": 35.3,
+    "floor_psd_at_0.25": 0.02,
+    "two_frames_cutoff_cpp": [
+     0.375,
+     0.5
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.67,
+     "1280": 0.47
+    }
+   }
+  },
+  {
+   "shot": 2,
+   "frame_in": 31,
+   "frame_out": 57,
+   "seconds": 1.04,
+   "arc": {
+    "apex_x": 0.526,
+    "apex_y": 0.478,
+    "sagitta_of_width": 0.0593,
+    "radius_over_width": 2.11,
+    "fit_inliers": 0.88,
+    "fit_resid_px_at_480": 1.6
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 24.8,
+   "object_rgb": [
+    173,
+    137,
+    64
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     10.5,
+     -1.5
+    ],
+    "zoom": 1.0,
+    "residual": 10.7,
+    "mean_abs_diff_per_frame": 0.98
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.2891,
+    "effective_width_px": 1110,
+    "set_by": "edge",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.2422,
+      "luma": 38.5,
+      "tiles": 3240
+     },
+     "object": {
+      "cutoff_cpp": 0.2578,
+      "luma": 140.1,
+      "tiles": 3696
+     },
+     "edge": {
+      "cutoff_cpp": 0.2891,
+      "luma": 83.4,
+      "tiles": 1056
+     }
+    },
+    "codec_cutoff_cpp": 0.3594,
+    "codec_err_rms": 1.39,
+    "limited_by": "source",
+    "grain_std": 0.29,
+    "grain_luma": 35.4,
+    "floor_psd_at_0.25": 0.146,
+    "two_frames_cutoff_cpp": [
+     0.2969,
+     0.2734
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.83,
+     "1280": 0.56
+    }
+   }
+  },
+  {
+   "shot": 3,
+   "frame_in": 57,
+   "frame_out": 83,
+   "seconds": 1.04,
+   "arc": {
+    "apex_x": 0.467,
+    "apex_y": 0.498,
+    "sagitta_of_width": 0.0536,
+    "radius_over_width": 2.33,
+    "fit_inliers": 0.99,
+    "fit_resid_px_at_480": 0.3
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 5.0,
+   "object_rgb": [
+    185,
+    122,
+    43
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     -4.5,
+     18.0
+    ],
+    "zoom": 1.025,
+    "residual": 22.1,
+    "mean_abs_diff_per_frame": 0.3
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.3672,
+    "effective_width_px": 1410,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": null,
+      "luma": 21.0,
+      "tiles": 3288
+     },
+     "object": {
+      "cutoff_cpp": 0.3672,
+      "luma": 141.5,
+      "tiles": 3456
+     },
+     "edge": {
+      "cutoff_cpp": 0.2109,
+      "luma": 101.9,
+      "tiles": 1248
+     }
+    },
+    "codec_cutoff_cpp": 0.375,
+    "codec_err_rms": 0.47,
+    "limited_by": "codec",
+    "grain_std": 0.26,
+    "grain_luma": 145.4,
+    "floor_psd_at_0.25": 0.062,
+    "two_frames_cutoff_cpp": [
+     0.375,
+     0.375
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.37,
+     "1280": 0.23
+    }
+   }
+  },
+  {
+   "shot": 4,
+   "frame_in": 83,
+   "frame_out": 94,
+   "seconds": 0.44,
+   "arc": {
+    "apex_x": 0.468,
+    "apex_y": 0.482,
+    "sagitta_of_width": 0.1047,
+    "radius_over_width": 1.19,
+    "fit_inliers": 1.0,
+    "fit_resid_px_at_480": 0.5
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 223.0,
+   "object_rgb": [
+    121,
+    70,
+    39
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.6,
+    "mean_abs_diff_per_frame": 0.15
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.5,
+    "effective_width_px": 1920,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 209.0,
+      "tiles": 1296
+     },
+     "object": {
+      "cutoff_cpp": 0.5,
+      "luma": 85.5,
+      "tiles": 1224
+     },
+     "edge": {
+      "cutoff_cpp": 0.3672,
+      "luma": 125.3,
+      "tiles": 477
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 1.64,
+    "limited_by": "codec",
+    "grain_std": 0.04,
+    "grain_luma": 209.0,
+    "floor_psd_at_0.25": 0.0,
+    "two_frames_cutoff_cpp": [
+     0.5,
+     0.5
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 2.16,
+     "1280": 1.32
+    }
+   }
+  },
+  {
+   "shot": 5,
+   "frame_in": 94,
+   "frame_out": 100,
+   "seconds": 0.24,
+   "arc": {
+    "apex_x": 0.491,
+    "apex_y": 0.5,
+    "sagitta_of_width": 0.0616,
+    "radius_over_width": 2.03,
+    "fit_inliers": 1.0,
+    "fit_resid_px_at_480": 0.8
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 137.6,
+   "object_rgb": [
+    223,
+    83,
+    32
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.4,
+    "mean_abs_diff_per_frame": 0.19
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.1406,
+    "effective_width_px": 540,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 125.5,
+      "tiles": 556
+     },
+     "object": {
+      "cutoff_cpp": 0.1406,
+      "luma": 116.2,
+      "tiles": 560
+     },
+     "edge": {
+      "cutoff_cpp": 0.125,
+      "luma": 131.9,
+      "tiles": 216
+     }
+    },
+    "codec_cutoff_cpp": 0.4609,
+    "codec_err_rms": 5.05,
+    "limited_by": "source",
+    "grain_std": 5.9,
+    "grain_luma": 125.0,
+    "floor_psd_at_0.25": 87.678,
+    "two_frames_cutoff_cpp": [
+     0.1406,
+     0.1406
+    ],
+    "render_width": 960,
+    "render_width_by_cutoff": 960,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 4.58,
+     "1280": 3.36
+    }
+   }
+  },
+  {
+   "shot": 6,
+   "frame_in": 100,
+   "frame_out": 106,
+   "seconds": 0.24,
+   "arc": {
+    "apex_x": 0.475,
+    "apex_y": 0.48,
+    "sagitta_of_width": 0.1027,
+    "radius_over_width": 1.22,
+    "fit_inliers": 0.99,
+    "fit_resid_px_at_480": 0.3
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 19.8,
+   "object_rgb": [
+    116,
+    133,
+    147
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     1.5,
+     4.5
+    ],
+    "zoom": 1.0,
+    "residual": 15.2,
+    "mean_abs_diff_per_frame": 6.15
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.2734,
+    "effective_width_px": 1050,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 33.8,
+      "tiles": 572
+     },
+     "object": {
+      "cutoff_cpp": 0.2734,
+      "luma": 119.5,
+      "tiles": 552
+     },
+     "edge": {
+      "cutoff_cpp": 0.0859,
+      "luma": 149.0,
+      "tiles": 208
+     }
+    },
+    "codec_cutoff_cpp": 0.2578,
+    "codec_err_rms": 1.65,
+    "limited_by": "codec",
+    "grain_std": 0.06,
+    "grain_luma": 34.0,
+    "floor_psd_at_0.25": 0.0,
+    "two_frames_cutoff_cpp": [
+     0.2734,
+     0.2812
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.84,
+     "1280": 0.62
+    }
+   }
+  },
+  {
+   "shot": 7,
+   "frame_in": 106,
+   "frame_out": 119,
+   "seconds": 0.52,
+   "arc": null,
+   "arc_manual_reason": "blueprint lines win over the arc",
+   "sky_luma": 103.6,
+   "object_rgb": [
+    65,
+    106,
+    145
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.6,
+    "mean_abs_diff_per_frame": 0.2
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.1406,
+    "effective_width_px": 540,
+    "set_by": "frame",
+    "regions": {
+     "frame": {
+      "cutoff_cpp": 0.1406,
+      "luma": 104.0,
+      "tiles": 3663
+     }
+    },
+    "codec_cutoff_cpp": 0.4844,
+    "codec_err_rms": 2.52,
+    "limited_by": "source",
+    "grain_std": 3.34,
+    "grain_luma": 94.7,
+    "floor_psd_at_0.25": 28.871,
+    "two_frames_cutoff_cpp": [
+     0.1406,
+     0.1406
+    ],
+    "render_width": 960,
+    "render_width_by_cutoff": 960,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 2.28,
+     "1280": 1.6
+    }
+   }
+  },
+  {
+   "shot": 8,
+   "frame_in": 119,
+   "frame_out": 134,
+   "seconds": 0.6,
+   "arc": null,
+   "arc_manual_reason": "rotating negative sphere, fit unstable mid-shot",
+   "sky_luma": 25.2,
+   "object_rgb": [
+    158,
+    161,
+    163
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     -3.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 11.3,
+    "mean_abs_diff_per_frame": 1.68
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.2266,
+    "effective_width_px": 870,
+    "set_by": "frame",
+    "regions": {
+     "frame": {
+      "cutoff_cpp": 0.2266,
+      "luma": 74.5,
+      "tiles": 4329
+     }
+    },
+    "codec_cutoff_cpp": 0.2812,
+    "codec_err_rms": 1.04,
+    "limited_by": "source",
+    "grain_std": 0.46,
+    "grain_luma": 180.7,
+    "floor_psd_at_0.25": 0.182,
+    "two_frames_cutoff_cpp": [
+     0.2344,
+     0.2344
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.62,
+     "1280": 0.48
+    }
+   }
+  },
+  {
+   "shot": 9,
+   "frame_in": 134,
+   "frame_out": 147,
+   "seconds": 0.52,
+   "arc": {
+    "apex_x": 0.554,
+    "apex_y": 0.486,
+    "sagitta_of_width": 0.0604,
+    "radius_over_width": 2.07,
+    "fit_inliers": 1.0,
+    "fit_resid_px_at_480": 1.6
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 221.8,
+   "object_rgb": [
+    109,
+    130,
+    32
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.8,
+    "mean_abs_diff_per_frame": 0.21
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.4453,
+    "effective_width_px": 1710,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0547,
+      "luma": 207.0,
+      "tiles": 1507
+     },
+     "object": {
+      "cutoff_cpp": 0.4453,
+      "luma": 112.5,
+      "tiles": 1650
+     },
+     "edge": {
+      "cutoff_cpp": 0.3594,
+      "luma": 156.5,
+      "tiles": 506
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 2.73,
+    "limited_by": "codec",
+    "grain_std": 1.99,
+    "grain_luma": 206.8,
+    "floor_psd_at_0.25": 9.93,
+    "two_frames_cutoff_cpp": [
+     0.4141,
+     0.4531
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 2.89,
+     "1280": 2.09
+    }
+   }
+  },
+  {
+   "shot": 10,
+   "frame_in": 147,
+   "frame_out": 161,
+   "seconds": 0.56,
+   "arc": {
+    "apex_x": 0.498,
+    "apex_y": 0.498,
+    "sagitta_of_width": 0.0629,
+    "radius_over_width": 1.99,
+    "fit_inliers": 0.97,
+    "fit_resid_px_at_480": 5.6
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 140.9,
+   "object_rgb": [
+    41,
+    24,
+    28
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.7,
+    "mean_abs_diff_per_frame": 0.1
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.2188,
+    "effective_width_px": 840,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 131.4,
+      "tiles": 1668
+     },
+     "object": {
+      "cutoff_cpp": 0.2188,
+      "luma": 39.6,
+      "tiles": 1704
+     },
+     "edge": {
+      "cutoff_cpp": 0.2109,
+      "luma": 82.9,
+      "tiles": 624
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 2.75,
+    "limited_by": "source",
+    "grain_std": 4.73,
+    "grain_luma": 131.4,
+    "floor_psd_at_0.25": 43.999,
+    "two_frames_cutoff_cpp": [
+     0.2109,
+     0.2109
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 1920,
+    "roundtrip_err_rms": {
+     "960": 3.76,
+     "1280": 2.8
+    }
+   }
+  },
+  {
+   "shot": 11,
+   "frame_in": 161,
+   "frame_out": 176,
+   "seconds": 0.6,
+   "arc": {
+    "apex_x": 0.518,
+    "apex_y": 0.522,
+    "sagitta_of_width": 0.1039,
+    "radius_over_width": 1.2,
+    "fit_inliers": 1.0,
+    "fit_resid_px_at_480": 10.4
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 10.3,
+   "object_rgb": [
+    147,
+    34,
+    64
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 4.5,
+    "mean_abs_diff_per_frame": 1.27
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.3281,
+    "effective_width_px": 1260,
+    "set_by": "edge",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 24.2,
+      "tiles": 1976
+     },
+     "object": {
+      "cutoff_cpp": 0.3125,
+      "luma": 79.9,
+      "tiles": 1508
+     },
+     "edge": {
+      "cutoff_cpp": 0.3281,
+      "luma": 80.3,
+      "tiles": 845
+     }
+    },
+    "codec_cutoff_cpp": 0.3438,
+    "codec_err_rms": 1.25,
+    "limited_by": "codec",
+    "grain_std": 0.07,
+    "grain_luma": 24.0,
+    "floor_psd_at_0.25": 0.002,
+    "two_frames_cutoff_cpp": [
+     0.3203,
+     0.3203
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.91,
+     "1280": 0.61
+    }
+   }
+  },
+  {
+   "shot": 12,
+   "frame_in": 176,
+   "frame_out": 189,
+   "seconds": 0.52,
+   "arc": {
+    "apex_x": 0.462,
+    "apex_y": 0.58,
+    "sagitta_of_width": 0.0684,
+    "radius_over_width": 1.83,
+    "fit_inliers": 0.82,
+    "fit_resid_px_at_480": 6.0
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 23.4,
+   "object_rgb": [
+    149,
+    114,
+    98
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.6,
+    "mean_abs_diff_per_frame": 0.17
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.5,
+    "effective_width_px": 1920,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 34.7,
+      "tiles": 1727
+     },
+     "object": {
+      "cutoff_cpp": 0.5,
+      "luma": 125.4,
+      "tiles": 1078
+     },
+     "edge": {
+      "cutoff_cpp": 0.5,
+      "luma": 83.5,
+      "tiles": 858
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 2.6,
+    "limited_by": "codec",
+    "grain_std": 1.31,
+    "grain_luma": 34.7,
+    "floor_psd_at_0.25": 3.54,
+    "two_frames_cutoff_cpp": [
+     0.5,
+     0.5
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 3.78,
+     "1280": 2.27
+    }
+   }
+  },
+  {
+   "shot": 13,
+   "frame_in": 189,
+   "frame_out": 203,
+   "seconds": 0.56,
+   "arc": {
+    "apex_x": 0.433,
+    "apex_y": 0.511,
+    "sagitta_of_width": 0.0769,
+    "radius_over_width": 1.63,
+    "fit_inliers": 0.86,
+    "fit_resid_px_at_480": 1.3
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 181.7,
+   "object_rgb": [
+    177,
+    108,
+    44
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.9,
+    "mean_abs_diff_per_frame": 0.18
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.3828,
+    "effective_width_px": 1470,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 173.8,
+      "tiles": 1740
+     },
+     "object": {
+      "cutoff_cpp": 0.3828,
+      "luma": 123.3,
+      "tiles": 1536
+     },
+     "edge": {
+      "cutoff_cpp": 0.3594,
+      "luma": 134.8,
+      "tiles": 720
+     }
+    },
+    "codec_cutoff_cpp": 0.4219,
+    "codec_err_rms": 6.26,
+    "limited_by": "codec",
+    "grain_std": 6.3,
+    "grain_luma": 174.8,
+    "floor_psd_at_0.25": 132.54,
+    "two_frames_cutoff_cpp": [
+     0.3828,
+     0.3828
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 7.93,
+     "1280": 4.61
+    }
+   }
+  },
+  {
+   "shot": 14,
+   "frame_in": 203,
+   "frame_out": 218,
+   "seconds": 0.6,
+   "arc": null,
+   "arc_manual_reason": "animated horse legs cross the arc",
+   "sky_luma": 147.9,
+   "object_rgb": [
+    195,
+    173,
+    114
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     -4.5,
+     1.5
+    ],
+    "zoom": 1.0,
+    "residual": 27.4,
+    "mean_abs_diff_per_frame": 18.83
+   },
+   "caption": "",
+   "sharpness": {
+    "cutoff_cpp": 0.125,
+    "effective_width_px": 480,
+    "set_by": "frame",
+    "regions": {
+     "frame": {
+      "cutoff_cpp": 0.125,
+      "luma": 179.9,
+      "tiles": 4329
+     }
+    },
+    "codec_cutoff_cpp": 0.2266,
+    "codec_err_rms": 0.98,
+    "limited_by": "source",
+    "grain_std": 0.25,
+    "grain_luma": 184.7,
+    "floor_psd_at_0.25": 0.095,
+    "two_frames_cutoff_cpp": [
+     0.2734,
+     0.1172
+    ],
+    "render_width": 960,
+    "render_width_by_cutoff": 960,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.57,
+     "1280": 0.43
+    }
+   }
+  },
+  {
+   "shot": 15,
+   "frame_in": 218,
+   "frame_out": 226,
+   "seconds": 0.32,
+   "arc": {
+    "apex_x": 0.493,
+    "apex_y": 0.467,
+    "sagitta_of_width": 0.094,
+    "radius_over_width": 1.33,
+    "fit_inliers": 0.97,
+    "fit_resid_px_at_480": 4.0
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 28.2,
+   "object_rgb": [
+    155,
+    100,
+    63
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.6,
+    "mean_abs_diff_per_frame": 0.18
+   },
+   "caption": "There's",
+   "sharpness": {
+    "cutoff_cpp": 0.4062,
+    "effective_width_px": 1560,
+    "set_by": "edge",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0938,
+      "luma": 39.7,
+      "tiles": 834
+     },
+     "object": {
+      "cutoff_cpp": 0.3516,
+      "luma": 114.3,
+      "tiles": 882
+     },
+     "edge": {
+      "cutoff_cpp": 0.4062,
+      "luma": 79.3,
+      "tiles": 282
+     }
+    },
+    "codec_cutoff_cpp": 0.4375,
+    "codec_err_rms": 1.19,
+    "limited_by": "codec",
+    "grain_std": 0.2,
+    "grain_luma": 37.7,
+    "floor_psd_at_0.25": 0.054,
+    "two_frames_cutoff_cpp": [
+     0.4062,
+     0.3984
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.99,
+     "1280": 0.63
+    }
+   }
+  },
+  {
+   "shot": 16,
+   "frame_in": 226,
+   "frame_out": 236,
+   "seconds": 0.4,
+   "arc": {
+    "apex_x": 0.512,
+    "apex_y": 0.5,
+    "sagitta_of_width": 0.0809,
+    "radius_over_width": 1.54,
+    "fit_inliers": 0.92,
+    "fit_resid_px_at_480": 1.0
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 6.5,
+   "object_rgb": [
+    187,
+    68,
+    43
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 4.1,
+    "mean_abs_diff_per_frame": 2.77
+   },
+   "caption": "There's",
+   "sharpness": {
+    "cutoff_cpp": 0.2344,
+    "effective_width_px": 900,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0547,
+      "luma": 21.2,
+      "tiles": 1136
+     },
+     "object": {
+      "cutoff_cpp": 0.2344,
+      "luma": 106.9,
+      "tiles": 1064
+     },
+     "edge": {
+      "cutoff_cpp": 0.2031,
+      "luma": 73.3,
+      "tiles": 464
+     }
+    },
+    "codec_cutoff_cpp": 0.3438,
+    "codec_err_rms": 2.36,
+    "limited_by": "source",
+    "grain_std": 1.42,
+    "grain_luma": 21.0,
+    "floor_psd_at_0.25": 3.624,
+    "two_frames_cutoff_cpp": [
+     0.3125,
+     0.2422
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 1.44,
+     "1280": 1.03
+    }
+   }
+  },
+  {
+   "shot": 17,
+   "frame_in": 236,
+   "frame_out": 244,
+   "seconds": 0.32,
+   "arc": {
+    "apex_x": 0.548,
+    "apex_y": 0.494,
+    "sagitta_of_width": 0.0666,
+    "radius_over_width": 1.88,
+    "fit_inliers": 0.74,
+    "fit_resid_px_at_480": 2.8
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 81.1,
+   "object_rgb": [
+    65,
+    213,
+    134
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.6,
+    "mean_abs_diff_per_frame": 0.14
+   },
+   "caption": "There's",
+   "sharpness": {
+    "cutoff_cpp": 0.2656,
+    "effective_width_px": 1020,
+    "set_by": "edge",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.2422,
+      "luma": 93.7,
+      "tiles": 834
+     },
+     "object": {
+      "cutoff_cpp": 0.0625,
+      "luma": 156.2,
+      "tiles": 852
+     },
+     "edge": {
+      "cutoff_cpp": 0.2656,
+      "luma": 134.2,
+      "tiles": 312
+     }
+    },
+    "codec_cutoff_cpp": 0.2969,
+    "codec_err_rms": 2.86,
+    "limited_by": "codec",
+    "grain_std": 2.07,
+    "grain_luma": 155.1,
+    "floor_psd_at_0.25": 4.207,
+    "two_frames_cutoff_cpp": [
+     0.2578,
+     0.2656
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 1.46,
+     "1280": 1.08
+    }
+   }
+  },
+  {
+   "shot": 18,
+   "frame_in": 244,
+   "frame_out": 255,
+   "seconds": 0.44,
+   "arc": {
+    "apex_x": 0.496,
+    "apex_y": 0.504,
+    "sagitta_of_width": 0.0764,
+    "radius_over_width": 1.64,
+    "fit_inliers": 0.59,
+    "fit_resid_px_at_480": 0.6
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 4.4,
+   "object_rgb": [
+    173,
+    163,
+    156
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 1.1,
+    "mean_abs_diff_per_frame": 0.23
+   },
+   "caption": "There's",
+   "sharpness": {
+    "cutoff_cpp": 0.3828,
+    "effective_width_px": 1470,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.1016,
+      "luma": 19.8,
+      "tiles": 1278
+     },
+     "object": {
+      "cutoff_cpp": 0.3828,
+      "luma": 163.6,
+      "tiles": 1170
+     },
+     "edge": {
+      "cutoff_cpp": 0.3281,
+      "luma": 125.4,
+      "tiles": 549
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 4.46,
+    "limited_by": "source",
+    "grain_std": 2.21,
+    "grain_luma": 19.1,
+    "floor_psd_at_0.25": 7.916,
+    "two_frames_cutoff_cpp": [
+     0.3828,
+     0.3828
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 3.93,
+     "1280": 2.9
+    }
+   }
+  },
+  {
+   "shot": 19,
+   "frame_in": 255,
+   "frame_out": 267,
+   "seconds": 0.48,
+   "arc": {
+    "apex_x": 0.5,
+    "apex_y": 0.49,
+    "sagitta_of_width": 0.0728,
+    "radius_over_width": 1.72,
+    "fit_inliers": 0.88,
+    "fit_resid_px_at_480": 0.3
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 19.7,
+   "object_rgb": [
+    72,
+    76,
+    95
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 5.7,
+    "mean_abs_diff_per_frame": 1.57
+   },
+   "caption": "There's",
+   "sharpness": {
+    "cutoff_cpp": 0.2031,
+    "effective_width_px": 780,
+    "set_by": "edge",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 32.2,
+      "tiles": 1390
+     },
+     "object": {
+      "cutoff_cpp": 0.0781,
+      "luma": 73.5,
+      "tiles": 1440
+     },
+     "edge": {
+      "cutoff_cpp": 0.2031,
+      "luma": 103.0,
+      "tiles": 500
+     }
+    },
+    "codec_cutoff_cpp": 0.1328,
+    "codec_err_rms": 0.51,
+    "limited_by": "codec",
+    "grain_std": 0.05,
+    "grain_luma": 32.1,
+    "floor_psd_at_0.25": 0.0,
+    "two_frames_cutoff_cpp": [
+     0.1797,
+     0.2031
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.2,
+     "1280": 0.17
+    }
+   }
+  },
+  {
+   "shot": 20,
+   "frame_in": 267,
+   "frame_out": 275,
+   "seconds": 0.32,
+   "arc": {
+    "apex_x": 0.476,
+    "apex_y": 0.482,
+    "sagitta_of_width": 0.0956,
+    "radius_over_width": 1.31,
+    "fit_inliers": 0.91,
+    "fit_resid_px_at_480": 1.7
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 100.1,
+   "object_rgb": [
+    45,
+    12,
+    17
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 1.8,
+    "mean_abs_diff_per_frame": 0.69
+   },
+   "caption": "more to",
+   "sharpness": {
+    "cutoff_cpp": 0.0938,
+    "effective_width_px": 360,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0625,
+      "luma": 110.4,
+      "tiles": 852
+     },
+     "object": {
+      "cutoff_cpp": 0.0938,
+      "luma": 36.3,
+      "tiles": 840
+     },
+     "edge": {
+      "cutoff_cpp": 0.0938,
+      "luma": 52.4,
+      "tiles": 306
+     }
+    },
+    "codec_cutoff_cpp": 0.1094,
+    "codec_err_rms": 0.54,
+    "limited_by": "codec",
+    "grain_std": 0.22,
+    "grain_luma": 33.6,
+    "floor_psd_at_0.25": 0.058,
+    "two_frames_cutoff_cpp": [
+     0.0938,
+     0.0938
+    ],
+    "render_width": 960,
+    "render_width_by_cutoff": 960,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.2,
+     "1280": 0.17
+    }
+   }
+  },
+  {
+   "shot": 21,
+   "frame_in": 275,
+   "frame_out": 285,
+   "seconds": 0.4,
+   "arc": {
+    "apex_x": 0.489,
+    "apex_y": 0.498,
+    "sagitta_of_width": 0.1032,
+    "radius_over_width": 1.21,
+    "fit_inliers": 0.85,
+    "fit_resid_px_at_480": 2.4
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 39.3,
+   "object_rgb": [
+    16,
+    0,
+    2
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.6,
+    "mean_abs_diff_per_frame": 0.34
+   },
+   "caption": "more to",
+   "sharpness": {
+    "cutoff_cpp": 0.4844,
+    "effective_width_px": 1860,
+    "set_by": "edge",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0781,
+      "luma": 60.8,
+      "tiles": 1168
+     },
+     "object": {
+      "cutoff_cpp": 0.0312,
+      "luma": 20.0,
+      "tiles": 1016
+     },
+     "edge": {
+      "cutoff_cpp": 0.4844,
+      "luma": 25.5,
+      "tiles": 480
+     }
+    },
+    "codec_cutoff_cpp": 0.2656,
+    "codec_err_rms": 0.37,
+    "limited_by": "codec",
+    "grain_std": 0.07,
+    "grain_luma": 20.1,
+    "floor_psd_at_0.25": 0.0,
+    "two_frames_cutoff_cpp": [
+     0.5,
+     0.3672
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.17,
+     "1280": 0.14
+    }
+   }
+  },
+  {
+   "shot": 22,
+   "frame_in": 285,
+   "frame_out": 293,
+   "seconds": 0.32,
+   "arc": {
+    "apex_x": 0.46,
+    "apex_y": 0.485,
+    "sagitta_of_width": 0.0361,
+    "radius_over_width": 3.46,
+    "fit_inliers": 0.85,
+    "fit_resid_px_at_480": 0.6
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 67.9,
+   "object_rgb": [
+    148,
+    67,
+    62
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 1.0,
+    "mean_abs_diff_per_frame": 0.28
+   },
+   "caption": "more to",
+   "sharpness": {
+    "cutoff_cpp": 0.1094,
+    "effective_width_px": 420,
+    "set_by": "sky",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.1094,
+      "luma": 74.9,
+      "tiles": 798
+     },
+     "object": {
+      "cutoff_cpp": 0.0547,
+      "luma": 94.3,
+      "tiles": 954
+     },
+     "edge": {
+      "cutoff_cpp": 0.1094,
+      "luma": 89.7,
+      "tiles": 246
+     }
+    },
+    "codec_cutoff_cpp": 0.4688,
+    "codec_err_rms": 6.09,
+    "limited_by": "source",
+    "grain_std": 8.7,
+    "grain_luma": 99.6,
+    "floor_psd_at_0.25": 409.305,
+    "two_frames_cutoff_cpp": [
+     0.1094,
+     0.1094
+    ],
+    "render_width": 960,
+    "render_width_by_cutoff": 960,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 6.09,
+     "1280": 4.06
+    }
+   }
+  },
+  {
+   "shot": 23,
+   "frame_in": 293,
+   "frame_out": 301,
+   "seconds": 0.32,
+   "arc": {
+    "apex_x": 0.514,
+    "apex_y": 0.485,
+    "sagitta_of_width": 0.1553,
+    "radius_over_width": 0.81,
+    "fit_inliers": 0.66,
+    "fit_resid_px_at_480": 3.9
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 176.8,
+   "object_rgb": [
+    172,
+    76,
+    98
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.8,
+    "mean_abs_diff_per_frame": 0.23
+   },
+   "caption": "more to",
+   "sharpness": {
+    "cutoff_cpp": 0.0938,
+    "effective_width_px": 360,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0625,
+      "luma": 170.8,
+      "tiles": 912
+     },
+     "object": {
+      "cutoff_cpp": 0.0938,
+      "luma": 112.2,
+      "tiles": 714
+     },
+     "edge": {
+      "cutoff_cpp": 0.0938,
+      "luma": 113.5,
+      "tiles": 372
+     }
+    },
+    "codec_cutoff_cpp": 0.4844,
+    "codec_err_rms": 3.41,
+    "limited_by": "source",
+    "grain_std": 3.41,
+    "grain_luma": 174.8,
+    "floor_psd_at_0.25": 25.759,
+    "two_frames_cutoff_cpp": [
+     0.0938,
+     0.1016
+    ],
+    "render_width": 960,
+    "render_width_by_cutoff": 960,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 2.93,
+     "1280": 2.21
+    }
+   }
+  },
+  {
+   "shot": 24,
+   "frame_in": 301,
+   "frame_out": 312,
+   "seconds": 0.44,
+   "arc": {
+    "apex_x": 0.467,
+    "apex_y": 0.492,
+    "sagitta_of_width": 0.0651,
+    "radius_over_width": 1.92,
+    "fit_inliers": 0.69,
+    "fit_resid_px_at_480": 1.5
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 5.1,
+   "object_rgb": [
+    142,
+    140,
+    142
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.7,
+    "mean_abs_diff_per_frame": 0.12
+   },
+   "caption": "more to",
+   "sharpness": {
+    "cutoff_cpp": 0.5,
+    "effective_width_px": 1920,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0781,
+      "luma": 18.9,
+      "tiles": 1251
+     },
+     "object": {
+      "cutoff_cpp": 0.5,
+      "luma": 138.9,
+      "tiles": 1287
+     },
+     "edge": {
+      "cutoff_cpp": 0.4141,
+      "luma": 116.9,
+      "tiles": 459
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 6.83,
+    "limited_by": "codec",
+    "grain_std": 1.67,
+    "grain_luma": 17.5,
+    "floor_psd_at_0.25": 5.972,
+    "two_frames_cutoff_cpp": [
+     0.5,
+     0.5
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 9.05,
+     "1280": 6.23
+    }
+   }
+  },
+  {
+   "shot": 25,
+   "frame_in": 312,
+   "frame_out": 319,
+   "seconds": 0.28,
+   "arc": {
+    "apex_x": 0.474,
+    "apex_y": 0.53,
+    "sagitta_of_width": 0.0898,
+    "radius_over_width": 1.39,
+    "fit_inliers": 0.85,
+    "fit_resid_px_at_480": 1.6
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 84.2,
+   "object_rgb": [
+    192,
+    167,
+    168
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.0,
+    "mean_abs_diff_per_frame": 0.01
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.4766,
+    "effective_width_px": 1830,
+    "set_by": "edge",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.2812,
+      "luma": 94.4,
+      "tiles": 755
+     },
+     "object": {
+      "cutoff_cpp": 0.2266,
+      "luma": 194.0,
+      "tiles": 590
+     },
+     "edge": {
+      "cutoff_cpp": 0.4766,
+      "luma": 101.1,
+      "tiles": 320
+     }
+    },
+    "codec_cutoff_cpp": 0.3906,
+    "codec_err_rms": 2.0,
+    "limited_by": "codec",
+    "grain_std": 1.03,
+    "grain_luma": 198.1,
+    "floor_psd_at_0.25": 2.25,
+    "two_frames_cutoff_cpp": [
+     0.4766,
+     0.4766
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 1.67,
+     "1280": 1.09
+    }
+   }
+  },
+  {
+   "shot": 26,
+   "frame_in": 319,
+   "frame_out": 325,
+   "seconds": 0.24,
+   "arc": null,
+   "arc_manual_reason": "crayon bands win over the arc",
+   "sky_luma": 182.4,
+   "object_rgb": [
+    135,
+    176,
+    237
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.4,
+    "mean_abs_diff_per_frame": 0.15
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.3516,
+    "effective_width_px": 1350,
+    "set_by": "frame",
+    "regions": {
+     "frame": {
+      "cutoff_cpp": 0.3516,
+      "luma": 177.2,
+      "tiles": 1332
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 4.11,
+    "limited_by": "source",
+    "grain_std": 4.51,
+    "grain_luma": 179.2,
+    "floor_psd_at_0.25": 43.86,
+    "two_frames_cutoff_cpp": [
+     0.3438,
+     0.3438
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 4.58,
+     "1280": 3.24
+    }
+   }
+  },
+  {
+   "shot": 27,
+   "frame_in": 325,
+   "frame_out": 333,
+   "seconds": 0.32,
+   "arc": {
+    "apex_x": 0.492,
+    "apex_y": 0.467,
+    "sagitta_of_width": 0.1427,
+    "radius_over_width": 0.88,
+    "fit_inliers": 0.94,
+    "fit_resid_px_at_480": 5.3
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 5.0,
+   "object_rgb": [
+    151,
+    94,
+    22
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 10.6,
+    "mean_abs_diff_per_frame": 6.87
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.2109,
+    "effective_width_px": 810,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0781,
+      "luma": 16.1,
+      "tiles": 882
+     },
+     "object": {
+      "cutoff_cpp": 0.2109,
+      "luma": 106.0,
+      "tiles": 780
+     },
+     "edge": {
+      "cutoff_cpp": 0.1562,
+      "luma": 94.6,
+      "tiles": 336
+     }
+    },
+    "codec_cutoff_cpp": 0.2188,
+    "codec_err_rms": 1.62,
+    "limited_by": "codec",
+    "grain_std": 0.09,
+    "grain_luma": 16.0,
+    "floor_psd_at_0.25": 0.001,
+    "two_frames_cutoff_cpp": [
+     0.2109,
+     0.2109
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.67,
+     "1280": 0.53
+    }
+   }
+  },
+  {
+   "shot": 28,
+   "frame_in": 333,
+   "frame_out": 341,
+   "seconds": 0.32,
+   "arc": {
+    "apex_x": 0.472,
+    "apex_y": 0.498,
+    "sagitta_of_width": 0.0941,
+    "radius_over_width": 1.33,
+    "fit_inliers": 0.83,
+    "fit_resid_px_at_480": 2.5
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 6.3,
+   "object_rgb": [
+    134,
+    129,
+    127
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.4,
+    "mean_abs_diff_per_frame": 0.09
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.5,
+    "effective_width_px": 1920,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 18.2,
+      "tiles": 864
+     },
+     "object": {
+      "cutoff_cpp": 0.5,
+      "luma": 132.5,
+      "tiles": 780
+     },
+     "edge": {
+      "cutoff_cpp": 0.2734,
+      "luma": 139.5,
+      "tiles": 354
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 3.08,
+    "limited_by": "codec",
+    "grain_std": 0.23,
+    "grain_luma": 17.9,
+    "floor_psd_at_0.25": 0.07,
+    "two_frames_cutoff_cpp": [
+     0.5,
+     0.5
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 3.27,
+     "1280": 2.37
+    }
+   }
+  },
+  {
+   "shot": 29,
+   "frame_in": 341,
+   "frame_out": 348,
+   "seconds": 0.28,
+   "arc": {
+    "apex_x": 0.485,
+    "apex_y": 0.502,
+    "sagitta_of_width": 0.0743,
+    "radius_over_width": 1.68,
+    "fit_inliers": 0.66,
+    "fit_resid_px_at_480": 0.4
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 95.5,
+   "object_rgb": [
+    167,
+    158,
+    145
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.1,
+    "mean_abs_diff_per_frame": 0.03
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.2109,
+    "effective_width_px": 810,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.1875,
+      "luma": 94.5,
+      "tiles": 710
+     },
+     "object": {
+      "cutoff_cpp": 0.2109,
+      "luma": 196.2,
+      "tiles": 660
+     },
+     "edge": {
+      "cutoff_cpp": 0.2109,
+      "luma": 94.0,
+      "tiles": 295
+     }
+    },
+    "codec_cutoff_cpp": 0.3281,
+    "codec_err_rms": 1.22,
+    "limited_by": "source",
+    "grain_std": 0.87,
+    "grain_luma": 112.5,
+    "floor_psd_at_0.25": 1.151,
+    "two_frames_cutoff_cpp": [
+     0.2109,
+     0.2109
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 0.75,
+     "1280": 0.57
+    }
+   }
+  },
+  {
+   "shot": 30,
+   "frame_in": 348,
+   "frame_out": 356,
+   "seconds": 0.32,
+   "arc": null,
+   "arc_manual_reason": "wood grain under the arc",
+   "sky_luma": 187.6,
+   "object_rgb": [
+    104,
+    93,
+    82
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.2,
+    "mean_abs_diff_per_frame": 0.04
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.4609,
+    "effective_width_px": 1770,
+    "set_by": "frame",
+    "regions": {
+     "frame": {
+      "cutoff_cpp": 0.4609,
+      "luma": 150.8,
+      "tiles": 1998
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 4.78,
+    "limited_by": "codec",
+    "grain_std": 0.4,
+    "grain_luma": 184.8,
+    "floor_psd_at_0.25": 0.146,
+    "two_frames_cutoff_cpp": [
+     0.4609,
+     0.4609
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1920,
+    "roundtrip_err_rms": {
+     "960": 7.35,
+     "1280": 5.65
+    }
+   }
+  },
+  {
+   "shot": 31,
+   "frame_in": 356,
+   "frame_out": 362,
+   "seconds": 0.24,
+   "arc": {
+    "apex_x": 0.459,
+    "apex_y": 0.494,
+    "sagitta_of_width": 0.0517,
+    "radius_over_width": 2.42,
+    "fit_inliers": 0.71,
+    "fit_resid_px_at_480": 2.2
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 233.7,
+   "object_rgb": [
+    83,
+    93,
+    100
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.2,
+    "mean_abs_diff_per_frame": 0.07
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.5,
+    "effective_width_px": 1920,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 222.5,
+      "tiles": 548
+     },
+     "object": {
+      "cutoff_cpp": 0.5,
+      "luma": 87.2,
+      "tiles": 592
+     },
+     "edge": {
+      "cutoff_cpp": 0.4141,
+      "luma": 135.6,
+      "tiles": 192
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 2.43,
+    "limited_by": "codec",
+    "grain_std": 1.81,
+    "grain_luma": 222.5,
+    "floor_psd_at_0.25": 6.411,
+    "two_frames_cutoff_cpp": [
+     0.5,
+     0.5
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 3.09,
+     "1280": 2.2
+    }
+   }
+  },
+  {
+   "shot": 32,
+   "frame_in": 362,
+   "frame_out": 369,
+   "seconds": 0.28,
+   "arc": {
+    "apex_x": 0.476,
+    "apex_y": 0.476,
+    "sagitta_of_width": 0.11,
+    "radius_over_width": 1.14,
+    "fit_inliers": 0.61,
+    "fit_resid_px_at_480": 1.9
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 217.4,
+   "object_rgb": [
+    151,
+    170,
+    155
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.7,
+    "mean_abs_diff_per_frame": 0.24
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.1719,
+    "effective_width_px": 660,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 208.8,
+      "tiles": 715
+     },
+     "object": {
+      "cutoff_cpp": 0.1719,
+      "luma": 158.2,
+      "tiles": 685
+     },
+     "edge": {
+      "cutoff_cpp": 0.1562,
+      "luma": 141.3,
+      "tiles": 265
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 6.78,
+    "limited_by": "source",
+    "grain_std": 9.99,
+    "grain_luma": 208.8,
+    "floor_psd_at_0.25": 168.318,
+    "two_frames_cutoff_cpp": [
+     0.1641,
+     0.1719
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 960,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 7.28,
+     "1280": 5.81
+    }
+   }
+  },
+  {
+   "shot": 33,
+   "frame_in": 369,
+   "frame_out": 376,
+   "seconds": 0.28,
+   "arc": null,
+   "arc_manual_reason": "object sits at the bottom edge",
+   "sky_luma": 29.0,
+   "object_rgb": [
+    34,
+    15,
+    12
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 2.2,
+    "mean_abs_diff_per_frame": 0.65
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.3047,
+    "effective_width_px": 1170,
+    "set_by": "frame",
+    "regions": {
+     "frame": {
+      "cutoff_cpp": 0.3047,
+      "luma": 34.9,
+      "tiles": 1665
+     }
+    },
+    "codec_cutoff_cpp": 0.375,
+    "codec_err_rms": 2.04,
+    "limited_by": "source",
+    "grain_std": 0.07,
+    "grain_luma": 26.0,
+    "floor_psd_at_0.25": 0.0,
+    "two_frames_cutoff_cpp": [
+     0.2969,
+     0.2969
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 1.53,
+     "1280": 0.97
+    }
+   }
+  },
+  {
+   "shot": 34,
+   "frame_in": 376,
+   "frame_out": 383,
+   "seconds": 0.28,
+   "arc": {
+    "apex_x": 0.506,
+    "apex_y": 0.459,
+    "sagitta_of_width": 0.1817,
+    "radius_over_width": 0.69,
+    "fit_inliers": 0.85,
+    "fit_resid_px_at_480": 14.4
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 238.9,
+   "object_rgb": [
+    226,
+    217,
+    208
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.4,
+    "mean_abs_diff_per_frame": 0.29
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.3594,
+    "effective_width_px": 1380,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 226.6,
+      "tiles": 765
+     },
+     "object": {
+      "cutoff_cpp": 0.3594,
+      "luma": 206.6,
+      "tiles": 605
+     },
+     "edge": {
+      "cutoff_cpp": 0.2656,
+      "luma": 214.0,
+      "tiles": 295
+     }
+    },
+    "codec_cutoff_cpp": 0.4688,
+    "codec_err_rms": 2.08,
+    "limited_by": "source",
+    "grain_std": 0.35,
+    "grain_luma": 227.7,
+    "floor_psd_at_0.25": 0.161,
+    "two_frames_cutoff_cpp": [
+     0.3672,
+     0.3516
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 1.46,
+     "1280": 1.11
+    }
+   }
+  },
+  {
+   "shot": 35,
+   "frame_in": 383,
+   "frame_out": 389,
+   "seconds": 0.24,
+   "arc": null,
+   "arc_manual_reason": "pen hatching",
+   "sky_luma": 179.7,
+   "object_rgb": [
+    170,
+    154,
+    120
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.6,
+    "mean_abs_diff_per_frame": 0.51
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.2656,
+    "effective_width_px": 1020,
+    "set_by": "frame",
+    "regions": {
+     "frame": {
+      "cutoff_cpp": 0.2656,
+      "luma": 179.0,
+      "tiles": 1332
+     }
+    },
+    "codec_cutoff_cpp": 0.4766,
+    "codec_err_rms": 3.36,
+    "limited_by": "source",
+    "grain_std": 1.91,
+    "grain_luma": 184.1,
+    "floor_psd_at_0.25": 3.434,
+    "two_frames_cutoff_cpp": [
+     0.2656,
+     0.2656
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 2.26,
+     "1280": 1.68
+    }
+   }
+  },
+  {
+   "shot": 36,
+   "frame_in": 389,
+   "frame_out": 394,
+   "seconds": 0.2,
+   "arc": {
+    "apex_x": 0.489,
+    "apex_y": 0.457,
+    "sagitta_of_width": 0.201,
+    "radius_over_width": 0.62,
+    "fit_inliers": 0.99,
+    "fit_resid_px_at_480": 15.6
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 18.9,
+   "object_rgb": [
+    195,
+    195,
+    195
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.5,
+    "mean_abs_diff_per_frame": 0.28
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.2109,
+    "effective_width_px": 810,
+    "set_by": "edge",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0547,
+      "luma": 27.4,
+      "tiles": 468
+     },
+     "object": {
+      "cutoff_cpp": 0.1406,
+      "luma": 199.7,
+      "tiles": 348
+     },
+     "edge": {
+      "cutoff_cpp": 0.2109,
+      "luma": 101.6,
+      "tiles": 183
+     }
+    },
+    "codec_cutoff_cpp": 0.3125,
+    "codec_err_rms": 1.61,
+    "limited_by": "source",
+    "grain_std": 0.25,
+    "grain_luma": 27.3,
+    "floor_psd_at_0.25": 0.091,
+    "two_frames_cutoff_cpp": [
+     0.2344,
+     0.1719
+    ],
+    "render_width": 1280,
+    "render_width_by_cutoff": 1280,
+    "render_width_by_roundtrip": 960,
+    "roundtrip_err_rms": {
+     "960": 1.07,
+     "1280": 0.77
+    }
+   }
+  },
+  {
+   "shot": 37,
+   "frame_in": 394,
+   "frame_out": 399,
+   "seconds": 0.2,
+   "arc": {
+    "apex_x": 0.493,
+    "apex_y": 0.509,
+    "sagitta_of_width": 0.0867,
+    "radius_over_width": 1.44,
+    "fit_inliers": 0.67,
+    "fit_resid_px_at_480": 1.7
+   },
+   "arc_manual_reason": null,
+   "sky_luma": 25.0,
+   "object_rgb": [
+    121,
+    47,
+    34
+   ],
+   "motion": {
+    "moves": false,
+    "drift_px_at_480": [
+     0.0,
+     0.0
+    ],
+    "zoom": 1.0,
+    "residual": 0.7,
+    "mean_abs_diff_per_frame": 0.61
+   },
+   "caption": "discover",
+   "sharpness": {
+    "cutoff_cpp": 0.5,
+    "effective_width_px": 1920,
+    "set_by": "object",
+    "regions": {
+     "sky": {
+      "cutoff_cpp": 0.0312,
+      "luma": 32.2,
+      "tiles": 435
+     },
+     "object": {
+      "cutoff_cpp": 0.5,
+      "luma": 73.1,
+      "tiles": 381
+     },
+     "edge": {
+      "cutoff_cpp": 0.5,
+      "luma": 80.2,
+      "tiles": 183
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 3.49,
+    "limited_by": "codec",
+    "grain_std": 0.8,
+    "grain_luma": 31.6,
+    "floor_psd_at_0.25": 1.348,
+    "two_frames_cutoff_cpp": [
+     0.5,
+     0.5
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1280,
+    "roundtrip_err_rms": {
+     "960": 4.21,
+     "1280": 2.84
+    }
+   }
+  },
+  {
+   "shot": 38,
+   "frame_in": 399,
+   "frame_out": 500,
+   "seconds": 4.04,
+   "arc": null,
+   "arc_manual_reason": "end card, the limb is at the bottom",
+   "sky_luma": 22.7,
+   "object_rgb": [
+    75,
+    108,
+    124
+   ],
+   "motion": {
+    "moves": true,
+    "drift_px_at_480": [
+     -28.5,
+     -6.0
+    ],
+    "zoom": 0.9,
+    "residual": 44.9,
+    "mean_abs_diff_per_frame": 1.89
+   },
+   "caption": "Opus 5.5 / Claude",
+   "sharpness": {
+    "cutoff_cpp": 0.5,
+    "effective_width_px": 1920,
+    "set_by": "frame",
+    "regions": {
+     "frame": {
+      "cutoff_cpp": 0.5,
+      "luma": 35.2,
+      "tiles": 32967
+     }
+    },
+    "codec_cutoff_cpp": 0.5,
+    "codec_err_rms": 0.73,
+    "limited_by": "codec",
+    "grain_std": 0.09,
+    "grain_luma": 32.0,
+    "floor_psd_at_0.25": 0.005,
+    "two_frames_cutoff_cpp": [
+     0.5,
+     0.4766
+    ],
+    "render_width": 1920,
+    "render_width_by_cutoff": 1920,
+    "render_width_by_roundtrip": 1920,
+    "roundtrip_err_rms": {
+     "960": 1.25,
+     "1280": 1.04
+    }
+   }
+  }
+ ]
+}

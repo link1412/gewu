@@ -1,0 +1,23 @@
+{
+ "sensor": "canon_eos_5d_mkiv",
+ "light": {
+  "blackbody_K": 5500,
+  "why": "the key light: every light of the studio is a 5500 K emitter (scene.py); rgbscene weights the nacre tables with it, so one bounce of it on a shell piece is exact"
+ },
+ "iso": 100,
+ "expose": {
+  "raw_ref": 1.0,
+  "of_saturation": 0.7,
+  "why": "fixed (a photographer's manual exposure); the studio's levels are fitted at it (fit.py), so its value only sets the scale of lights.json"
+ },
+ "develop": {
+  "ev": 0.0,
+  "shoulder_from": 0.5,
+  "why": "as S2's shot 19"
+ },
+ "sharpen": {
+  "amount": 0.0,
+  "sigma_px": 0.7
+ },
+ "seed": 1919
+}

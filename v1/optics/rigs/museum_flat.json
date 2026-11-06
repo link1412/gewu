@@ -1,0 +1,126 @@
+{
+ "name": "museum_flat",
+ "title": "博物馆平光",
+ "what": "The Palace Museum's set-up for low-contrast object photographs (Jin Yueping 2020, printed p.554, Fig. 2: two flashes in 60 x 60 cm softboxes, front left and front right at 45 degrees, grey paper behind), plus an optional top light (Meng Chengguang's guidance: top, key, fill and background lights, printed pp.581-582). For material cards against museum catalogue photographs. Found in research (ref/studio/report.md).",
+ "look_target": {
+  "film": "ref/reference-film.mp4",
+  "note": "a reference film: a look target for the light only, never material truth",
+  "shots": [
+   {
+    "shot": 25,
+    "frame": 316,
+    "what": "paper stack on cream: even, frontal-soft, no hard shadow, seamless background"
+   },
+   {
+    "shot": 28,
+    "frame": 337,
+    "what": "blue-and-white plate on red: even light, a broad soft sheen, flat background"
+   },
+   {
+    "shot": 24,
+    "frame": 307,
+    "what": "plant section on cream: flat, shadowless"
+   }
+  ]
+ },
+ "spectrum": {
+  "blackbody_K": 5500,
+  "why": "v0: every lamp of a rig has the same spectrum, the key light rgbscene projects with, so one bounce is exact (docs/optics.md); 5500 K blackbody: a stand-in for daylight-balanced studio flash or LED, our choice"
+ },
+ "lamps": [
+  {
+   "name": "left",
+   "group": "left",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": -45,
+    "elevation_deg": 30,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "jin2020: a 60 x 60 cm softbox at 45 degrees front-left; its height (30 degrees) and distance (1 m) are not given there: our choice; equal to the other side, as the set-up is for even, low-contrast light"
+  },
+  {
+   "name": "right",
+   "group": "right",
+   "shape": "rect",
+   "size": {
+    "mm": [
+     600,
+     600
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 45,
+    "elevation_deg": 30,
+    "distance": {
+     "mm": 1000
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 1000,
+   "why": "jin2020: a 60 x 60 cm softbox at 45 degrees front-right; its height (30 degrees) and distance (1 m) are not given there: our choice; equal to the other side, as the set-up is for even, low-contrast light"
+  },
+  {
+   "name": "top",
+   "group": "top",
+   "shape": "rect",
+   "size": {
+    "R": [
+     5,
+     5
+    ]
+   },
+   "at": {
+    "anchor": "centre",
+    "azimuth_deg": 0,
+    "elevation_deg": 75,
+    "distance": {
+     "R": 7
+    }
+   },
+   "aim": {
+    "anchor": "centre"
+   },
+   "lux": 500,
+   "why": "meng: a top light; its size (5 R), height and strength (a stop under the sides) are our choice"
+  }
+ ],
+ "backdrop": {
+  "kind": "sweep",
+  "material": "grey_18",
+  "distance": {
+   "R": 6
+  },
+  "cove": {
+   "R": 2
+  },
+  "height": {
+   "R": 14
+  },
+  "width": {
+   "R": 18
+  },
+  "why": "the default ground; a recipe sets the colour for its object (backdrop.material)"
+ },
+ "sources": {
+  "jin2020": "Jin Yueping, Capturing surface texture ... (Palace Museum), https://www.dpm.org.cn/Uploads/File/2020/11/13/u5fae29884d938.pdf, printed p.554, section 1(1)2, Fig. 2 [reported practice]",
+  "meng": "Meng Chengguang, 博物馆之文物摄影, https://img.dpm.org.cn/Uploads/File/2020/11/13/u5fae2a6a1aea0.pdf, printed pp.581-582 [guidance]",
+  "british_museum": "two 60 x 90 cm softboxes on Colorama Storm Grey (image record Oc1944,02.2109) [reported practice]"
+ }
+}

@@ -1,0 +1,187 @@
+{
+ "name": "lychee",
+ "what": "The lychee fruit's substances (Litchi chinensis): the aril (the white, juicy, translucent flesh), the pericarp (its red outer layer and white spongy inner layer), the seed coat and the seed's cotyledon, and the juice. Substance only: the fruit's shape, its tubercles and its seed's size are the object (objects/lychee/); the knife's cut and the juice on the cut face are the craft (crafts/cutting/); the light is optics. Bai Juyi's 荔枝图序 names the layers: 壳如红缯 (the pericarp's red), 膜如紫绡 (the pink endocarp), 瓤肉莹白如冰雪 (the aril's weak scattering), 浆液甘酸如醴酪 (the juice).",
+ "tags": {
+  "M": "量的: a measured value reported in a source, or one we measured off a photo or a render",
+  "I": "查到的: a value a source gives but did not measure itself (a handbook, a catalogue, a review), or a measured value of another fruit used as a stand-in",
+  "D": "推的: computed from other values, the algorithm stated",
+  "F": "拟合的: tuned so a render matches a reference (the material card's output; what was matched and how stated)",
+  "A": "假设: our assumption or placeholder"
+ },
+ "model": "Every part is a closed surface with air outside (both renderers carry a medium only inside a dielectric, tools/cycles_scene.py): the aril, the pericarp's two layers and the seed coat are dielectric shells over homogeneous media (sigma_a, sigma_s, Henyey-Greenstein g); the cotyledon is diffuse. Neighbouring parts are separated by thin air gaps, which the fruit has between pericarp and aril (the endocarp often comes away from the aril, Nacif 2001) and which are our approximation between the pericarp's two layers [A]. Spectra on 360-830 nm (materials/lychee/optics.py).",
+ "sources": {
+  "nacif2001": "Nacif, Paoli & Salomao 2001, Morphological and anatomical development of the litchi fruit (cv. Brewster), Fruits 56(4):225-233: fruit 38.62 x 36.10 mm, 23.90 g; pericarp of epicarp (epidermis, sclerenchyma in 2-3 discontinuous layers under the protuberances), mesocarp (parenchyma, anthocyanins at maturity) and endocarp (membranous, pinkish, often separated from the aril); aril white, juicy, translucent",
+  "yuan2023": "袁叶, 王伟山, 招胜坚, 古运洪, 余金昌 2023, 荔枝果实性状多样性分析, 天津农业科学 (abstract): 120 accessions, pericarp 0.74-3.13 mm, fruit 13.36-56.04 g, seed 0.5-5.53 g, edible rate 59.18-82.48 %, TSS 13.1-21.7 %, tubercles flat to sharp",
+  "casb2023": "中国农学通报 2023, 39(4):44-51, doi:10.11924/j.issn.1000-6850.casb2022-0833 (abstract): 'Guiwei' in Yongde, Yunnan: 22.53 g, TSS 19.27 %, edible rate 76.61 %, shrivelled-seed rate 44 %",
+  "pope1997": "Pope & Fry 1997, Appl. Opt. 36:8710-8723, pure water absorption 380-727.5 nm (data/water_pope97.csv)",
+  "segelstein1981": "Segelstein 1981, M.Sc. thesis, UMKC, water's complex index compiled (data/water_segelstein81.csv), outside Pope & Fry's range",
+  "icumsa": "ICUMSA SPS-3 refractive index of sucrose solutions at 20 C: 15 % 1.35567, 20 % 1.36384, 25 % 1.37233",
+  "saeys2008": "Saeys, Velazco-Roa, Thennadil, Ramon & Nicolai 2008, Appl. Opt. 47(7):908-919, apple skin and flesh 350-2200 nm: anisotropy g 0.6-0.8",
+  "kiwi2016": "J. Zhejiang Univ. Sci. B 2016, doi:10.1631/jzus.B1500086: kiwifruit tissues at 632.8 nm by integrating sphere and inverse adding-doubling, mu_a 0.031-0.308 /mm, mu_s' 0.120-0.946 /mm",
+  "leidus2021": "Ivar Leidus, 'Lychee fruits and seed', Wikimedia Commons, CC BY-SA 4.0, Nikon D5200, 105 mm, f/8, focus stack of 15 (ref/lychee/leidus_lychee_fruits_and_seed.jpg, not in git): a whole fruit, a peeled aril in a cup of its skin, a seed; cultivar unknown (bought in Estonia in January: imported, days old)",
+  "prospectd2017": "Feret, Gitelson, Noble & Jacquemoud 2017, PROSPECT-D: Towards modeling leaf optical properties through a complete lifecycle, Remote Sensing of Environment 193:204-215, doi:10.1016/j.rse.2017.03.004: in-vivo specific absorption of anthocyanins (cm2/ug) and of brown pigments (a.u., F. Baret's), data/prospect_d.csv",
+  "gao2000": "高飞飞, 尹金华, 陈大成, 叶自行, 胡桂兵 2000, 荔枝果皮叶绿素、类胡萝卜素、花青苷合成规律及其对着色的影响, 华南农业大学学报 21(1):16-18, doi:10.7671/j.issn.1001-411X.2000.01.005 (abstract)"
+ },
+ "sets": {
+  "leidus": "the fruit in the card's photograph (leidus2021): unknown cultivar, days after harvest (browned tubercle ridges)",
+  "guiwei": "桂味 for the film: fresh (0 h after harvest), freshly cut"
+ },
+ "aril": {
+  "eta": {
+   "value": 1.3627,
+   "range": [
+    1.3524,
+    1.3667
+   ],
+   "tag": "D",
+   "source": "the juice's index from its soluble solids, read as sucrose (icumsa, linear between 15 and 20 %): 'Guiwei' TSS 19.27 % [M, casb2023]; the range from TSS 13.1-21.7 % over 120 accessions [M, yuan2023]. The cell sap is the juice; the cell walls are a few per cent of the volume [A]"
+  },
+  "g": {
+   "value": 0.7,
+   "range": [
+    0.6,
+    0.8
+   ],
+   "tag": "I",
+   "source": "apple flesh (saeys2008), a stand-in: no lychee value found (S4 search: lychee, longan, grape, kiwifruit, citrus)"
+  },
+  "mus_prime_550_per_mm": {
+   "value": 0.5,
+   "range": [
+    0.12,
+    0.95
+   ],
+   "tag": "A",
+   "fit": "card",
+   "source": "start of the card's fit; range: kiwifruit flesh at 632.8 nm (kiwi2016), a stand-in. The aril scatters weakly because its cells are large, full of juice, with few air spaces: 莹白 (translucent white), not opaque"
+  },
+  "mus_prime_power": {
+   "value": 1.0,
+   "tag": "A",
+   "source": "mu_s'(lambda) = mu_s'(550) (lambda/550)^-b; fruit tissues' mu_s' falls with wavelength (Qin & Lu 2008, PBT 49:355-365) [I], b not measured for lychee"
+  },
+  "yellow_mua_400_per_mm": {
+   "value": 0.0467,
+   "tag": "A",
+   "fit": "card: fit_card.py, the layer model with the render's correction factors (S4)",
+   "source": "a pale-yellow absorber, a400 exp(-(lambda-400)/w); the aril's cream colour in the card's photo"
+  },
+  "yellow_width_nm": {
+   "value": 40.0,
+   "tag": "A",
+   "source": "shape of a generic pale-yellow absorber (phenolics); none measured for lychee aril"
+  },
+  "water": {
+   "tag": "M",
+   "source": "pope1997 380-727.5 nm, segelstein1981 elsewhere; the aril is about 80 % water [I, general fruit composition], taken as 100 % [A]"
+  }
+ },
+ "pericarp_outer": {
+  "what": "the red layer: epidermis, cuticle, sclerenchyma and the anthocyanin-bearing outer mesocarp (nacif2001)",
+  "eta": {
+   "value": 1.45,
+   "tag": "A",
+   "source": "cuticle and cell walls; not measured"
+  },
+  "mus_prime_per_mm": {
+   "value": 5.0,
+   "tag": "A",
+   "fit": "card",
+   "source": "strongly scattering (sclereids, cell walls); written with g = 0 and mu_s = mu_s' (similarity relation [D]) to keep paths short. Not measured. S4: 4 /mm first, then 8 for a crisper skin at the section's 2.55x (it looked like wax); 5 with the 0.4 mm layer keeps the card's anthocyanins inside the literature's range (see thickness_mm). The rest of the waxiness is the layer's structure: a thin, strongly scattering sclereid skin over the red cells is not modelled (v0)"
+  },
+  "anthocyanin_shape": {
+   "value": "data/prospect_d.csv k_anthocyanin_cm2_per_ug",
+   "tag": "I",
+   "source": "the in-vivo specific absorption of anthocyanins in PROSPECT-D (prospectd2017), fitted on leaves, whose anthocyanins are mostly cyanidin glycosides as the lychee's are (cyanidin-3-rutinoside 68.8-100 % of the pericarp's, Molecules 2012, 17:14954 [M]). Broad: at 450 nm 64 % and at 400 nm 92 % of its 530 nm peak. Held at its 400 nm value below 400 nm [A]. It replaced a Gaussian band at 530 nm (FWHM 100 nm [A]), which passed blue and rendered the skin magenta (S4 first preview)"
+  },
+  "anthocyanin_ug_per_cm3": {
+   "value": {
+    "leidus": 359.8,
+    "guiwei": 359.8
+   },
+   "range": [
+    40,
+    471
+   ],
+   "tag": "F",
+   "fit": "card (leidus): fit_card.py, the layer model with the render's correction factors (out/lychee/card_correction.json, S4); guiwei copies leidus until a fresh Guiwei colour is found",
+   "source": "concentration in the red layer; mu_a = k_anthocyanin x this. The range [D]: total anthocyanins 1.77-20.94 mg/100 g fresh pericarp over nine cultivars (Molecules 2012) [M], at 1 g/cm3 [A], all of it in the red 0.4 mm of a 0.9 mm pericarp [A] (x 2.25)"
+  },
+  "carotenoid_ug_per_cm3": {
+   "value": {
+    "leidus": 181.9,
+    "guiwei": 91.0
+   },
+   "tag": "F",
+   "fit": "card (leidus): fit_card.py with the render's correction factors (S4). guiwei: half of it [A]: the card's fruit was days old (its plates' ridges browned), and its blue absorber may hold browning products the fit gave to the carotenoids; a fresh Guiwei reads crimson (the section's look target, S4), and with leidus's value the section's rim was coral-orange. No fresh Guiwei colour measured",
+   "source": "carotenoids are among the pericarp's pigments with chlorophyll and anthocyanins (gao2000, abstract: no amounts) [M, qualitative]; shape PROSPECT-D's in-vivo carotenoids (prospectd2017) [I]. Needed: the photo's skin absorbs blue more than green (B/R 0.16 < G/R 0.23), which anthocyanins alone do not (their band at 450 nm is 64 % of the 530 nm peak), and PROSPECT-D's brown pigment, flat enough to darken red too, made the skin 10x too dark against the aril (fit_card.py, S4)"
+  },
+  "browning_mua_500_per_mm": {
+   "value": {
+    "leidus": 0.0,
+    "guiwei": 0.0
+   },
+   "tag": "F",
+   "fit": "card (leidus): fit_card.py drives it to its lower bound (S4): the photo's skin colour needs none beside the carotenoids; its brown flecks lie on the plates' ridges, a pattern, not the layer's colour",
+   "source": "browning products (polymerised phenolics after anthocyanin loss and PPO; browning starts 3-4 h after harvest at room temperature, Bengal, UFV [M]) as an absorber of PROSPECT-D's brown-pigment shape (data/prospect_d.csv k_brown_au, senescent leaves' brown pigments, prospectd2017) [I shape], scaled to its value at 500 nm, held at 400 nm below; guiwei is fresh: 0"
+  },
+  "thickness_mm": {
+   "value": 0.4,
+   "tag": "A",
+   "source": "the red part of the pericarp's cut face [A]: a cut fruit shows it as more than half (ref/lychee/commons2, Filo gen', CC BY-SA 4.0, by eye); the card's fit with the literature's anthocyanins bounds it the other way: with the skin's colour fixed, a thicker red layer needs more pigment (its own scattering returns light unfiltered), and at 0.55 mm the fit is above the range at any mu_s' >= 5 (S4 grid, fit_card.py). 0.4 mm with mu_s' 5 /mm sits inside. S4: 0.3 first (a guess), which drew a white band twice the red's width"
+  }
+ },
+ "pericarp_inner": {
+  "what": "the white spongy inner mesocarp and the endocarp",
+  "eta": {
+   "value": 1.4,
+   "tag": "A",
+   "source": "not measured"
+  },
+  "mus_prime_per_mm": {
+   "value": 30.0,
+   "tag": "A",
+   "source": "spongy, air spaces between cells: white and nearly opaque at 1 mm; g = 0 with mu_s = mu_s' (similarity); S4: 10 -> 30 /mm: the white spongy layer is full of air spaces, closer to paper than to flesh, and at 10 /mm its cut face rendered grey"
+  },
+  "mua_per_mm": {
+   "value": 0.0,
+   "tag": "A",
+   "source": "water only"
+  }
+ },
+ "testa": {
+  "what": "the seed coat: glossy, chestnut brown",
+  "eta": {
+   "value": 1.5,
+   "tag": "A",
+   "source": "a glossy coat; not measured"
+  },
+  "thickness_mm": {
+   "value": 0.25,
+   "tag": "A",
+   "source": "not measured"
+  },
+  "mus_per_mm": {
+   "value": 0.5,
+   "tag": "A",
+   "source": "a little scattering; not measured"
+  },
+  "mua_anchors_per_mm": {
+   "value": {
+    "450": 2.43,
+    "540": 2.258,
+    "610": 1.14
+   },
+   "tag": "A",
+   "fit": "card: fit_card.py, the layer model only; the card cannot check the seed (its lower body mirrors the card's white floor and sweep)",
+   "source": "three anchors at the channels' centres, piecewise linear between, held outside (the shape between them is [A]); the seed's colour in the card's photo"
+  }
+ },
+ "cotyledon": {
+  "reflectance": {
+   "value": 0.6,
+   "tag": "A",
+   "source": "cream-white starchy tissue on a fresh cut; flat spectrum; it browns within minutes of the cut (an after-cut process, crafts/cutting), 0 min here"
+  }
+ }
+}

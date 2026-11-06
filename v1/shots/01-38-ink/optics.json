@@ -1,0 +1,105 @@
+{
+  "_labels": "[M] measured  [D] derived  [F] fitted to the original  [I] inferred  [A] assumed. See docs/shots/01-38-ink.md.",
+  "paper": {
+    "s_m2_per_kg": 31.0,
+    "_s": "[查到, substitute] Yamauchi & Usami 2005 Table 1: kozo washi Sekishuu (32 g/m^2) KM S = 31 m^2/kg; no xuan value found",
+    "wet_scatter_factor": 0.156,
+    "_wet": "[D] ((n_cellulose - n_water)/(n_cellulose - 1))^2 = ((1.55-1.333)/0.55)^2",
+    "k550_m2_per_kg": 0.3,
+    "k_slope": 3.0,
+    "_k": "[A] slight warm tint of unbleached bast paper"
+  },
+  "carbon": {
+    "mac550_m2_per_g": 7.5,
+    "_mac": "[查到] Bond & Bergstrom 2006: fresh soot MAC 7.5 +- 1.2 m^2/g at 550 nm",
+    "aae": {
+      "coarse": 1.0,
+      "fine": 4.069659228867449
+    },
+    "_aae": "coarse [查到] AAE ~1 for black carbon (Bond & Bergstrom 2006); fine [F] within 1-3 (biomass/pine soot, Kirchstetter et al. 2004)"
+  },
+  "lamps": [
+    {
+      "name": "sun",
+      "x_mm": 0.0,
+      "y_mm": -17.682280887690784,
+      "depth_mm": 87.08446309185332,
+      "radius_mm": 5.0,
+      "scale": 1449.532027487545,
+      "spectrum": {
+        "kind": "blackbody",
+        "T": 1778.5815735494512
+      },
+      "_": "[F] round 2b (fit3.py E, frames 0+420+470): warm lamp under the core, deep (87 mm) and directional (radiance ~ cos^40 of the emission angle: a beam). r1/r2 had it Lambertian 1 mm under the paper; its a^-4 tail lit the paper 50-70 mm away warm (frame 420 rows 90-140).",
+      "cos_power": 40.24308404562776,
+      "_cos_power": "[F] radiance ~ cos^n of the emission angle (optics.disc_irradiance_cosn); n = 0 is a Lambertian disc"
+    },
+    {
+      "name": "sky",
+      "x_mm": 0.0,
+      "y_mm": 6.6128398322432735,
+      "depth_mm": 27.880473218531243,
+      "radius_mm": 36.3599652199032,
+      "scale": 4.484575440310895,
+      "spectrum": {
+        "kind": "sky",
+        "beta": 4.272917619856346,
+        "gamma": 0.49117022196146964
+      },
+      "_": "[F] round 2b: broad cool light further back (28 mm deep, radius 36 mm), directional (cos^39). Its edge sets where the steel-blue plateau ends (original: +0.30-0.45 H, then the floor).",
+      "cos_power": 38.883936537589506,
+      "_cos_power": "[F] radiance ~ cos^n of the emission angle (optics.disc_irradiance_cosn); n = 0 is a Lambertian disc"
+    },
+    {
+      "name": "ambient",
+      "kind": "ambient",
+      "scale": 0.011619096734311586,
+      "spectrum": {
+        "kind": "sky",
+        "beta": 1.7212252355368076,
+        "gamma": 0.0
+      },
+      "_": "[F] round 2 / 2b: diffuse cool back-light larger than the field (uniform irradiance), transmitted by the same KM sheet as the lamps: the dark navy floor of shot 38 (original (15,19,23), bt709 tv). Refit jointly in 2b (fit3.py) after the paper texture fix: r2's 0.0076 was partly paying for the clamped thin edge row of the grammage map."
+    }
+  ],
+  "front": {
+    "scale": 9.357622968840208e-14,
+    "spectrum": {
+      "kind": "blackbody",
+      "T": 6500.0
+    },
+    "_": "[F] dim fill on the camera side"
+  },
+  "exposure": 1.0,
+  "camera": {
+    "el_deg": 18.0,
+    "dist_mm": 150.0,
+    "aim": [
+      0.0,
+      8.100000000000001
+    ],
+    "pitch_deg": -0.03854320303571761,
+    "f_px": 7107.075531270283,
+    "aperture_mm": 1.8642105484636278,
+    "focus_mm": 150.0,
+    "_": "[F] to the arc (apex, R/W) of frame 0; f_px and pitch refitted in round 2b (fit.py --stage geo) after the light changed the measured R/W from 3.35 to 3.09 (6777 -> 7107 px, -0.064 -> -0.039 deg)"
+  },
+  "veil": {
+    "halo": 0.12582544236873774,
+    "halo_sigma_frac": 0.08418538144795323,
+    "uniform": 1.9949260025475803e-10,
+    "_": "[F] round 2b two-part lens veil (optics.veil): halo 12.6 % at sigma 0.084 W; uniform veil fitted to 0 (held-out 485 shows no veil above the band). Replaces r1's single wide Gaussian (0.149 at 0.2 W)."
+  },
+  "sheen": {
+    "scale": 0.04747129943415857,
+    "n": 1.333,
+    "spectrum": {
+      "kind": "blackbody",
+      "T": 6500.0
+    },
+    "_": "[F] scale: radiance of the dim surroundings in front of the sheet, mirrored by the pool's smooth surface (optics.render, Fresnel at the view angle); what lights the opaque ink core in 2b. n 1.333 [A] (pool taken as still wet), neutral 6500 K [A], only the thick ink film is glossy [A] (film_gsm).",
+    "film_gsm": 10.0,
+    "_film_gsm": "[A] carbon load (g/m^2) above which the ink surface counts as a continuous glossy film; gloss = clip(carbon / film_gsm, 0, 1). The core holds ~45 g/m^2, the halo < 2 at 4 mm out."
+  },
+  "_r2b": "Round 2b (fix pass): light fitted by fit3.py to frame 0's three band profiles and to frames 420 and 470 (profiles + top-60 sky RGB), alternating with the camera fit to frame 0's arc (fit.py --stage geo). Held out: 456, 485 and every other frame. Starts A/B (no sheen) and C/D (sheen) each reached one minimum; E = C's light refitted after the camera refit. Logs: out/shots/01-38-ink/r2/fit3*.log."
+}

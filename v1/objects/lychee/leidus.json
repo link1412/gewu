@@ -1,0 +1,111 @@
+{
+ "name": "leidus",
+ "what": "the fruit in the material card's photograph (Ivar Leidus, 'Lychee fruits and seed', Commons, CC BY-SA 4.0): cultivar unknown, days old, rounded plates. Lengths in mm. Tags as materials/lychee/material.json.",
+ "material_set": "leidus",
+ "fruit": {
+  "D_mm": {
+   "value": 30.0,
+   "tag": "A",
+   "source": "the photograph has no scale: a typical size (Brewster 36.1 mm across [M, nacif2001]; 13.36-56.04 g over 120 accessions [M, yuan2023]); the card's scale follows it, so its px/mm is uncertain by about 15 %"
+  },
+  "L_over_D": {
+   "value": 1.21,
+   "tag": "M",
+   "source": "the limb's ellipse in the photo, 2513 x 2069 px (materials/lychee/measure_ref.py), the fruit lying on its side, long axis across"
+  },
+  "shoulder": {
+   "value": 0.04,
+   "tag": "A",
+   "source": "slightly broader at the stem, by eye on the photo"
+  }
+ },
+ "tubercles": {
+  "spacing_over_D": {
+   "value": 0.096,
+   "tag": "M",
+   "source": "the card's photo (leidus2021), plates counted face-on at the fruit's centre on a 100 px grid: about 220 px for a fruit 2280 px across (mean of the limb ellipse's axes); taken over to Guiwei [A]"
+  },
+  "height_over_D": {
+   "value": 0.018,
+   "tag": "M",
+   "source": "the limb's peaks over its median-filtered outline: median prominence 41 px for a fruit 2280 px across (p25-p75 24-60 px, max 73)"
+  },
+  "height_cv": {
+   "value": 0.25,
+   "tag": "A",
+   "source": "plate to plate"
+  },
+  "sharpness_q": {
+   "value": 0.7,
+   "tag": "A",
+   "source": "rounded plates (q < 1: convex flanks), by eye on the photo's face-on plates"
+  },
+  "jitter": {
+   "value": 0.3,
+   "tag": "A",
+   "source": "plate centres: a Fibonacci lattice moved by up to this many spacings"
+  }
+ },
+ "pericarp": {
+  "thickness_mm": {
+   "value": 0.9,
+   "tag": "A",
+   "source": "at the grooves; 0.74-3.13 over 120 accessions [M, yuan2023]; Guiwei's is thin and brittle [I, popular]"
+  },
+  "outer_mm": {
+   "value": 0.4,
+   "tag": "A",
+   "source": "the red layer, materials/lychee/material.json pericarp_outer"
+  },
+  "layer_gap_mm": {
+   "value": 0.01,
+   "tag": "A",
+   "source": "between the two layers: an artefact of the renderers' one medium per closed surface (material.json model)"
+  }
+ },
+ "gaps": {
+  "pericarp_aril_mm": {
+   "value": 0.05,
+   "tag": "A",
+   "source": "the endocarp often separates from the aril (nacif2001)"
+  },
+  "aril_seed_mm": {
+   "value": 0.03,
+   "tag": "A",
+   "source": "the aril grows from the funicle and wraps the seed (nacif2001; PCP 2015); not attached over the seed's surface"
+  },
+  "testa_cotyledon_mm": {
+   "value": 0.01,
+   "tag": "A",
+   "source": "an artefact, as layer_gap_mm"
+  }
+ },
+ "seed": {
+  "length_mm": {
+   "value": 22.0,
+   "tag": "M",
+   "source": "the photo's seed is 0.82 of the fruit's mean diameter long, 0.37 wide, in front of the fruit (so drawn about 10 % larger) [M, by eye on the 1500 px preview]: 0.75 x 30 mm"
+  },
+  "width_mm": {
+   "value": 10.5,
+   "tag": "M",
+   "source": "see length"
+  },
+  "thickness_mm": {
+   "value": 9.5,
+   "tag": "A",
+   "source": "a little flatter than wide, as lychee seeds are"
+  },
+  "centre_z_mm": {
+   "value": 1.0,
+   "tag": "A",
+   "source": "as guiwei"
+  }
+ },
+ "mesh": {
+  "step_mm": 0.1,
+  "smooth_step_mm": 0.25,
+  "tag": "A",
+  "source": "the card frames 84 mm across: 0.1 mm is a quarter of a 1080p pixel"
+ }
+}
