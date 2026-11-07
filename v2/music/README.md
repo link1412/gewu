@@ -236,7 +236,7 @@ python3 -I v2/music/verify.py A   # 爆音、音高、落点
 
 > The acknowledgements and copyright notices above must be included in any derivative work.
 
-**Keyscape**(片子的低音和簧风琴)是付费音色库,我没有查授权条款。
+**Keyscape**(片子的低音和簧风琴)是付费音色库,渲染用的是正版。条款查过(2026-11):[Licensing FAQ](https://support.spectrasonics.net/manual/Keyscape/11/en/topic/legal) 写明用它做的音乐可以发布,商业项目不需要另外的授权;[Sampling FAQ](https://support.spectrasonics.net/manual/Keyscape/11/en/topic/sample-faq) 写明自用的样本可以做,样本不能分发。所以仓库只放混音,不放渲出的单音。这些页面没有直接提到广告和营销,也没有提到用程序驱动插件。
 
 **TimbresOfHeaven** 只在放弃的版本里,不在片子里。下面是换音色之前查的。它的条款,来自作者站点 [midkar.com/SoundFonts](https://midkar.com/SoundFonts/index.html)(2026-11 读的原文):
 
